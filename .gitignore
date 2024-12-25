@@ -46,4 +46,4 @@ yarn-error.log*
 .idea
 
 # python virtual env
-/venv
+venv/

@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React from 'react'
 import { type Event } from '~/utils/types'
 import { IMAGE_MAP } from "~/generated/WorldHistoryImages";
 import Image from 'next/image';

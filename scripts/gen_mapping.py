@@ -20,7 +20,7 @@ if __name__ == '__main__':
 
     contents = """// DO NOT MODIFY! This file is generated automatically.
 // Run python3 scripts/gen_mapping.py to update this file.
-import { StaticImageData } from 'next/image';
+import { type StaticImageData } from 'next/image';
 
 """
 

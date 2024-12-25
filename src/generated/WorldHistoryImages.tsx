@@ -1,6 +1,6 @@
 // DO NOT MODIFY! This file is generated automatically.
 // Run python3 scripts/gen_mapping.py to update this file.
-import { StaticImageData } from 'next/image';
+import { type StaticImageData } from 'next/image';
 
 import FallOfTroy from '@public/world_history/fall_of_troy.jpg';
 import BuddhaDies from '@public/world_history/buddha_dies.jpg';

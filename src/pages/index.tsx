@@ -1,14 +1,6 @@
 import Head from "next/head";
 import { GeistSans } from "geist/font/sans";
-import Link from "next/link";
-import {
-  SignInButton,
-  SignedIn,
-  SignedOut,
-  UserButton
-} from '@clerk/nextjs'
-import { api } from "~/utils/api";
-import { Deck, Event } from "~/utils/types";
+import { type Deck } from "~/utils/types";
 
 import WorldHistoryData from "~/data/world_history.json";
 import { Card } from "./components/Card";
@@ -16,10 +8,14 @@ import { useEffect, useState } from "react";
 
 const worldHistoryDeck: Deck = WorldHistoryData;
 
-function shuffle(array: any[]) {
+function shuffle<T>(array: T[]) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
+    if (array[i] !== undefined && array[j] !== undefined) {
+      const temp = array[i]!;
+      array[i] = array[j]!;
+      array[j] = temp;
+    }
   }
   return array;
 }
