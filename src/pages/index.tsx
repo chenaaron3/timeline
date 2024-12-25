@@ -3,7 +3,7 @@ import { GeistSans } from "geist/font/sans";
 import { type Deck } from "~/utils/types";
 
 import WorldHistoryData from "~/data/world_history.json";
-import { Card } from "./components/Card";
+import { Card } from "../components/Card";
 import { useEffect, useState } from "react";
 
 const worldHistoryDeck: Deck = WorldHistoryData;
