@@ -46,6 +46,27 @@ export const Timeline: React.FC = () => {
         </div>;
     }
 
+    const fieldElements = [];
+    // loop through player cards and add elements to fieldelements
+    for (let i = 0; i < playedCards.length; i++) {
+        const card = playedCards[i]!;
+        // Show preshadow if the intent is to place the card here
+        const showPreshadow = draggingCard != null && insertionIntent === i;
+        // Show postshadow if its the last card
+        const showPostshadow = draggingCard != null && insertionIntent === i + 1 && i == playedCards.length - 1
+
+        // Show shadow text for tutorial
+        const showTutorial = playedCards.length == 1
+
+        if (showTutorial || showPreshadow) {
+            fieldElements.push(<ShadowCard key="pre-shadow" intent={showPreshadow} message={showTutorial ? "Before?" : ""} />)
+        }
+        fieldElements.push(<DroppableCard key={card.id} cardID={card.id} />)
+        if (showTutorial || showPostshadow) {
+            fieldElements.push(<ShadowCard key="post-shadow" intent={showPostshadow} message={showTutorial ? "After?" : ""} />)
+        }
+    }
+
     return (<div className='h-screen bg-red-600'>
         <LayoutGroup id="board">
             <DndContext
@@ -56,21 +77,7 @@ export const Timeline: React.FC = () => {
                 onDragMove={handleDragMove}
             >
                 <div className="w-full h-fit flex items-center justify-evenly py-16 gap-10 overflow-auto">
-                    {playedCards.map((card, i) => {
-                        // Show preshadow if the intent is to place the card here
-                        const showPreshadow = draggingCard != null && insertionIntent === i;
-                        // Show postshadow if its the last card
-                        const showPostshadow = draggingCard != null && insertionIntent === i + 1 && i == playedCards.length - 1
-
-                        // Show shadow text for tutorial
-                        const showTutorial = playedCards.length == 1
-
-                        return <>
-                            {(showTutorial || showPreshadow) && <ShadowCard intent={showPreshadow} message={showTutorial ? "Before?" : ""} />}
-                            <DroppableCard key={card.id} cardID={card.id} />
-                            {(showTutorial || showPostshadow) && <ShadowCard intent={showPostshadow} message={showTutorial ? "After?" : ""} />}
-                        </>
-                    })}
+                    {...fieldElements}
                 </div>
                 <div className="w-full min-h-1 flex items-center justify-evenly gap-10 bg-blue-500">
                     {/* Don't render while dragging, since the overlay is taking over */}
