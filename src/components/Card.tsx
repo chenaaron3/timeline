@@ -26,6 +26,8 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(
             >
                 <motion.div
                     className='relative min-w-[21vh] w-[21vh] h-[28vh] rounded-3xl overflow-hidden bg-white'
+                    animate={showDate ? { scale: 1 } : undefined}
+                    initial={showDate ? { scale: 0 } : undefined}
                     layoutId={cardID}
                 >
                     {/* eslint-disable-next-line */}

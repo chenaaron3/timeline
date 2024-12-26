@@ -25,7 +25,7 @@ import { DroppableCard } from './DroppableCard';
 import { ShadowCard } from './ShadowCard';
 import { useGameStore } from '~/state';
 
-import { LayoutGroup } from 'framer-motion';
+import { AnimatePresence, LayoutGroup } from 'framer-motion';
 
 export const Timeline: React.FC = () => {
     const playedCards = useGameStore.use.playedCards();
@@ -59,16 +59,16 @@ export const Timeline: React.FC = () => {
         const showTutorial = playedCards.length == 1
 
         if (showTutorial || showPreshadow) {
-            fieldElements.push(<ShadowCard key="pre-shadow" intent={showPreshadow} message={showTutorial ? "Before?" : ""} />)
+            fieldElements.push(<ShadowCard key={"pre-shadow"} intent={showPreshadow} message={showTutorial ? "Before?" : ""} />)
         }
         fieldElements.push(<DroppableCard key={card.id} cardID={card.id} />)
         if (showTutorial || showPostshadow) {
-            fieldElements.push(<ShadowCard key="post-shadow" intent={showPostshadow} message={showTutorial ? "After?" : ""} />)
+            fieldElements.push(<ShadowCard key={"post-shadow"} intent={showPostshadow} message={showTutorial ? "After?" : ""} />)
         }
     }
 
     return (<div className='h-screen bg-red-600'>
-        <LayoutGroup id="board">
+        <LayoutGroup>
             <DndContext
                 sensors={sensors}
                 collisionDetection={closestCenter}
@@ -102,7 +102,8 @@ export const Timeline: React.FC = () => {
         // Get the mouse's x position
         const mouseX = (active.rect.current.translated!.left + active.rect.current.translated!.right) / 2;
         // Get the target card's x position
-        const targetX = over.rect.left + over.rect.width / 2
+        const targetX = (over.rect.left + over.rect.right) / 2
+        console.log(mouseX, targetX)
 
         // Get the target card's index
         const targetIndex = playedCards.findIndex(card => card.id === over.id);
