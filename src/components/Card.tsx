@@ -1,22 +1,45 @@
-import React from 'react'
-import { type Event } from '~/utils/types'
-import { IMAGE_MAP } from "~/generated/WorldHistoryImages";
+import React, { forwardRef } from 'react'
 import Image from 'next/image';
+import { useGameStore } from '~/state';
+import { motion } from "motion/react"
 
-interface CardProps {
-    event: Event
+export interface CardProps {
+    cardID: string
+    style?: React.CSSProperties;
+    showDate?: boolean;
 }
 
-export const Card: React.FC<CardProps> = ({ event }) => {
-    return (<div className='w-[270px] h-[360px] relative rounded-3xl overflow-hidden bg-white'>
-        <Image src={IMAGE_MAP[event.id]!} alt={event.title} className='py-5 px-5 rounded-3xl' />
-        <div className='relative bottom-24 text-center text-wrap w-full flex items-center flex-col '>
-            <div className='relative translate-y-3 h-[36px] m-auto w-1/3 bg-red-800 rounded-3xl flex justify-center items-center'>
-                <p className='w-full'>{event.year}</p>
-            </div>
-            <div className='h-[48px] m-auto w-2/3 bg-red-800 rounded-3xl flex justify-center items-center'>
-                <h2 className='max-w-full max-h-full text-xs'>{event.title}</h2>
-            </div>
-        </div>
-    </div>)
-}
+export const Card = forwardRef<HTMLDivElement, CardProps>(
+    ({ cardID, showDate, ...props }, ref) => {
+        const card = useGameStore.use.cardMap()[cardID];
+
+        if (!card) {
+            return <div>
+                Cannot find card {cardID}!
+            </div>;
+        }
+
+        return (
+            <div
+                ref={ref}
+                {...props}
+            >
+                <motion.div
+                    className='relative min-w-[21vh] w-[21vh] h-[28vh] rounded-3xl overflow-hidden bg-white'
+                    layoutId={cardID}
+                >
+                    {/* eslint-disable-next-line */}
+                    <Image src={card.image} alt={card.title} className='py-4 px-3 rounded-3xl' />
+                    <div className='absolute bottom-5 text-center text-wrap w-full flex items-center flex-col '>
+                        {showDate && <div className='absolute bottom-9 h-[36px] m-auto w-1/3 bg-red-800 rounded-3xl flex justify-center items-center'>
+                            <p className='w-full'>{card.year}</p>
+                        </div>
+                        }
+                        <div className='absolute bottom-0 h-[48px] m-auto w-2/3 bg-red-800 rounded-3xl flex justify-center items-center'>
+                            <h2 className='max-w-full max-h-full text-xs'>{card.title}</h2>
+                        </div>
+                    </div>
+                </motion.div>
+            </div>)
+    }
+)
