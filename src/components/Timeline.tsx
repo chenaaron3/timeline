@@ -32,6 +32,7 @@ export const Timeline: React.FC = () => {
     const playedCards = useGameStore.use.playedCards();
     const activeCard = useGameStore.use.activeCard();
     const playCard = useGameStore.use.playCard();
+    const discardCard = useGameStore.use.discardCard();
 
     const [draggingCard, setDraggingCard] = useState<string | null>(null);
     const [insertionIntent, setInsertionIntent] = useState<number | null>(null);
@@ -134,17 +135,37 @@ export const Timeline: React.FC = () => {
     function handleDragEnd(event: DragEndEvent) {
         const { active, over } = event;
 
-        console.log("Ended!")
-
         // There will always be an over since we are using closestCenter
-        if (!over || !inPlayingField(active)) {
+        if (!activeCard || !over || !inPlayingField(active)) {
             setDraggingCard(null);
             setInsertionIntent(null);
             return
         }
 
-        // Play the card at the insertion index
-        playCard(getInsertionIndex(active, over))
+        // Check if the card is placed in the correct position
+        const insertionIndex = getInsertionIndex(active, over)
+
+        let validPlacement = true;
+        const leftNeighbor = playedCards[insertionIndex - 1];
+        const rightNeighbor = playedCards[insertionIndex];
+        if (leftNeighbor) {
+            if (leftNeighbor.year > activeCard.year) {
+                validPlacement = false;
+            }
+        }
+        if (rightNeighbor) {
+            if (rightNeighbor.year < activeCard.year) {
+                validPlacement = false;
+            }
+        }
+
+        if (validPlacement) {
+            // Play the card at the insertion index
+            playCard(insertionIndex)
+        } else {
+            discardCard();
+        }
+
         // Stop dragging the card
         setDraggingCard(null);
         // Reset the insertion intent
@@ -153,8 +174,6 @@ export const Timeline: React.FC = () => {
 
     function handleDragMove(event: DragMoveEvent) {
         const { active, over } = event;
-
-        console.log(over)
 
         // Do not do anything if not dragging upwards from the start
         if (!over || !inPlayingField(active)) {

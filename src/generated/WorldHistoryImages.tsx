@@ -2,170 +2,172 @@
 // Run python3 scripts/gen_mapping.py to update this file.
 import { type StaticImageData } from 'next/image';
 
-import FallOfTroy from '@public/world_history/fall_of_troy.jpg';
-import BuddhaDies from '@public/world_history/buddha_dies.jpg';
-import ParthianWarImpact from '@public/world_history/parthian_war_impact.jpg';
-import TacitusBirth from '@public/world_history/tacitus_birth.jpg';
-import BustOfCaesar from '@public/world_history/bust_of_caesar.jpg';
-import RomanEmpireFounded from '@public/world_history/roman_empire_founded.jpg';
-import HerodBuildsTemple from '@public/world_history/herod-builds-temple.jpg';
-import CrucifixionOfJesus from '@public/world_history/crucifixion-of-jesus.jpg';
-import GreatFireOfRome from '@public/world_history/great-fire-of-rome.jpg';
-import DestructionOfTemple from '@public/world_history/destruction-of-temple.jpg';
-import AntoninePlague from '@public/world_history/antonine_plague.jpg';
-import BirthOfConstantine from '@public/world_history/birth-of-constantine.jpg';
-import ConstantineBattle from '@public/world_history/constantine_battle.jpg';
-import DurlandStory from '@public/world_history/durland_story.jpg';
-import NicanorBattle from '@public/world_history/nicanor-battle.jpg';
-import DruidsLaws from '@public/world_history/druids_laws.jpg';
-import TheodosiusDeclaration from '@public/world_history/theodosius_declaration.jpg';
-import TheodosiusIi from '@public/world_history/theodosius-ii.jpg';
-import TheodosianCodex from '@public/world_history/theodosian-codex.jpg';
-import HunsInvadeRome from '@public/world_history/huns-invade-rome.jpg';
-import SackOfRome from '@public/world_history/sack-of-rome.jpg';
-import TheDissolutionOfTheWesternRomanEmpire from '@public/world_history/the_dissolution_of_the_western_roman_empire.jpg';
-import BattleOfBadon from '@public/world_history/battle_of_badon.jpg';
-import TheConversionOfKingClovis from '@public/world_history/the_conversion_of_king_clovis.jpg';
-import JustinianIBecomesEmperor from '@public/world_history/justinian_i_becomes_emperor.jpg';
-import TheCaptivityOfVarangians from '@public/world_history/the_captivity_of_varangians.jpg';
-import TheBattleOfCowpens from '@public/world_history/the_battle_of_cowpens.jpg';
-import DefeatOfChristianArmy from '@public/world_history/defeat-of-christian-army.jpg';
-import EstablishmentOfCaliphate from '@public/world_history/establishment-of-caliphate.jpg';
-import BattleOfYarmouk from '@public/world_history/battle-of-yarmouk.jpg';
-import TreatyOfSavar from '@public/world_history/treaty-of-savar.jpg';
-import ConstructionOfUmayyadMosque from '@public/world_history/construction-of-umayyad-mosque.jpg';
-import MadainSalehArchitecture from '@public/world_history/madain-saleh-architecture.jpg';
-import BattleOfWoodedGlade from '@public/world_history/battle_of_wooded_glade.jpg';
-import CoronationOfCharlemagne from '@public/world_history/coronation_of_charlemagne.jpg';
-import DeathOfCharlemagne from '@public/world_history/death_of_charlemagne.jpg';
-import SackOfParis from '@public/world_history/sack_of_paris.jpg';
-import VikingExploration from '@public/world_history/viking_exploration.jpg';
-import EstablishmentOfTheFirstSchools from '@public/world_history/establishment_of_the_first_schools.jpg';
-import ByzantineInvasionOfMacedonia from '@public/world_history/byzantine_invasion_of_macedonia.jpg';
-import ConstructionOfTheFirstStoneCastle from '@public/world_history/construction_of_the_first_stone_castle.jpg';
-import Battleofhastings from '@public/world_history/battleofhastings.jpg';
-import InvestitureControversy from '@public/world_history/investiture_controversy.jpg';
-import CroatiaGoldenBull from '@public/world_history/croatia_golden_bull.jpg';
-import GreatFamine from '@public/world_history/great_famine.jpg';
+import AgriculturalRevolution from '@public/world_history/agricultural_revolution.jpg';
+import FirstCitiesMesopotamia from '@public/world_history/first_cities_mesopotamia.jpg';
+import FirstWheeledVehicles from '@public/world_history/first_wheeled_vehicles.jpg';
+import FirstWritingSystems from '@public/world_history/first_writing_systems.jpg';
+import GreatPyramidOfGiza from '@public/world_history/great_pyramid_of_giza.jpg';
+import ModernAlphabetOrigin from '@public/world_history/modern_alphabet_origin.jpg';
+import CodeOfHammurabi from '@public/world_history/code_of_hammurabi.jpg';
+import EndOfBronzeAge from '@public/world_history/end_of_bronze_age.jpg';
+import AncientGreekCivilization from '@public/world_history/ancient_greek_civilization.jpg';
+import LifeOfBuddha from '@public/world_history/life_of_buddha.jpg';
+import LifeOfConfucius from '@public/world_history/life_of_confucius.jpg';
+import RiseRomanCivilization from '@public/world_history/rise_roman_civilization.jpg';
+import EmpireOfAlexanderTheGreat from '@public/world_history/empire_of_alexander_the_great.jpg';
+import EndGreekCivilization from '@public/world_history/end_greek_civilization.jpg';
+import BirthOfChristianity from '@public/world_history/birth_of_christianity.jpg';
+import ModernCalendarBirth from '@public/world_history/modern_calendar_birth.jpg';
+import UnificationOfChina from '@public/world_history/unification_of_china.jpg';
+import FallRomanCivilization from '@public/world_history/fall_roman_civilization.jpg';
+import BirthOfIslam from '@public/world_history/birth_of_islam.jpg';
+import CrowningOfCharlemagne from '@public/world_history/crowning_of_charlemagne.jpg';
+import InventionOfGunpowder from '@public/world_history/invention_of_gunpowder.jpg';
+import NorseDiscoveryNorthAtlantic from '@public/world_history/norse_discovery_north_atlantic.jpg';
+import NormanConquestEngland from '@public/world_history/norman_conquest_england.jpg';
+import FirstUniversityBologna from '@public/world_history/first_university_bologna.jpg';
 import FirstCrusade from '@public/world_history/first_crusade.jpg';
-import Siegeofjerusalem from '@public/world_history/siegeofjerusalem.jpg';
-import Thirdcrusade from '@public/world_history/thirdcrusade.jpg';
-import Deathofsaladin from '@public/world_history/deathofsaladin.jpg';
-import BattleOfBouvines from '@public/world_history/battle_of_bouvines.jpg';
-import MagnaCarta from '@public/world_history/magna_carta.jpg';
-import December251223 from '@public/world_history/december_25_1223.jpg';
-import EstablishmentOfUniversityOfParis from '@public/world_history/establishment_of_university_of_paris.jpg';
-import PestilenceOf1338 from '@public/world_history/pestilence_of_1338.jpg';
-import BattleOfCrecy from '@public/world_history/battle_of_crecy.jpg';
-import Peasantrebellion from '@public/world_history/peasantrebellion.jpg';
-import Battleofagincourt from '@public/world_history/battleofagincourt.jpg';
-import Inventionofprintingpress from '@public/world_history/inventionofprintingpress.jpg';
-import Fallofconstantinople from '@public/world_history/fallofconstantinople.jpg';
-import SpanishInquisitionStart from '@public/world_history/spanish_inquisition_start.jpg';
-import Discoveryofamericas from '@public/world_history/discoveryofamericas.jpg';
-import MartinLuther95Theses from '@public/world_history/martin_luther_95_theses.jpg';
-import EstablishmentOfTheMughalEmpire from '@public/world_history/establishment_of_the_mughal_empire.jpg';
-import DefeatOfSpanishArmada from '@public/world_history/defeat_of_spanish_armada.jpg';
-import Theedictofnantes from '@public/world_history/theedictofnantes.jpg';
-import Defenestrationofprague from '@public/world_history/defenestrationofprague.jpg';
-import Thepeacetreatyofwestphalia from '@public/world_history/thepeacetreatyofwestphalia.jpg';
-import Thegreatplague from '@public/world_history/thegreatplague.jpg';
-import Thegreatfireoflondon from '@public/world_history/thegreatfireoflondon.jpg';
-import Thegloriousrevolution from '@public/world_history/thegloriousrevolution.jpg';
-import TheDeclarationOfIndependence from '@public/world_history/the_declaration_of_independence.jpg';
-import TheSigningOfTheUSConstitution from '@public/world_history/the_signing_of_the_u_s_constitution.jpg';
-import TheFrenchRevolution from '@public/world_history/the_french_revolution.jpg';
-import TheAbolishmentOfSlaveryInHaiti from '@public/world_history/the_abolishment_of_slavery_in_haiti.jpg';
-import TheMexicanWarOfIndependence from '@public/world_history/the_mexican_war_of_independence.jpg';
-import TheBattleOfWaterloo from '@public/world_history/the_battle_of_waterloo.jpg';
-import Greekindependence from '@public/world_history/greekindependence.jpg';
-import Emancipationproclamation from '@public/world_history/emancipationproclamation.jpg';
-import Startofww1 from '@public/world_history/startofww1.jpg';
-import Endofww1 from '@public/world_history/endofww1.jpg';
-import Startofww2 from '@public/world_history/startofww2.jpg';
-import Pearlharbor from '@public/world_history/pearlharbor.jpg';
+import AngkorWat from '@public/world_history/angkor_wat.jpg';
+import OverthrowTairaEmperor from '@public/world_history/overthrow_taira_emperor.jpg';
+import MongolEmpireGenghisKhan from '@public/world_history/mongol_empire_genghis_khan.jpg';
+import MagnaChartaSigned from '@public/world_history/magna_charta_signed.jpg';
+import MarcoPoloFarEast from '@public/world_history/marco_polo_far_east.jpg';
+import AztecCivilization from '@public/world_history/aztec_civilization.jpg';
+import BlackDeath from '@public/world_history/black_death.jpg';
+import StartRenaissance from '@public/world_history/start_renaissance.jpg';
+import IncaEmpire from '@public/world_history/inca_empire.jpg';
+import GutenbergPrintingPress from '@public/world_history/gutenberg_printing_press.jpg';
+import OttomanFallsConstantinople from '@public/world_history/ottoman_falls_constantinople.jpg';
+import ColumbusWestIndies from '@public/world_history/columbus_west_indies.jpg';
+import VascoDaGamaRouteIndia from '@public/world_history/vasco_da_gama_route_india.jpg';
+import NewWorldFoods from '@public/world_history/new_world_foods.jpg';
+import Luther95Theses from '@public/world_history/luther_95_theses.jpg';
+import SlaveTradeAmericas from '@public/world_history/slave_trade_americas.jpg';
+import ExpansionOttomanSuleiman from '@public/world_history/expansion_ottoman_suleiman.jpg';
+import MagellansExpedition from '@public/world_history/magellans_expedition.jpg';
+import CopernicanTheory from '@public/world_history/copernican_theory.jpg';
+import DefeatSpanishArmada from '@public/world_history/defeat_spanish_armada.jpg';
+import HamletWritten from '@public/world_history/hamlet_written.jpg';
+import JamestownSettlement from '@public/world_history/jamestown_settlement.jpg';
+import GalileoStarryMessenger from '@public/world_history/galileo_starry_messenger.jpg';
+import EnglishCivilWar from '@public/world_history/english_civil_war.jpg';
+import TajMahalBuilt from '@public/world_history/taj_mahal_built.jpg';
+import NewtonsPrincipia from '@public/world_history/newtons_principia.jpg';
+import SteamEngineInvented from '@public/world_history/steam_engine_invented.jpg';
+import CommunistManifesto from '@public/world_history/communist_manifesto.jpg';
+import OriginOfSpecies from '@public/world_history/origin_of_species.jpg';
+import AmericanCivilWarStart from '@public/world_history/american_civil_war_start.jpg';
+import AmericanCivilWarEnd from '@public/world_history/american_civil_war_end.jpg';
+import MeijiRestoration from '@public/world_history/meiji_restoration.jpg';
+import SuezCanalOpening from '@public/world_history/suez_canal_opening.jpg';
+import TelephonePatent from '@public/world_history/telephone_patent.jpg';
+import ScrambleForAfrica from '@public/world_history/scramble_for_africa.jpg';
+import WomenSuffrage from '@public/world_history/women_suffrage.jpg';
+import InventionRadio from '@public/world_history/invention_radio.jpg';
+import FirstPoweredFlight from '@public/world_history/first_powered_flight.jpg';
+import RussoJapaneseWar from '@public/world_history/russo_japanese_war.jpg';
+import Ww1Start from '@public/world_history/ww1_start.jpg';
+import RussianRevolution from '@public/world_history/russian_revolution.jpg';
+import Ww1End from '@public/world_history/ww1_end.jpg';
+import TelevisionInvention from '@public/world_history/television_invention.jpg';
+import StockMarketCrash from '@public/world_history/stock_market_crash.jpg';
+import RiseOfHitler from '@public/world_history/rise_of_hitler.jpg';
+import Ww2Start from '@public/world_history/ww2_start.jpg';
+import Ww2End from '@public/world_history/ww2_end.jpg';
+import InventionDigitalComputer from '@public/world_history/invention_digital_computer.jpg';
+import IndiaIndependence from '@public/world_history/india_independence.jpg';
+import DiscoveryDnaStructure from '@public/world_history/discovery_dna_structure.jpg';
+import SovietLaunchesSputnik from '@public/world_history/soviet_launches_sputnik.jpg';
+import FdaApprovesContraceptivePill from '@public/world_history/fda_approves_contraceptive_pill.jpg';
+import KennedyAssassination from '@public/world_history/kennedy_assassination.jpg';
+import UsEntersVietnamWar from '@public/world_history/us_enters_vietnam_war.jpg';
+import MlkAssassination from '@public/world_history/mlk_assassination.jpg';
+import Apollo11Landing from '@public/world_history/apollo11_landing.jpg';
+import BirthOfInternet from '@public/world_history/birth_of_internet.jpg';
+import Attacks911 from '@public/world_history/911_attacks.jpg';
 
 export const IMAGE_MAP: Record<string, StaticImageData> = {
-  'fall_of_troy': FallOfTroy,
-  'buddha_dies': BuddhaDies,
-  'parthian_war_impact': ParthianWarImpact,
-  'tacitus_birth': TacitusBirth,
-  'bust_of_caesar': BustOfCaesar,
-  'roman_empire_founded': RomanEmpireFounded,
-  'herod-builds-temple': HerodBuildsTemple,
-  'crucifixion-of-jesus': CrucifixionOfJesus,
-  'great-fire-of-rome': GreatFireOfRome,
-  'destruction-of-temple': DestructionOfTemple,
-  'antonine_plague': AntoninePlague,
-  'birth-of-constantine': BirthOfConstantine,
-  'constantine_battle': ConstantineBattle,
-  'durland_story': DurlandStory,
-  'nicanor-battle': NicanorBattle,
-  'druids_laws': DruidsLaws,
-  'theodosius_declaration': TheodosiusDeclaration,
-  'theodosius-ii': TheodosiusIi,
-  'theodosian-codex': TheodosianCodex,
-  'huns-invade-rome': HunsInvadeRome,
-  'sack-of-rome': SackOfRome,
-  'the_dissolution_of_the_western_roman_empire': TheDissolutionOfTheWesternRomanEmpire,
-  'battle_of_badon': BattleOfBadon,
-  'the_conversion_of_king_clovis': TheConversionOfKingClovis,
-  'justinian_i_becomes_emperor': JustinianIBecomesEmperor,
-  'the_captivity_of_varangians': TheCaptivityOfVarangians,
-  'the_battle_of_cowpens': TheBattleOfCowpens,
-  'defeat-of-christian-army': DefeatOfChristianArmy,
-  'establishment-of-caliphate': EstablishmentOfCaliphate,
-  'battle-of-yarmouk': BattleOfYarmouk,
-  'treaty-of-savar': TreatyOfSavar,
-  'construction-of-umayyad-mosque': ConstructionOfUmayyadMosque,
-  'madain-saleh-architecture': MadainSalehArchitecture,
-  'battle_of_wooded_glade': BattleOfWoodedGlade,
-  'coronation_of_charlemagne': CoronationOfCharlemagne,
-  'death_of_charlemagne': DeathOfCharlemagne,
-  'sack_of_paris': SackOfParis,
-  'viking_exploration': VikingExploration,
-  'establishment_of_the_first_schools': EstablishmentOfTheFirstSchools,
-  'byzantine_invasion_of_macedonia': ByzantineInvasionOfMacedonia,
-  'construction_of_the_first_stone_castle': ConstructionOfTheFirstStoneCastle,
-  'battleofhastings': Battleofhastings,
-  'investiture_controversy': InvestitureControversy,
-  'croatia_golden_bull': CroatiaGoldenBull,
-  'great_famine': GreatFamine,
+  'agricultural_revolution': AgriculturalRevolution,
+  'first_cities_mesopotamia': FirstCitiesMesopotamia,
+  'first_wheeled_vehicles': FirstWheeledVehicles,
+  'first_writing_systems': FirstWritingSystems,
+  'great_pyramid_of_giza': GreatPyramidOfGiza,
+  'modern_alphabet_origin': ModernAlphabetOrigin,
+  'code_of_hammurabi': CodeOfHammurabi,
+  'end_of_bronze_age': EndOfBronzeAge,
+  'ancient_greek_civilization': AncientGreekCivilization,
+  'life_of_buddha': LifeOfBuddha,
+  'life_of_confucius': LifeOfConfucius,
+  'rise_roman_civilization': RiseRomanCivilization,
+  'empire_of_alexander_the_great': EmpireOfAlexanderTheGreat,
+  'end_greek_civilization': EndGreekCivilization,
+  'birth_of_christianity': BirthOfChristianity,
+  'modern_calendar_birth': ModernCalendarBirth,
+  'unification_of_china': UnificationOfChina,
+  'fall_roman_civilization': FallRomanCivilization,
+  'birth_of_islam': BirthOfIslam,
+  'crowning_of_charlemagne': CrowningOfCharlemagne,
+  'invention_of_gunpowder': InventionOfGunpowder,
+  'norse_discovery_north_atlantic': NorseDiscoveryNorthAtlantic,
+  'norman_conquest_england': NormanConquestEngland,
+  'first_university_bologna': FirstUniversityBologna,
   'first_crusade': FirstCrusade,
-  'siegeofjerusalem': Siegeofjerusalem,
-  'thirdcrusade': Thirdcrusade,
-  'deathofsaladin': Deathofsaladin,
-  'battle_of_bouvines': BattleOfBouvines,
-  'magna_carta': MagnaCarta,
-  'december_25_1223': December251223,
-  'establishment_of_university_of_paris': EstablishmentOfUniversityOfParis,
-  'pestilence_of_1338': PestilenceOf1338,
-  'battle_of_crecy': BattleOfCrecy,
-  'peasantrebellion': Peasantrebellion,
-  'battleofagincourt': Battleofagincourt,
-  'inventionofprintingpress': Inventionofprintingpress,
-  'fallofconstantinople': Fallofconstantinople,
-  'spanish_inquisition_start': SpanishInquisitionStart,
-  'discoveryofamericas': Discoveryofamericas,
-  'martin_luther_95_theses': MartinLuther95Theses,
-  'establishment_of_the_mughal_empire': EstablishmentOfTheMughalEmpire,
-  'defeat_of_spanish_armada': DefeatOfSpanishArmada,
-  'theedictofnantes': Theedictofnantes,
-  'defenestrationofprague': Defenestrationofprague,
-  'thepeacetreatyofwestphalia': Thepeacetreatyofwestphalia,
-  'thegreatplague': Thegreatplague,
-  'thegreatfireoflondon': Thegreatfireoflondon,
-  'thegloriousrevolution': Thegloriousrevolution,
-  'the_declaration_of_independence': TheDeclarationOfIndependence,
-  'the_signing_of_the_u_s_constitution': TheSigningOfTheUSConstitution,
-  'the_french_revolution': TheFrenchRevolution,
-  'the_abolishment_of_slavery_in_haiti': TheAbolishmentOfSlaveryInHaiti,
-  'the_mexican_war_of_independence': TheMexicanWarOfIndependence,
-  'the_battle_of_waterloo': TheBattleOfWaterloo,
-  'greekindependence': Greekindependence,
-  'emancipationproclamation': Emancipationproclamation,
-  'startofww1': Startofww1,
-  'endofww1': Endofww1,
-  'startofww2': Startofww2,
-  'pearlharbor': Pearlharbor,
+  'angkor_wat': AngkorWat,
+  'overthrow_taira_emperor': OverthrowTairaEmperor,
+  'mongol_empire_genghis_khan': MongolEmpireGenghisKhan,
+  'magna_charta_signed': MagnaChartaSigned,
+  'marco_polo_far_east': MarcoPoloFarEast,
+  'aztec_civilization': AztecCivilization,
+  'black_death': BlackDeath,
+  'start_renaissance': StartRenaissance,
+  'inca_empire': IncaEmpire,
+  'gutenberg_printing_press': GutenbergPrintingPress,
+  'ottoman_falls_constantinople': OttomanFallsConstantinople,
+  'columbus_west_indies': ColumbusWestIndies,
+  'vasco_da_gama_route_india': VascoDaGamaRouteIndia,
+  'new_world_foods': NewWorldFoods,
+  'luther_95_theses': Luther95Theses,
+  'slave_trade_americas': SlaveTradeAmericas,
+  'expansion_ottoman_suleiman': ExpansionOttomanSuleiman,
+  'magellans_expedition': MagellansExpedition,
+  'copernican_theory': CopernicanTheory,
+  'defeat_spanish_armada': DefeatSpanishArmada,
+  'hamlet_written': HamletWritten,
+  'jamestown_settlement': JamestownSettlement,
+  'galileo_starry_messenger': GalileoStarryMessenger,
+  'english_civil_war': EnglishCivilWar,
+  'taj_mahal_built': TajMahalBuilt,
+  'newtons_principia': NewtonsPrincipia,
+  'steam_engine_invented': SteamEngineInvented,
+  'communist_manifesto': CommunistManifesto,
+  'origin_of_species': OriginOfSpecies,
+  'american_civil_war_start': AmericanCivilWarStart,
+  'american_civil_war_end': AmericanCivilWarEnd,
+  'meiji_restoration': MeijiRestoration,
+  'suez_canal_opening': SuezCanalOpening,
+  'telephone_patent': TelephonePatent,
+  'scramble_for_africa': ScrambleForAfrica,
+  'women_suffrage': WomenSuffrage,
+  'invention_radio': InventionRadio,
+  'first_powered_flight': FirstPoweredFlight,
+  'russo_japanese_war': RussoJapaneseWar,
+  'ww1_start': Ww1Start,
+  'russian_revolution': RussianRevolution,
+  'ww1_end': Ww1End,
+  'television_invention': TelevisionInvention,
+  'stock_market_crash': StockMarketCrash,
+  'rise_of_hitler': RiseOfHitler,
+  'ww2_start': Ww2Start,
+  'ww2_end': Ww2End,
+  'invention_digital_computer': InventionDigitalComputer,
+  'india_independence': IndiaIndependence,
+  'discovery_dna_structure': DiscoveryDnaStructure,
+  'soviet_launches_sputnik': SovietLaunchesSputnik,
+  'fda_approves_contraceptive_pill': FdaApprovesContraceptivePill,
+  'kennedy_assassination': KennedyAssassination,
+  'us_enters_vietnam_war': UsEntersVietnamWar,
+  'mlk_assassination': MlkAssassination,
+  'apollo11_landing': Apollo11Landing,
+  'birth_of_internet': BirthOfInternet,
+  '911_attacks': Attacks911,
 };

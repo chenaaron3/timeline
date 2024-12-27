@@ -6,11 +6,9 @@ class HistoricalEvent(BaseModel):
     year: int
     date: str
     country: str
-    division: str
     description: str
     longDescription: str
     imagePrompt: str
-    relevanceScore: int
 
 class EventCollection(BaseModel):
     events: list[HistoricalEvent]

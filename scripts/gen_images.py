@@ -73,7 +73,10 @@ if __name__ == '__main__':
         data = json.load(f)
 
     # Skip downloading this entry if it already exists
-    existing_images = set([os.path.splitext(p)[0] for p in os.listdir(save_directory_path)])
+    if os.path.exists(save_directory_path):
+        existing_images = set([os.path.splitext(p)[0] for p in os.listdir(save_directory_path)])
+    else:
+        existing_images = set()
 
     start = time.time()
     # Generate images in parallel

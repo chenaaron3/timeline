@@ -2,11 +2,15 @@ import Head from "next/head";
 import { GeistSans } from "geist/font/sans";
 
 import { Timeline } from "../components/Timeline";
+import { Scoreboard } from "../components/Scoreboard";
+
 import { useEffect } from "react";
 import { useGameStore } from '~/state';
+import { Details } from "~/components/Details";
 
 export default function Home() {
   const init = useGameStore.use.init();
+  const score = useGameStore.use.score();
 
   // Initalize the board with the world history deck
   useEffect(() => {
@@ -21,9 +25,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={GeistSans.className + " h-full"}>
-        <div className="bg-black text-white h-full">
-          {/* Timeline */}
+        <div className="h-full text-white bg-black">
+          <Scoreboard />
           <Timeline />
+          <Details />
         </div>
       </main>
     </>

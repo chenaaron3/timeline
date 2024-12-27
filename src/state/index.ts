@@ -15,14 +15,19 @@ type GameState = {
   deck: Events;
   cardMap: Record<string, Event>;
   activeCard: Event | undefined;
+  displayedCard: Event | undefined;
   playedCards: Events;
   discardedCards: Events;
+  score: { correct: number; incorrect: number };
 };
 
 type GameActions = {
   init: (deckName: DECK_NAMES) => void;
   drawCard: () => void;
   playCard: (index: number) => void;
+  learnCard: (cardID: string) => void;
+  discardCard: () => void;
+  acknowledgeCard: () => void;
 };
 
 // Get deck by name and perform validation
@@ -102,9 +107,29 @@ const drawCard = (state: GameState) => {
   }
 };
 
+// Learn about the card
+const learnCard = (state: GameState, cardID: string) => {
+  state.displayedCard = state.cardMap[cardID];
+};
+
+// Acknowledge the card and remove it from the display
+const acknowledgeCard = (state: GameState) => {
+  state.displayedCard = undefined;
+};
+
 // Plays the active card into the field
 const playCard = (state: GameState, index: number) => {
   state.playedCards.splice(index, 0, state.activeCard!);
+  state.score.correct += 1;
+  drawCard(state);
+};
+
+// Discards the card into the discard pile
+const discardCard = (state: GameState) => {
+  state.discardedCards.push(state.activeCard!);
+  state.score.incorrect += 1;
+  // Learn about the card before completely discarding it
+  learnCard(state, state.activeCard!.id);
   drawCard(state);
 };
 
@@ -113,8 +138,10 @@ export const gameStore = create<GameState & GameActions>()(
     deck: [] as Events,
     cardMap: {} as Record<string, Event>,
     activeCard: undefined as Event | undefined,
+    displayedCard: undefined as Event | undefined,
     playedCards: [] as Events,
     discardedCards: [] as Events,
+    score: { correct: 0, incorrect: 0 },
     init: (deckName: DECK_NAMES) =>
       set((state) => {
         initGame(state, deckName);
@@ -127,6 +154,18 @@ export const gameStore = create<GameState & GameActions>()(
     playCard: (index: number) =>
       set((state) => {
         playCard(state, index);
+      }),
+    discardCard: () =>
+      set((state) => {
+        discardCard(state);
+      }),
+    learnCard: (cardID: string) =>
+      set((state) => {
+        learnCard(state, cardID);
+      }),
+    acknowledgeCard: () =>
+      set((state) => {
+        acknowledgeCard(state);
       }),
   })),
 );
