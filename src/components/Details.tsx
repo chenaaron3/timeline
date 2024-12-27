@@ -32,6 +32,7 @@ export function Details() {
                     <AlertDialogDescription>
                         <div className='flex items-center justify-center gap-10'>
                             <div className='w-1/2'>
+                                {/* eslint-disable-next-line */}
                                 <Image src={displayedCard.image} alt={displayedCard.title} className='rounded-3xl' />
                             </div>
                             <div className='flex flex-col items-center justify-center w-1/2 h-64'>

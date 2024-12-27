@@ -4,7 +4,6 @@ import {
     closestCenter,
     DndContext,
     DragOverlay,
-    KeyboardSensor,
     PointerSensor,
     TouchSensor,
     useSensor,

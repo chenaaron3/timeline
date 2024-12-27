@@ -10,7 +10,6 @@ import { Details } from "~/components/Details";
 
 export default function Home() {
   const init = useGameStore.use.init();
-  const score = useGameStore.use.score();
 
   // Initalize the board with the world history deck
   useEffect(() => {

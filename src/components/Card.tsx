@@ -11,10 +11,10 @@ export interface CardProps {
 
 function mapRange(
     value: number,
-    inMin: number = 5,
-    inMax: number = 40,
-    outMin: number = 1,
-    outMax: number = 0.5
+    inMin = 5,
+    inMax = 40,
+    outMin = 1,
+    outMax = 0.5
 ): number {
     // Clamp the value within the input range
     if (value < inMin) {
@@ -37,11 +37,7 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(
             if (card) {
                 setTextSize(`${mapRange(card.title.length)}rem`)
             }
-        }, [card?.title])
-
-        useEffect(() => {
-            console.log(card?.title.length, textSize)
-        }, [textSize])
+        }, [card?.title, card])
 
         if (!card) {
             return <div>
