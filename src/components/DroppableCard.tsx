@@ -1,14 +1,15 @@
 import React from 'react';
 
-import { Card, type CardProps } from './Card';
+import { PlayedCard, type PlayedCardProps } from './PlayedCard';
+
 import { useDroppable } from '@dnd-kit/core';
 
-export const DroppableCard: React.FC<CardProps> = (props) => {
+export const DroppableCard: React.FC<PlayedCardProps> = (props) => {
     const { setNodeRef } = useDroppable({
         id: props.cardID,
     });
 
     return (
-        <Card showDate ref={setNodeRef} {...props} />
+        <PlayedCard ref={setNodeRef} {...props} />
     );
 }

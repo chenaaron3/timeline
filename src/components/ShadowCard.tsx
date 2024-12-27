@@ -10,7 +10,7 @@ export const ShadowCard: React.FC<ShadowCardProps> = ({ message, intent }) => {
     const outlineColor = intent ? "#86efac" : "#d1d5db"
     return <motion.div
         className={`relative min-w-[21vh] w-[21vh] h-[28vh] rounded-3xl overflow-hidden bg-opacity-70 outline-dashed`}
-        initial={{ scale: .5 }}
+        initial={{ scale: .75 }}
         animate={{ scale: 1 }}
         layoutId="shadow"
         style={{

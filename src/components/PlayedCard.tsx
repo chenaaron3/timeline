@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { useGameStore } from '~/state';
 import { motion } from "motion/react"
 
-export interface CardProps {
+export interface PlayedCardProps {
     cardID: string
     style?: React.CSSProperties;
 }
@@ -26,7 +26,7 @@ function mapRange(
     return outMin + (outMax - outMin) * (value - inMin) / (inMax - inMin);
 }
 
-export const Card = forwardRef<HTMLDivElement, CardProps>(
+export const PlayedCard = forwardRef<HTMLDivElement, PlayedCardProps>(
     ({ cardID, ...props }, ref) => {
         const card = useGameStore.use.cardMap()[cardID];
 
@@ -55,12 +55,17 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(
             >
                 <motion.div
                     // Disable touch actions for mobile
-                    className={`relative min-w-[20vh] w-[20vh] h-[30vh] rounded-3xl  bg-white touch-none drop-shadow-2xl`}
+                    className={`relative min-w-[20vh] w-[20vh] h-[30vh] rounded-3xl  bg-white drop-shadow-2xl`}
+                    initial={{ translateY: -100 }}
+                    animate={{ translateY: 0 }}
                     layoutId={cardID}
                 >
                     {/* eslint-disable-next-line */}
                     <Image src={card.image} alt={card.title} className='px-2 py-3 rounded-3xl' />
                     <div className='absolute bottom-0 flex flex-col items-center w-full text-center text-wrap '>
+                        <div className='translate-y-1 h-[v5vh] text-sm z-10 m-auto w-1/3 bg-red-800 rounded-xl flex justify-center items-center outline-yellow-300 outline-double'>
+                            <p className='w-full'>{card.year}</p>
+                        </div>
                         <div className='mb-1 h-[6vh] p-1 mx-auto w-5/6 bg-red-800 rounded-3xl flex justify-center items-center outline-yellow-300 outline-double shadow-sm shadow-black'>
                             <h2 className={`max-w-full max-h-full`}
                                 style={{

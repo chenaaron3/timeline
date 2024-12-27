@@ -6,6 +6,7 @@ import {
     DragOverlay,
     KeyboardSensor,
     PointerSensor,
+    TouchSensor,
     useSensor,
     useSensors,
     type DragStartEvent,
@@ -25,7 +26,7 @@ import { DroppableCard } from './DroppableCard';
 import { ShadowCard } from './ShadowCard';
 import { useGameStore } from '~/state';
 
-import { AnimatePresence, LayoutGroup } from 'framer-motion';
+import { LayoutGroup } from 'framer-motion';
 
 export const Timeline: React.FC = () => {
     const playedCards = useGameStore.use.playedCards();
@@ -37,7 +38,7 @@ export const Timeline: React.FC = () => {
 
     const sensors = useSensors(
         useSensor(PointerSensor),
-        useSensor(KeyboardSensor)
+        useSensor(TouchSensor)
     );
 
     if (!activeCard) {
@@ -58,16 +59,18 @@ export const Timeline: React.FC = () => {
         // Show shadow text for tutorial
         const showTutorial = playedCards.length == 1
 
+        // Intent card should be identicle so they could intepolate smoothly
+        // Tutorial cards need to be differentiated
         if (showTutorial || showPreshadow) {
-            fieldElements.push(<ShadowCard key={"pre-shadow"} intent={showPreshadow} message={showTutorial ? "Before?" : ""} />)
+            fieldElements.push(<ShadowCard key={(showTutorial ? "pre" : "") + "shadow"} intent={showPreshadow} message={showTutorial ? "Before?" : ""} />)
         }
         fieldElements.push(<DroppableCard key={card.id} cardID={card.id} />)
         if (showTutorial || showPostshadow) {
-            fieldElements.push(<ShadowCard key={"post-shadow"} intent={showPostshadow} message={showTutorial ? "After?" : ""} />)
+            fieldElements.push(<ShadowCard key={(showTutorial ? "post" : "") + "shadow"} intent={showPostshadow} message={showTutorial ? "After?" : ""} />)
         }
     }
 
-    return (<div className='h-screen bg-red-600'>
+    return (<div className='h-screen bg-slate-700'>
         <LayoutGroup>
             <DndContext
                 sensors={sensors}
@@ -75,11 +78,17 @@ export const Timeline: React.FC = () => {
                 onDragStart={handleDragStart}
                 onDragEnd={handleDragEnd}
                 onDragMove={handleDragMove}
+                onDragCancel={(event) => { console.log("Cancelled!", event) }}
+                onDragPending={() => { console.log("Pending!") }}
+                onDragAbort={() => { console.log("Aborted!") }}
+                onDragOver={() => { console.log("Over!") }}
             >
-                <div className="w-full h-fit flex items-center justify-evenly py-16 gap-10 overflow-auto">
+                <div className="flex items-center w-full gap-10 py-16 overflow-auto h-fit justify-evenly">
+                    {/* <AnimatePresence> */}
                     {...fieldElements}
+                    {/* </AnimatePresence> */}
                 </div>
-                <div className="w-full min-h-1 flex items-center justify-evenly gap-10 bg-blue-500">
+                <div className="flex items-center w-full gap-10 bg-blue-500 min-h-1 justify-evenly">
                     {/* Don't render while dragging, since the overlay is taking over */}
                     {!draggingCard && <DraggableCard key={activeCard.id} cardID={activeCard.id}></DraggableCard>}
                 </div>
@@ -125,6 +134,8 @@ export const Timeline: React.FC = () => {
     function handleDragEnd(event: DragEndEvent) {
         const { active, over } = event;
 
+        console.log("Ended!")
+
         // There will always be an over since we are using closestCenter
         if (!over || !inPlayingField(active)) {
             setDraggingCard(null);
@@ -136,10 +147,14 @@ export const Timeline: React.FC = () => {
         playCard(getInsertionIndex(active, over))
         // Stop dragging the card
         setDraggingCard(null);
+        // Reset the insertion intent
+        setInsertionIntent(null);
     }
 
     function handleDragMove(event: DragMoveEvent) {
         const { active, over } = event;
+
+        console.log(over)
 
         // Do not do anything if not dragging upwards from the start
         if (!over || !inPlayingField(active)) {
