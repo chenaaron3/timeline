@@ -1,17 +1,22 @@
-import { create, type StoreApi, type UseBoundStore } from "zustand";
-
-import { immer } from "zustand/middleware/immer";
-import { type Event, type Events, type ImageMap } from "../utils/types";
-import { shuffle, setSubtract, areSetsEqual } from "~/utils/utils";
-
+import { create, StoreApi, UseBoundStore } from 'zustand';
+import { immer } from 'zustand/middleware/immer';
+import OldWorldHistoryData from '~/data/old_world_history.json';
 // World History Deck
-import WorldHistoryData from "~/data/world_history.json";
-import { IMAGE_MAP as worldHistoryImageMap } from "~/generated/WorldHistoryImages";
-const worldHistoryDeck: Events = WorldHistoryData;
+import WorldHistoryData from '~/data/world_history.json';
+import { IMAGE_MAP as oldWorldHistoryImageMap } from '~/generated/OldWorldHistoryImages';
+import { IMAGE_MAP as worldHistoryImageMap } from '~/generated/WorldHistoryImages';
+import { areSetsEqual, setSubtract, shuffle } from '~/utils/utils';
 
-type DECK_NAMES = "world_history" | "test_deck";
+// Hard World History Deck
+import { Event, Events, ImageMap } from '../utils/types';
+
+const worldHistoryDeck: Events = WorldHistoryData;
+const oldWorldHistoryDeck: Events = OldWorldHistoryData;
+
+export type DECK_NAMES = "world_history" | "old_world_history";
 
 type GameState = {
+  deckName: DECK_NAMES;
   deck: Events;
   cardMap: Record<string, Event>;
   activeCard: Event | undefined;
@@ -22,7 +27,8 @@ type GameState = {
 };
 
 type GameActions = {
-  init: (deckName: DECK_NAMES) => void;
+  init: () => void;
+  selectDeck: (deckName: DECK_NAMES) => void;
   drawCard: () => void;
   playCard: (index: number) => void;
   learnCard: (cardID: string) => void;
@@ -39,6 +45,9 @@ const getDeck = (deckName: DECK_NAMES): Events => {
   if (deckName === "world_history") {
     imageMap = worldHistoryImageMap;
     deckData = worldHistoryDeck;
+  } else if (deckName === "old_world_history") {
+    imageMap = oldWorldHistoryImageMap;
+    deckData = oldWorldHistoryDeck;
   } else {
     imageMap = {};
     deckData = [];
@@ -74,14 +83,22 @@ const getDeck = (deckName: DECK_NAMES): Events => {
   return deckData;
 };
 
+// Change the deck name and reset the deck
+const selectDeck = (state: GameState, deckName: DECK_NAMES) => {
+  state.deckName = deckName;
+  initGame(state);
+};
+
 // Initialize the game state
-const initGame = (state: GameState, deckName: DECK_NAMES) => {
+const initGame = (state: GameState) => {
   console.log("Initializing Game!");
 
   // Get the deck data and image map
-  const deckData = getDeck(deckName);
+  const deckData = getDeck(state.deckName);
   // Shuffle the deck
   const shuffledDeck = shuffle(deckData);
+  // Sample a subset of cards from the deck so the game can end
+  const sampledDeck = shuffledDeck.slice(0, 5);
 
   // Create a map from card ID to card. Must create map
   // before removing cards from the deck.
@@ -92,18 +109,22 @@ const initGame = (state: GameState, deckName: DECK_NAMES) => {
   state.cardMap = cardMap;
 
   // Draw a card to start the game
-  state.activeCard = shuffledDeck.pop();
+  state.activeCard = sampledDeck.pop();
   // Play a card on the table
-  state.playedCards = [shuffledDeck.pop()!];
-  state.deck = shuffledDeck;
+  state.playedCards = [sampledDeck.pop()!];
+  state.deck = sampledDeck;
 };
 
 // Draw a card and set it as the active card
 const drawCard = (state: GameState) => {
+  // If theres more cards in the deck, draw it
   if (state.deck.length > 0) {
     const drawnCard = state.deck.pop();
     state.deck = state.deck;
     state.activeCard = drawnCard;
+  } else {
+    // Clear the active Card
+    state.activeCard = undefined;
   }
 };
 
@@ -135,6 +156,7 @@ const discardCard = (state: GameState) => {
 
 export const gameStore = create<GameState & GameActions>()(
   immer((set) => ({
+    deckName: "world_history" as DECK_NAMES,
     deck: [] as Events,
     cardMap: {} as Record<string, Event>,
     activeCard: undefined as Event | undefined,
@@ -142,9 +164,13 @@ export const gameStore = create<GameState & GameActions>()(
     playedCards: [] as Events,
     discardedCards: [] as Events,
     score: { correct: 0, incorrect: 0 },
-    init: (deckName: DECK_NAMES) =>
+    selectDeck: (deckName: DECK_NAMES) =>
       set((state) => {
-        initGame(state, deckName);
+        selectDeck(state, deckName);
+      }),
+    init: () =>
+      set((state) => {
+        initGame(state);
       }),
     drawCard: () => {
       set((state) => {

@@ -41,7 +41,6 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(
 
         if (!card) {
             return <div>
-                Cannot find card {cardID}!
             </div>;
         }
 
@@ -60,7 +59,7 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(
                     {/* eslint-disable-next-line */}
                     <Image src={card.image} alt={card.title} className='px-2 py-3 rounded-3xl' />
                     <div className='absolute bottom-0 flex flex-col items-center w-full text-center text-wrap '>
-                        {showDate && <div className='z-10 flex items-center justify-center w-1/3 h-5 m-auto text-sm translate-y-1 bg-[var(--sub-error-color)] rounded-xl outline-[var(--accent-color)] outline-double'>
+                        {showDate && <div className='z-10 flex items-center justify-center w-2/5 h-6 m-auto text-xl translate-y-1 bg-[var(--sub-error-color)] rounded-xl outline-[var(--accent-color)] outline-double'>
                             <p className='w-full'>{card.year}</p>
                         </div>
                         }

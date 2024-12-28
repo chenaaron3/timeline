@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
-import { Button } from './ui/button';
-import { Separator } from "~/components/ui/separator"
+import { useEffect, useState } from 'react';
+import { Button } from '~/components/ui/button';
+import { Separator } from '~/components/ui/separator';
 
 interface TypewriterProps {
     shortText: string;

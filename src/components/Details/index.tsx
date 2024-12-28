@@ -1,16 +1,13 @@
-import { useGameStore } from '~/state';
-import {
-    AlertDialog,
-    AlertDialogCancel,
-    AlertDialogContent,
-    AlertDialogDescription,
-    AlertDialogFooter,
-    AlertDialogHeader,
-    AlertDialogTitle,
-} from "~/components/ui/alert-dialog"
 import Image from 'next/image';
+import {
+    AlertDialog, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter,
+    AlertDialogHeader, AlertDialogTitle
+} from '~/components/ui/alert-dialog';
+import { Separator } from '~/components/ui/separator';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '~/components/ui/tooltip';
+import { useGameStore } from '~/state';
+
 import { Typewriter } from './Typewriter';
-import { Separator } from "~/components/ui/separator"
 
 export function Details() {
     const displayedCard = useGameStore.use.displayedCard();
@@ -32,8 +29,17 @@ export function Details() {
                     <AlertDialogDescription>
                         <div className='flex items-center justify-center gap-10'>
                             <div className='w-1/2'>
-                                {/* eslint-disable-next-line */}
-                                <Image src={displayedCard.image} alt={displayedCard.title} className='rounded-3xl' />
+                                <TooltipProvider>
+                                    <Tooltip>
+                                        <TooltipTrigger asChild>
+                                            {/* eslint-disable-next-line */}
+                                            <Image src={displayedCard.image} alt={displayedCard.title} className='rounded-3xl' />
+                                        </TooltipTrigger>
+                                        <TooltipContent>
+                                            <p>{displayedCard.imagePrompt}</p>
+                                        </TooltipContent>
+                                    </Tooltip>
+                                </TooltipProvider>
                             </div>
                             <div className='flex flex-col items-center justify-center w-1/2 h-64'>
                                 <Typewriter shortText={displayedCard.description} longText={displayedCard.longDescription} />

@@ -4,15 +4,15 @@ import { useEffect } from 'react';
 import { Details } from '~/components/Details';
 import { useGameStore } from '~/state';
 
-import { Header } from '../components/Header/Header';
-import { Timeline } from '../components/Timeline';
+import { Board } from '../components/Board';
+import { Header } from '../components/Header';
 
 export default function Home() {
   const init = useGameStore.use.init();
 
-  // Initalize the board with the world history deck
+  // Initalize the board
   useEffect(() => {
-    init("world_history");
+    init();
   }, [init])
 
   return (
@@ -25,7 +25,7 @@ export default function Home() {
       <main className={GeistSans.className + " h-screen"}>
         <div className="h-full text-[--sub-text-color] bg-gradient-to-br from-[var(--sub-color)] to-[var(--sub-alt-color)]">
           <Header />
-          <Timeline />
+          <Board />
           <Details />
         </div>
       </main>
