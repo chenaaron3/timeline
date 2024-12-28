@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import { Details } from '~/components/Details';
 import { useGameStore } from '~/state';
 
-import { Header } from '../components/Header';
+import { Header } from '../components/Header/Header';
 import { Timeline } from '../components/Timeline';
 
 export default function Home() {
