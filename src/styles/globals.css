@@ -1,6 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --bg-color: #0a192f;
+  --sub-color: #172a45;
+  --sub-alt-color: #020c1b;
+  --text-color: #8892b0;
+  --sub-text-color: #e6e6fa;
+  /* green-400 */
+  --main-color: #4ade80;
+  /* green-700 */
+  --sub-main-color: #15803d;
+  /* red-400 */
+  --error-color: #f87171;
+  /* red-700 */
+  --sub-error-color: #b91c1c;
+  /* yellow-500 */
+  --accent-color: #eab308;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -27,7 +46,7 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-    --radius: 0.5rem
+    --radius: 0.5rem;
   }
   .dark {
     --background: 240 10% 3.9%;
@@ -53,7 +72,7 @@
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%
+    --chart-5: 340 75% 55%;
   }
 }
 @layer base {

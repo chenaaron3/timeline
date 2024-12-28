@@ -1,31 +1,17 @@
-import React, { useState } from 'react'
+import { LayoutGroup } from 'framer-motion';
+import React, { useState } from 'react';
+import { useGameStore } from '~/state';
 
 import {
-    closestCenter,
-    DndContext,
-    DragOverlay,
-    PointerSensor,
-    TouchSensor,
-    useSensor,
-    useSensors,
-    type DragStartEvent,
-    type DragEndEvent,
-    type DragMoveEvent,
-    type Active,
-    type Over,
+    Active, closestCenter, DndContext, DragEndEvent, DragMoveEvent, DragOverlay, DragStartEvent,
+    Over, PointerSensor, TouchSensor, useSensor, useSensors
 } from '@dnd-kit/core';
-import {
-    restrictToWindowEdges,
-} from '@dnd-kit/modifiers';
-
+import { restrictToWindowEdges } from '@dnd-kit/modifiers';
 
 import { Card } from './Card';
 import { DraggableCard } from './DraggableCard';
 import { DroppableCard } from './DroppableCard';
 import { ShadowCard } from './ShadowCard';
-import { useGameStore } from '~/state';
-
-import { LayoutGroup } from 'framer-motion';
 
 export const Timeline: React.FC = () => {
     const playedCards = useGameStore.use.playedCards();
@@ -70,7 +56,7 @@ export const Timeline: React.FC = () => {
         }
     }
 
-    return (<div className='h-screen bg-slate-700'>
+    return (<div className=''>
         <LayoutGroup>
             <DndContext
                 sensors={sensors}
@@ -88,7 +74,7 @@ export const Timeline: React.FC = () => {
                     {...fieldElements}
                     {/* </AnimatePresence> */}
                 </div>
-                <div className="flex items-center w-full gap-10 bg-blue-500 min-h-1 justify-evenly">
+                <div className="flex items-center w-full gap-10 min-h-1 justify-evenly">
                     {/* Don't render while dragging, since the overlay is taking over */}
                     {!draggingCard && <DraggableCard key={activeCard.id} cardID={activeCard.id}></DraggableCard>}
                 </div>
