@@ -9,7 +9,7 @@ interface TypewriterProps {
     speed?: number;
 }
 
-export const Typewriter: React.FC<TypewriterProps> = ({ shortText, longText, speed = 10 }) => {
+export const Typewriter: React.FC<TypewriterProps> = ({ shortText, longText, speed = 5 }) => {
     const [displayedText, setDisplayedText] = useState([] as string[]);
     const [learnMore, setLearnMore] = useState(false);
 
@@ -21,7 +21,7 @@ export const Typewriter: React.FC<TypewriterProps> = ({ shortText, longText, spe
             const text = learnMore ? longText : shortText;
             if (index < text.length) {
                 setDisplayedText(text.slice(0, index + 1).split(""));
-                index++;
+                index += 2;
             }
             if (index === text.length) {
                 clearInterval(typingInterval);

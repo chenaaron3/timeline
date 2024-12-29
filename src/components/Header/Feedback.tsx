@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form';
 import { toast } from 'sonner';
 import { z } from 'zod';
 import {
-    Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage
+    Form, FormControl, FormField, FormItem, FormLabel, FormMessage
 } from '~/components/ui/form';
 import { Input } from '~/components/ui/input';
 import { Popover, PopoverContent, PopoverTrigger } from '~/components/ui/popover';
@@ -48,40 +48,18 @@ export const Feedback = () => {
                         name="feedback"
                         render={({ field }) => (
                             <FormItem>
-                                <FormLabel>Feedback</FormLabel>
+                                <FormLabel>
+                                    <h4 className="font-medium leading-none">Feedback</h4>
+                                </FormLabel>
                                 <FormControl>
                                     <Input placeholder="Deck suggestions or feature requests..." {...field} />
                                 </FormControl>
-                                <FormDescription>
-                                    Is there anything you would like to see improved?
-                                </FormDescription>
                                 <FormMessage />
                             </FormItem>
                         )}
                     />
                 </form>
             </Form>
-
-            {/* <div className="grid gap-4">
-                <div className="space-y-2">
-                    <h4 className="font-medium leading-none">Feedback</h4>
-                    <p className="text-sm text-muted-foreground">
-                        Is there anything you would like to see improved?
-                    </p>
-                </div>
-                <div className="grid gap-2">
-                    <div className="grid items-center gap-4">
-                        <Input
-                            id="width"
-                            type='text'
-                            placeholder='Deck suggestions or feature requests...'
-                            className="h-8 col-span-2"
-                            onChange={(e) => setFeedback(e.target.value)}
-                            onSubmit={handleSubmit}
-                        />
-                    </div>
-                </div>
-            </div> */}
         </PopoverContent>
     </Popover>
 }

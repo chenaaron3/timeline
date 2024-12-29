@@ -41,7 +41,7 @@ export const PlayingArea: React.FC<PlayingAreaProps> = ({
 
 function DragMe() {
     const ref = useRef<HTMLDivElement>(null);
-    const radius = 35; // Radius of the circle
+    const radius = 25; // Radius of the circle
     const centerX = 0; // Center X-coordinate
     const centerY = 0; // Center Y-coordinate
     const [angle, setAngle] = useState(0); // Current angle

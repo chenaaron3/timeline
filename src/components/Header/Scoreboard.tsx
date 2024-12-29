@@ -11,7 +11,9 @@ export function Scoreboard() {
     const time = useGameStore.use.time();
     const setTime = useGameStore.use.setTime();
     // Include the active card as well
+    const deckSize = useGameStore.use.deckSize();
     const cardsLeft = useGameStore.use.deck().length + (useGameStore.use.activeCard() ? 1 : 0);
+    const playedCards = useGameStore.use.playedCards().length + useGameStore.use.discardedCards().length;
 
     const correctScoreControls = useAnimation();
     const incorrectScoreControls = useAnimation();
@@ -19,7 +21,9 @@ export function Scoreboard() {
 
     useEffect(() => {
         let interval: NodeJS.Timeout;
-        if (cardsLeft > 0) {
+        // Game ends if there are no cards left
+        // Game starts when there is more than 1 card on the field/grave.
+        if (cardsLeft > 0 && playedCards > 1) {
             interval = setInterval(() => {
                 setTime(time + 1); // Update time every second
             }, 1000);
