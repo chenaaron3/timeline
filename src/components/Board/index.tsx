@@ -40,6 +40,8 @@ export const Board: React.FC = () => {
                 onDragStart={handleDragStart}
                 onDragEnd={handleDragEnd}
                 onDragMove={handleDragMove}
+                onDragAbort={handleDragCancel}
+                onDragCancel={handleDragCancel}
             >
                 {/* Render the timeline */}
                 <Timeline draggingCard={draggingCard} insertionIntent={insertionIntent} />
@@ -85,6 +87,12 @@ export const Board: React.FC = () => {
         // Check if the card is placed in the correct position
         const insertionIndex = getInsertionIndex(active, over)
         placeCard(insertionIndex);
+    }
+
+    function handleDragCancel() {
+        // Reset the dragging card in case we ever lose it
+        setDraggingCard(null);
+        setInsertionIntent(null);
     }
 
     // Helper Logic
