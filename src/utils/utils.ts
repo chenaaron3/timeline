@@ -1,4 +1,4 @@
-import { UserData } from './types';
+import { HighscoreCategory, Highscores, UserData } from './types';
 
 export function shuffle<T>(array: T[]) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -41,6 +41,24 @@ export function getUserData(): UserData {
 
 export function saveUserData(userData: UserData) {
   localStorage.setItem("userData", JSON.stringify(userData));
+}
+
+// Save and return the new high scores
+export function saveHighScore(
+  deckName: string,
+  deckSize: number,
+  category: HighscoreCategory,
+  score: number,
+): Highscores {
+  const userData = getUserData();
+  const highScores = userData.highScores;
+  const highScoreKey = `${deckName}-${deckSize}`;
+  if (!highScores[highScoreKey]) {
+    highScores[highScoreKey] = {};
+  }
+  highScores[highScoreKey][category] = score;
+  saveUserData(userData);
+  return highScores[highScoreKey];
 }
 
 export function formatSeconds(seconds: number) {

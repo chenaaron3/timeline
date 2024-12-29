@@ -34,7 +34,7 @@ export const PlayingArea: React.FC<PlayingAreaProps> = ({
         {/* Can't use snapCenterToCursor since it messes with the reset*/}
         <DragOverlay modifiers={[restrictToWindowEdges]}>
             {/* This presentational element is what is on the mouse */}
-            {draggingCard ? <Card key={activeCard.id} cardID={draggingCard} /> : null}
+            {draggingCard ? <Card key={activeCard.id} cardID={draggingCard} previewable={false} /> : null}
         </DragOverlay>
     </div>
 }

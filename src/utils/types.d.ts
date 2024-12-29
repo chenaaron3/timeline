@@ -16,9 +16,9 @@ export interface Event {
 export type ImageMap = Record<string, StaticImageData>;
 
 export interface Highscores {
-  accuracy: number;
-  time: number;
-  streak: number;
+  accuracy?: number;
+  time?: number;
+  streak?: number;
 }
 export type HighscoreCategory = keyof Highscores;
 
@@ -26,6 +26,6 @@ export interface UserData {
   // Stores high scores based on deck size
   // eslint-disable-next-line
   highScores: {
-    [key: number]: Highscores;
+    [key: string]: Highscores;
   };
 }
