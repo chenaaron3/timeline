@@ -1,6 +1,3 @@
-
-
-
 import { Logo } from './Logo';
 import { Menu } from './Menu';
 import { Scoreboard } from './Scoreboard';

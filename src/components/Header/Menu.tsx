@@ -8,6 +8,8 @@ import {
 import { DECK_NAMES, useGameStore } from '~/state';
 import { DISPLAY_DECKS } from '~/utils/constants';
 
+import { Feedback } from './Feedback';
+
 const deckSizes = [
     { count: 5 },
     { count: 10 },
@@ -47,7 +49,8 @@ export function Menu() {
     }, []);
 
     return (
-        <div className='absolute top-3 right-3 sm:static'>
+        <div className='absolute flex gap-5 top-3 right-3 sm:static'>
+            <Feedback />
             <DropdownMenu>
                 <DropdownMenuTrigger>
                     <MenuIcon />
@@ -109,6 +112,7 @@ export function Menu() {
                                 </DropdownMenuSubContent>
                             </DropdownMenuPortal>
                         </DropdownMenuSub>
+                        <DropdownMenuSeparator />
                         <DropdownMenuItem disabled>
                             <UserPlus2 />
                             <span>Invite Player (Soon!)</span>

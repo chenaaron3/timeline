@@ -1,12 +1,12 @@
 import Image from 'next/image';
 import {
-    AlertDialog, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter,
-    AlertDialogHeader, AlertDialogTitle
-} from '~/components/ui/alert-dialog';
+    Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle
+} from '~/components/ui/dialog';
 import { Separator } from '~/components/ui/separator';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '~/components/ui/tooltip';
 import { useGameStore } from '~/state';
 
+import { Button } from '../ui/button';
 import { Typewriter } from './Typewriter';
 
 export function Details() {
@@ -19,15 +19,15 @@ export function Details() {
 
     return (
         // Can also close dialog with escape
-        <AlertDialog defaultOpen onOpenChange={(e) => { acknowledgeCard() }}>
-            <AlertDialogContent className=''>
-                <AlertDialogHeader>
-                    <AlertDialogTitle>
+        <Dialog defaultOpen onOpenChange={() => { acknowledgeCard() }}>
+            <DialogContent className=''>
+                <DialogHeader>
+                    <DialogTitle>
                         <span>{displayedCard.title}</span>
                         <span className='ml-1'>({displayedCard.year})</span>
-                    </AlertDialogTitle>
+                    </DialogTitle>
                     <Separator />
-                    <AlertDialogDescription>
+                    <DialogDescription>
                         <div className='flex items-center justify-center gap-10'>
                             <div className='w-1/2'>
                                 <TooltipProvider>
@@ -46,14 +46,12 @@ export function Details() {
                                 <Typewriter shortText={displayedCard.description} longText={displayedCard.longDescription} />
                             </div>
                         </div>
-                    </AlertDialogDescription>
-                </AlertDialogHeader>
-                <AlertDialogFooter>
-                    <AlertDialogCancel onClick={acknowledgeCard}>
-                        Got It!
-                    </AlertDialogCancel>
-                </AlertDialogFooter>
-            </AlertDialogContent>
-        </AlertDialog>
+                    </DialogDescription>
+                </DialogHeader>
+                <DialogFooter>
+                    <Button type="submit" onClick={acknowledgeCard}>Got It!</Button>
+                </DialogFooter>
+            </DialogContent>
+        </Dialog>
     );
 }

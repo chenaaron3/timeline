@@ -2,6 +2,7 @@ import { GeistSans } from 'geist/font/sans';
 import Head from 'next/head';
 import { useEffect } from 'react';
 import { Details } from '~/components/Details';
+import { Toaster } from '~/components/ui/sonner';
 import { useGameStore } from '~/state';
 
 import { Board } from '../components/Board';
@@ -27,6 +28,7 @@ export default function Home() {
           <Header />
           <Board />
           <Details />
+          <Toaster />
         </div>
       </main>
     </>
