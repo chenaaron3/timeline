@@ -169,7 +169,7 @@ const discardCard = (state: GameState) => {
 export const gameStore = create<GameState & GameActions>()(
   immer((set) => ({
     deckName: "world_history" as DECK_NAMES,
-    deckSize: 5,
+    deckSize: 20,
     deck: [] as Events,
     cardMap: {} as Record<string, Event>,
     activeCard: undefined as Event | undefined,
