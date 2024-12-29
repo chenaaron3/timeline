@@ -39,7 +39,7 @@ export const Timeline: React.FC<TimelineProps> = ({
 
     fieldElements.push()
 
-    return <div className="relative flex items-center w-full gap-3 p-2 overflow-auto sm:gap-10 h-fit justify-evenly">
+    return <div className="relative flex items-center w-full gap-3 p-2 overflow-auto justify-evenly sm:gap-10 h-fit">
         <div className='fixed w-full h-1 border-t-4 border-[--text-color] border-dashed' ></div>
         {...fieldElements}
     </div>

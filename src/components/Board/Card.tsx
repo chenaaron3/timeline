@@ -61,7 +61,7 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(
         >
             <motion.div
                 // Disable touch actions for mobile
-                className={`relative hover:cursor-grabs w-24 min-w-24 h-36 sm:min-w-40 sm:w-40 sm:h-60 rounded-3xl bg-white text-white ${!showDate && 'touch-none'} drop-shadow-2xl`}
+                className={`relative hover:cursor-grabs w-32 min-w-32 h-48 sm:min-w-40 sm:w-40 sm:h-60 rounded-3xl bg-white text-white ${!showDate && 'touch-none'} drop-shadow-2xl`}
                 initial={showDate ? { translateY: -100 } : undefined}
                 animate={showDate ? { translateY: 0 } : undefined}
                 layoutId={cardID}

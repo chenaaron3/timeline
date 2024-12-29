@@ -28,7 +28,7 @@ export function Details() {
                     </DialogTitle>
                     <Separator />
                     <DialogDescription>
-                        <div className='flex items-center justify-center gap-10'>
+                        <div className='flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-10'>
                             <div className='w-1/2'>
                                 <TooltipProvider>
                                     <Tooltip>
@@ -42,7 +42,7 @@ export function Details() {
                                     </Tooltip>
                                 </TooltipProvider>
                             </div>
-                            <div className='flex flex-col items-center justify-center w-1/2 h-64'>
+                            <div className='flex flex-col items-center justify-center w-full h-48 sm:h-64 sm:w-1/2'>
                                 <Typewriter shortText={displayedCard.description} longText={displayedCard.longDescription} />
                             </div>
                         </div>
