@@ -19,7 +19,6 @@ export const Typewriter: React.FC<TypewriterProps> = ({ shortText, longText, spe
         const typingInterval = setInterval(() => {
             const text = learnMore ? longText : shortText;
             if (index < text.length) {
-                console.log(index)
                 setDisplayedText(text.slice(0, index + 1));
                 index++;
             }

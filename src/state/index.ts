@@ -1,3 +1,4 @@
+import { init } from 'next/dist/compiled/webpack/webpack';
 import { create, StoreApi, UseBoundStore } from 'zustand';
 import { immer } from 'zustand/middleware/immer';
 import OldWorldHistoryData from '~/data/old_world_history.json';
@@ -17,6 +18,7 @@ export type DECK_NAMES = "world_history" | "old_world_history";
 
 type GameState = {
   deckName: DECK_NAMES;
+  deckSize: number;
   deck: Events;
   cardMap: Record<string, Event>;
   activeCard: Event | undefined;
@@ -25,6 +27,8 @@ type GameState = {
   discardedCards: Events;
   score: { correct: number; incorrect: number };
   time: number;
+  streak: number;
+  longestStreak: number;
 };
 
 type GameActions = {
@@ -36,6 +40,7 @@ type GameActions = {
   discardCard: () => void;
   acknowledgeCard: () => void;
   setTime: (time: number) => void;
+  setDeckSize: (deckSize: number) => void;
 };
 
 // Get deck by name and perform validation
@@ -93,14 +98,12 @@ const selectDeck = (state: GameState, deckName: DECK_NAMES) => {
 
 // Initialize the game state
 const initGame = (state: GameState) => {
-  console.log("Initializing Game!");
-
   // Get the deck data and image map
   const deckData = getDeck(state.deckName);
   // Shuffle the deck
   const shuffledDeck = shuffle(deckData);
   // Sample a subset of cards from the deck so the game can end
-  const sampledDeck = shuffledDeck.slice(0, 5);
+  const sampledDeck = shuffledDeck.slice(0, state.deckSize);
 
   // Create a map from card ID to card. Must create map
   // before removing cards from the deck.
@@ -118,6 +121,7 @@ const initGame = (state: GameState) => {
   state.deck = sampledDeck;
   state.time = 0;
   state.score = { correct: 0, incorrect: 0 };
+  state.streak = 0;
 };
 
 // Draw a card and set it as the active card
@@ -147,6 +151,8 @@ const acknowledgeCard = (state: GameState) => {
 const playCard = (state: GameState, index: number) => {
   state.playedCards.splice(index, 0, state.activeCard!);
   state.score.correct += 1;
+  state.streak += 1;
+  state.longestStreak = Math.max(state.streak, state.longestStreak);
   drawCard(state);
 };
 
@@ -154,6 +160,7 @@ const playCard = (state: GameState, index: number) => {
 const discardCard = (state: GameState) => {
   state.discardedCards.push(state.activeCard!);
   state.score.incorrect += 1;
+  state.streak = 0;
   // Learn about the card before completely discarding it
   learnCard(state, state.activeCard!.id);
   drawCard(state);
@@ -162,6 +169,7 @@ const discardCard = (state: GameState) => {
 export const gameStore = create<GameState & GameActions>()(
   immer((set) => ({
     deckName: "world_history" as DECK_NAMES,
+    deckSize: 5,
     deck: [] as Events,
     cardMap: {} as Record<string, Event>,
     activeCard: undefined as Event | undefined,
@@ -170,6 +178,8 @@ export const gameStore = create<GameState & GameActions>()(
     discardedCards: [] as Events,
     score: { correct: 0, incorrect: 0 },
     time: 0,
+    streak: 0,
+    longestStreak: 0,
     selectDeck: (deckName: DECK_NAMES) =>
       set((state) => {
         selectDeck(state, deckName);
@@ -202,6 +212,11 @@ export const gameStore = create<GameState & GameActions>()(
     setTime: (time: number) =>
       set((state) => {
         state.time = time;
+      }),
+    setDeckSize: (deckSize: number) =>
+      set((state) => {
+        state.deckSize = deckSize;
+        initGame(state);
       }),
   })),
 );

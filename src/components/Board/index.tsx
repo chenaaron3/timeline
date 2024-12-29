@@ -8,6 +8,7 @@ import {
 } from '@dnd-kit/core';
 
 import { PlayingArea } from './PlayingArea';
+import { Results } from './Results';
 import { Timeline } from './Timeline';
 
 export const Board: React.FC = () => {
@@ -27,7 +28,6 @@ export const Board: React.FC = () => {
 
     useEffect(() => {
         // When the deck changes, reset the game
-        console.log("Deck Changed!", deckName)
         setDraggingCard(null);
         setInsertionIntent(null);
     }, [deckName]);
@@ -40,15 +40,13 @@ export const Board: React.FC = () => {
                 onDragStart={handleDragStart}
                 onDragEnd={handleDragEnd}
                 onDragMove={handleDragMove}
-                onDragCancel={(event) => { console.log("Cancelled!", event) }}
-                onDragPending={() => { console.log("Pending!") }}
-                onDragAbort={() => { console.log("Aborted!") }}
-                onDragOver={() => { console.log("Over!") }}
             >
                 {/* Render the timeline */}
                 <Timeline draggingCard={draggingCard} insertionIntent={insertionIntent} />
                 {/* Render the active card */}
-                <PlayingArea draggingCard={draggingCard} />
+                {activeCard && <PlayingArea activeCard={activeCard} draggingCard={draggingCard} />}
+                {/* Render result screen if there is no more active card */}
+                {!activeCard && playedCards.length > 0 && <Results />}
             </DndContext>
         </LayoutGroup>
     </div >
@@ -95,7 +93,6 @@ export const Board: React.FC = () => {
         const mouseX = (active.rect.current.translated!.left + active.rect.current.translated!.right) / 2;
         // Get the target card's x position
         const targetX = (over.rect.left + over.rect.right) / 2
-        console.log(mouseX, targetX)
 
         // Get the target card's index
         const targetIndex = playedCards.findIndex(card => card.id === over.id);

@@ -2,14 +2,9 @@ import { CircleCheck, CircleX } from 'lucide-react';
 import { motion, useAnimation } from 'motion/react';
 import { useEffect } from 'react';
 import { useGameStore } from '~/state';
+import { formatSeconds } from '~/utils/utils';
 
 import { FlipText } from './FlipText';
-
-function formatSeconds(seconds: number) {
-    const minutes = Math.floor(seconds / 60);
-    const remainingSeconds = seconds % 60;
-    return `${String(minutes).padStart(2, '0')}:${String(remainingSeconds).padStart(2, '0')}`;
-}
 
 export function Scoreboard() {
     const score = useGameStore.use.score();

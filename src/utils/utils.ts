@@ -1,3 +1,5 @@
+import { UserData } from './types';
+
 export function shuffle<T>(array: T[]) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -26,4 +28,23 @@ export function areSetsEqual<T>(setA: Set<T>, setB: Set<T>) {
   }
 
   return true; // All items match
+}
+
+export function getUserData(): UserData {
+  const userData = localStorage.getItem("userData");
+  if (userData) {
+    return JSON.parse(userData) as UserData;
+  } else {
+    return { highScores: {} };
+  }
+}
+
+export function saveUserData(userData: UserData) {
+  localStorage.setItem("userData", JSON.stringify(userData));
+}
+
+export function formatSeconds(seconds: number) {
+  const minutes = Math.floor(seconds / 60);
+  const remainingSeconds = seconds % 60;
+  return `${String(minutes).padStart(2, "0")}:${String(remainingSeconds).padStart(2, "0")}`;
 }

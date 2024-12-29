@@ -1,6 +1,4 @@
-import {
-    Boxes, Earth, EarthLock, Menu as MenuIcon, PlusCircle, RotateCcw, UserPlus2
-} from 'lucide-react';
+import { Boxes, Menu as MenuIcon, PlusCircle, RotateCcw, Ruler, UserPlus2 } from 'lucide-react';
 import { useEffect } from 'react';
 import {
     DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem, DropdownMenuLabel,
@@ -8,21 +6,21 @@ import {
     DropdownMenuSubContent, DropdownMenuSubTrigger, DropdownMenuTrigger
 } from '~/components/ui/dropdown-menu';
 import { DECK_NAMES, useGameStore } from '~/state';
+import { DISPLAY_DECKS } from '~/utils/constants';
 
-interface DisplayDecks {
-    id: DECK_NAMES;
-    name: string;
-    icon: React.ReactNode;
-}
-
-const displayDecks = [
-    { id: 'world_history', name: 'World History', icon: <Earth /> },
-    { id: 'old_world_history', name: 'World History (Hard)', icon: <EarthLock /> },
-] as DisplayDecks[];
+const deckSizes = [
+    { count: 5 },
+    { count: 10 },
+    { count: 20 },
+    { count: 40 },
+    { count: 80 },
+]
 
 export function Menu() {
+    const setDeckSize = useGameStore.use.setDeckSize();
     const selectDeck = useGameStore.use.selectDeck();
     const currentDeck = useGameStore.use.deckName();
+    const currentDeckSize = useGameStore.use.deckSize();
     const init = useGameStore.use.init();
 
     const onSelectDeck = (deckName: DECK_NAMES) => {
@@ -65,13 +63,36 @@ export function Menu() {
                         </DropdownMenuItem>
                         <DropdownMenuSub>
                             <DropdownMenuSubTrigger>
+                                <Ruler />
+                                <span>Deck Size</span>
+                            </DropdownMenuSubTrigger>
+                            <DropdownMenuPortal>
+                                <DropdownMenuSubContent>
+                                    {
+                                        deckSizes.map((deckSize) => (
+                                            <DropdownMenuItem
+                                                disabled={deckSize.count === currentDeckSize}
+                                                key={deckSize.count}
+                                                onClick={() => setDeckSize(deckSize.count)}>
+                                                {/* {deck.icon} */}
+                                                <span>
+                                                    {`${deckSize.count} Cards`}
+                                                </span>
+                                            </DropdownMenuItem>
+                                        ))
+                                    }
+                                </DropdownMenuSubContent>
+                            </DropdownMenuPortal>
+                        </DropdownMenuSub>
+                        <DropdownMenuSub>
+                            <DropdownMenuSubTrigger>
                                 <Boxes />
                                 <span>Browse Decks</span>
                             </DropdownMenuSubTrigger>
                             <DropdownMenuPortal>
                                 <DropdownMenuSubContent>
                                     {
-                                        displayDecks.map((deck) => (
+                                        DISPLAY_DECKS.map((deck) => (
                                             <DropdownMenuItem disabled={deck.id === currentDeck} key={deck.id} onClick={() => onSelectDeck(deck.id)}>
                                                 {deck.icon}
                                                 <span>

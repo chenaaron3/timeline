@@ -18,7 +18,8 @@ export function Details() {
     }
 
     return (
-        <AlertDialog defaultOpen>
+        // Can also close dialog with escape
+        <AlertDialog defaultOpen onOpenChange={(e) => { acknowledgeCard() }}>
             <AlertDialogContent className=''>
                 <AlertDialogHeader>
                     <AlertDialogTitle>
