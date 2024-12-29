@@ -1,3 +1,5 @@
+
+
 import { HighscoreCategory, Highscores, UserData } from './types';
 
 export function shuffle<T>(array: T[]) {
