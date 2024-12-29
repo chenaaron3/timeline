@@ -37,7 +37,7 @@ export const Timeline: React.FC<TimelineProps> = ({
         }
     }
 
-    return <div className="flex items-center w-full gap-10 py-16 overflow-auto h-fit justify-evenly">
+    return <div className="flex items-center w-full gap-10 p-2 overflow-auto h-fit justify-evenly">
         {...fieldElements}
     </div>
 }

@@ -32,7 +32,7 @@ export const Board: React.FC = () => {
         setInsertionIntent(null);
     }, [deckName]);
 
-    return (<div className=''>
+    return (<div className='flex flex-col items-center flex-1 justify-evenly'>
         <LayoutGroup>
             <DndContext
                 sensors={sensors}

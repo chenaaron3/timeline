@@ -18,7 +18,7 @@ export const PlayingArea: React.FC<PlayingAreaProps> = ({
     const init = useGameStore.use.init();
 
     if (activeCard) {
-        return <div className="flex items-center w-full min-h-1 justify-evenly">
+        return <div className="flex items-center w-full h-60 justify-evenly">
             {/* Don't render while dragging, since the overlay is taking over */}
             {!draggingCard && <DraggableCard key={activeCard.id} cardID={activeCard.id}></DraggableCard>}
             {/* Can't use snapCenterToCursor since it messes with the reset*/}
