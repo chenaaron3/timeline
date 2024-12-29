@@ -11,19 +11,19 @@ interface FlipTextProps {
 export const FlipText: React.FC<FlipTextProps> = ({ id, text }) => {
     const textArray = text.split('');
     return (
-        <span className="flex items-center justify-center">
+        <span className="flex items-center justify-center overflow-hidden">
             <AnimatePresence mode='popLayout'>
                 {textArray.map((char, index) => (
                     <motion.span
                         key={id + index + char}
                         initial={{
-                            translateY: "100%",
+                            translateY: "-100%",
                         }}
                         animate={{
                             translateY: "0%",
                         }}
                         exit={{
-                            translateY: "-100%",
+                            translateY: "100%",
                             opacity: 0,
                         }}
                         className={!isNaN(Number(char)) ? "w-3" : "w-1"}

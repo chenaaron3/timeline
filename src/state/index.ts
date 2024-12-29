@@ -24,6 +24,7 @@ type GameState = {
   playedCards: Events;
   discardedCards: Events;
   score: { correct: number; incorrect: number };
+  time: number;
 };
 
 type GameActions = {
@@ -34,6 +35,7 @@ type GameActions = {
   learnCard: (cardID: string) => void;
   discardCard: () => void;
   acknowledgeCard: () => void;
+  setTime: (time: number) => void;
 };
 
 // Get deck by name and perform validation
@@ -112,7 +114,10 @@ const initGame = (state: GameState) => {
   state.activeCard = sampledDeck.pop();
   // Play a card on the table
   state.playedCards = [sampledDeck.pop()!];
+  state.discardedCards = [];
   state.deck = sampledDeck;
+  state.time = 0;
+  state.score = { correct: 0, incorrect: 0 };
 };
 
 // Draw a card and set it as the active card
@@ -164,6 +169,7 @@ export const gameStore = create<GameState & GameActions>()(
     playedCards: [] as Events,
     discardedCards: [] as Events,
     score: { correct: 0, incorrect: 0 },
+    time: 0,
     selectDeck: (deckName: DECK_NAMES) =>
       set((state) => {
         selectDeck(state, deckName);
@@ -192,6 +198,10 @@ export const gameStore = create<GameState & GameActions>()(
     acknowledgeCard: () =>
       set((state) => {
         acknowledgeCard(state);
+      }),
+    setTime: (time: number) =>
+      set((state) => {
+        state.time = time;
       }),
   })),
 );

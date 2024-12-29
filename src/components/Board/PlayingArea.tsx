@@ -15,6 +15,7 @@ export const PlayingArea: React.FC<PlayingAreaProps> = ({
     draggingCard
 }) => {
     const activeCard = useGameStore.use.activeCard();
+    const init = useGameStore.use.init();
 
     if (activeCard) {
         return <div className="flex items-center w-full min-h-1 justify-evenly">
@@ -28,7 +29,12 @@ export const PlayingArea: React.FC<PlayingAreaProps> = ({
         </div>
     } else {
         return <div className="flex items-center w-full min-h-1 justify-evenly">
-            <Button variant={'outline'} className='bg-[--main-color] text-black'>Play Again</Button>
+            <Button
+                variant={'outline'}
+                className='bg-[--main-color] text-black'
+                onClick={init}>
+                Play Again
+            </Button>
         </div>
     }
 
