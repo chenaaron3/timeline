@@ -9,21 +9,25 @@ interface TypewriterProps {
     speed?: number;
 }
 
-export const Typewriter: React.FC<TypewriterProps> = ({ shortText, longText, speed = 5 }) => {
-    const [displayedText, setDisplayedText] = useState([] as string[]);
+export const Typewriter: React.FC<TypewriterProps> = ({ shortText, longText, speed = 10 }) => {
+    const [displayedText, setDisplayedText] = useState('');
     const [learnMore, setLearnMore] = useState(false);
+    const [isComplete, setIsComplete] = useState(false);
 
-    const isComplete = displayedText.join("") === shortText;
+    useEffect(() => {
+        setIsComplete(displayedText === shortText);
+    }, [displayedText, shortText]);
 
     useEffect(() => {
         let index = 0;
         const typingInterval = setInterval(() => {
             const text = learnMore ? longText : shortText;
             if (index < text.length) {
-                setDisplayedText(text.slice(0, index + 1).split(""));
-                index += 2;
+                const step = 2;
+                setDisplayedText(text.slice(0, index + step));
+                index += step;
             }
-            if (index === text.length) {
+            if (index >= text.length) {
                 clearInterval(typingInterval);
             }
         }, speed);
@@ -33,7 +37,7 @@ export const Typewriter: React.FC<TypewriterProps> = ({ shortText, longText, spe
 
     return <div className="flex flex-col items-start justify-start w-full h-full">
         <div className="h-full overflow-auto">
-            {displayedText.map(
+            {displayedText.split("").map(
                 (char, i) => <motion.span
                     key={"typewriter" + char + i}
                     initial={{ opacity: 0 }}
