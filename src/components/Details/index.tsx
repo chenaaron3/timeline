@@ -20,16 +20,18 @@ export function Details() {
     return (
         // Can also close dialog with escape
         <Dialog defaultOpen onOpenChange={() => { acknowledgeCard() }}>
-            <DialogContent className=''>
+            <DialogContent>
                 <DialogHeader>
                     <DialogTitle>
-                        <span>{displayedCard.title}</span>
-                        <span className='ml-1'>({displayedCard.year})</span>
+                        <div className='sm:text-3xl'>
+                            <span>{displayedCard.title}</span>
+                            <span className='ml-1'>({displayedCard.year})</span>
+                        </div>
                     </DialogTitle>
                     <Separator />
                     <DialogDescription>
                         <div className='flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-10'>
-                            <div className='w-1/2'>
+                            <div className='w-2/3 sm:w-1/2'>
                                 <TooltipProvider>
                                     <Tooltip>
                                         <TooltipTrigger asChild>
@@ -42,7 +44,7 @@ export function Details() {
                                     </Tooltip>
                                 </TooltipProvider>
                             </div>
-                            <div className='flex flex-col items-center justify-center w-full h-48 sm:h-64 sm:w-1/2'>
+                            <div className='flex flex-col items-center justify-center h-48 sm:h-96 sm:w-1/2 sm:text-lg'>
                                 <Typewriter shortText={displayedCard.description} longText={displayedCard.longDescription} />
                             </div>
                         </div>

@@ -8,7 +8,7 @@ import { areSetsEqual, setSubtract, shuffle } from '~/utils/utils';
 import { Event, Events, ImageMap } from '../utils/types';
 
 type GameState = {
-  deckName: DECK_NAMES;
+  deckName?: DECK_NAMES;
   deckSize: number;
   deck: Events;
   cardMap: Record<string, Event>;
@@ -37,7 +37,6 @@ type GameActions = {
 // Get deck by name and perform validation
 const getDeck = (deckName: DECK_NAMES): Events => {
   console.log("Getting deck", deckName);
-
   const deck = DISPLAY_DECKS.find((deck) => deck.id === deckName)!;
   let imageMap = deck.imageMap;
   let deckData = deck.deckData;
@@ -74,6 +73,10 @@ const getDeck = (deckName: DECK_NAMES): Events => {
 
 // Initialize the game state
 const initGame = (state: GameState) => {
+  // Don't know which deck to load
+  if (state.deckName == undefined) {
+    return;
+  }
   // Get the deck data and image map
   const deckData = getDeck(state.deckName);
   // Shuffle the deck
@@ -144,7 +147,7 @@ const discardCard = (state: GameState) => {
 
 export const gameStore = create<GameState & GameActions>()(
   immer((set) => ({
-    deckName: "world_history" as DECK_NAMES,
+    deckName: undefined,
     deckSize: 20,
     deck: [] as Events,
     cardMap: {} as Record<string, Event>,

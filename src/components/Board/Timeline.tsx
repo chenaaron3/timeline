@@ -15,6 +15,15 @@ export const Timeline: React.FC<TimelineProps> = ({
     const playedCards = useGameStore.use.playedCards();
     const gameComplete = useGameStore(isGameComplete);
     const discardedCards = useGameStore.use.discardedCards();
+    // const [fieldElements, setFieldElements] = useState<JSX.Element[]>([]);
+
+    // useEffect(() => {
+    //     if (playedCards.length == 0) {
+    //         return
+    //     }
+
+
+    // }, [playedCards, gameComplete, discardedCards, draggingCard, insertionIntent])
 
     const fieldElements = [];
     if (!gameComplete) {

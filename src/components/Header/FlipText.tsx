@@ -23,7 +23,6 @@ export const FlipText: React.FC<FlipTextProps> = ({ id, text }) => {
                             translateY: "0%",
                         }}
                         exit={{
-                            translateY: "100%",
                             opacity: 0,
                         }}
                         className={!isNaN(Number(char)) ? "w-3" : "w-1"}
