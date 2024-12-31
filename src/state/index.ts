@@ -1,20 +1,11 @@
 import { init } from 'next/dist/compiled/webpack/webpack';
 import { create, StoreApi, UseBoundStore } from 'zustand';
 import { immer } from 'zustand/middleware/immer';
-import OldWorldHistoryData from '~/data/old_world_history.json';
-// World History Deck
-import WorldHistoryData from '~/data/world_history.json';
-import { IMAGE_MAP as oldWorldHistoryImageMap } from '~/generated/OldWorldHistoryImages';
-import { IMAGE_MAP as worldHistoryImageMap } from '~/generated/WorldHistoryImages';
+import { DECK_NAMES, DISPLAY_DECKS } from '~/utils/constants';
 import { areSetsEqual, setSubtract, shuffle } from '~/utils/utils';
 
 // Hard World History Deck
 import { Event, Events, ImageMap } from '../utils/types';
-
-const worldHistoryDeck: Events = WorldHistoryData;
-const oldWorldHistoryDeck: Events = OldWorldHistoryData;
-
-export type DECK_NAMES = "world_history" | "old_world_history";
 
 type GameState = {
   deckName: DECK_NAMES;
@@ -45,20 +36,9 @@ type GameActions = {
 
 // Get deck by name and perform validation
 const getDeck = (deckName: DECK_NAMES): Events => {
-  let imageMap: ImageMap;
-  let deckData: Events;
-
-  // Initalize deck based on name
-  if (deckName === "world_history") {
-    imageMap = worldHistoryImageMap;
-    deckData = worldHistoryDeck;
-  } else if (deckName === "old_world_history") {
-    imageMap = oldWorldHistoryImageMap;
-    deckData = oldWorldHistoryDeck;
-  } else {
-    imageMap = {};
-    deckData = [];
-  }
+  const deck = DISPLAY_DECKS.find((deck) => deck.id === deckName)!;
+  let imageMap = deck.imageMap;
+  let deckData = deck.deckData;
 
   // Clone the data so we can mutate it
   imageMap = JSON.parse(JSON.stringify(imageMap)) as ImageMap;

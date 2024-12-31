@@ -1,20 +1,32 @@
 import { GeistSans } from 'geist/font/sans';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import { Details } from '~/components/Details';
 import { Toaster } from '~/components/ui/sonner';
 import { useGameStore } from '~/state';
+import { DECK_NAMES, DISPLAY_DECKS } from '~/utils/constants';
 
 import { Board } from '../components/Board';
 import { Header } from '../components/Header';
 
 export default function Home() {
+  const selectDeck = useGameStore.use.selectDeck();
   const init = useGameStore.use.init();
+  const router = useRouter();
+  // Access query parameters from the router object
+  const { query } = router;
+  const deckName = query.deck;
 
   // Initalize the board
   useEffect(() => {
-    init();
-  }, [init])
+    // Check if deck name is in DISPLAY_DECKS
+    if (deckName && DISPLAY_DECKS.find((deck) => deck.id === deckName)) {
+      selectDeck(deckName as DECK_NAMES);
+    } else {
+      init();
+    }
+  }, [init, deckName])
 
   return (
     <>
