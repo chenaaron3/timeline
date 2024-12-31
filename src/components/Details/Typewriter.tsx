@@ -11,7 +11,7 @@ interface TypewriterProps {
 
 export const Typewriter: React.FC<TypewriterProps> = ({ shortText, longText, speed = 10 }) => {
     const [displayedText, setDisplayedText] = useState('');
-    const [learnMore, setLearnMore] = useState(false);
+    const [learnMore, setLearnMore] = useState(true);
     const [isComplete, setIsComplete] = useState(false);
 
     useEffect(() => {
