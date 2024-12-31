@@ -1,6 +1,4 @@
-
-
-import { HighscoreCategory, Highscores, UserData } from './types';
+import { Event, HighscoreCategory, Highscores, UserData } from './types';
 
 export function shuffle<T>(array: T[]) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -67,4 +65,19 @@ export function formatSeconds(seconds: number) {
   const minutes = Math.floor(seconds / 60);
   const remainingSeconds = seconds % 60;
   return `${String(minutes).padStart(2, "0")}:${String(remainingSeconds).padStart(2, "0")}`;
+}
+
+// Compare method to compare event dates
+export function compareEvent(a: Event, b: Event): number {
+  // First compare by year
+  if (a.year < b.year) return -1; // `this` is earlier
+  if (a.year > b.year) return 1; // `this` is later
+
+  // If years are the same, use the more unreliable date
+  const thisDate = new Date(a.date).getTime();
+  const otherDate = new Date(b.date).getTime();
+
+  if (thisDate < otherDate) return -1; // `this` is earlier
+  if (thisDate > otherDate) return 1; // `this` is later
+  return 0; // `this` is the same as `other`
 }

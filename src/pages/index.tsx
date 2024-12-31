@@ -11,22 +11,27 @@ import { Board } from '../components/Board';
 import { Header } from '../components/Header';
 
 export default function Home() {
-  const selectDeck = useGameStore.use.selectDeck();
   const init = useGameStore.use.init();
   const router = useRouter();
   // Access query parameters from the router object
   const { query } = router;
-  const deckName = query.deck;
+  const name = query.deck;
+  const size = parseInt(query.size as string);
 
   // Initalize the board
   useEffect(() => {
-    // Check if deck name is in DISPLAY_DECKS
-    if (deckName && DISPLAY_DECKS.find((deck) => deck.id === deckName)) {
-      selectDeck(deckName as DECK_NAMES);
-    } else {
-      init();
+    let deckName: DECK_NAMES | undefined;
+    let deckSize: number | undefined;
+    // Check if deckSize is a number
+    if (!isNaN(size) && size > 1) {
+      deckSize = size
     }
-  }, [init, deckName])
+    // Check if deck name is in DISPLAY_DECKS
+    if (name && DISPLAY_DECKS.find((deck) => deck.id === name)) {
+      deckName = name as DECK_NAMES
+    }
+    init(deckName, deckSize);
+  }, [init, name, size])
 
   return (
     <>

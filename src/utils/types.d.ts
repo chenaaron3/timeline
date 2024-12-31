@@ -3,13 +3,14 @@ export type Events = Event[];
 export interface Event {
   id: string;
   title: string;
-  year: int;
+  year: number;
   date: string;
   country: string;
   description: string;
   longDescription: string;
   imagePrompt: string;
   image?: StaticImageData;
+  compareTo(other: Event): number;
 }
 
 // Maps the event id to the imported image

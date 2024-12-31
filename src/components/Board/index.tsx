@@ -1,6 +1,7 @@
 import { LayoutGroup } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
 import { isGameComplete, useGameStore } from '~/state';
+import { compareEvent } from '~/utils/utils';
 
 import {
     Active, closestCenter, DndContext, DragEndEvent, DragMoveEvent, DragStartEvent, Over,
@@ -129,12 +130,12 @@ export const Board: React.FC = () => {
         const leftNeighbor = playedCards[insertionIndex - 1];
         const rightNeighbor = playedCards[insertionIndex];
         if (leftNeighbor) {
-            if (leftNeighbor.year > activeCard.year) {
+            if (compareEvent(activeCard, leftNeighbor) < 0) {
                 validPlacement = false;
             }
         }
         if (rightNeighbor) {
-            if (rightNeighbor.year < activeCard.year) {
+            if (compareEvent(activeCard, rightNeighbor) > 0) {
                 validPlacement = false;
             }
         }

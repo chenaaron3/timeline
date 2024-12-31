@@ -73,7 +73,7 @@ export const Results = () => {
         <Button
             variant={'outline'}
             className='bg-[--main-color] text-black'
-            onClick={init}>
+            onClick={() => init()}>
             <RotateCcw />
             Restart
         </Button>

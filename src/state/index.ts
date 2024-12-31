@@ -23,7 +23,7 @@ type GameState = {
 };
 
 type GameActions = {
-  init: () => void;
+  init: (deckName?: string, deckSize?: number) => void;
   selectDeck: (deckName: DECK_NAMES) => void;
   drawCard: () => void;
   playCard: (index: number) => void;
@@ -36,6 +36,8 @@ type GameActions = {
 
 // Get deck by name and perform validation
 const getDeck = (deckName: DECK_NAMES): Events => {
+  console.log("Getting deck", deckName);
+
   const deck = DISPLAY_DECKS.find((deck) => deck.id === deckName)!;
   let imageMap = deck.imageMap;
   let deckData = deck.deckData;
@@ -68,12 +70,6 @@ const getDeck = (deckName: DECK_NAMES): Events => {
   }
 
   return deckData;
-};
-
-// Change the deck name and reset the deck
-const selectDeck = (state: GameState, deckName: DECK_NAMES) => {
-  state.deckName = deckName;
-  initGame(state);
 };
 
 // Initialize the game state
@@ -162,10 +158,17 @@ export const gameStore = create<GameState & GameActions>()(
     longestStreak: 0,
     selectDeck: (deckName: DECK_NAMES) =>
       set((state) => {
-        selectDeck(state, deckName);
+        state.deckName = deckName;
+        initGame(state);
       }),
-    init: () =>
+    init: (deckName?: string, deckSize?: number) =>
       set((state) => {
+        if (deckName != undefined) {
+          state.deckName = deckName as DECK_NAMES;
+        }
+        if (deckSize != undefined) {
+          state.deckSize = deckSize;
+        }
         initGame(state);
       }),
     drawCard: () => {

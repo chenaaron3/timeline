@@ -59,7 +59,7 @@ export function Menu() {
                     <DropdownMenuLabel>Settings</DropdownMenuLabel>
                     <DropdownMenuSeparator />
                     <DropdownMenuGroup>
-                        <DropdownMenuItem onClick={init}>
+                        <DropdownMenuItem onClick={() => init()}>
                             <RotateCcw />
                             <span>Restart</span>
                             <DropdownMenuShortcut>⇧R</DropdownMenuShortcut>
