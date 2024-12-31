@@ -7,6 +7,8 @@ import { Toaster } from '~/components/ui/sonner';
 import { useGameStore } from '~/state';
 import { DECK_NAMES, DISPLAY_DECKS } from '~/utils/constants';
 
+import { GoogleAnalytics } from '@next/third-parties/google';
+
 import { Board } from '../components/Board';
 import { Header } from '../components/Header';
 
@@ -39,6 +41,7 @@ export default function Home() {
         <title>TimeQuest</title>
         <meta name="description" content="Online multiplayer game to learn about history" />
         <link rel="icon" href="/favicon.ico" />
+        <GoogleAnalytics gaId="G-T2LR4YQ3RZ" />
       </Head>
       <main className={GeistSans.className + " h-dvh overscroll-none"}>
         <div className="h-full flex flex-col text-[--sub-text-color] bg-gradient-to-br from-[var(--sub-color)] to-[var(--sub-alt-color)]">
