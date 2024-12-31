@@ -2,11 +2,13 @@ import json
 import os
 import time
 from playwright.sync_api import sync_playwright
-from constants import DECK_NAME, PUBLIC_DIRECTORY_PATH, JSON_PATH
+from constants import DECK_NAME, PUBLIC_DIRECTORY_PATH, JSON_PATH, LIST_PATH
 import concurrent.futures
+import json
 
+model_name = json.load(open(LIST_PATH))["image_model"]
 # URL of the image generator
-gen_url = 'https://deepai.org/machine-learning-model/anime-world-generator'
+gen_url = 'https://deepai.org/machine-learning-model/' + model_name
 # Name the save directory after the json name. Save into public folder
 save_directory_path = os.path.join(PUBLIC_DIRECTORY_PATH,DECK_NAME)
 
