@@ -8,7 +8,7 @@ import { IMAGE_MAP as worldHistoryImageMap } from '~/generated/WorldHistoryImage
 
 import { Events, ImageMap } from './types';
 
-export type DECK_NAMES = "world_history" | "old_world_history" | "us_presidents";
+export type DECK_NAMES = "world_history" | "old_world_history" | "us_presidents" | "";
 
 interface DisplayDecks {
     id: DECK_NAMES;
