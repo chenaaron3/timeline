@@ -34,11 +34,17 @@ export const Results = () => {
         }
     }, [deckName, deckSize])
 
-    return <div className='flex flex-col items-center justify-center w-1/3 gap-5'>
-        <div className='text-3xl'>
-            Score for {DISPLAY_DECKS.find((deck) => deck.id == deckName)!.name} Deck
+    return <div className='flex flex-col items-center justify-center w-full gap-5 sm:w-1/3'>
+        <div className='w-full text-2xl text-center sm:text-3xl'>
+            <p>
+
+                {DISPLAY_DECKS.find((deck) => deck.id == deckName)!.name} Results!
+            </p>
+            <p className='text-sm'>
+                x{deckSize} cards
+            </p>
         </div>
-        <div className='flex items-center justify-center w-full gap-3'>
+        <div className='flex items-center justify-center w-full gap-3 p-3'>
             <ResultCategory
                 category={'streak'}
                 titleDisplay='Streak'
@@ -122,18 +128,18 @@ const ResultCategory: React.FC<ResultCategoryProps> = ({
         }
     }, [currentHighScore, value, category])
 
-    return <Card className="w-1/3 font-bold text-center">
+    return <Card className="flex-1 font-bold text-center sm:w-1/3">
         <CardHeader>
             <CardTitle>
-                <div className='text-3xl'>
+                <div className='text-xl sm:text-3xl'>
                     {getDisplayValue(displayType, value)}
                 </div>
             </CardTitle>
             <CardDescription>
-                <div className='text-xl'>
+                <div className='text-sm sm:text-xl'>
                     {titleDisplay}
                 </div>
-                <div className='text-sm'>
+                <div className='text-xs sm:text-sm'>
                     {highScoreText}
                 </div>
             </CardDescription>

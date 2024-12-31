@@ -1,6 +1,6 @@
 import { LayoutGroup } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
-import { useGameStore } from '~/state';
+import { isGameComplete, useGameStore } from '~/state';
 
 import {
     Active, closestCenter, DndContext, DragEndEvent, DragMoveEvent, DragStartEvent, Over,
@@ -12,6 +12,7 @@ import { Results } from './Results';
 import { Timeline } from './Timeline';
 
 export const Board: React.FC = () => {
+    const gameComplete = useGameStore(isGameComplete)
     const deckName = useGameStore.use.deckName();
     const playedCards = useGameStore.use.playedCards();
     const activeCard = useGameStore.use.activeCard();
@@ -48,7 +49,7 @@ export const Board: React.FC = () => {
                 {/* Render the active card */}
                 {activeCard && <PlayingArea activeCard={activeCard} draggingCard={draggingCard} />}
                 {/* Render result screen if there is no more active card */}
-                {!activeCard && playedCards.length > 0 && <Results />}
+                {gameComplete && <Results />}
             </DndContext>
         </LayoutGroup>
     </div >

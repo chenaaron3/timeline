@@ -120,7 +120,7 @@ const initGame = (state: GameState) => {
   state.discardedCards = [];
   state.deck = sampledDeck;
   state.time = 0;
-  state.score = { correct: 0, incorrect: 0 };
+  state.score = { correct: 1, incorrect: 0 };
   state.streak = 0;
 };
 
@@ -220,6 +220,9 @@ export const gameStore = create<GameState & GameActions>()(
       }),
   })),
 );
+
+export const isGameComplete = (s: GameState) =>
+  !s.activeCard && s.playedCards.length > 0;
 
 type WithSelectors<S> = S extends { getState: () => infer T }
   ? S & { use: { [K in keyof T]: () => T[K] } }

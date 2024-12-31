@@ -14,6 +14,7 @@ export interface CardProps {
     showDate?: boolean;
     children?: React.ReactNode;
     previewable?: boolean
+    incorrect?: boolean
 }
 
 function mapRange(
@@ -35,7 +36,7 @@ function mapRange(
 }
 
 export const Card = forwardRef<HTMLDivElement, CardProps>(
-    ({ cardID, showDate, previewable = true, ...props }, ref) => {
+    ({ cardID, showDate, incorrect, previewable = true, ...props }, ref) => {
         const card = useGameStore.use.cardMap()[cardID]!;
         const [textSize, setTextSize] = useState(`${mapRange(card.title.length)}rem`);
         const { isSmallScreen } = useMediaQueries();
@@ -64,6 +65,7 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(
                 className={`relative hover:cursor-grabs w-32 min-w-32 h-48 sm:min-w-40 sm:w-40 sm:h-60 rounded-3xl bg-white text-white ${!showDate && 'touch-none'} drop-shadow-2xl`}
                 initial={showDate ? { translateY: -100 } : undefined}
                 animate={showDate ? { translateY: 0 } : undefined}
+                style={incorrect ? { backgroundColor: 'var(--error-color)' } : {}}
                 layoutId={cardID}
             >
                 {props.children}
