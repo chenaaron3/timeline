@@ -29,6 +29,8 @@ export default function Home() {
     // Check if deck name is in DISPLAY_DECKS
     if (name && DISPLAY_DECKS.find((deck) => deck.id === name)) {
       deckName = name as DECK_NAMES
+    } else {
+      deckName = "world_history"
     }
     init(deckName, deckSize);
   }, [init, name, size])
