@@ -1,7 +1,7 @@
 import { Grab } from 'lucide-react';
 import { motion, useAnimationFrame } from 'motion/react';
 import React, { useRef, useState } from 'react';
-import { useGameStore } from '~/state';
+import { isGameComplete, useGameStore } from '~/state';
 import { Event } from '~/utils/types';
 
 import { DragOverlay } from '@dnd-kit/core';
@@ -9,9 +9,10 @@ import { restrictToWindowEdges } from '@dnd-kit/modifiers';
 
 import { Card } from './Card';
 import { DraggableCard } from './DraggableCard';
+import { Results } from './Results';
 
 interface PlayingAreaProps {
-    activeCard: Event;
+    activeCard?: Event;
     draggingCard: string | null;
 }
 
@@ -21,21 +22,24 @@ export const PlayingArea: React.FC<PlayingAreaProps> = ({
 }) => {
     const playedCards = useGameStore.use.playedCards();
     const discardedCards = useGameStore.use.discardedCards();
+    const gameComplete = useGameStore(isGameComplete)
 
-    return <div className="relative flex items-center w-full h-60 justify-evenly">
-        {/* Don't render while dragging, since the overlay is taking over */}
-        {!draggingCard && <DraggableCard key={activeCard.id} cardID={activeCard.id}>
-            {playedCards.length + discardedCards.length == 1 &&
-                <div className='absolute inset-0 z-10 flex items-center justify-center text-[--accent-color] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-fit w-fit pointer-events-none'>
-                    <DragMe />
-                </div>
-            }
-        </DraggableCard>}
-        {/* Can't use snapCenterToCursor since it messes with the reset*/}
-        <DragOverlay modifiers={[restrictToWindowEdges]}>
-            {/* This presentational element is what is on the mouse */}
-            {draggingCard ? <Card key={activeCard.id} cardID={draggingCard} previewable={false} /> : null}
-        </DragOverlay>
+    return <div className="flex items-center w-full min-h-60 justify-evenly">
+        <div className='fixed'>
+            {/* Don't render while dragging, since the overlay is taking over */}
+            {activeCard && !draggingCard && <DraggableCard key={activeCard.id} cardID={activeCard.id}>
+                {playedCards.length + discardedCards.length == 1 &&
+                    <div className='absolute inset-0 z-10 flex items-center justify-center text-[--accent-color] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-fit w-fit pointer-events-none'>
+                        <DragMe />
+                    </div>
+                }
+            </DraggableCard>}
+            {(activeCard && draggingCard) && <DragOverlay modifiers={[restrictToWindowEdges]}>
+                <Card key={activeCard.id} cardID={draggingCard} previewable={false} />
+            </DragOverlay>}
+            {/* Render result screen if there is no more active card */}
+            {gameComplete && <Results />}
+        </div>
     </div>
 }
 

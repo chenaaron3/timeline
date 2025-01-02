@@ -34,7 +34,7 @@ export const Results = () => {
         }
     }, [deckName, deckSize])
 
-    return <div className='flex flex-col items-center justify-center w-full gap-5 sm:w-1/3'>
+    return <div className='flex flex-col items-center justify-center w-full gap-5'>
         <div className='w-full text-2xl text-center sm:text-3xl'>
             <p>
 
@@ -128,7 +128,7 @@ const ResultCategory: React.FC<ResultCategoryProps> = ({
         }
     }, [currentHighScore, value, category])
 
-    return <Card className="flex-1 font-bold text-center sm:w-1/3">
+    return <Card className="flex-1 min-w-0 font-bold text-center sm:w-1/3">
         <CardHeader>
             <CardTitle>
                 <div className='text-xl sm:text-3xl'>

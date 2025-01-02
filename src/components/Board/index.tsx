@@ -1,6 +1,6 @@
 import { LayoutGroup } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
-import { isGameComplete, useGameStore } from '~/state';
+import { useGameStore } from '~/state';
 import { compareEvent } from '~/utils/utils';
 
 import {
@@ -9,32 +9,68 @@ import {
 } from '@dnd-kit/core';
 
 import { PlayingArea } from './PlayingArea';
-import { Results } from './Results';
 import { Timeline } from './Timeline';
 
 export const Board: React.FC = () => {
-    const gameComplete = useGameStore(isGameComplete)
     const deckName = useGameStore.use.deckName();
     const playedCards = useGameStore.use.playedCards();
     const activeCard = useGameStore.use.activeCard();
+    const stageCard = useGameStore.use.stageCard();
     const playCard = useGameStore.use.playCard();
     const discardCard = useGameStore.use.discardCard();
+    const stagedCard = useGameStore((state) => state.stagedCard);
 
     const [draggingCard, setDraggingCard] = useState<string | null>(null);
     const [insertionIntent, setInsertionIntent] = useState<number | null>(null);
+    const [incorrectMove, setIncorrectMove] = useState<boolean>(false);
 
     const sensors = useSensors(
         useSensor(PointerSensor),
         useSensor(TouchSensor)
     );
 
+    // When a new card is placed, check if it is in the correct position
     useEffect(() => {
-        // When the deck changes, reset the game
+        if (stagedCard) {
+            const insertionIndex = playedCards.findIndex(card => card.id === stagedCard.id);
+
+            let validPlacement = true;
+            const leftNeighbor = playedCards[insertionIndex - 1];
+            const rightNeighbor = playedCards[insertionIndex + 1];
+            if (leftNeighbor) {
+                if (compareEvent(stagedCard, leftNeighbor) < 0) {
+                    validPlacement = false;
+                }
+            }
+            if (rightNeighbor) {
+                if (compareEvent(stagedCard, rightNeighbor) > 0) {
+                    validPlacement = false;
+                }
+            }
+
+            if (validPlacement) {
+                playCard();
+            } else {
+                // Display incorrect screen for a bit
+                setIncorrectMove(true);
+                setTimeout(() => {
+                    discardCard();
+                    setIncorrectMove(false);
+                }, 1000)
+            }
+        }
+    }, [stagedCard, playedCards])
+
+    useEffect(() => {
+        // When the deck changes, reset the local state
         setDraggingCard(null);
         setInsertionIntent(null);
     }, [deckName]);
 
-    return (<div className='flex flex-col items-center flex-1 justify-evenly'>
+    return (<div className='flex flex-col items-center w-full h-full overflow-x-auto justify-evenly'
+        style={{
+            scrollbarWidth: 'none',
+        }}>
         <LayoutGroup>
             <DndContext
                 sensors={sensors}
@@ -46,11 +82,9 @@ export const Board: React.FC = () => {
                 onDragCancel={handleDragCancel}
             >
                 {/* Render the timeline */}
-                <Timeline draggingCard={draggingCard} insertionIntent={insertionIntent} />
+                <Timeline incorrectCard={incorrectMove ? stagedCard?.id : undefined} draggingCard={draggingCard} insertionIntent={insertionIntent} />
                 {/* Render the active card */}
-                {activeCard && <PlayingArea activeCard={activeCard} draggingCard={draggingCard} />}
-                {/* Render result screen if there is no more active card */}
-                {gameComplete && <Results />}
+                <PlayingArea activeCard={activeCard} draggingCard={draggingCard} />
             </DndContext>
         </LayoutGroup>
     </div >
@@ -88,7 +122,12 @@ export const Board: React.FC = () => {
 
         // Check if the card is placed in the correct position
         const insertionIndex = getInsertionIndex(active, over)
-        placeCard(insertionIndex);
+        stageCard(insertionIndex);
+
+        // Stop dragging the card
+        setDraggingCard(null);
+        // Reset the insertion intent
+        setInsertionIntent(null);
     }
 
     function handleDragCancel() {
@@ -119,37 +158,5 @@ export const Board: React.FC = () => {
     function inPlayingField(active: Active) {
         // Do not do anything if not dragging upwards from the start
         return active.rect.current.initial!.top > active.rect.current.translated!.top + 50;
-    }
-
-    function placeCard(insertionIndex: number) {
-        if (!activeCard) {
-            return;
-        }
-
-        let validPlacement = true;
-        const leftNeighbor = playedCards[insertionIndex - 1];
-        const rightNeighbor = playedCards[insertionIndex];
-        if (leftNeighbor) {
-            if (compareEvent(activeCard, leftNeighbor) < 0) {
-                validPlacement = false;
-            }
-        }
-        if (rightNeighbor) {
-            if (compareEvent(activeCard, rightNeighbor) > 0) {
-                validPlacement = false;
-            }
-        }
-
-        if (validPlacement) {
-            // Play the card at the insertion index
-            playCard(insertionIndex)
-        } else {
-            discardCard();
-        }
-
-        // Stop dragging the card
-        setDraggingCard(null);
-        // Reset the insertion intent
-        setInsertionIntent(null);
     }
 }

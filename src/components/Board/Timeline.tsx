@@ -6,24 +6,17 @@ import { ShadowCard } from './ShadowCard';
 interface TimelineProps {
     draggingCard: string | null;
     insertionIntent: number | null;
+    incorrectCard?: string;
 }
 
 export const Timeline: React.FC<TimelineProps> = ({
     draggingCard,
-    insertionIntent
+    insertionIntent,
+    incorrectCard
 }) => {
     const playedCards = useGameStore.use.playedCards();
     const gameComplete = useGameStore(isGameComplete);
     const discardedCards = useGameStore.use.discardedCards();
-    // const [fieldElements, setFieldElements] = useState<JSX.Element[]>([]);
-
-    // useEffect(() => {
-    //     if (playedCards.length == 0) {
-    //         return
-    //     }
-
-
-    // }, [playedCards, gameComplete, discardedCards, draggingCard, insertionIntent])
 
     const fieldElements = [];
     if (!gameComplete) {
@@ -43,7 +36,7 @@ export const Timeline: React.FC<TimelineProps> = ({
             if (showTutorial || showPreshadow) {
                 fieldElements.push(<ShadowCard key={(showTutorial ? "pre" : "") + "shadow"} intent={showPreshadow} message={showTutorial ? "Before?" : ""} />)
             }
-            fieldElements.push(<DroppableCard key={card.id} cardID={card.id} />)
+            fieldElements.push(<DroppableCard incorrect={card.id == incorrectCard} key={card.id} cardID={card.id} />)
             if (showTutorial || showPostshadow) {
                 fieldElements.push(<ShadowCard key={(showTutorial ? "post" : "") + "shadow"} intent={showPostshadow} message={showTutorial ? "After?" : ""} />)
             }
@@ -57,9 +50,12 @@ export const Timeline: React.FC<TimelineProps> = ({
             fieldElements.push(<DroppableCard key={card.id} cardID={card.id} incorrect={incorrectCards.has(card.id)} />)
         }
     }
+    // Addding from left and right
+    fieldElements.splice(0, 0, <div className='h-1 min-w-16 sm:min-w-32'></div>)
+    fieldElements.push(<div className='h-1 min-w-16 sm:min-w-32'></div>)
 
-    return <div className="relative flex items-center w-full gap-3 p-2 overflow-auto justify-evenly sm:gap-10 h-fit">
-        <div className='fixed w-full h-1 border-t-4 border-[--text-color] border-dashed' ></div>
+    return <div className='flex items-center w-full gap-3 py-2 min-h-60 justify-evenly sm:gap-10 h-fit'>
+        <div className='fixed w-full h-1 border-t-4 border-[--accent-color] border-dashed' ></div>
         {...fieldElements}
     </div>
 }

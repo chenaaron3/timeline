@@ -63,10 +63,16 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(
             <motion.div
                 // Disable touch actions for mobile
                 className={`relative hover:cursor-grabs w-32 min-w-32 h-48 sm:min-w-40 sm:w-40 sm:h-60 rounded-3xl bg-white text-white ${!showDate && 'touch-none'} drop-shadow-2xl`}
-                initial={showDate ? { translateY: -100 } : undefined}
-                animate={showDate ? { translateY: 0 } : undefined}
-                style={incorrect ? { backgroundColor: 'var(--error-color)' } : {}}
+                initial={showDate ? {
+                    // translateY: -100,
+                    backgroundColor: "#FFFFFF"
+                } : undefined}
+                animate={showDate ? {
+                    // translateY: 0,
+                    backgroundColor: incorrect ? "var(--error-color)" : "#FFFFFF",
+                } : undefined}
                 layoutId={cardID}
+                layout
             >
                 {props.children}
                 {/* eslint-disable-next-line */}

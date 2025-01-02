@@ -1,5 +1,5 @@
-import { init } from 'next/dist/compiled/webpack/webpack';
 import { create, StoreApi, UseBoundStore } from 'zustand';
+import { subscribeWithSelector } from 'zustand/middleware';
 import { immer } from 'zustand/middleware/immer';
 import { DECK_NAMES, DISPLAY_DECKS } from '~/utils/constants';
 import { areSetsEqual, setSubtract, shuffle } from '~/utils/utils';
@@ -12,10 +12,11 @@ type GameState = {
   deckSize: number;
   deck: Events;
   cardMap: Record<string, Event>;
-  activeCard: Event | undefined;
-  displayedCard: Event | undefined;
-  playedCards: Events;
-  discardedCards: Events;
+  activeCard: Event | undefined; // The card that is in hand, bottom row
+  displayedCard: Event | undefined; // The card that is displayed in the modal
+  stagedCard?: Event; // The last played card that is being evaluated for correctness
+  playedCards: Events; // A list of correctly played cards
+  discardedCards: Events; // A list of incorrectly played cards
   score: { correct: number; incorrect: number };
   time: number;
   streak: number;
@@ -26,7 +27,8 @@ type GameActions = {
   init: (deckName?: string, deckSize?: number) => void;
   selectDeck: (deckName: DECK_NAMES) => void;
   drawCard: () => void;
-  playCard: (index: number) => void;
+  stageCard: (index: number) => void;
+  playCard: () => void;
   learnCard: (cardID: string) => void;
   discardCard: () => void;
   acknowledgeCard: () => void;
@@ -74,7 +76,7 @@ const getDeck = (deckName: DECK_NAMES): Events => {
 // Initialize the game state
 const initGame = (state: GameState) => {
   // Don't know which deck to load
-  if (state.deckName == "") {
+  if (state.deckName == "NULL_DECK") {
     return;
   }
   // Get the deck data and image map
@@ -83,6 +85,7 @@ const initGame = (state: GameState) => {
   const shuffledDeck = shuffle(deckData);
   // Sample a subset of cards from the deck so the game can end
   const sampledDeck = shuffledDeck.slice(0, state.deckSize);
+  console.log(state.deckSize);
 
   // Create a map from card ID to card. Must create map
   // before removing cards from the deck.
@@ -95,7 +98,7 @@ const initGame = (state: GameState) => {
   // Draw a card to start the game
   state.activeCard = sampledDeck.pop();
   // Play a card on the table
-  state.playedCards = [sampledDeck.pop()!];
+  state.playedCards = [sampledDeck.pop()!].sort((a, b) => a.year - b.year);
   state.discardedCards = [];
   state.deck = sampledDeck;
   state.time = 0;
@@ -126,9 +129,21 @@ const acknowledgeCard = (state: GameState) => {
   state.displayedCard = undefined;
 };
 
-// Plays the active card into the field
-const playCard = (state: GameState, index: number) => {
+// Stages the active card into the field
+const stageCard = (state: GameState, index: number) => {
+  // Stage the active card onto the playing field
   state.playedCards.splice(index, 0, state.activeCard!);
+  state.stagedCard = state.activeCard;
+  // Clear the active card
+  state.activeCard = undefined;
+};
+
+// Commites the active card into the field
+const playCard = (state: GameState) => {
+  // Clear the staging area for the next card
+  state.stagedCard = undefined;
+
+  // Keep track of score
   state.score.correct += 1;
   state.streak += 1;
   state.longestStreak = Math.max(state.streak, state.longestStreak);
@@ -137,78 +152,98 @@ const playCard = (state: GameState, index: number) => {
 
 // Discards the card into the discard pile
 const discardCard = (state: GameState) => {
-  state.discardedCards.push(state.activeCard!);
+  if (!state.stagedCard) {
+    throw new Error("Cannot discard a card that is not staged");
+  }
+  // Take out the staged card and place it in the discard pile
+  // Also learn about it
+  state.playedCards = state.playedCards.filter(
+    (card) => card.id != state.stagedCard!.id,
+  );
+  state.discardedCards.push(state.stagedCard);
+  learnCard(state, state.stagedCard.id);
+  state.stagedCard = undefined;
+
+  // Keep track of score
   state.score.incorrect += 1;
   state.streak = 0;
-  // Learn about the card before completely discarding it
-  learnCard(state, state.activeCard!.id);
   drawCard(state);
 };
 
 export const gameStore = create<GameState & GameActions>()(
-  immer((set) => ({
-    deckName: "",
-    deckSize: 20,
-    deck: [] as Events,
-    cardMap: {} as Record<string, Event>,
-    activeCard: undefined as Event | undefined,
-    displayedCard: undefined as Event | undefined,
-    playedCards: [] as Events,
-    discardedCards: [] as Events,
-    score: { correct: 0, incorrect: 0 },
-    time: 0,
-    streak: 0,
-    longestStreak: 0,
-    selectDeck: (deckName: DECK_NAMES) =>
-      set((state) => {
-        state.deckName = deckName;
-        initGame(state);
-      }),
-    init: (deckName?: string, deckSize?: number) =>
-      set((state) => {
-        if (deckName != undefined) {
-          state.deckName = deckName as DECK_NAMES;
-        }
-        if (deckSize != undefined) {
+  subscribeWithSelector(
+    immer((set) => ({
+      deckName: "NULL_DECK",
+      deckSize: 20,
+      deck: [] as Events,
+      cardMap: {} as Record<string, Event>,
+      activeCard: undefined as Event | undefined,
+      displayedCard: undefined as Event | undefined,
+      playedCards: [] as Events,
+      discardedCards: [] as Events,
+      score: { correct: 0, incorrect: 0 },
+      time: 0,
+      streak: 0,
+      longestStreak: 0,
+      selectDeck: (deckName: DECK_NAMES) =>
+        set((state) => {
+          state.deckName = deckName;
+          initGame(state);
+        }),
+      init: (deckName?: string, deckSize?: number) =>
+        set((state) => {
+          if (deckName != undefined) {
+            state.deckName = deckName as DECK_NAMES;
+          }
+          if (deckSize != undefined) {
+            state.deckSize = deckSize;
+          }
+          initGame(state);
+        }),
+      drawCard: () => {
+        set((state) => {
+          drawCard(state);
+        });
+      },
+      stageCard: (index: number) =>
+        set((state) => {
+          stageCard(state, index);
+        }),
+      playCard: () =>
+        set((state) => {
+          playCard(state);
+        }),
+      discardCard: () =>
+        set((state) => {
+          discardCard(state);
+        }),
+      learnCard: (cardID: string) =>
+        set((state) => {
+          learnCard(state, cardID);
+        }),
+      acknowledgeCard: () =>
+        set((state) => {
+          acknowledgeCard(state);
+        }),
+      setTime: (time: number) =>
+        set((state) => {
+          state.time = time;
+        }),
+      setDeckSize: (deckSize: number) =>
+        set((state) => {
           state.deckSize = deckSize;
-        }
-        initGame(state);
-      }),
-    drawCard: () => {
-      set((state) => {
-        drawCard(state);
-      });
-    },
-    playCard: (index: number) =>
-      set((state) => {
-        playCard(state, index);
-      }),
-    discardCard: () =>
-      set((state) => {
-        discardCard(state);
-      }),
-    learnCard: (cardID: string) =>
-      set((state) => {
-        learnCard(state, cardID);
-      }),
-    acknowledgeCard: () =>
-      set((state) => {
-        acknowledgeCard(state);
-      }),
-    setTime: (time: number) =>
-      set((state) => {
-        state.time = time;
-      }),
-    setDeckSize: (deckSize: number) =>
-      set((state) => {
-        state.deckSize = deckSize;
-        initGame(state);
-      }),
-  })),
+          initGame(state);
+        }),
+    })),
+  ),
 );
 
+// Game is complete if the deck is empty and atleast one card has been played
 export const isGameComplete = (s: GameState) =>
-  !s.activeCard && s.playedCards.length > 0;
+  s.playedCards.length > 0 &&
+  s.activeCard == undefined &&
+  s.stagedCard == undefined &&
+  s.deck.length == 0;
 
 type WithSelectors<S> = S extends { getState: () => infer T }
   ? S & { use: { [K in keyof T]: () => T[K] } }

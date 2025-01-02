@@ -1,9 +1,9 @@
 import React from 'react';
-
-import { Card, type CardProps } from './Card';
+import { useGameStore } from '~/state';
 
 import { useDroppable } from '@dnd-kit/core';
-import { useGameStore } from '~/state';
+
+import { Card, CardProps } from './Card';
 
 export const DroppableCard: React.FC<CardProps> = (props) => {
     const { setNodeRef } = useDroppable({
