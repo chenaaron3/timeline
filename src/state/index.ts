@@ -166,7 +166,6 @@ const discardCard = (state: GameState) => {
   // Keep track of score
   state.score.incorrect += 1;
   state.streak = 0;
-  drawCard(state);
 };
 
 export const gameStore = create<GameState & GameActions>()(

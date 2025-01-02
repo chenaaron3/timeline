@@ -19,6 +19,7 @@ export const Board: React.FC = () => {
     const playCard = useGameStore.use.playCard();
     const discardCard = useGameStore.use.discardCard();
     const learnCard = useGameStore.use.learnCard();
+    const drawCard = useGameStore.use.drawCard();
     const stagedCard = useGameStore((state) => state.stagedCard);
     const discardedCards = useGameStore.use.discardedCards();
 
@@ -70,6 +71,7 @@ export const Board: React.FC = () => {
             if (lastDiscarded) {
                 setTimeout(() => {
                     learnCard(lastDiscarded.id);
+                    drawCard();
                 }, 500)
             }
         }
