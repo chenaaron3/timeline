@@ -5,18 +5,17 @@ import { ShadowCard } from './ShadowCard';
 
 interface TimelineProps {
     draggingCard: string | null;
-    insertionIntent: number | null;
     incorrectCard?: string;
 }
 
 export const Timeline: React.FC<TimelineProps> = ({
     draggingCard,
-    insertionIntent,
     incorrectCard
 }) => {
     const playedCards = useGameStore.use.playedCards();
     const gameComplete = useGameStore(isGameComplete);
     const discardedCards = useGameStore.use.discardedCards();
+    const insertionIntent = useGameStore.use.insertionIntent();
 
     const fieldElements = [];
     if (!gameComplete) {

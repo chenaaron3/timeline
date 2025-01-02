@@ -1,7 +1,8 @@
 import { LayoutGroup } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
+import { useGame } from '~/hooks/useGame';
+import { useMutliplayer } from '~/hooks/useMultiplayer';
 import { useGameStore } from '~/state';
-import { compareEvent } from '~/utils/utils';
 
 import {
     Active, closestCenter, DndContext, DragEndEvent, DragMoveEvent, DragStartEvent, Over,
@@ -12,70 +13,25 @@ import { PlayingArea } from './PlayingArea';
 import { Timeline } from './Timeline';
 
 export const Board: React.FC = () => {
+    // Selectors
+    const activeCard = useGameStore.use.activeCard();
+    const channelID = useGameStore.use.channelID();
     const deckName = useGameStore.use.deckName();
     const playedCards = useGameStore.use.playedCards();
-    const activeCard = useGameStore.use.activeCard();
-    const stageCard = useGameStore.use.stageCard();
-    const playCard = useGameStore.use.playCard();
-    const discardCard = useGameStore.use.discardCard();
-    const learnCard = useGameStore.use.learnCard();
-    const drawCard = useGameStore.use.drawCard();
     const stagedCard = useGameStore((state) => state.stagedCard);
-    const discardedCards = useGameStore.use.discardedCards();
+    const insertionIntent = useGameStore.use.insertionIntent();
 
+    // Local State
     const [draggingCard, setDraggingCard] = useState<string | null>(null);
-    const [insertionIntent, setInsertionIntent] = useState<number | null>(null);
-    const [incorrectMove, setIncorrectMove] = useState<boolean>(false);
+
+    // Custom Hooks
+    const { incorrectMove } = useGame()
+    const { setInsertionIntent, stageCard, isConnected } = useMutliplayer(channelID);
 
     const sensors = useSensors(
         useSensor(PointerSensor),
         useSensor(TouchSensor)
     );
-
-    // When a new card is placed, check if it is in the correct position
-    useEffect(() => {
-        if (stagedCard) {
-            const insertionIndex = playedCards.findIndex(card => card.id === stagedCard.id);
-
-            let validPlacement = true;
-            const leftNeighbor = playedCards[insertionIndex - 1];
-            const rightNeighbor = playedCards[insertionIndex + 1];
-            if (leftNeighbor) {
-                if (compareEvent(stagedCard, leftNeighbor) < 0) {
-                    validPlacement = false;
-                }
-            }
-            if (rightNeighbor) {
-                if (compareEvent(stagedCard, rightNeighbor) > 0) {
-                    validPlacement = false;
-                }
-            }
-
-            if (validPlacement) {
-                playCard();
-            } else {
-                // Display incorrect screen for a bit
-                setIncorrectMove(true);
-                setTimeout(() => {
-                    discardCard();
-                    setIncorrectMove(false);
-                }, 1000)
-            }
-        }
-    }, [stagedCard, playedCards])
-
-    useEffect(() => {
-        // When a new card is discarded, open it for learning
-        if (discardedCards.length > 0) {
-            const lastDiscarded = discardedCards[discardedCards.length - 1];
-            if (lastDiscarded) {
-                setTimeout(() => {
-                    learnCard(lastDiscarded.id);
-                    drawCard();
-                }, 500)
-            }
-        }
-    }, [discardedCards])
 
     useEffect(() => {
         // When the deck changes, reset the local state
@@ -98,7 +54,7 @@ export const Board: React.FC = () => {
                 onDragCancel={handleDragCancel}
             >
                 {/* Render the timeline */}
-                <Timeline incorrectCard={incorrectMove ? stagedCard?.id : undefined} draggingCard={draggingCard} insertionIntent={insertionIntent} />
+                <Timeline incorrectCard={incorrectMove ? stagedCard?.id : undefined} draggingCard={draggingCard} />
                 {/* Render the active card */}
                 <PlayingArea activeCard={activeCard} draggingCard={draggingCard} />
             </DndContext>

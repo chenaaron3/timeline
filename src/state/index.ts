@@ -4,7 +4,6 @@ import { immer } from 'zustand/middleware/immer';
 import { DECK_NAMES, DISPLAY_DECKS } from '~/utils/constants';
 import { areSetsEqual, setSubtract, shuffle } from '~/utils/utils';
 
-// Hard World History Deck
 import { Event, Events, ImageMap } from '../utils/types';
 
 type GameState = {
@@ -17,14 +16,24 @@ type GameState = {
   stagedCard?: Event; // The last played card that is being evaluated for correctness
   playedCards: Events; // A list of correctly played cards
   discardedCards: Events; // A list of incorrectly played cards
+  insertionIntent: number | null; // The index where the staged card is being dragged to
   score: { correct: number; incorrect: number };
   time: number;
   streak: number;
   longestStreak: number;
+  channelID: string;
+  seed: number;
+  lobbyOpen: boolean;
+  playerIndex: number;
 };
 
 type GameActions = {
-  init: (deckName?: string, deckSize?: number, deckDraws?: number) => void;
+  init: (
+    deckName?: string,
+    deckSize?: number,
+    deckDraws?: number,
+    seed?: number,
+  ) => void;
   selectDeck: (deckName: DECK_NAMES) => void;
   drawCard: () => void;
   stageCard: (index: number) => void;
@@ -34,6 +43,10 @@ type GameActions = {
   acknowledgeCard: () => void;
   setTime: (time: number) => void;
   setDeckSize: (deckSize: number) => void;
+  setInsertionIntent: (insertionIntent: number | null) => void;
+  setSeed: (seed: number) => void;
+  setLobbyOpen: (lobbyOpen: boolean) => void;
+  setPlayerIndex: (playerIndex: number) => void;
 };
 
 // Get deck by name and perform validation
@@ -82,7 +95,7 @@ const initGame = (state: GameState, deckDraws = 1) => {
   // Get the deck data and image map
   const deckData = getDeck(state.deckName);
   // Shuffle the deck
-  const shuffledDeck = shuffle(deckData);
+  const shuffledDeck = shuffle(deckData, state.seed);
   // Sample a subset of cards from the deck so the game can end
   const sampledDeck = shuffledDeck.slice(0, state.deckSize);
   console.log(state.deckSize);
@@ -187,18 +200,33 @@ export const gameStore = create<GameState & GameActions>()(
       time: 0,
       streak: 0,
       longestStreak: 0,
+      channelID: "game",
+      insertionIntent: null,
+      seed: Math.random(),
+      lobbyOpen: false,
+      playerIndex: 0,
       selectDeck: (deckName: DECK_NAMES) =>
         set((state) => {
           state.deckName = deckName;
           initGame(state);
         }),
-      init: (deckName?: string, deckSize?: number, deckDraws?: number) =>
+      init: (
+        deckName?: string,
+        deckSize?: number,
+        deckDraws?: number,
+        seed?: number,
+      ) =>
         set((state) => {
           if (deckName != undefined) {
             state.deckName = deckName as DECK_NAMES;
           }
           if (deckSize != undefined) {
             state.deckSize = deckSize;
+          }
+          if (seed != undefined) {
+            state.seed = seed;
+          } else {
+            state.seed = Math.random();
           }
           initGame(state, deckDraws);
         }),
@@ -235,6 +263,23 @@ export const gameStore = create<GameState & GameActions>()(
         set((state) => {
           state.deckSize = deckSize;
           initGame(state);
+        }),
+      setInsertionIntent: (insertionIntent: number | null) =>
+        set((state) => {
+          state.insertionIntent = insertionIntent;
+        }),
+      setSeed: (seed: number) =>
+        set((state) => {
+          state.seed = seed;
+        }),
+      setLobbyOpen: (lobbyOpen: boolean) =>
+        set((state) => {
+          state.lobbyOpen = lobbyOpen;
+        }),
+      setPlayerIndex: (playerIndex: number) =>
+        set((state) => {
+          console.log("Player Index", playerIndex);
+          state.playerIndex = playerIndex;
         }),
     })),
   ),

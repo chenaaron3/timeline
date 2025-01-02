@@ -1,4 +1,5 @@
 import { feedbackRouter } from '~/server/api/routers/feedback';
+import { multiplayerRouter } from '~/server/api/routers/multiplayer';
 import { createCallerFactory, createTRPCRouter } from '~/server/api/trpc';
 
 /**
@@ -8,6 +9,7 @@ import { createCallerFactory, createTRPCRouter } from '~/server/api/trpc';
  */
 export const appRouter = createTRPCRouter({
   feedback: feedbackRouter,
+  multiplayer: multiplayerRouter,
 });
 
 // export type definition of API

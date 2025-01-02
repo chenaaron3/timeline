@@ -23,6 +23,7 @@ export function Menu() {
     const selectDeck = useGameStore.use.selectDeck();
     const currentDeck = useGameStore.use.deckName();
     const currentDeckSize = useGameStore.use.deckSize();
+    const setLobbyOpen = useGameStore.use.setLobbyOpen();
     const init = useGameStore.use.init();
 
     const onSelectDeck = (deckName: DECK_NAMES) => {
@@ -113,9 +114,9 @@ export function Menu() {
                             </DropdownMenuPortal>
                         </DropdownMenuSub>
                         <DropdownMenuSeparator />
-                        <DropdownMenuItem disabled>
+                        <DropdownMenuItem onClick={() => setLobbyOpen(true)}>
                             <UserPlus2 />
-                            <span>Invite Player (Soon!)</span>
+                            <span>Invite Player</span>
                         </DropdownMenuItem>
                     </DropdownMenuGroup>
                 </DropdownMenuContent>

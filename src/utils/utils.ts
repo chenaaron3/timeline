@@ -1,8 +1,16 @@
 import { Event, HighscoreCategory, Highscores, UserData } from './types';
 
-export function shuffle<T>(array: T[]) {
+function seededRandom(seed: number): () => number {
+  return function () {
+    const x = Math.sin(seed++) * 10000;
+    return x - Math.floor(x);
+  };
+}
+
+export function shuffle<T>(array: T[], seed: number): T[] {
+  const random = seededRandom(seed);
   for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
+    const j = Math.floor(random() * (i + 1));
     if (array[i] !== undefined && array[j] !== undefined) {
       const temp = array[i]!;
       array[i] = array[j]!;
@@ -80,4 +88,18 @@ export function compareEvent(a: Event, b: Event): number {
   if (thisDate < otherDate) return -1; // `this` is earlier
   if (thisDate > otherDate) return 1; // `this` is later
   return 0; // `this` is the same as `other`
+}
+
+export function generateUniqueID(): string {
+  const characters =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  const idLength = 6;
+  let uniqueId = "";
+
+  for (let i = 0; i < idLength; i++) {
+    const randomIndex = Math.floor(Math.random() * characters.length);
+    uniqueId += characters[randomIndex];
+  }
+
+  return uniqueId;
 }
