@@ -64,7 +64,7 @@ function DragMe() {
     });
 
     return <motion.div
-        className='flex items-center justify-center p-2 bg-white rounded-full'
+        className='flex items-center justify-center gap-1 p-2 bg-[--accent-color] text-white rounded-full'
         ref={ref}
     >
         <Grab />

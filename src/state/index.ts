@@ -161,7 +161,6 @@ const discardCard = (state: GameState) => {
     (card) => card.id != state.stagedCard!.id,
   );
   state.discardedCards.push(state.stagedCard);
-  learnCard(state, state.stagedCard.id);
   state.stagedCard = undefined;
 
   // Keep track of score

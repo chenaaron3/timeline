@@ -18,7 +18,9 @@ export const Board: React.FC = () => {
     const stageCard = useGameStore.use.stageCard();
     const playCard = useGameStore.use.playCard();
     const discardCard = useGameStore.use.discardCard();
+    const learnCard = useGameStore.use.learnCard();
     const stagedCard = useGameStore((state) => state.stagedCard);
+    const discardedCards = useGameStore.use.discardedCards();
 
     const [draggingCard, setDraggingCard] = useState<string | null>(null);
     const [insertionIntent, setInsertionIntent] = useState<number | null>(null);
@@ -60,6 +62,18 @@ export const Board: React.FC = () => {
             }
         }
     }, [stagedCard, playedCards])
+
+    useEffect(() => {
+        // When a new card is discarded, open it for learning
+        if (discardedCards.length > 0) {
+            const lastDiscarded = discardedCards[discardedCards.length - 1];
+            if (lastDiscarded) {
+                setTimeout(() => {
+                    learnCard(lastDiscarded.id);
+                }, 500)
+            }
+        }
+    }, [discardedCards])
 
     useEffect(() => {
         // When the deck changes, reset the local state
