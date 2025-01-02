@@ -17,12 +17,14 @@ export default function Home() {
   const { query, isReady } = router;
   const name = query.deck;
   const size = parseInt(query.size as string);
+  const draws = parseInt(query.draws as string);
 
   useEffect(() => {
     // Initalize the board once the query parameters are ready
     if (isReady) {
       let deckName: DECK_NAMES | undefined;
       let deckSize: number | undefined;
+      let deckDraws: number | undefined;
       // Check if deckSize is a number
       if (!isNaN(size) && size > 1) {
         deckSize = size
@@ -33,7 +35,10 @@ export default function Home() {
       } else {
         deckName = "world_history"
       }
-      init(deckName, deckSize);
+      if (!isNaN(draws) && draws > 1) {
+        deckDraws = draws
+      }
+      init(deckName, deckSize, deckDraws);
     }
   }, [isReady])
 

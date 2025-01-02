@@ -24,7 +24,7 @@ type GameState = {
 };
 
 type GameActions = {
-  init: (deckName?: string, deckSize?: number) => void;
+  init: (deckName?: string, deckSize?: number, deckDraws?: number) => void;
   selectDeck: (deckName: DECK_NAMES) => void;
   drawCard: () => void;
   stageCard: (index: number) => void;
@@ -74,7 +74,7 @@ const getDeck = (deckName: DECK_NAMES): Events => {
 };
 
 // Initialize the game state
-const initGame = (state: GameState) => {
+const initGame = (state: GameState, deckDraws = 1) => {
   // Don't know which deck to load
   if (state.deckName == "NULL_DECK") {
     return;
@@ -98,7 +98,11 @@ const initGame = (state: GameState) => {
   // Draw a card to start the game
   state.activeCard = sampledDeck.pop();
   // Play a card on the table
-  state.playedCards = [sampledDeck.pop()!].sort((a, b) => a.year - b.year);
+  state.playedCards = [];
+  for (let i = 0; i < deckDraws; i++) {
+    state.playedCards.push(sampledDeck.pop()!);
+  }
+  state.playedCards.sort((a, b) => a.year - b.year);
   state.discardedCards = [];
   state.deck = sampledDeck;
   state.time = 0;
@@ -188,7 +192,7 @@ export const gameStore = create<GameState & GameActions>()(
           state.deckName = deckName;
           initGame(state);
         }),
-      init: (deckName?: string, deckSize?: number) =>
+      init: (deckName?: string, deckSize?: number, deckDraws?: number) =>
         set((state) => {
           if (deckName != undefined) {
             state.deckName = deckName as DECK_NAMES;
@@ -196,7 +200,7 @@ export const gameStore = create<GameState & GameActions>()(
           if (deckSize != undefined) {
             state.deckSize = deckSize;
           }
-          initGame(state);
+          initGame(state, deckDraws);
         }),
       drawCard: () => {
         set((state) => {
