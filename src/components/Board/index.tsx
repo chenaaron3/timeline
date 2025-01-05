@@ -39,7 +39,7 @@ export const Board: React.FC = () => {
         setInsertionIntent(null);
     }, [deckName]);
 
-    return (<div className='flex flex-col items-center w-screen h-full overflow-x-auto justify-evenly'
+    return (<div className='flex flex-col items-center w-screen max-w-[100vw] h-full overflow-x-auto justify-evenly'
     // style={{
     //     scrollbarWidth: 'none',
     // }}
