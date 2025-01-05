@@ -42,7 +42,7 @@ export const multiplayerRouter = createTRPCRouter({
     )
     .mutation(async ({ ctx, input }) => {
       // Get the existing players in the lobby
-      let existingLobby = await ctx.db
+      const existingLobby = await ctx.db
         .select({
           players: lobby.players,
         })
@@ -53,7 +53,7 @@ export const multiplayerRouter = createTRPCRouter({
       if (!existingLobby || existingLobby.length == 0) {
         return;
       }
-      const existingPlayers = existingLobby[0]!["players"]! as string[];
+      const existingPlayers = existingLobby[0]!.players as string[];
       if (existingPlayers) {
         existingPlayers.push(input.playerName);
       }
@@ -81,6 +81,7 @@ export const multiplayerRouter = createTRPCRouter({
       }),
     )
     .mutation(async ({ ctx, input }) => {
+      // eslint-disable-next-line
       pushMessage<any>(
         input.lobbyID,
         input.event as MessageTypes,
@@ -94,7 +95,7 @@ function pushMessage<T>(
   messageType: MessageTypes,
   message: T,
 ) {
-  pusher.trigger(lobbyID, messageType, {
+  void pusher.trigger(lobbyID, messageType, {
     message: message,
   });
 }

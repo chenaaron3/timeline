@@ -41,7 +41,7 @@ export const WaitingRoom = () => {
                 (players && players.length > 0) && <div>
                     <div className='flex justify-evenly items-center flex-wrap'>
                         {
-                            players.map(p => <Badge className='animate-pulse text-lg sm:text-xl' variant="secondary">
+                            players.map((p, i) => <Badge key={p + i} className='animate-pulse text-lg sm:text-xl' variant="secondary">
                                 {p}
                             </Badge>
                             )

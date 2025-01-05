@@ -76,8 +76,8 @@ export const LobbyEntrance = () => {
 
             // Clear the ticket for joining this lobby (whether or not it was successful or not)
             const newQuery = { ...query };
-            delete newQuery['lobby'];
-            router.push(
+            delete newQuery.lobby
+            void router.push(
                 {
                     pathname: router.pathname,
                     query: newQuery,
