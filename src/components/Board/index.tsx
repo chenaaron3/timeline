@@ -39,11 +39,7 @@ export const Board: React.FC = () => {
         setInsertionIntent(null);
     }, [deckName]);
 
-    return (<div className='flex flex-col items-center w-screen max-w-[100vw] h-full overflow-x-auto justify-evenly'
-    // style={{
-    //     scrollbarWidth: 'none',
-    // }}
-    >
+    return (
         <LayoutGroup>
             <DndContext
                 sensors={sensors}
@@ -60,7 +56,6 @@ export const Board: React.FC = () => {
                 <PlayingArea activeCard={activeCard} draggingCard={draggingCard} />
             </DndContext>
         </LayoutGroup>
-    </div >
     );
 
     // DND Hooks

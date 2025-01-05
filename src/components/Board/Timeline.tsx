@@ -51,11 +51,15 @@ export const Timeline: React.FC<TimelineProps> = ({
         }
     }
     // Addding from left and right
-    // fieldElements.splice(0, 0, <div className='w-16 h-1 min-w-16 sm:min-w-32'></div>)
-    // fieldElements.push(<div className='w-16 h-1 min-w-16 sm:min-w-32'></div>)
+    fieldElements.splice(0, 0, <div className='w-16 h-1 min-w-16 sm:min-w-32'></div>)
+    fieldElements.push(<div className='w-16 h-1 min-w-16 sm:min-w-32'></div>)
 
-    return <div className='flex items-center min-w-full max-w-full w-full gap-3 py-2 min-h-60 justify-evenly sm:gap-10 h-fit'>
-        <div className='fixed w-full h-1 border-t-4 border-[--accent-color] border-dashed' ></div>
+    return <div className='flex items-start overflow-x-auto gap-3 py-12 min-h-60 justify-evenly sm:gap-10 h-full'
+        style={{
+            scrollbarWidth: 'none',
+        }}
+    >
+        <div className='absolute mt-24 sm:mt-32 w-full h-1 border-t-4 border-[--accent-color] border-dashed' ></div>
         {...fieldElements}
     </div>
 }
