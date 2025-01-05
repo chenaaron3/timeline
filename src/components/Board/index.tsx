@@ -16,6 +16,7 @@ export const Board: React.FC = () => {
     // Selectors
     const activeCard = useGameStore.use.activeCard();
     const lobbyID = useMultiplayerStore.use.lobbyID();
+    const playerID = useMultiplayerStore.use.playerID();
     const deckName = useGameStore.use.deckName();
     const playedCards = useGameStore.use.playedCards();
     const stagedCard = useGameStore((state) => state.stagedCard);
@@ -25,7 +26,7 @@ export const Board: React.FC = () => {
 
     // Custom Hooks
     const { incorrectMove } = useGame()
-    const { setInsertionIntent, stageCard, joinedLobby } = useMultiplayer(lobbyID);
+    const { setInsertionIntent, stageCard, joinedLobby } = useMultiplayer(lobbyID, playerID);
 
     const sensors = useSensors(
         useSensor(PointerSensor),
