@@ -31,7 +31,7 @@ export const WaitingRoom = () => {
     return <div>
         <DialogHeader>
             <DialogTitle>
-                <span className='sm:text-4xl'>Lobby</span>
+                <span className='text-3xl sm:text-4xl'>Lobby</span>
             </DialogTitle>
             <DialogDescription>
             </DialogDescription>
@@ -41,7 +41,7 @@ export const WaitingRoom = () => {
                 (players && players.length > 0) && <div>
                     <div className='flex justify-evenly items-center flex-wrap'>
                         {
-                            players.map(p => <Badge className='animate-pulse text-xl' variant="secondary">
+                            players.map(p => <Badge className='animate-pulse text-lg sm:text-xl' variant="secondary">
                                 {p}
                             </Badge>
                             )
@@ -58,9 +58,9 @@ export const WaitingRoom = () => {
                 <Button variant="outline" onClick={() => handleCopyClipboard()}>
                     <ClipboardCopy />
                 </Button>
-                <Input className='min-w-64' type="text" value={lobbyLink} />
+                <Input className='sm:min-w-64' type="text" value={lobbyLink} />
             </div>
-            <div className="">
+            <div className="text-sm">
                 <p>Share this link with your friends</p>
             </div>
             <Button disabled={playerID != 1} type="button">Start Game</Button>
