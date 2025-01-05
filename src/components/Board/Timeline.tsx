@@ -54,7 +54,7 @@ export const Timeline: React.FC<TimelineProps> = ({
     fieldElements.splice(0, 0, <div className='w-16 h-1 min-w-16 sm:min-w-32'></div>)
     fieldElements.push(<div className='w-16 h-1 min-w-16 sm:min-w-32'></div>)
 
-    return <div className='flex items-center w-full gap-3 py-2 min-h-60 justify-evenly sm:gap-10 h-fit'>
+    return <div className='flex items-center w-screen gap-3 py-2 min-h-60 justify-evenly sm:gap-10 h-fit'>
         <div className='fixed w-full h-1 border-t-4 border-[--accent-color] border-dashed' ></div>
         {...fieldElements}
     </div>
