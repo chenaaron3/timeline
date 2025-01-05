@@ -1,4 +1,5 @@
-import { isGameComplete, useGameStore } from '~/state';
+import { useGameStore } from '~/state';
+import { isGameComplete } from '~/state/game';
 
 import { DroppableCard } from './DroppableCard';
 import { ShadowCard } from './ShadowCard';

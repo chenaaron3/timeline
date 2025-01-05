@@ -1,15 +1,14 @@
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
-import { useGameStore } from '~/state';
-import { api } from '~/utils/api';
+import { useGameStore, useMultiplayerStore } from '~/state';
 import { DECK_NAMES, DISPLAY_DECKS } from '~/utils/constants';
 
 export const useInitialize = () => {
     const router = useRouter();
-    const joinLobby = api.multiplayer.joinLobby.useMutation();
 
     const init = useGameStore.use.init();
-    const setPlayerIndex = useGameStore.use.setPlayerIndex();
+    const setLobbyOpen = useMultiplayerStore.use.setLobbyOpen();
+    const setLobbyID = useMultiplayerStore.use.setLobbyID();
 
     // Access query parameters from the router object
     const { query, isReady } = router;
@@ -19,7 +18,8 @@ export const useInitialize = () => {
     const draws = parseInt(query.draws as string);
 
     useEffect(() => {
-        const handleQueries = async () => {
+        // Initalize the board once the query parameters are ready
+        if (isReady) {
             let deckName: DECK_NAMES | undefined;
             let deckSize: number | undefined;
             let deckDraws: number | undefined;
@@ -27,28 +27,11 @@ export const useInitialize = () => {
 
             // Check if lobby is in the query parameters
             if (lobby) {
-                const lobbyResults = await joinLobby.mutateAsync({
-                    lobbyID: lobby as string,
-                    playerName: "Player2"
-                })
-                if (lobbyResults && lobbyResults.length > 0) {
-                    const details = lobbyResults[0]!
-                    deckName = details.deckName as DECK_NAMES
-                    deckSize = details.deckSize
-                    seed = parseFloat(details.seed)
-                    setPlayerIndex((details.players as string[]).length - 1)
-                }
+                setLobbyOpen(true);
             } else {
                 // Check if deckSize is a number
                 if (!isNaN(size) && size > 1) {
                     deckSize = size
-                }
-
-                // Check if deck name is in DISPLAY_DECKS
-                if (name && DISPLAY_DECKS.find((deck) => deck.id === name)) {
-                    deckName = name as DECK_NAMES
-                } else {
-                    deckName = "world_history"
                 }
 
                 // Check if deckDraws is a number
@@ -56,12 +39,13 @@ export const useInitialize = () => {
                     deckDraws = draws
                 }
             }
+            // Check if deck name is in DISPLAY_DECKS
+            if (name && DISPLAY_DECKS.find((deck) => deck.id === name)) {
+                deckName = name as DECK_NAMES
+            } else {
+                deckName = "world_history"
+            }
             init(deckName, deckSize, deckDraws, seed);
-        }
-
-        // Initalize the board once the query parameters are ready
-        if (isReady) {
-            handleQueries()
         }
     }, [isReady])
 }

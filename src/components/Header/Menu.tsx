@@ -5,7 +5,7 @@ import {
     DropdownMenuPortal, DropdownMenuSeparator, DropdownMenuShortcut, DropdownMenuSub,
     DropdownMenuSubContent, DropdownMenuSubTrigger, DropdownMenuTrigger
 } from '~/components/ui/dropdown-menu';
-import { useGameStore } from '~/state';
+import { useGameStore, useMultiplayerStore } from '~/state';
 import { DECK_NAMES, DISPLAY_DECKS } from '~/utils/constants';
 
 import { Feedback } from './Feedback';
@@ -23,7 +23,7 @@ export function Menu() {
     const selectDeck = useGameStore.use.selectDeck();
     const currentDeck = useGameStore.use.deckName();
     const currentDeckSize = useGameStore.use.deckSize();
-    const setLobbyOpen = useGameStore.use.setLobbyOpen();
+    const setLobbyOpen = useMultiplayerStore.use.setLobbyOpen();
     const init = useGameStore.use.init();
 
     const onSelectDeck = (deckName: DECK_NAMES) => {

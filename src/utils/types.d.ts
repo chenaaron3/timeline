@@ -13,6 +13,25 @@ export interface Event {
   compareTo(other: Event): number;
 }
 
+// Event types
+export type MessageTypes = "stageCard" | "setInsertionIntent" | "onPlayerJoin";
+
+export interface BaseMessage {
+  playerID: number;
+}
+
+export interface StageCardMessage extends BaseMessage {
+  index: number;
+}
+
+export interface SetInsertionIntentMessage extends BaseMessage {
+  index: number;
+}
+
+export interface OnPlayerJoinMessage extends BaseMessage {
+  playerNames: string[];
+}
+
 // Maps the event id to the imported image
 export type ImageMap = Record<string, StaticImageData>;
 

@@ -1,8 +1,8 @@
 import { LayoutGroup } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
 import { useGame } from '~/hooks/useGame';
-import { useMutliplayer } from '~/hooks/useMultiplayer';
-import { useGameStore } from '~/state';
+import { useMultiplayer } from '~/hooks/useMultiplayer';
+import { useGameStore, useMultiplayerStore } from '~/state';
 
 import {
     Active, closestCenter, DndContext, DragEndEvent, DragMoveEvent, DragStartEvent, Over,
@@ -15,18 +15,17 @@ import { Timeline } from './Timeline';
 export const Board: React.FC = () => {
     // Selectors
     const activeCard = useGameStore.use.activeCard();
-    const channelID = useGameStore.use.channelID();
+    const lobbyID = useMultiplayerStore.use.lobbyID();
     const deckName = useGameStore.use.deckName();
     const playedCards = useGameStore.use.playedCards();
     const stagedCard = useGameStore((state) => state.stagedCard);
-    const insertionIntent = useGameStore.use.insertionIntent();
 
     // Local State
     const [draggingCard, setDraggingCard] = useState<string | null>(null);
 
     // Custom Hooks
     const { incorrectMove } = useGame()
-    const { setInsertionIntent, stageCard, isConnected } = useMutliplayer(channelID);
+    const { setInsertionIntent, stageCard, joinedLobby } = useMultiplayer(lobbyID);
 
     const sensors = useSensors(
         useSensor(PointerSensor),

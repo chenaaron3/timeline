@@ -1,7 +1,8 @@
 import { Grab } from 'lucide-react';
 import { motion, useAnimationFrame } from 'motion/react';
 import React, { useRef, useState } from 'react';
-import { isGameComplete, useGameStore } from '~/state';
+import { useGameStore } from '~/state';
+import { isGameComplete } from '~/state/game';
 import { Event } from '~/utils/types';
 
 import { DragOverlay } from '@dnd-kit/core';

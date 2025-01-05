@@ -1,8 +1,9 @@
 import { eq } from 'drizzle-orm';
 import Pusher from 'pusher';
-import { z } from 'zod';
+import { number, z } from 'zod';
 import { createTRPCRouter, publicProcedure } from '~/server/api/trpc';
 import { lobby } from '~/server/db/schema';
+import { MessageTypes, OnPlayerJoinMessage } from '~/utils/types';
 
 const pusher = new Pusher({
   appId: process.env.PUSHER_APP_ID!,
@@ -41,36 +42,59 @@ export const multiplayerRouter = createTRPCRouter({
     )
     .mutation(async ({ ctx, input }) => {
       // Get the existing players in the lobby
-      const queryResults = await ctx.db
+      let existingLobby = await ctx.db
         .select({
           players: lobby.players,
         })
         .from(lobby)
         .where(eq(lobby.id, input.lobbyID))
         .limit(1);
-      const existingPlayers = queryResults[0]!["players"]! as string[];
+      // Check if lobby does not exists, return
+      if (!existingLobby || existingLobby.length == 0) {
+        return;
+      }
+      const existingPlayers = existingLobby[0]!["players"]! as string[];
       if (existingPlayers) {
         existingPlayers.push(input.playerName);
       }
-      return await ctx.db
+      const update = await ctx.db
         .update(lobby)
         .set({
           players: existingPlayers,
         })
         .where(eq(lobby.id, input.lobbyID))
         .returning();
+
+      //  Notify all players that a new player joined
+      pushMessage<OnPlayerJoinMessage>(input.lobbyID, "onPlayerJoin", {
+        playerID: existingPlayers.length,
+        playerNames: existingPlayers,
+      });
+      return update[0];
     }),
   sendMessage: publicProcedure
     .input(
       z.object({
-        channelID: z.string().min(1),
+        lobbyID: z.string().min(1),
         event: z.string().min(1),
         message: z.string(),
       }),
     )
     .mutation(async ({ ctx, input }) => {
-      pusher.trigger(input.channelID, input.event, {
-        message: input.message,
-      });
+      pushMessage<any>(
+        input.lobbyID,
+        input.event as MessageTypes,
+        input.message,
+      );
     }),
 });
+
+function pushMessage<T>(
+  lobbyID: string,
+  messageType: MessageTypes,
+  message: T,
+) {
+  pusher.trigger(lobbyID, messageType, {
+    message: message,
+  });
+}
