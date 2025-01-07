@@ -26,7 +26,7 @@ export const Board: React.FC = () => {
 
     // Custom Hooks
     const { incorrectMove } = useGame()
-    const { setInsertionIntent, stageCard, joinedLobby } = useMultiplayer(lobbyID, playerID);
+    const { setInsertionIntent, stageCard, joinedLobby, gameStarted, isMyTurn } = useMultiplayer(lobbyID, playerID);
 
     const sensors = useSensors(
         useSensor(PointerSensor),
@@ -52,8 +52,8 @@ export const Board: React.FC = () => {
             >
                 {/* Render the timeline */}
                 <Timeline incorrectCard={incorrectMove ? stagedCard?.id : undefined} draggingCard={draggingCard} />
-                {/* Render the active card */}
-                <PlayingArea activeCard={activeCard} draggingCard={draggingCard} />
+                {/* Render the active card, disable if multiplayer */}
+                <PlayingArea activeCard={activeCard} draggingCard={draggingCard} disabled={joinedLobby && !gameStarted} />
             </DndContext>
         </LayoutGroup>
     );

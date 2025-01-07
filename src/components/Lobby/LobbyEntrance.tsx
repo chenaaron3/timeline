@@ -103,6 +103,8 @@ export const LobbyEntrance = () => {
             setLobbyID(lobbyID);
             setPlayerID(1);
             setPlayers([values.displayName])
+            // Reset the game 
+            init(deckName, deckSize, undefined, seed);
             toast.success("Lobby created!");
         }
         form.reset();

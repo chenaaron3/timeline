@@ -7,9 +7,11 @@ type MultiplayerState = {
   playerID: number | null; // Populated when joining a lobby
   players: string[]; // list of player names in the lobby
   lobbyOpen: boolean;
+  gameStarted: boolean;
 };
 
 type MultiplayerActions = {
+  setGameStarted: (gameStarted: boolean) => void;
   setLobbyID: (lobbyID: string) => void;
   setLobbyOpen: (lobbyOpen: boolean) => void;
   setPlayerID: (playerID: number) => void;
@@ -23,6 +25,8 @@ export const multiplayerStore = create<MultiplayerState & MultiplayerActions>()(
       lobbyOpen: false,
       playerID: 0,
       players: [],
+      gameStarted: false,
+      turn: 0,
       setLobbyID: (lobbyID: string) =>
         set((state) => {
           state.lobbyID = lobbyID;
@@ -38,6 +42,10 @@ export const multiplayerStore = create<MultiplayerState & MultiplayerActions>()(
       setPlayers: (players: string[]) =>
         set((state) => {
           state.players = players;
+        }),
+      setGameStarted: (gameStarted: boolean) =>
+        set((state) => {
+          state.gameStarted = gameStarted;
         }),
     })),
   ),

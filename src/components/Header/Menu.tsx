@@ -116,7 +116,7 @@ export function Menu() {
                         <DropdownMenuSeparator />
                         <DropdownMenuItem onClick={() => setLobbyOpen(true)}>
                             <UserPlus2 />
-                            <span>Invite Player</span>
+                            <span>Multiplayer</span>
                         </DropdownMenuItem>
                     </DropdownMenuGroup>
                 </DropdownMenuContent>

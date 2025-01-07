@@ -22,11 +22,12 @@ export const Timeline: React.FC<TimelineProps> = ({
     if (!gameComplete) {
         // loop through player cards and add elements to fieldelements
         for (let i = 0; i < playedCards.length; i++) {
+            console.log("pc", playedCards)
             const card = playedCards[i]!;
             // Show preshadow if the intent is to place the card here
-            const showPreshadow = draggingCard != null && insertionIntent === i;
+            const showPreshadow = insertionIntent === i;
             // Show postshadow if its the last card
-            const showPostshadow = draggingCard != null && insertionIntent === i + 1 && i == playedCards.length - 1
+            const showPostshadow = insertionIntent === i + 1 && i == playedCards.length - 1
 
             // Show shadow text for tutorial
             const showTutorial = playedCards.length == 1

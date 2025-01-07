@@ -1,4 +1,3 @@
-import { toast } from 'sonner';
 import { Dialog, DialogContent } from '~/components/ui/dialog';
 import { useMultiplayer } from '~/hooks/useMultiplayer';
 import { useMultiplayerStore } from '~/state';
@@ -16,17 +15,7 @@ export const Lobby = () => {
     const setLobbyOpen = useMultiplayerStore.use.setLobbyOpen();
 
     // Custom Hooks
-    const { joinedLobby } = useMultiplayer(lobbyID, playerID);
-
-    const lobbyLink = BASE_URL + lobbyID
-
-    function handleCopyClipboard() {
-        navigator.clipboard.writeText(lobbyLink).then(() => {
-            toast.success("Copied to clipboard!");
-        }).catch((err) => {
-            toast.error("Cannot copy to clipboard!");
-        });
-    }
+    const { players, joinedLobby, startGame } = useMultiplayer(lobbyID, playerID);
 
     return (
         <Dialog open={lobbyOpen} onOpenChange={setLobbyOpen}>
@@ -35,7 +24,7 @@ export const Lobby = () => {
                     !joinedLobby && <LobbyEntrance />
                 }
                 {
-                    joinedLobby && <WaitingRoom />
+                    joinedLobby && <WaitingRoom players={players!} startGame={startGame} />
                 }
             </DialogContent>
         </Dialog>

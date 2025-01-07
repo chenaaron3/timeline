@@ -77,7 +77,7 @@ export const multiplayerRouter = createTRPCRouter({
       z.object({
         lobbyID: z.string().min(1),
         event: z.string().min(1),
-        message: z.string(),
+        message: z.any(),
       }),
     )
     .mutation(async ({ ctx, input }) => {

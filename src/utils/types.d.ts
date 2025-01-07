@@ -14,7 +14,11 @@ export interface Event {
 }
 
 // Event types
-export type MessageTypes = "stageCard" | "setInsertionIntent" | "onPlayerJoin";
+export type MessageTypes =
+  | "stageCard"
+  | "setInsertionIntent"
+  | "onPlayerJoin"
+  | "onGameStarted";
 
 export interface BaseMessage {
   playerID: number;
@@ -31,6 +35,8 @@ export interface SetInsertionIntentMessage extends BaseMessage {
 export interface OnPlayerJoinMessage extends BaseMessage {
   playerNames: string[];
 }
+
+export interface OnGameStartedMessage extends BaseMessage {}
 
 // Maps the event id to the imported image
 export type ImageMap = Record<string, StaticImageData>;

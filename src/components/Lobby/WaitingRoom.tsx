@@ -1,6 +1,5 @@
 import { ClipboardCopy } from 'lucide-react';
 import { toast } from 'sonner';
-import { useMultiplayer } from '~/hooks/useMultiplayer';
 import { useMultiplayerStore } from '~/state';
 
 import { Badge } from '../ui/badge';
@@ -10,13 +9,15 @@ import { Input } from '../ui/input';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL! + "?lobby="
 
-export const WaitingRoom = () => {
+interface WaitingRoomProps {
+    players: string[]
+    startGame: () => void
+}
+
+export const WaitingRoom: React.FC<WaitingRoomProps> = ({ players, startGame }) => {
     // Global State
     const lobbyID = useMultiplayerStore.use.lobbyID();
     const playerID = useMultiplayerStore.use.playerID();
-
-    // Custom Hooks
-    const { players, joinedLobby } = useMultiplayer(lobbyID, playerID);
 
     const lobbyLink = BASE_URL + lobbyID
 
@@ -63,7 +64,7 @@ export const WaitingRoom = () => {
             <div className="text-sm">
                 <p>Share this link with your friends</p>
             </div>
-            <Button disabled={playerID != 1} type="button">Start Game</Button>
+            <Button disabled={playerID != 1 || players.length < 2} type="button" onClick={startGame}>Start Game</Button>
         </div>
     </div>
 
