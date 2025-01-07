@@ -1,6 +1,9 @@
+/* eslint-disable */
+
 import { useCallback, useRef } from 'react';
 
 export const useThrottle = (
+    // eslint
     callback: (...args: any[]) => void,
     delay: number,
     deps: any[]

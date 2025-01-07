@@ -24,7 +24,7 @@ export const Lobby = () => {
                     !joinedLobby && <LobbyEntrance />
                 }
                 {
-                    joinedLobby && <WaitingRoom players={players!} startGame={startGame} />
+                    joinedLobby && <WaitingRoom players={players} startGame={startGame} />
                 }
             </DialogContent>
         </Dialog>

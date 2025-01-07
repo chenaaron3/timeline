@@ -36,7 +36,9 @@ export interface OnPlayerJoinMessage extends BaseMessage {
   playerNames: string[];
 }
 
-export interface OnGameStartedMessage extends BaseMessage {}
+export interface OnGameStartedMessage extends BaseMessage {
+  turn: number;
+}
 
 // Maps the event id to the imported image
 export type ImageMap = Record<string, StaticImageData>;
