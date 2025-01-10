@@ -153,6 +153,7 @@ const stageCard = (state: GameState, index: number) => {
   state.stagedCard = state.activeCard;
   // Clear the active card
   state.activeCard = undefined;
+  state.insertionIntent = null;
 };
 
 // Commites the active card into the field

@@ -8,7 +8,6 @@ export const useInitialize = () => {
 
     const init = useGameStore.use.init();
     const setLobbyOpen = useMultiplayerStore.use.setLobbyOpen();
-    const setLobbyID = useMultiplayerStore.use.setLobbyID();
 
     // Access query parameters from the router object
     const { query, isReady } = router;

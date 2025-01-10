@@ -1,5 +1,4 @@
 import { Dialog, DialogContent } from '~/components/ui/dialog';
-import { useMultiplayer } from '~/hooks/useMultiplayer';
 import { useMultiplayerStore } from '~/state';
 
 import { LobbyEntrance } from './LobbyEntrance';
@@ -10,12 +9,9 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL! + "?lobby="
 export const Lobby = () => {
     // Global State
     const lobbyOpen = useMultiplayerStore.use.lobbyOpen();
-    const lobbyID = useMultiplayerStore.use.lobbyID();
-    const playerID = useMultiplayerStore.use.playerID();
-    const setLobbyOpen = useMultiplayerStore.use.setLobbyOpen();
+    const joinedLobby = useMultiplayerStore.use.joinedLobby();
 
-    // Custom Hooks
-    const { players, joinedLobby, startGame } = useMultiplayer(lobbyID, playerID);
+    const setLobbyOpen = useMultiplayerStore.use.setLobbyOpen();
 
     return (
         <Dialog open={lobbyOpen} onOpenChange={setLobbyOpen}>
@@ -24,7 +20,7 @@ export const Lobby = () => {
                     !joinedLobby && <LobbyEntrance />
                 }
                 {
-                    joinedLobby && <WaitingRoom players={players} startGame={startGame} />
+                    joinedLobby && <WaitingRoom />
                 }
             </DialogContent>
         </Dialog>

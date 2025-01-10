@@ -5,12 +5,10 @@ import { DroppableCard } from './DroppableCard';
 import { ShadowCard } from './ShadowCard';
 
 interface TimelineProps {
-    draggingCard: string | null;
     incorrectCard?: string;
 }
 
 export const Timeline: React.FC<TimelineProps> = ({
-    draggingCard,
     incorrectCard
 }) => {
     const playedCards = useGameStore.use.playedCards();
@@ -22,7 +20,6 @@ export const Timeline: React.FC<TimelineProps> = ({
     if (!gameComplete) {
         // loop through player cards and add elements to fieldelements
         for (let i = 0; i < playedCards.length; i++) {
-            console.log("pc", playedCards)
             const card = playedCards[i]!;
             // Show preshadow if the intent is to place the card here
             const showPreshadow = insertionIntent === i;

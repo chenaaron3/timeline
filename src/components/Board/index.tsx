@@ -1,7 +1,8 @@
 import { LayoutGroup } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
 import { useGame } from '~/hooks/useGame';
-import { useMultiplayer } from '~/hooks/useMultiplayer';
+import { useMultiplayerControls } from '~/hooks/useMultiplayerControls';
+import { useMultiplayerSubscriptions } from '~/hooks/useMultiplayerSubscriptions';
 import { useGameStore, useMultiplayerStore } from '~/state';
 
 import {
@@ -15,18 +16,20 @@ import { Timeline } from './Timeline';
 export const Board: React.FC = () => {
     // Selectors
     const activeCard = useGameStore.use.activeCard();
-    const lobbyID = useMultiplayerStore.use.lobbyID();
-    const playerID = useMultiplayerStore.use.playerID();
     const deckName = useGameStore.use.deckName();
     const playedCards = useGameStore.use.playedCards();
     const stagedCard = useGameStore((state) => state.stagedCard);
+    const joinedLobby = useMultiplayerStore.use.joinedLobby();
+    const gameStarted = useMultiplayerStore.use.gameStarted();
 
     // Local State
     const [draggingCard, setDraggingCard] = useState<string | null>(null);
 
     // Custom Hooks
     const { incorrectMove } = useGame()
-    const { setInsertionIntent, stageCard, joinedLobby, gameStarted, isMyTurn } = useMultiplayer(lobbyID, playerID);
+    // Should only have 1 instance so subscriptions are not duped
+    useMultiplayerSubscriptions();
+    const { setInsertionIntent, stageCard } = useMultiplayerControls();
 
     const sensors = useSensors(
         useSensor(PointerSensor),
@@ -51,7 +54,7 @@ export const Board: React.FC = () => {
                 onDragCancel={handleDragCancel}
             >
                 {/* Render the timeline */}
-                <Timeline incorrectCard={incorrectMove ? stagedCard?.id : undefined} draggingCard={draggingCard} />
+                <Timeline incorrectCard={incorrectMove ? stagedCard?.id : undefined} />
                 {/* Render the active card, disable if multiplayer */}
                 <PlayingArea activeCard={activeCard} draggingCard={draggingCard} disabled={joinedLobby && !gameStarted} />
             </DndContext>
