@@ -44,11 +44,11 @@ export const LobbyEntrance = () => {
     const [formSubmitted, setFormSubmitted] = useState(false)
 
     useEffect(() => {
-        const inputElement = document.querySelector("input")
+        const inputElement = document.querySelector("#lobbyinput") as HTMLElement
         if (inputElement) {
             setTimeout(() => {
                 inputElement.focus()
-            })
+            }, 250)
         }
     }, [])
 
@@ -137,7 +137,7 @@ export const LobbyEntrance = () => {
                     return (
                         <FormItem>
                             <FormControl>
-                                <Input tabIndex={-1} autoFocus placeholder="Enter your name" {...field} />
+                                <Input id="lobbyinput" tabIndex={-1} autoFocus placeholder="Enter your name" {...field} />
                             </FormControl>
                             <FormMessage />
                         </FormItem>
