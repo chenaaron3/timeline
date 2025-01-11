@@ -20,7 +20,7 @@ export function Details() {
     return (
         // Can also close dialog with escape
         <Dialog defaultOpen onOpenChange={() => { acknowledgeCard() }}>
-            <DialogContent>
+            <DialogContent id="details-modal">
                 <DialogHeader>
                     <DialogTitle>
                         <div className='sm:text-3xl'>

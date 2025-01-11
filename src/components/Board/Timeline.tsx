@@ -52,7 +52,7 @@ export const Timeline: React.FC<TimelineProps> = ({
     fieldElements.splice(0, 0, <div className='w-16 h-1 min-w-16 sm:min-w-32'></div>)
     fieldElements.push(<div className='w-16 h-1 min-w-16 sm:min-w-32'></div>)
 
-    return <div className='flex items-start overflow-x-auto gap-3 py-12 min-h-60 justify-evenly sm:gap-10 h-full'
+    return <div id="timeline" className='flex items-start overflow-x-auto gap-3 py-12 min-h-60 justify-evenly sm:gap-10 h-full'
         style={{
             scrollbarWidth: 'none',
         }}

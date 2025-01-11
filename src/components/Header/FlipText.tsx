@@ -11,7 +11,7 @@ interface FlipTextProps {
 export const FlipText: React.FC<FlipTextProps> = ({ id, text }) => {
     const textArray = text.split('');
     return (
-        <span className="flex items-center justify-center overflow-hidden">
+        <span id={id} className="flex items-center justify-center overflow-hidden">
             <AnimatePresence mode='popLayout'>
                 {textArray.map((char, index) => (
                     <motion.span

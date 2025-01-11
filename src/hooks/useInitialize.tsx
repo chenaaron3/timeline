@@ -15,6 +15,7 @@ export const useInitialize = () => {
     const name = query.deck;
     const size = parseInt(query.size as string);
     const draws = parseInt(query.draws as string);
+    const seed = parseFloat(query.seed as string);
 
     useEffect(() => {
         // Initalize the board once the query parameters are ready
@@ -22,7 +23,7 @@ export const useInitialize = () => {
             let deckName: DECK_NAMES | undefined;
             let deckSize: number | undefined;
             let deckDraws: number | undefined;
-            let seed: number | undefined;
+            let deckSeed: number | undefined;
 
             // Check if lobby is in the query parameters
             if (lobby) {
@@ -32,10 +33,13 @@ export const useInitialize = () => {
                 if (!isNaN(size) && size > 1) {
                     deckSize = size
                 }
-
                 // Check if deckDraws is a number
                 if (!isNaN(draws) && draws > 1) {
                     deckDraws = draws
+                }
+                // Check if deckDraws is a number
+                if (!isNaN(seed)) {
+                    deckSeed = seed
                 }
             }
             // Check if deck name is in DISPLAY_DECKS
@@ -44,7 +48,7 @@ export const useInitialize = () => {
             } else {
                 deckName = "world_history"
             }
-            init(deckName, deckSize, deckDraws, seed);
+            init(deckName, deckSize, deckDraws, deckSeed);
         }
     }, [isReady])
 }

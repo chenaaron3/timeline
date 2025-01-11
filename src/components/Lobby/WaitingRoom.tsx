@@ -28,6 +28,8 @@ export const WaitingRoom: React.FC = () => {
         });
     }
 
+    const isLobbyOwner = playerID == 1
+
     return <div>
         <DialogHeader>
             <DialogTitle>
@@ -39,7 +41,7 @@ export const WaitingRoom: React.FC = () => {
         <div className='flex flex-col gap-3 max-w-sm'>
             {
                 (players && players.length > 0) && <div>
-                    <div className='flex justify-evenly items-center flex-wrap'>
+                    <div className='flex justify-evenly items-center flex-wrap gap-2'>
                         {
                             players.map((p, i) => <Badge key={p + i} className='animate-pulse text-lg sm:text-xl' variant="secondary">
                                 {p}
@@ -54,16 +56,25 @@ export const WaitingRoom: React.FC = () => {
                     Waiting for players to join...
                 </div>
             }
-            <div className="flex items-center w-full max-w-sm space-x-2">
-                <Button variant="outline" onClick={() => handleCopyClipboard()}>
-                    <ClipboardCopy />
-                </Button>
-                <Input className='sm:min-w-64' type="text" value={lobbyLink} />
-            </div>
-            <div className="text-sm">
-                <p>Share this link with your friends</p>
-            </div>
-            <Button disabled={playerID != 1 || players.length < 2} type="button" onClick={startGame}>Start Game</Button>
+            {
+                isLobbyOwner && <>
+                    <div className="flex items-center w-full max-w-sm space-x-2">
+                        <Button variant="outline" onClick={() => handleCopyClipboard()}>
+                            <ClipboardCopy />
+                        </Button>
+                        <Input className='sm:min-w-64' type="text" value={lobbyLink} />
+                    </div>
+                    <div className="text-sm">
+                        <p>Share this link with your friends</p>
+                    </div>
+                    <Button disabled={playerID != 1 || players.length < 2} type="button" onClick={startGame}>Start Game</Button>
+                </>
+            }
+            {
+                !isLobbyOwner && <div className='text-center'>
+                    Waiting for players to join...
+                </div>
+            }
         </div>
     </div>
 

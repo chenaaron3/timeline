@@ -50,8 +50,11 @@ export function Menu() {
     }, []);
 
     return (
-        <div className='fixed flex gap-5 bottom-5 left-5 flex-col sm:top-3 sm:right-3 sm:static'>
+        <div className='fixed flex gap-5 bottom-5 left-5 flex-col sm:flex-row sm:top-3 sm:right-3 sm:static'>
             <Feedback />
+            <div className='cursor-pointer' onClick={() => setLobbyOpen(true)}>
+                <UserPlus2 />
+            </div>
             <DropdownMenu>
                 <DropdownMenuTrigger>
                     <Settings />
@@ -114,10 +117,6 @@ export function Menu() {
                             </DropdownMenuPortal>
                         </DropdownMenuSub>
                         <DropdownMenuSeparator />
-                        <DropdownMenuItem onClick={() => setLobbyOpen(true)}>
-                            <UserPlus2 />
-                            <span>Multiplayer</span>
-                        </DropdownMenuItem>
                     </DropdownMenuGroup>
                 </DropdownMenuContent>
             </DropdownMenu>

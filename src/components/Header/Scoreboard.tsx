@@ -103,7 +103,7 @@ export function Scoreboard() {
                     style={{
                         clipPath: 'polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%)',
                     }}>
-                    <FlipText id='cards-left' text={formatSeconds(time)} />
+                    <FlipText id='timer' text={formatSeconds(time)} />
                 </div>
             </div>
         </div >

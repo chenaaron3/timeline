@@ -27,7 +27,7 @@ export const PlayingArea: React.FC<PlayingAreaProps> = ({
     const discardedCards = useGameStore.use.discardedCards();
     const gameComplete = useGameStore(isGameComplete)
 
-    return <div className="absolute pointer-events-none bottom-12 w-full flex justify-center items-center min-h-60">
+    return <div id="playing-area" className="absolute pointer-events-none bottom-12 w-full flex justify-center items-center min-h-60">
         {
             disabled && <div className='text-center'>
                 Waiting for Lobby Owner to Start the Game...

@@ -1,6 +1,6 @@
 import { Loader2 } from 'lucide-react';
 import { useRouter } from 'next/router';
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { toast } from 'sonner';
 import { string, z } from 'zod';
@@ -42,16 +42,6 @@ export const LobbyEntrance = () => {
 
     // Local State
     const [formSubmitted, setFormSubmitted] = useState(false)
-
-    useEffect(() => {
-        const inputElement = document.querySelector<HTMLElement>("#lobbyinput")
-        if (inputElement) {
-            setTimeout(() => {
-                inputElement.blur()
-                inputElement.focus()
-            }, 250)
-        }
-    }, [])
 
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
@@ -124,7 +114,7 @@ export const LobbyEntrance = () => {
         <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col gap-3">
             <DialogHeader>
                 <DialogTitle>
-                    <span className='sm:text-2xl'>{query.lobby ? "Join" : "Create"} a Game</span>
+                    <span className='sm:text-2xl'>{query.lobby ? "Accept Invite" : "Invite Players"}</span>
                 </DialogTitle>
                 <DialogDescription>
 
@@ -138,7 +128,7 @@ export const LobbyEntrance = () => {
                     return (
                         <FormItem>
                             <FormControl>
-                                <Input id="lobbyinput" tabIndex={-1} autoFocus placeholder="Enter your name" {...field} />
+                                <Input tabIndex={-1} autoFocus placeholder="Enter your name" {...field} />
                             </FormControl>
                             <FormMessage />
                         </FormItem>
@@ -148,7 +138,7 @@ export const LobbyEntrance = () => {
 
             <Button type="submit">
                 {formSubmitted && <Loader2 className="animate-spin" />}
-                {query.lobby ? "Join" : "Create"}
+                {query.lobby ? "Join" : "Create Room"}
             </Button>
         </form>
     </Form >
