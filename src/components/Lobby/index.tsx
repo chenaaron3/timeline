@@ -15,7 +15,7 @@ export const Lobby = () => {
 
     return (
         <Dialog open={lobbyOpen} onOpenChange={setLobbyOpen}>
-            <DialogContent>
+            <DialogContent onOpenAutoFocus={e => e.preventDefault()}>
                 {
                     !joinedLobby && <LobbyEntrance />
                 }

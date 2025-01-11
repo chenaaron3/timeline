@@ -34,7 +34,7 @@ export const Results = () => {
         }
     }, [deckName, deckSize])
 
-    return <div className='flex flex-col items-center justify-center w-full gap-5'>
+    return <div className='pointer-events-auto flex flex-col items-center justify-center w-full gap-5'>
         <div className='w-full text-2xl text-center sm:text-3xl'>
             <p>
 

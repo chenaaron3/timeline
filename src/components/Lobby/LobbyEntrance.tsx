@@ -127,7 +127,7 @@ export const LobbyEntrance = () => {
                 render={({ field }) => (
                     <FormItem>
                         <FormControl>
-                            <Input placeholder="Enter your name" {...field} />
+                            <Input autoFocus placeholder="Enter your name" {...field} />
                         </FormControl>
                         <FormMessage />
                     </FormItem>

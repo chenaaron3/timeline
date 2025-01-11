@@ -1,4 +1,4 @@
-import { Boxes, Menu as MenuIcon, PlusCircle, RotateCcw, Ruler, UserPlus2 } from 'lucide-react';
+import { Boxes, PlusCircle, RotateCcw, Ruler, Settings, UserPlus2 } from 'lucide-react';
 import { useEffect } from 'react';
 import {
     DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem, DropdownMenuLabel,
@@ -50,11 +50,11 @@ export function Menu() {
     }, []);
 
     return (
-        <div className='absolute flex gap-5 top-3 right-3 sm:static'>
+        <div className='fixed flex gap-5 bottom-5 left-5 flex-col sm:top-3 sm:right-3 sm:static'>
             <Feedback />
             <DropdownMenu>
                 <DropdownMenuTrigger>
-                    <MenuIcon />
+                    <Settings />
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="w-56">
                     <DropdownMenuLabel>Settings</DropdownMenuLabel>
