@@ -23,7 +23,6 @@ export const Feedback = () => {
     useEffect(() => {
         const inputElement = document.querySelector<HTMLElement>("#feedbackinput")
         if (inputElement) {
-            inputElement
             setTimeout(() => {
                 inputElement.blur()
                 inputElement.focus()
