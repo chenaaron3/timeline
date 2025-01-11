@@ -44,7 +44,7 @@ export const LobbyEntrance = () => {
     const [formSubmitted, setFormSubmitted] = useState(false)
 
     useEffect(() => {
-        const inputElement = document.querySelector("#lobbyinput") as HTMLElement
+        const inputElement = document.querySelector<HTMLElement>("#lobbyinput")
         if (inputElement) {
             setTimeout(() => {
                 inputElement.focus()
