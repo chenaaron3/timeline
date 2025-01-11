@@ -1,6 +1,6 @@
 import { Loader2 } from 'lucide-react';
 import { useRouter } from 'next/router';
-import { useCallback, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { toast } from 'sonner';
 import { string, z } from 'zod';
@@ -42,6 +42,15 @@ export const LobbyEntrance = () => {
 
     // Local State
     const [formSubmitted, setFormSubmitted] = useState(false)
+
+    useEffect(() => {
+        const inputElement = document.querySelector("input")
+        if (inputElement) {
+            setTimeout(() => {
+                inputElement.focus()
+            })
+        }
+    }, [])
 
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
@@ -124,14 +133,16 @@ export const LobbyEntrance = () => {
             <FormField
                 control={form.control}
                 name="displayName"
-                render={({ field }) => (
-                    <FormItem>
-                        <FormControl>
-                            <Input autoFocus placeholder="Enter your name" {...field} />
-                        </FormControl>
-                        <FormMessage />
-                    </FormItem>
-                )}
+                render={({ field }) => {
+                    return (
+                        <FormItem>
+                            <FormControl>
+                                <Input tabIndex={-1} autoFocus placeholder="Enter your name" {...field} />
+                            </FormControl>
+                            <FormMessage />
+                        </FormItem>
+                    )
+                }}
             />
 
             <Button type="submit">

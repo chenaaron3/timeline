@@ -47,3 +47,8 @@ yarn-error.log*
 
 # python virtual env
 venv/
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/

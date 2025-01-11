@@ -40,7 +40,7 @@ export const Feedback = () => {
         <PopoverTrigger asChild>
             <MessageCircleWarning />
         </PopoverTrigger>
-        <PopoverContent className="w-80">
+        <PopoverContent onOpenAutoFocus={e => e.preventDefault()} className="w-80">
             <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="">
                     <FormField
