@@ -58,11 +58,8 @@ export default function Page({ metadata, content }: PageProps) {
                                 const sections = chunk(sentences, 10)
                                 return <div className='mt-12 flex gap-12 shadow-lg rounded-xl p-12' key={e.id}>
                                     <div className='flex-1 flex justify-center items-center'>
-                                        <Image
-                                            className='rounded-3xl'
-                                            alt={e.imagePrompt}
-                                            src={e.image}
-                                        ></Image>
+                                        {/* eslint-disable-next-line */}
+                                        <Image className='rounded-3xl' alt={e.imagePrompt} src={e.image}></Image>
                                     </div>
                                     <div className='flex-[2] flex flex-col gap-5'>
                                         <h1 className='text-3xl'>{e.title} ({e.year})</h1>
