@@ -1,5 +1,18 @@
 # Timeline
 
+## Generating a New Deck
+
+1. Curate a custom list under /scripts/lists/{topic}.json. Change the topic under [constants](/scripts/constants.py)
+2. Run command to iterate on prompt. Remove sample once satisfied with output.
+   ```
+   python3 gen_cards_from_list.py --sample
+   ```
+3. Generate images and mapping.
+   ```
+   python3 gen_images.py && python3 gen_mapping.py
+   ```
+4. Add deck info to [constants](/src/utils/constants.tsx)
+
 ## What is Timeline?
 
 Timeline is a game I stumbled upon in a board game cafe at Toronto.
@@ -53,11 +66,6 @@ No one likes watching ads. Ads should not be placed everywhere and hinder the pl
 Additionally, players can have the option to create an account and buy card packs. Since this is an educational game, there can be card packs dedicated for history classes (APUSH, AP World History, AP European History). This will also remove ads.
 
 If I have time, I want to explore the option of affiliate marketing. Working with creators is a great way to expose your products. Having an affiliate program incentivises creators to promote your product.
-
-## Generating a New Deck
-
-1. Use the prompt below to generate a json file in the format deck_name.json
-2. Run the image generation script after editing the deck name
 
 ## AI Card Generation
 

@@ -1,14 +1,16 @@
-import { Earth, EarthLock, User } from 'lucide-react';
+import { Brain, Earth, EarthLock, User } from 'lucide-react';
 import OldWorldHistoryData from '~/data/old_world_history.json';
+import PhilosophersData from '~/data/philosophers.json';
 import USPresidents from '~/data/us_president_inaugurations.json';
 import WorldHistoryData from '~/data/world_history.json';
 import { IMAGE_MAP as oldWorldHistoryImageMap } from '~/generated/OldWorldHistoryImages';
+import { IMAGE_MAP as philosophersImageMap } from '~/generated/PhilosophersImages';
 import { IMAGE_MAP as usPresidentsImageMap } from '~/generated/UsPresidentInaugurationsImages';
 import { IMAGE_MAP as worldHistoryImageMap } from '~/generated/WorldHistoryImages';
 
 import { Events, ImageMap } from './types';
 
-export type DECK_NAMES = "world_history" | "old_world_history" | "us_presidents" | "NULL_DECK";
+export type DECK_NAMES = "world_history" | "old_world_history" | "us_presidents" | "philosophers" | "NULL_DECK";
 
 export interface DisplayDecks {
     id: DECK_NAMES;
@@ -48,6 +50,13 @@ export const DISPLAY_DECKS = [
         icon: <EarthLock />,
         imageMap: oldWorldHistoryImageMap,
         deckData: OldWorldHistoryData,
+    },
+    {
+        id: 'philosophers',
+        name: 'Philosophers',
+        icon: <Brain />,
+        imageMap: philosophersImageMap,
+        deckData: PhilosophersData,
     },
     {
         id: 'us_presidents',
