@@ -1,6 +1,7 @@
 from constants import DECK_NAME, ROOT_PATH, DATA_DIRECTORY_PATH, LIST_PATH
 from models import EventCollection
 from utils import snake_to_pascal
+import argparse
 from dotenv import load_dotenv
 from openai import OpenAI
 import os
@@ -32,6 +33,7 @@ def fetch_events(events):
     events_list = list_to_numbered_string(events)
     example_input = list_to_numbered_string(input_data["example_input"])
     example_output = json.dumps(input_data["example_output"], indent=4)
+    title =  input_data["title"] if "title" in input_data else ""
     description = input_data["description"]
     image_prompt = input_data["image_prompt"]
 
@@ -42,7 +44,7 @@ Compile a list of significant historical events based on the following list:
 Each JSON entry should be formatted as below. 
 {{
 id: string // Lowercase unique identifier derived from the title. Use underscores for spaces.
-title: string // Should be less than 30 characters. Do not include the year.
+title: string // Should be less than 30 characters. Do not include the year. {title}
 year: number // The year the event took place. If the event is BC, use a negative number.
 date: string // Formatted like May 29, 2024. Include BC but omit AD.
 country: string // The location of the event
@@ -83,6 +85,10 @@ def chunk_list(lst, chunk_size):
         yield lst[i:i + chunk_size]
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Generate card info from a curated list.")
+    parser.add_argument('--sample', action='store_true', help='Only generate a couple samples. Use for iterating on prompt and generating samples.')
+    args = parser.parse_args()
+
     all_events = []
     years = set()
 
@@ -91,8 +97,11 @@ if __name__ == "__main__":
     # Use ThreadPoolExecutor to parallelize the API calls
     with concurrent.futures.ThreadPoolExecutor() as executor:
         futures = []
-        for chunk in chunk_list(master_list, MAX_EVENTS_PER_PROMPT):
+        chunk_size = 3 if args.sample else MAX_EVENTS_PER_PROMPT
+        for chunk in chunk_list(master_list, chunk_size):
             futures.append(executor.submit(fetch_events, chunk))
+            if args.sample:
+                break
 
         for future in concurrent.futures.as_completed(futures):
             parsed_response = future.result()

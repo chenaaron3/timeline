@@ -1,6 +1,6 @@
 import os
 
-DECK_NAME = "us_president_inaugurations"
+DECK_NAME = "philosophers"
 
 # Root Directory Paths
 ROOT_PATH = os.path.abspath(os.path.join(__file__, "..", ".."))

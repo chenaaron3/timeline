@@ -1,0 +1,71 @@
+{
+    "list": [
+        "Aristotle",
+        "Plato",
+        "Socrates",
+        "Immanuel Kant",
+        "Rene Descartes",
+        "David Hume",
+        "Confucious",
+        "John Locke",
+        "Friedrich Nietzsche",
+        "Karl Marx",
+        "St. Thomas Aquinas",
+        "Ludwig Wittenstein",
+        "Epicurus",
+        "Soren Kierkegaard",
+        "Lao Tzu",
+        "Jean-Jacques Rousseau",
+        "Niccolo Machiavelli",
+        "Thomas Hobbes",
+        "Parmenides",
+        "Marcus Aurelius",
+        "Viktor Frankl",
+        "Epictetus",
+        "Buddha",
+        "Voltaire",
+        "John Calvin",
+        "Alfred Adler"
+    ],
+    "title": "The birth of the philosopher",
+    "description": "State their most well known or controversial ideologies. Give an interesting fun fact. Describe the impact of their work. End with a famous quote.",
+    "image_prompt": "Should be a portrait",
+    "example_input": [
+        "Aristotle",
+        "Plato",
+        "Socrates"
+    ],
+    "example_output": [
+        {
+            "id": "birth_of_socrates",
+            "title": "The Birth of Socrates",
+            "year": -470,
+            "date": "470 BC",
+            "country": "Greece",
+            "description": "Socrates, the father of Western philosophy, is born in Athens, Greece.",
+            "longDescription": "Born in 470 BC in Athens, Socrates is celebrated for establishing the Socratic method, an approach to problem-solving and critical thinking through questioning. He did not write down his teachings but influenced many through dialogues recorded by his disciples, notably Plato. Passionate about ethics and morality, Socrates believed in questioning one's life and values. An interesting fact about Socrates is his trial and execution for 'corrupting the youth,' which solidified his philosophy's enduring impact. He left behind a powerful legacy, expressed in his saying, 'The unexamined life is not worth living.'",
+            "imagePrompt": "A depiction of Socrates in classical Greek attire, engaged in dialogue in the vibrant streets of ancient Athens."
+        },
+        {
+            "id": "birth_of_plato",
+            "title": "The Birth of Plato",
+            "year": -427,
+            "date": "427 BC",
+            "country": "Greece",
+            "description": "Plato, a key figure in Western philosophy, is born in Athens.",
+            "longDescription": "Plato, born around 427 BC in Athens, Greece, was a student of Socrates and the teacher of Aristotle, forming a triad that shaped much of Western philosophy. His contributions include the 'Theory of Forms,' which suggests non-material abstract forms, and are more real than the material world. An interesting aspect of his philosophy is the 'Allegory of the Cave,' representing the philosopher's journey from ignorance to enlightenment. Plato founded the Academy, one of the earliest institutions of higher learning in the Western world. He famously said, 'The measure of a man is what he does with power.'",
+            "imagePrompt": "A portrayal of young Plato in Athens, surrounded by ancient Greek architecture, with a distant view of the Athenian skyline."
+        },
+        {
+            "id": "birth_of_aristotle",
+            "title": "The Birth of Aristotle",
+            "year": -384,
+            "date": "384 BC",
+            "country": "Greece",
+            "description": "Aristotle, a towering figure in ancient Greek philosophy, is born in Stagira, Greece.",
+            "longDescription": "Aristotle, born in 384 BC in Stagira, Greece, is one of the most influential philosophers of all time, introducing groundbreaking ideas in logic, metaphysics, and ethics. Known for his philosophical empiricism, he believed knowledge comes from experience, unlike his predecessors who trusted intuition. A student of Plato and teacher of Alexander the Great, Aristotle's works laid the foundation in many fields, from natural sciences to political theory. He argued the concept of 'syllogism' and emphasized the importance of reason, stating, 'Knowing yourself is the beginning of all wisdom.'",
+            "imagePrompt": "A portrait of young Aristotle in the ancient city of Stagira, surrounded by scrolls and the natural landscape of Greece."
+        }
+    ],
+    "image_model": "colonial-portrait-generator"
+}
