@@ -49,7 +49,7 @@ export const Feedback = () => {
                         render={({ field }) => (
                             <FormItem>
                                 <FormLabel>
-                                    <h4 className="font-medium leading-none">Feedback</h4>
+                                    <h4 className="font-medium leading-none">Got Feedback?</h4>
                                 </FormLabel>
                                 <FormControl>
                                     <Input placeholder="Deck suggestions or feature requests..." {...field} />

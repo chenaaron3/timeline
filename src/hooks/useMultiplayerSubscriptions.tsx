@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useGameStore, useMultiplayerStore } from '~/state';
-import { pusher } from '~/utils/pusher';
+import { getPusherClient } from '~/utils/pusher';
 import {
     BaseMessage, MessageTypes, OnGameStartedMessage, OnPlayerJoinMessage, SetInsertionIntentMessage,
     StageCardMessage
@@ -36,13 +36,13 @@ export const useMultiplayerSubscriptions = () => {
 
     // Unsubscribe from the channel when the component unmounts
     useEffect(() => {
-        // Multiplayer is only valid if both are present
+        console.log("Detected lobby change", lobbyID)
+        // Multiplayer is only valid if a lobbyID is present
         if (lobbyID == null) {
-            console.log("Detected lobby change", lobbyID)
             return;
         }
 
-        const newChannel = pusher.subscribe(lobbyID);
+        const newChannel = getPusherClient().subscribe(lobbyID);
         // Once subscription succeeds, can start sending messages
         newChannel.bind("pusher:subscription_succeeded", () => {
             console.log("Connected to channel!", lobbyID);

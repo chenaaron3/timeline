@@ -5,6 +5,7 @@ import {
     DropdownMenuPortal, DropdownMenuSeparator, DropdownMenuShortcut, DropdownMenuSub,
     DropdownMenuSubContent, DropdownMenuSubTrigger, DropdownMenuTrigger
 } from '~/components/ui/dropdown-menu';
+import { SimpleTooltip } from '~/components/ui/simple-tooltip';
 import { useGameStore, useMultiplayerStore } from '~/state';
 import { DECK_NAMES, DISPLAY_DECKS } from '~/utils/constants';
 
@@ -51,10 +52,14 @@ export function Menu() {
 
     return (
         <div className='fixed flex gap-5 bottom-5 left-5 flex-col sm:flex-row sm:top-3 sm:right-3 sm:static'>
-            <Feedback />
-            <div className='cursor-pointer' onClick={() => setLobbyOpen(true)}>
-                <UserPlus2 />
-            </div>
+            <SimpleTooltip description='Provide Feedback'>
+                <Feedback />
+            </SimpleTooltip>
+            <SimpleTooltip description='Multiplayer'>
+                <div className='cursor-pointer' onClick={() => setLobbyOpen(true)}>
+                    <UserPlus2 />
+                </div>
+            </SimpleTooltip>
             <DropdownMenu>
                 <DropdownMenuTrigger>
                     <Settings />

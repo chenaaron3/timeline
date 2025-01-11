@@ -114,7 +114,7 @@ export const LobbyEntrance = () => {
         <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col gap-3">
             <DialogHeader>
                 <DialogTitle>
-                    <span className='sm:text-2xl'>{query.lobby ? "Accept Invite" : "Invite Players"}</span>
+                    <span className='sm:text-2xl'>{query.lobby ? "Accept Invite" : "Play With Friends"}</span>
                 </DialogTitle>
                 <DialogDescription>
 

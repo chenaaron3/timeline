@@ -23,6 +23,12 @@ export const WaitingRoom: React.FC = () => {
     function handleCopyClipboard() {
         navigator.clipboard.writeText(lobbyLink).then(() => {
             toast.success("Copied to clipboard!");
+            if (navigator.share) {
+                void navigator.share({
+                    title: 'TimeShift Invite',
+                    url: lobbyLink
+                })
+            }
         }).catch((err) => {
             toast.error("Cannot copy to clipboard!");
         });

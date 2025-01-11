@@ -14,9 +14,9 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>TimeQuest</title>
+        <title>TimeShift</title>
         <meta name="description" content="Online multiplayer game to learn about history" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.ico" />
       </Head>
       <main className={GeistSans.className + " h-dvh w-dvw overscroll-none"}>
         <div className="h-full w-full overflow-hidden flex flex-col text-[--sub-text-color] bg-gradient-to-br from-[var(--sub-color)] to-[var(--sub-alt-color)]">
