@@ -1,5 +1,5 @@
 import { MessageCircleWarning } from 'lucide-react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { toast } from 'sonner';
 import { z } from 'zod';
@@ -19,6 +19,17 @@ const formSchema = z.object({
 export const Feedback = () => {
     const createFeedback = api.feedback.create.useMutation();
     const [open, setOpen] = useState(false);
+
+    useEffect(() => {
+        const inputElement = document.querySelector<HTMLElement>("#feedbackinput")
+        if (inputElement) {
+            inputElement
+            setTimeout(() => {
+                inputElement.blur()
+                inputElement.focus()
+            }, 250)
+        }
+    }, [])
 
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
@@ -52,7 +63,7 @@ export const Feedback = () => {
                                     <h4 className="font-medium leading-none">Feedback</h4>
                                 </FormLabel>
                                 <FormControl>
-                                    <Input placeholder="Deck suggestions or feature requests..." {...field} />
+                                    <Input id="feedbackinput" placeholder="Deck suggestions or feature requests..." {...field} />
                                 </FormControl>
                                 <FormMessage />
                             </FormItem>

@@ -47,6 +47,7 @@ export const LobbyEntrance = () => {
         const inputElement = document.querySelector<HTMLElement>("#lobbyinput")
         if (inputElement) {
             setTimeout(() => {
+                inputElement.blur()
                 inputElement.focus()
             }, 250)
         }
