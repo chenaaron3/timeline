@@ -7,7 +7,7 @@ import { string, z } from 'zod';
 import { Form, FormControl, FormField, FormItem, FormMessage } from '~/components/ui/form';
 import { useGameStore, useMultiplayerStore } from '~/state';
 import { api } from '~/utils/api';
-import { DECK_NAMES } from '~/utils/constants';
+import { DECK_NAMES } from '~/utils/deckCollection';
 import { generateUniqueID } from '~/utils/utils';
 
 import { zodResolver } from '@hookform/resolvers/zod';

@@ -1,5 +1,6 @@
 import { useGameStore } from '~/state';
 import { isGameComplete } from '~/state/game';
+import { DISPLAY_DECKS } from '~/utils/deckCollection';
 
 import { DroppableCard } from './DroppableCard';
 import { ShadowCard } from './ShadowCard';
@@ -12,12 +13,14 @@ export const Timeline: React.FC<TimelineProps> = ({
     incorrectCard
 }) => {
     const playedCards = useGameStore.use.playedCards();
+    const deckName = useGameStore.use.deckName();
     const gameComplete = useGameStore(isGameComplete);
     const discardedCards = useGameStore.use.discardedCards();
     const insertionIntent = useGameStore.use.insertionIntent();
 
     const fieldElements = [];
     if (!gameComplete) {
+        const deckData = DISPLAY_DECKS.find(d => d.id == deckName)
         // loop through player cards and add elements to fieldelements
         for (let i = 0; i < playedCards.length; i++) {
             const card = playedCards[i]!;
@@ -32,11 +35,27 @@ export const Timeline: React.FC<TimelineProps> = ({
             // Intent card should be identicle so they could intepolate smoothly
             // Tutorial cards need to be differentiated
             if (showTutorial || showPreshadow) {
-                fieldElements.push(<ShadowCard key={(showTutorial ? "pre" : "") + "shadow"} intent={showPreshadow} message={showTutorial ? "Before?" : ""} />)
+                let message = ""
+                if (showTutorial) {
+                    if (deckData?.comparisonType == "count") {
+                        message = "Less"
+                    } else {
+                        message = "Before"
+                    }
+                }
+                fieldElements.push(<ShadowCard key={(showTutorial ? "pre" : "") + "shadow"} intent={showPreshadow} message={message} />)
             }
             fieldElements.push(<DroppableCard incorrect={card.id == incorrectCard} key={card.id} cardID={card.id} />)
             if (showTutorial || showPostshadow) {
-                fieldElements.push(<ShadowCard key={(showTutorial ? "post" : "") + "shadow"} intent={showPostshadow} message={showTutorial ? "After?" : ""} />)
+                let message = ""
+                if (showTutorial) {
+                    if (deckData?.comparisonType == "count") {
+                        message = "More"
+                    } else {
+                        message = "After"
+                    }
+                }
+                fieldElements.push(<ShadowCard key={(showTutorial ? "post" : "") + "shadow"} intent={showPostshadow} message={message} />)
             }
         }
     } else {

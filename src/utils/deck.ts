@@ -1,4 +1,4 @@
-import { DECK_NAMES, DISPLAY_DECKS } from '~/utils/constants';
+import { DECK_NAMES, DISPLAY_DECKS } from '~/utils/deckCollection';
 import { areSetsEqual, setSubtract } from '~/utils/utils';
 
 import { Events, ImageMap } from '../utils/types';

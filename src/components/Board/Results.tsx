@@ -1,7 +1,7 @@
 import { RotateCcw } from 'lucide-react';
 import { useCallback, useEffect, useState } from 'react';
 import { useGameStore } from '~/state';
-import { DISPLAY_DECKS } from '~/utils/constants';
+import { DISPLAY_DECKS } from '~/utils/deckCollection';
 import { HighscoreCategory, Highscores } from '~/utils/types';
 import { formatSeconds, getUserData, saveHighScore } from '~/utils/utils';
 

@@ -20,6 +20,8 @@ export interface DisplayDecks {
     icon: React.ReactNode;
     imageMap?: ImageMap;
     deckData: Events;
+    instruction: string;
+    comparisonType: "date" | "count";
     // Blog Data should be SEO optimized
     blogData?: {
         title: string;
@@ -35,6 +37,8 @@ export const DISPLAY_DECKS = [
         icon: <Earth />,
         imageMap: worldHistoryImageMap,
         deckData: WorldHistoryData,
+        instruction: "Which historical event came first?",
+        comparisonType: "date",
         blogData: {
             title: "Most Significant World History Events",
             description: `Explore the pivotal moments in world history that shaped 
@@ -52,6 +56,8 @@ export const DISPLAY_DECKS = [
         icon: <EarthLock />,
         imageMap: oldWorldHistoryImageMap,
         deckData: OldWorldHistoryData,
+        instruction: "Which historical event came first?",
+        comparisonType: "date",
     },
     {
         id: 'philosophers',
@@ -59,6 +65,8 @@ export const DISPLAY_DECKS = [
         icon: <Brain />,
         imageMap: philosophersImageMap,
         deckData: PhilosophersData,
+        instruction: "Which Philosopher came first?",
+        comparisonType: "date",
     },
     {
         id: 'reddit_communities',
@@ -66,6 +74,8 @@ export const DISPLAY_DECKS = [
         icon: <UsersRound />,
         deckData: RedditCommunitesData,
         imageMap: redditCommunitiesImageMap,
+        instruction: "Which Subreddit has more subscribers?",
+        comparisonType: "count",
     },
     {
         id: 'us_presidents',
@@ -73,6 +83,8 @@ export const DISPLAY_DECKS = [
         icon: <User />,
         imageMap: usPresidentsImageMap,
         deckData: USPresidents,
+        instruction: "Which President served first?",
+        comparisonType: "date",
         blogData: {
             title: "List of US Presidents",
             description: `Discover a comprehensive list of all U.S. Presidents, 

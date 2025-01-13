@@ -57,8 +57,8 @@ test.describe("board setup", () => {
     await expect(timer).toHaveText(["0", "0", ":", "0", "0"]);
 
     // Playing Field
-    await expect(page.getByText("Before?")).toBeVisible();
-    await expect(page.getByText("After?")).toBeVisible();
+    await expect(page.getByText("Before")).toBeVisible();
+    await expect(page.getByText("After")).toBeVisible();
     await expect(page.getByText("The First Crusade")).toBeVisible();
     await expect(
       page.getByText("Gutenberg Invents Printing Press"),
@@ -68,8 +68,8 @@ test.describe("board setup", () => {
   test("details", async ({ page }) => {
     // Drag First Crusade before Printing Press
     page.getByText("Gutenberg Invents Printing Press").click();
-    // Modal shows up
-    await expect(page.locator("#details-modal")).toBeVisible();
+    // Modal shows up (disabled since its kind of annoying)
+    // await expect(page.locator("#details-modal")).toBeVisible();
   });
 
   test("correct card", async ({ page }) => {
@@ -152,7 +152,7 @@ test.describe("board setup", () => {
     await expect(restart).toBeVisible();
     await restart.click();
     // Game should have reset
-    await expect(page.getByText("Before?")).toBeVisible();
-    await expect(page.getByText("After?")).toBeVisible();
+    await expect(page.getByText("Before")).toBeVisible();
+    await expect(page.getByText("After")).toBeVisible();
   });
 });

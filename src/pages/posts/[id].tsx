@@ -3,8 +3,8 @@ import { chunk } from 'lodash';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import Image from 'next/image';
 import { useRef } from 'react';
-import { DECK_NAMES, DISPLAY_DECKS, DisplayDecks } from '~/utils/constants';
 import { getDeck } from '~/utils/deck';
+import { DECK_NAMES, DISPLAY_DECKS, DisplayDecks } from '~/utils/deckCollection';
 import { Event } from '~/utils/types';
 
 // Icons are not serializable, so remove it

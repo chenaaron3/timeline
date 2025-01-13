@@ -1,5 +1,8 @@
+import { CircleHelp } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import { toast } from 'sonner';
 import { useGameStore } from '~/state';
+import { DISPLAY_DECKS } from '~/utils/deckCollection';
 import { compareEvent } from '~/utils/utils';
 
 export const useGame = () => {
@@ -7,6 +10,7 @@ export const useGame = () => {
     const stagedCard = useGameStore((state) => state.stagedCard);
     const playedCards = useGameStore.use.playedCards();
     const discardedCards = useGameStore.use.discardedCards();
+    const deckName = useGameStore.use.deckName();
 
     // Mutators
     const playCard = useGameStore.use.playCard();
@@ -16,6 +20,18 @@ export const useGame = () => {
 
     // Local State
     const [incorrectMove, setIncorrectMove] = useState<boolean>(false);
+
+    useEffect(() => {
+        // Display welcome message
+        const deckData = DISPLAY_DECKS.find((deck) => deck.id === deckName)
+        if (deckData) {
+            toast(deckData.instruction, {
+                position: "top-center",
+                icon: <CircleHelp />,
+                richColors: true,
+            })
+        }
+    }, [deckName])
 
     // When a new card is placed, check if it is in the correct position
     useEffect(() => {

@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import { useGameStore, useMultiplayerStore } from '~/state';
-import { DECK_NAMES, DISPLAY_DECKS } from '~/utils/constants';
+import { DECK_NAMES, DISPLAY_DECKS } from '~/utils/deckCollection';
 
 export const useInitialize = () => {
     const router = useRouter();

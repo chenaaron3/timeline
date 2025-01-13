@@ -7,7 +7,7 @@ import {
 } from '~/components/ui/dropdown-menu';
 import { SimpleTooltip } from '~/components/ui/simple-tooltip';
 import { useGameStore, useMultiplayerStore } from '~/state';
-import { DECK_NAMES, DISPLAY_DECKS } from '~/utils/constants';
+import { DECK_NAMES, DISPLAY_DECKS } from '~/utils/deckCollection';
 
 import { Feedback } from './Feedback';
 

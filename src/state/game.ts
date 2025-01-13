@@ -1,8 +1,8 @@
 import { create } from 'zustand';
 import { subscribeWithSelector } from 'zustand/middleware';
 import { immer } from 'zustand/middleware/immer';
-import { DECK_NAMES } from '~/utils/constants';
 import { getDeck } from '~/utils/deck';
+import { DECK_NAMES } from '~/utils/deckCollection';
 import { shuffle } from '~/utils/utils';
 
 import { Event, Events } from '../utils/types';
