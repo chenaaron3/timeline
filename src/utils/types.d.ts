@@ -3,13 +3,13 @@ export type Events = Event[];
 export interface Event {
   id: string;
   title: string;
-  year: number;
-  date: string;
-  country: string;
+  rank: number;
   description: string;
   longDescription: string;
   imagePrompt: string;
-  image?: StaticImageData;
+  imageURL?: string;
+  // eslint-disable-next-line
+  image?: StaticImageData | string; // This is a derived column
   compareTo(other: Event): number;
 }
 

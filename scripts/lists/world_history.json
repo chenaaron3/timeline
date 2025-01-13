@@ -101,7 +101,7 @@
         {
             "id": "agricultural_revolution",
             "title": "The Agricultural Revolution",
-            "year": -11000,
+            "rank": -11000,
             "date": "11,000 BCE",
             "country": "Iraq",
             "description": "Humans begin to domesticate plants and animals.",
@@ -111,7 +111,7 @@
         {
             "id": "rise_roman_civilization",
             "title": "Rise of Ancient Roman Civilization",
-            "year": -509,
+            "rank": -509,
             "date": "509 BCE",
             "country": "Italy",
             "description": "Ancient Roman civilization begins with the establishment of the Republic.",
@@ -121,7 +121,7 @@
         {
             "id": "fall_roman_civilization",
             "title": "Fall of Ancient Roman Civilization",
-            "year": 476,
+            "rank": 476,
             "date": "476",
             "country": "Italy",
             "description": "The Western Roman Empire falls, marking the end of ancient Rome.",

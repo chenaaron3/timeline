@@ -5,6 +5,7 @@ import {
 import { Separator } from '~/components/ui/separator';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '~/components/ui/tooltip';
 import { useGameStore } from '~/state';
+import { prettyPrintNumber } from '~/utils/utils';
 
 import { Button } from '../ui/button';
 import { Typewriter } from './Typewriter';
@@ -25,18 +26,21 @@ export function Details() {
                     <DialogTitle>
                         <div className='sm:text-3xl'>
                             <span>{displayedCard.title}</span>
-                            <span className='ml-1'>({displayedCard.year})</span>
+                            <span className='ml-1'>({prettyPrintNumber(displayedCard.rank)})</span>
                         </div>
                     </DialogTitle>
                     <Separator />
                     <DialogDescription>
                         <div className='flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-10'>
-                            <div className='w-2/3 sm:w-1/2'>
+                            <div className='w-2/3 sm:w-1/2 flex justify-center items-center'>
                                 <TooltipProvider>
                                     <Tooltip>
                                         <TooltipTrigger asChild>
                                             {/* eslint-disable-next-line */}
-                                            <Image src={displayedCard.image} alt={displayedCard.title} className='rounded-3xl' />
+                                            <Image src={displayedCard.image}
+                                                alt={displayedCard.title}
+                                                className='rounded-3xl min-w-32 sm:min-w-64'
+                                            />
                                         </TooltipTrigger>
                                         <TooltipContent>
                                             <p>{displayedCard.imagePrompt}</p>
@@ -44,7 +48,7 @@ export function Details() {
                                     </Tooltip>
                                 </TooltipProvider>
                             </div>
-                            <div className='flex flex-col items-center justify-center h-48 sm:h-96 sm:w-1/2 sm:text-lg'>
+                            <div className='flex w-full flex-col items-center justify-center h-48 sm:h-96 sm:w-1/2 sm:text-lg'>
                                 <Typewriter shortText={displayedCard.description} longText={displayedCard.longDescription} />
                             </div>
                         </div>

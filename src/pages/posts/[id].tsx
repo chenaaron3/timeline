@@ -59,10 +59,13 @@ export default function Page({ metadata, content }: PageProps) {
                                 return <div className='mt-12 flex gap-12 shadow-lg rounded-xl p-12' key={e.id}>
                                     <div className='flex-1 flex justify-center items-center'>
                                         {/* eslint-disable-next-line */}
-                                        <Image className='rounded-3xl' alt={e.imagePrompt} src={e.image}></Image>
+                                        <Image src={e.image}
+                                            className='rounded-3xl'
+                                            alt={e.imagePrompt}
+                                        ></Image>
                                     </div>
                                     <div className='flex-[2] flex flex-col gap-5'>
-                                        <h1 className='text-3xl'>{e.title} ({e.year})</h1>
+                                        <h1 className='text-3xl'>{e.title} ({e.rank})</h1>
                                         {sections.map((section, sid) => <p key={e.id + sid}>
                                             {section.join(". ")}
                                         </p>)}
@@ -95,7 +98,7 @@ export const getStaticProps: GetStaticProps<PageProps> = async ({ params }) => {
     const id = params?.id as DECK_NAMES;
     const metadata = DISPLAY_DECKS.find(x => x.id == id)!;
     const content = getDeck(id)
-    content.sort(e => e.year)
+    content.sort(e => e.rank)
     const { icon, ...serializableMetadata } = metadata;
     return {
         props: {

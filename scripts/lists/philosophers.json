@@ -39,7 +39,7 @@
         {
             "id": "birth_of_socrates",
             "title": "The Birth of Socrates",
-            "year": -470,
+            "rank": -470,
             "date": "470 BC",
             "country": "Greece",
             "description": "Socrates, the father of Western philosophy, is born in Athens, Greece.",
@@ -49,7 +49,7 @@
         {
             "id": "birth_of_plato",
             "title": "The Birth of Plato",
-            "year": -427,
+            "rank": -427,
             "date": "427 BC",
             "country": "Greece",
             "description": "Plato, a key figure in Western philosophy, is born in Athens.",
@@ -59,7 +59,7 @@
         {
             "id": "birth_of_aristotle",
             "title": "The Birth of Aristotle",
-            "year": -384,
+            "rank": -384,
             "date": "384 BC",
             "country": "Greece",
             "description": "Aristotle, a towering figure in ancient Greek philosophy, is born in Stagira, Greece.",

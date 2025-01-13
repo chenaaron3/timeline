@@ -3,6 +3,7 @@ import Image from 'next/image';
 import React, { forwardRef, useEffect, useState } from 'react';
 import { useGameStore } from '~/state';
 import { useMediaQueries } from '~/utils/mediaQueries';
+import { prettyPrintNumber } from '~/utils/utils';
 
 import { TooltipProvider } from '@radix-ui/react-tooltip';
 
@@ -75,11 +76,15 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(
                 layout
             >
                 {props.children}
+
                 {/* eslint-disable-next-line */}
-                <Image src={card.image} alt={card.title} className='px-2 py-3 rounded-3xl' />
+                <Image src={card.image}
+                    alt={card.title}
+                    className='px-2 py-3 rounded-3xl w-full'
+                />
                 <div className='absolute flex flex-col items-center w-full text-center bottom-2 text-wrap '>
                     {showDate && <div className='z-10 flex items-center justify-center w-2/5 h-4 sm:h-6 m-auto text-sm sm:text-xl translate-y-1 bg-[var(--sub-error-color)] rounded-xl outline-[var(--accent-color)] outline-solid outline-1 outline'>
-                        <p className='w-full'>{card.year}</p>
+                        <p className='w-full'>{prettyPrintNumber(card.rank)}</p>
                     </div>
                     }
                     <div className='flex items-center justify-center w-5/6 h-8 sm:h-10 p-1 mx-auto mb-1 bg-[var(--sub-error-color)] shadow-sm rounded-3xl outline-[var(--accent-color)] outline-solid outline-1 outline shadow-black'>

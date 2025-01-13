@@ -2,9 +2,7 @@
     {
         "id": "agricultural_revolution",
         "title": "The Agricultural Revolution",
-        "year": -11000,
-        "date": "11,000 BCE",
-        "country": "Iraq",
+        "rank": -11000,
         "description": "Humans begin to domesticate plants and animals.",
         "longDescription": "The Agricultural Revolution marks a pivotal point in human history, as societies transitioned from nomadic lifestyles to settled agricultural communities. This period, spanning from approximately 11,000 to 4,000 BCE, saw the domestication of key crops like wheat and barley, as well as animals such as sheep and goats. This shift allowed for more stable food supplies, supporting population growth and the formation of complex societies. The consequences were profound, as agriculture laid the foundation for civilization, ultimately leading to advancements in technology, governance, and culture.",
         "imagePrompt": "A vibrant landscape of ancient farming with domesticated animals and early humans cultivating crops."
@@ -12,8 +10,7 @@
     {
         "id": "first_cities_mesopotamia",
         "title": "The First Cities Emerge",
-        "year": -4000,
-        "date": "4,000 BCE",
+        "rank": -4000,
         "country": "Iraq",
         "description": "Emergence of the first cities in Mesopotamia.",
         "longDescription": "Around 4,000 BCE, the landscape of Mesopotamia witnessed the rise of the earliest known cities, marking a significant shift from small agricultural settlements to complex urban centers. These cities, such as Uruk and Ur, became the cradles of civilization, introducing innovations in governance, architecture, and culture. These urban centers fostered trade, crafts, and social organization, laying significant foundations for contemporary cities.",
@@ -22,9 +19,7 @@
     {
         "id": "first_wheeled_vehicles",
         "title": "The First Wheeled Vehicles",
-        "year": -3500,
-        "date": "3,500 BCE",
-        "country": "Iraq",
+        "rank": -3500,
         "description": "Invention of wheeled vehicles in Mesopotamia.",
         "longDescription": "The advent of wheeled vehicles around 3,500 BCE in Mesopotamia revolutionized transport and trade. Initially used for pottery-making, the wheel's adaptation to transportation marked a technological leap that facilitated the movement of goods and people significantly. This advancement empowered societies to expand trade networks and improve agricultural techniques, shaping economic and social landscapes.",
         "imagePrompt": "An ancient Mesopotamian landscape with artisans making wheels and the first carts being pulled by oxen."
@@ -32,8 +27,7 @@
     {
         "id": "first_writing_systems",
         "title": "The First Writing Systems",
-        "year": -3200,
-        "date": "3,200 BCE",
+        "rank": -3200,
         "country": "Iraq",
         "description": "Development of early writing systems in Mesopotamia.",
         "longDescription": "The cradle of writing, Mesopotamia, witnessed the birth of cuneiform scripts around 3,200 BCE. Crafted by the Sumerians, these pictographic symbols were etched onto clay tablets, representing a monumental leap in record-keeping and communication. This innovation paved the way for advanced governance, literature, and historical records, profoundly impacting human societies forever.",
@@ -42,8 +36,7 @@
     {
         "id": "great_pyramid_of_giza",
         "title": "Great Pyramid Built",
-        "year": -2560,
-        "date": "2,560 BCE",
+        "rank": -2560,
         "country": "Egypt",
         "description": "Construction of the Great Pyramid of Giza.",
         "longDescription": "Completed around 2,560 BCE, the Great Pyramid of Giza stands as an enduring marvel of ancient architecture. Built as a tomb for Pharaoh Khufu, it showcases astonishing ingenuity in engineering and labor organization. The pyramid, part of a rich funerary complex, symbolizes Egypt's power and religious devotion, influencing architectural styles for centuries.",
@@ -52,8 +45,7 @@
     {
         "id": "modern_alphabet_origin",
         "title": "Origin of Modern Alphabets",
-        "year": -1800,
-        "date": "1,800 BCE",
+        "rank": -1800,
         "country": "Middle East",
         "description": "Development of early alphabetic systems.",
         "longDescription": "Emerging in the Middle East around 1,800 BCE, early alphabetic systems like the Phoenician alphabet drastically changed written communication. Simplifying the complex writing systems of the past, these innovations enabled widespread literacy and adaptation by numerous cultures, directly influencing the Greek, Latin, and modern alphabets, shaping languages globally.",
@@ -62,8 +54,7 @@
     {
         "id": "code_of_hammurabi",
         "title": "Code of Hammurabi Issued",
-        "year": -1754,
-        "date": "1,754 BCE",
+        "rank": -1754,
         "country": "Iraq",
         "description": "King Hammurabi issues one of the earliest legal codes.",
         "longDescription": "In 1,754 BCE, Babylonian King Hammurabi established one of the earliest and most comprehensive legal codes. Carved onto stele, these laws delineated justice and social order, covering various aspects of daily life. The Code of Hammurabi heralded a new era of structured governance and legal thought, influencing numerous subsequent legal systems.",
@@ -72,8 +63,7 @@
     {
         "id": "end_of_bronze_age",
         "title": "Bronze to Iron Age Transition",
-        "year": -1200,
-        "date": "1,200 BCE",
+        "rank": -1200,
         "country": "Middle East",
         "description": "The transition from the Bronze Age to the Iron Age.",
         "longDescription": "Around 1,200 BCE, technological advancements spread as societies across the Middle East transitioned from bronze to iron metallurgy. This shift, involving more accessible and durable iron tools, marked the dawn of the Iron Age, spurring agricultural productivity, warfare capabilities, and urban expansion, profoundly transforming ancient civilization's fabric.",
@@ -82,8 +72,7 @@
     {
         "id": "ancient_greek_civilization",
         "title": "Ancient Greek Civilization Rise",
-        "year": -800,
-        "date": "800 BCE",
+        "rank": -800,
         "country": "Greece",
         "description": "The rise of Ancient Greek civilization.",
         "longDescription": "Greeks' minor kingdoms and city-states flourished into a grand civilization around 800 BCE. Developments in philosophy, democracy, arts, and sciences imperfectly shaped Western thought. Greece's cultural, political, and military prowess echoes through ages, influencing politically-structured societies over centuries, culminating eventually in Roman absorption.",
@@ -92,8 +81,7 @@
     {
         "id": "life_of_buddha",
         "title": "The Life of the Buddha",
-        "year": -563,
-        "date": "563 BCE",
+        "rank": -563,
         "country": "India",
         "description": "Siddhartha Gautama's journey and founding of Buddhism.",
         "longDescription": "Born in 563 BCE, Siddhartha Gautama renounced luxury and ventured on a spiritual quest, attaining enlightenment under the Bodhi tree. Henceforth recognized as the Buddha, his teachings formed the bedrock of Buddhism, emphasizing the Middle Path, mindfulness, and compassion, influencing spiritual doctrines and practices worldwide.",
@@ -102,8 +90,7 @@
     {
         "id": "life_of_confucius",
         "title": "The Life of Confucius",
-        "year": -551,
-        "date": "551 BCE",
+        "rank": -551,
         "country": "China",
         "description": "Confucius' philosophical teachings ignite Confucianism.",
         "longDescription": "Confucius, born in 551 BCE, stands as one of ancient China's most influential philosophers. His teachings champion moral integrity, familial devotion, and social harmony. Confucianism, derived from his works, embedded deeply in Chinese society, continues shaping Asian cultural and ethical norms across millennia, impacting societies globally.",
@@ -112,8 +99,7 @@
     {
         "id": "rise_roman_civilization",
         "title": "Rise of Ancient Roman Civilization",
-        "year": -509,
-        "date": "509 BCE",
+        "rank": -509,
         "country": "Italy",
         "description": "Ancient Roman civilization begins with the establishment of the Republic.",
         "longDescription": "The rise of ancient Roman civilization officially began in 509 BCE with the overthrow of the last king, leading to the establishment of the Roman Republic. This pivotal transformation introduced a system of governance characterized by elected representatives and a complex constitution, fostering political stability and growth. Rome soon expanded through military conquests and strategic alliances, evolving into a dominant power in the Mediterranean, laying the groundwork for the eventual empire.",
@@ -122,8 +108,7 @@
     {
         "id": "empire_of_alexander_the_great",
         "title": "Alexander the Great's Empire",
-        "year": -336,
-        "date": "336 BCE",
+        "rank": -336,
         "country": "Macedonia",
         "description": "Alexander the Great's rapid expansion of empire.",
         "longDescription": "Ascending to the throne in 336 BCE, Alexander III of Macedon embarked on unparalleled conquests, forging a vast empire spanning from Greece to India. His campaigns disseminated Hellenistic culture, merging Eastern and Western influences, profoundly shaping ancient societies' political and cultural landscapes, leaving an enduring global legacy.",
@@ -132,8 +117,7 @@
     {
         "id": "end_greek_civilization",
         "title": "Fall of Greek Civilization",
-        "year": -146,
-        "date": "146 BCE",
+        "rank": -146,
         "country": "Greece",
         "description": "The fall of Ancient Greek civilization as Romans take control.",
         "longDescription": "In 146 BCE, the ancient Greek civilization succumbed to Roman conquest during the Battle of Corinth, transitioning power structures and integrating Greece within the vast Roman Empire. Despite this political dominance, Greek culture continued influencing arts, philosophy, and sciences, providing a rich heritage embedded in Roman civilization's foundations.",
@@ -142,8 +126,7 @@
     {
         "id": "birth_of_christianity",
         "title": "The Birth of Christianity",
-        "year": 4,
-        "date": "4 BCE",
+        "rank": 4,
         "country": "Palestine",
         "description": "The nativity of Jesus Christ and nascent Christianity.",
         "longDescription": "The birth of Jesus around 4 BCE heralded a new religious era as his teachings inspired the foundation of Christianity. His doctrines embraced love, compassion, and eternal salvation, spreading initially across the Roman Empire through disciples like Peter and Paul, profoundly impacting spiritual beliefs and ethics worldwide, leading to enduring legacies.",
@@ -152,8 +135,7 @@
     {
         "id": "modern_calendar_birth",
         "title": "Birth of the Modern Calendar",
-        "year": 46,
-        "date": "46 BCE",
+        "rank": 46,
         "country": "Italy",
         "description": "Julius Caesar introduces the Julian calendar.",
         "longDescription": "In 46 BCE, reforming Rome's chaotic calendar, Julius Caesar introduced the Julian calendar, offering a systematic approach to measuring time, featuring a 365-day year with an added leap day biennially. Simplifying keeping track of religious festivities and agricultural cycles, it laid the groundwork for the eventual creation of today's globally-utilized Gregorian calendar.",
@@ -162,8 +144,7 @@
     {
         "id": "unification_of_china",
         "title": "Unification of China",
-        "year": 221,
-        "date": "221 BCE",
+        "rank": 221,
         "country": "China",
         "description": "Unifying the Warring States under Emperor Qin Shi Huang.",
         "longDescription": "In 221 BCE, Emperor Qin Shi Huang became China's first sovereign emperor, unifying fragmentary states after prolonged warfare into one centralized empire. Implementing administrative reforms, standardizing metrics, and advancing infrastructure, this pivotal unification sculpted the imperial structure, leaving a significant imprint on China's further development.",
@@ -172,8 +153,7 @@
     {
         "id": "fall_roman_civilization",
         "title": "Fall of Ancient Roman Civilization",
-        "year": 476,
-        "date": "476",
+        "rank": 476,
         "country": "Italy",
         "description": "The Western Roman Empire falls, marking the end of ancient Rome.",
         "longDescription": "The fall of the Western Roman Empire in 476 CE marked the end of ancient Roman civilization as the last emperor was deposed by Germanic chieftain Odoacer. This event signified not only the collapse of imperial rule but also the fragmentation of political authority across Europe, leading to the Middle Ages. Despite the fall, the legacy of Roman law, culture, and engineering continued to shape European history for centuries to come.",
@@ -182,8 +162,7 @@
     {
         "id": "birth_of_islam",
         "title": "The Birth of Islam",
-        "year": 570,
-        "date": "570",
+        "rank": 570,
         "country": "Arabia",
         "description": "Birth of Prophet Muhammad who founded Islam.",
         "longDescription": "Prophet Muhammad, born in 570 CE in Mecca, founded Islam, receiving divine revelations later compiled into the Quran. Emphasizing monotheism, moral conduct, and social justice, Islam swiftly expanded, transforming societies across diverse cultures. It laid the foundation for an empire characterized by staunch beliefs, intellectual prosperity, and cultural enrichment.",
@@ -192,8 +171,7 @@
     {
         "id": "crowning_of_charlemagne",
         "title": "Pope Crowns Charlemagne",
-        "year": 800,
-        "date": "December 25, 800",
+        "rank": 800,
         "country": "Vatican City",
         "description": "Charlemagne is crowned Holy Roman Emperor by Pope Leo III.",
         "longDescription": "On December 25, 800 CE, Charlemagne, King of the Franks, was crowned as the first Holy Roman Emperor by Pope Leo III, intertwining the church and state. This coronation symbolized a renewed Roman Empire vision in Western Europe, fostering political stability while catalyzing the Carolingian Renaissance, an era of cultural and intellectual revival.",
@@ -202,8 +180,7 @@
     {
         "id": "invention_of_gunpowder",
         "title": "Invention of Gunpowder",
-        "year": 850,
-        "date": "850",
+        "rank": 850,
         "country": "China",
         "description": "Chinese invention of gunpowder affecting warfare.",
         "longDescription": "The invention of gunpowder in 9th-century China heralded a transformative era in weaponry and warfare. Initially used for fireworks, its military application brought unprecedented power to weapons like cannons and muskets. This shift altered siege tactics, influenced global conflicts, and contributed substantially to territorial and cultural shifts worldwide.",
@@ -212,8 +189,7 @@
     {
         "id": "norse_discovery_north_atlantic",
         "title": "Norse Colonize New Lands",
-        "year": 985,
-        "date": "985",
+        "rank": 985,
         "country": "Greenland",
         "description": "Norse explorers, including Erik the Red, colonize Greenland ere long North Atlantic explorations.",
         "longDescription": "With intrepid spirit, Norse explorers, led by figures such as Erik the Red, ventured across the North Atlantic, baptizing new realms and colonizing Greenland around 985 CE. Their voyages laid footstones for subsequent transatlantic discoveries, igniting exploration narratives and cultural exchanges influencing European interaction with the Americas.",
@@ -222,8 +198,7 @@
     {
         "id": "norman_conquest_england",
         "title": "Norman Conquest of England",
-        "year": 1066,
-        "date": "October 14, 1066",
+        "rank": 1066,
         "country": "England",
         "description": "The Normans defeat the Anglo-Saxons, changing the course of English history.",
         "longDescription": "The Norman Conquest of 1066 significantly altered the landscape of England as Duke William of Normandy defeated King Harold II at the Battle of Hastings. This conquest established Norman rule over England, bringing about profound changes in administration, cultural integration, and the clergy. Castles were built, towns were revamped, and the Feudal System entrenched. It's a pivotal chapter marking the end of Anglo-Saxon dominance and the beginning of a new era in English history.",
@@ -232,8 +207,7 @@
     {
         "id": "first_university_bologna",
         "title": "First University Established",
-        "year": 1088,
-        "date": "1088",
+        "rank": 1088,
         "country": "Italy",
         "description": "Bologna establishes the first university, pioneering higher education.",
         "longDescription": "In 1088, the University of Bologna was founded, laying the foundations for modern university education. Known as the oldest existing university, it specialized in law and attracted students from across Europe. This institution set a precedent for other universities by combining research and teaching, symbolizing the shift towards structured higher learning and intellectual pursuit. Bologna's establishment demonstrated the growing emphasis on education in medieval Europe.",
@@ -242,8 +216,7 @@
     {
         "id": "first_crusade",
         "title": "The First Crusade",
-        "year": 1096,
-        "date": "August 15, 1096",
+        "rank": 1096,
         "country": "Israel",
         "description": "Europeans launch a military expedition to reclaim the Holy Land from Muslim control.",
         "longDescription": "The First Crusade, beginning in 1096, was a significant military expedition by European Christians aimed at reclaiming Jerusalem and other sacred territories from Muslim rule. Endorsed by Pope Urban II, this campaign witnessed advances through Anatolia before culminating in the capture of Jerusalem in 1099. This crusade left lasting impacts on Christian-Muslim relations, marked cultural exchanges, and altered the geopolitical landscape of the medieval Mediterranean world.",
@@ -252,8 +225,7 @@
     {
         "id": "angkor_wat",
         "title": "Building of Angkor Wat",
-        "year": 1122,
-        "date": "1122",
+        "rank": 1122,
         "country": "Cambodia",
         "description": "King Suryavarman II constructs the magnificent Angkor Wat.",
         "longDescription": "Constructed during the reign of King Suryavarman II in the early 12th century, Angkor Wat is one of the largest religious monuments in the world. Originally built as a Hindu temple dedicated to Vishnu, it symbolizes the peak of Khmer architecture. Its intricate designs and grandeur reflect the power, wealth, and artistry of the Khmer Empire. Angkor Wat remains a symbol of Cambodia, showcasing its history and spiritual significance.",
@@ -262,8 +234,7 @@
     {
         "id": "overthrow_taira_emperor",
         "title": "Shogun Overthrows Emperor",
-        "year": 1185,
-        "date": "April 25, 1185",
+        "rank": 1185,
         "country": "Japan",
         "description": "Shogun Minamoto no Yorimoto overthrows the Taira Emperor, marking the beginning of the Kamakura Shogunate.",
         "longDescription": "In 1185, Minamoto no Yorimoto's decisive victory at the Battle of Dan-no-ura marked the end of the Taira clan's influence and established the Kamakura Shogunate. This pivotal power shift from imperial to feudal rule initiated Japan's samurai-dominated era, shaping the nation\u2019s administrative and military structure for centuries. Yorimoto\u2019s leadership deeply influenced the country's social and cultural landscape, setting a precedent for future governing systems.",
@@ -272,8 +243,7 @@
     {
         "id": "mongol_empire_genghis_khan",
         "title": "Mongol Empire Established",
-        "year": 1206,
-        "date": "1206",
+        "rank": 1206,
         "country": "Mongolia",
         "description": "Genghis Khan unites Mongolia, founding the vast Mongol Empire.",
         "longDescription": "In 1206, Temujin was proclaimed Genghis Khan, solidifying Mongolia's tribes into a cohesive empire. Under his leadership, the Mongol Empire rapidly expanded across Asia and into Europe, demonstrating unparalleled military tactics and administrative strategies. This forged an era of cultural exchange known as the Pax Mongolica, enhancing trade and communication along the Silk Road. Genghis Khan's legacy is pivotal in world history, forming the largest contiguous empire ever known.",
@@ -282,8 +252,7 @@
     {
         "id": "magna_charta_signed",
         "title": "Signing of the Magna Charta",
-        "year": 1215,
-        "date": "June 15, 1215",
+        "rank": 1215,
         "country": "England",
         "description": "English nobles compel King John to sign the Magna Charta.",
         "longDescription": "In 1215, facing rebellious barons, King John of England acceded to sign the Magna Charta at Runnymede. This seminal document sought to limit royal power and asserted the rights of the nobility, setting a foundational precedent for constitutional governance. The Magna Charta evolved into a symbol for liberty and justice, influencing legal systems across the globe and laying the groundwork for modern democracy.",
@@ -292,8 +261,7 @@
     {
         "id": "marco_polo_far_east",
         "title": "Tales of Marco Polo",
-        "year": 1298,
-        "date": "1298",
+        "rank": 1298,
         "country": "Italy",
         "description": "Marco Polo returns to Europe, sharing stories of the Far East.",
         "longDescription": "In 1298, Venetian explorer Marco Polo's experiences were compiled into 'The Travels of Marco Polo', unveiling the riches and wonders of the East. His narratives about China and the court of Kublai Khan fascinated Europe, inspiring interests in Asian trade and exploration. Polo's accounts contributed to the European Age of Exploration, enhancing intercultural exchanges and understanding in the centuries that followed.",
@@ -302,8 +270,7 @@
     {
         "id": "aztec_civilization",
         "title": "Aztec Civilization at Peak",
-        "year": 1325,
-        "date": "1325",
+        "rank": 1325,
         "country": "Mexico",
         "description": "The Aztec civilization begins flourishing as Tenochtitl\u00e1n is founded.",
         "longDescription": "The founding of Tenochtitl\u00e1n in 1325 marked the inception of the Aztec Empire, a powerful Mesoamerican civilization. The city became a cultural and economic hub, renowned for its intricate social order, grand architecture, and agricultural advancements. Despite its eventual decline due to Spanish conquest, the Aztecs made significant contributions to art, astronomy, and engineering, leaving an indelible impact on history and culture.",
@@ -312,8 +279,7 @@
     {
         "id": "black_death",
         "title": "The Black Death Plague",
-        "year": 1347,
-        "date": "1347",
+        "rank": 1347,
         "country": "Europe",
         "description": "The Black Death devastates Europe, killing millions and reshaping society.",
         "longDescription": "The Black Death, reaching Europe in 1347, was a catastrophic pandemic responsible for the deaths of millions, reducing Europe's population by a third. Spread by fleas on rats, the bubonic plague ravaged urban centers and rural communities alike, causing widespread economic and social upheaval. Its aftermath led to labor shortages, shifts in societal structures, and drastic changes in the Church's influence, arguably paving the way for the Renaissance.",
@@ -322,8 +288,7 @@
     {
         "id": "start_renaissance",
         "title": "Start of the Renaissance",
-        "year": 1400,
-        "date": "1400",
+        "rank": 1400,
         "country": "Italy",
         "description": "A renewed interest in art, culture, and science begins in Italy, sparking the Renaissance.",
         "longDescription": "The Renaissance, emerging in 1400 Italy, marked a revival of art, literature, and science inspired by Classical antiquity. A period of profound transformation, it saw great thinkers like Leonardo da Vinci and Michelangelo thrive, reshaping perceptions of humanity's place in the universe. Patronage from wealthy families, such as the Medici, fueled cultural pursuits. The Renaissance challenged medieval norms, lay a foundational stone for modern thought, and had enduring impacts across the globe.",
@@ -332,8 +297,7 @@
     {
         "id": "inca_empire",
         "title": "Incan Empire Created",
-        "year": 1438,
-        "date": "1438",
+        "rank": 1438,
         "country": "Peru",
         "description": "The Inca civilization begins its swift expansion across the Andean region.",
         "longDescription": "In 1438, under the leadership of Pachacuti, the Incan Empire began its territorial expansion, creating an extensive network across the Andes. Renowned for its sophisticated architecture, such as Machu Picchu, and innovative agricultural terraces, the Incas established a legacy of cultural richness. Even after Spanish conquest, the Incan achievements in engineering and governance continue to be celebrated for their complexity and foresight.",
@@ -342,8 +306,7 @@
     {
         "id": "gutenberg_printing_press",
         "title": "Gutenberg Invents Printing Press",
-        "year": 1440,
-        "date": "1440",
+        "rank": 1440,
         "country": "Germany",
         "description": "Johannes Gutenberg invents his printing press, revolutionizing the spread of information.",
         "longDescription": "Invented in 1440, Johannes Gutenberg's printing press transformed the dissemination of knowledge by enabling mass production of texts. This groundbreaking invention broke the Church's monopoly on information, paving the way for the Reformation, the Renaissance, and the Enlightenment. It democratized learning, leading to increased literacy, and improved communication. The advent of the printing press is often seen as the beginning of a cultural and informational revolution.",
@@ -352,8 +315,7 @@
     {
         "id": "ottoman_falls_constantinople",
         "title": "Ottoman Capture Constantinople",
-        "year": 1453,
-        "date": "May 29, 1453",
+        "rank": 1453,
         "country": "Turkey",
         "description": "The Ottoman Turks seize Constantinople, ending the Eastern Roman Empire.",
         "longDescription": "The fall of Constantinople in 1453 marked the end of the Eastern Roman Empire as it succumbed to the Ottoman Turks led by Sultan Mehmed II. This pivotal event signified a major shift in power and heralded the rise of the Ottoman Empire as a dominant force in southeastern Europe and the Middle East. The fall of this bastion of Christianity prompted a migration of Greek scholars to the West, aiding the dawn of the Renaissance in Europe.",
@@ -362,8 +324,7 @@
     {
         "id": "columbus_west_indies",
         "title": "Columbus Arrives in Americas",
-        "year": 1492,
-        "date": "October 12, 1492",
+        "rank": 1492,
         "country": "Bahamas",
         "description": "Christopher Columbus lands in the West Indies, claiming the land for Spain.",
         "longDescription": "On October 12, 1492, Christopher Columbus arrived in the present-day Bahamas, marking the onset of European exploration and colonization of the Americas. Under the patronage of Spanish monarchs Ferdinand and Isabella, Columbus aimed to find a new trade route to Asia, inadvertently opening the Americas to European economic interests. This epoch started a period of significant cultural exchange and conquest, reshaping the global socioeconomic landscape.",
@@ -372,8 +333,7 @@
     {
         "id": "vasco_da_gama_route_india",
         "title": "Vasco da Gama Reaches India",
-        "year": 1498,
-        "date": "May 20, 1498",
+        "rank": 1498,
         "country": "India",
         "description": "Portuguese navigator Vasco da Gama finds a new sea route to India.",
         "longDescription": "In 1498, Vasco da Gama's fleet became the first to sail directly from Europe to India, bypassing the Middle East by rounding the Cape of Good Hope. This epic journey strengthened Portugal's position in the spice trade and undercut the Venetian- and Arab-controlled routes, leading to an era of European maritime dominance. Da Gama's successful voyage propelled the Age of Discovery and ushered in a global age of exploration and trade.",
@@ -382,8 +342,7 @@
     {
         "id": "new_world_foods",
         "title": "New World Foods Introduced",
-        "year": 1500,
-        "date": "1500",
+        "rank": 1500,
         "country": "Europe",
         "description": "European explorers introduce new world crops like tomatoes, potatoes, and corn to Europe.",
         "longDescription": "In the early 1500s, following Columbus's expeditions, European explorers introduced a variety of crops from the Americas, including tomatoes, potatoes, corn, chocolate, and tobacco, to Europe. This exchange dramatically altered European diets, culinary practices, and agriculture. These crops became staples, transforming nutrition, economies, and lifestyles, contributing to population growth and cultural enrichment across the continent.",
@@ -392,8 +351,7 @@
     {
         "id": "luther_95_theses",
         "title": "Luther's 95 Theses",
-        "year": 1517,
-        "date": "October 31, 1517",
+        "rank": 1517,
         "country": "Germany",
         "description": "Martin Luther sparks the Protestant Reformation by publishing his 95 Theses.",
         "longDescription": "On October 31, 1517, Martin Luther's act of penning and possibly posting his 95 Theses on the door of the Wittenberg Church launched a seismic shift in Christian doctrine and church practices, known as the Protestant Reformation. Challenging the Catholic Church's teachings, Luther advocated for religious and clerical reforms. This movement diversified Christianity, reduced the Church's central power, and paved the way for religious freedoms and modern socio-political ideologies.",
@@ -402,8 +360,7 @@
     {
         "id": "slave_trade_americas",
         "title": "Start of Slave Trade in Americas",
-        "year": 1518,
-        "date": "1518",
+        "rank": 1518,
         "country": "Africa",
         "description": "Enslaved Africans began being forcibly transported to the Americas for labor.",
         "longDescription": "The year 1518 marks the onset of the transatlantic slave trade that forcibly relocated millions of Africans to the Americas over successive centuries. Driven by European colonial demands for labor in plantations and mines, this human tragedy had immense social, economic, and cultural impacts on both continents. The consequences included the devastation of African societies and the entrenchment of racial hierarchies in the New World that echoed through history.",
@@ -412,8 +369,7 @@
     {
         "id": "expansion_ottoman_suleiman",
         "title": "Suleiman's Reign Peak",
-        "year": 1520,
-        "date": "1520",
+        "rank": 1520,
         "country": "Turkey",
         "description": "Suleiman the Magnificent begins his influential reign, expanding the Ottoman Empire's reach.",
         "longDescription": "In 1520, Suleiman the Magnificent ascended to the throne, ruling the Ottoman Empire at its zenith. His reign saw the expansion into Europe, Arabia, and North Africa, fortifying the empire's status as a major power. Under his rule, arts and architecture flourished, heralding what would be renowned as the Ottoman Golden Age. Suleiman's military, legal, and cultural achievements laid enduring foundations for the empire's extensive legacy.",
@@ -422,8 +378,7 @@
     {
         "id": "magellans_expedition",
         "title": "Magellan's Expedition",
-        "year": 1522,
-        "date": "September 6, 1522",
+        "rank": 1522,
         "country": "Spain",
         "description": "Magellan's fleet completes the first circumnavigation of the globe.",
         "longDescription": "Ferdinand Magellan's expedition, although he himself did not survive the journey, became the first fleet to circumnavigate the globe. This monumental expedition started in 1519, aiming to find a western sea route to the Spice Islands. Despite numerous struggles including Magellan's death in the Philippines, his fleet, led by Juan Sebasti\u00e1n Elcano, managed to return to Spain in 1522. This historic journey proved the globe was round and set the stage for future global navigation routes.",
@@ -432,8 +387,7 @@
     {
         "id": "copernican_theory",
         "title": "Copernican Theory",
-        "year": 1543,
-        "date": "March 1, 1543",
+        "rank": 1543,
         "country": "Poland",
         "description": "Copernicus proposes a heliocentric model of the universe.",
         "longDescription": "In 1543, Polish astronomer Nicolaus Copernicus published 'On the Revolutions of the Celestial Spheres', a groundbreaking work that challenged the existing geocentric model. He proposed a heliocentric system where Earth and other planets revolved around the Sun. This revolutionary idea laid the foundation for modern astronomy, influencing key figures like Galileo and Kepler, and reshaping humanity's understanding of our place in the universe.",
@@ -442,8 +396,7 @@
     {
         "id": "defeat_spanish_armada",
         "title": "Defeat Spanish Armada",
-        "year": 1588,
-        "date": "August 8, 1588",
+        "rank": 1588,
         "country": "England",
         "description": "England defeats the Spanish Armada, preventing a Spanish invasion.",
         "longDescription": "In 1588, under Queen Elizabeth I's reign, England faced a formidable threat from Spain's grand fleet, the Spanish Armada. The Armada aimed to overthrow the Protestant queen and reinstate Catholicism. Through a combination of naval strategy, a series of storms, and smaller, more maneuverable English ships led by Sir Francis Drake, England repelled the Spanish forces. This victory solidified England as a dominant maritime power and marked the beginning of its global expansion.",
@@ -452,8 +405,7 @@
     {
         "id": "hamlet_written",
         "title": "Shakespeare Writes Hamlet",
-        "year": 1601,
-        "date": "January 1, 1601",
+        "rank": 1601,
         "country": "England",
         "description": "William Shakespeare writes the tragedy 'Hamlet'.",
         "longDescription": "In 1601, William Shakespeare penned one of his most enduring plays, 'Hamlet'. This tragedy explores themes of treachery, revenge, and moral corruption as it follows Prince Hamlet's quest for vengeance against his uncle, King Claudius. 'Hamlet' remains a profound exploration of the human psyche and is considered one of the greatest works in English literature, continuously performed and adapted worldwide.",
@@ -462,8 +414,7 @@
     {
         "id": "jamestown_settlement",
         "title": "Jamestown Settlement",
-        "year": 1607,
-        "date": "May 14, 1607",
+        "rank": 1607,
         "country": "United States",
         "description": "English colonists establish Jamestown as the first permanent settlement in America.",
         "longDescription": "In 1607, English colonists, motivated by potential wealth and expansion, established Jamestown in Virginia, marking the first permanent English settlement in the New World. Despite numerous hardships including disease, famine, and conflicts with Indigenous peoples, Jamestown survived and paved the way for later colonial expansion. It became a crucial foothold in America, influencing the cultural and political landscape of the United States.",
@@ -472,8 +423,7 @@
     {
         "id": "galileo_starry_messenger",
         "title": "Galileo's Starry Messenger",
-        "year": 1610,
-        "date": "March 12, 1610",
+        "rank": 1610,
         "country": "Italy",
         "description": "Galileo publishes 'The Starry Messenger', revealing his astronomical discoveries.",
         "longDescription": "In 1610, Galileo Galilei published 'The Starry Messenger', revealing his groundbreaking astronomical observations made using a telescope. He astonished the world with detailed descriptions of the Moon\u2019s surface, Jupiter\u2019s four largest moons, and countless stars previously unseen. His work challenged established astronomical doctrines and advanced the Copernican heliocentric model, although it faced eventual opposition from the Church.",
@@ -482,8 +432,7 @@
     {
         "id": "english_civil_war",
         "title": "English Civil War",
-        "year": 1642,
-        "date": "August 22, 1642",
+        "rank": 1642,
         "country": "England",
         "description": "A series of civil conflicts break out in England between Royalists and Parliamentarians.",
         "longDescription": "Beginning in 1642, England was engulfed in a series of civil wars between the Royalists, who supported King Charles I, and Parliamentarians, led by Oliver Cromwell. Rooted in religious and political disputes, the conflict ultimately led to the trial and execution of Charles I in 1649, the abolition of the monarchy, and a temporary republican government. The war fundamentally reshaped the political landscape of England, leading to constitutional reforms and reinforcing parliamentary power.",
@@ -492,8 +441,7 @@
     {
         "id": "taj_mahal_built",
         "title": "Taj Mahal Built",
-        "year": 1643,
-        "date": "January 1, 1643",
+        "rank": 1643,
         "country": "India",
         "description": "Mughal Emperor Shah Jahan commissions the construction of the Taj Mahal.",
         "longDescription": "Construction of the Taj Mahal began in 1643 under Mughal Emperor Shah Jahan, as a mausoleum in memory of his beloved wife Mumtaz Mahal. This ivory-white marble structure is considered an architectural marvel, representing the pinnacle of Mughal architecture and embodying themes of love and loss. Completed in 1653, the Taj Mahal stands as a UNESCO World Heritage Site, attracting millions of visitors worldwide, symbolizing India's rich cultural heritage.",
@@ -502,8 +450,7 @@
     {
         "id": "newtons_principia",
         "title": "Newton\u2019s Principia Mathematica",
-        "year": 1687,
-        "date": "July 5, 1687",
+        "rank": 1687,
         "country": "England",
         "description": "Isaac Newton publishes 'Principia Mathematica', laying the foundation for classical mechanics.",
         "longDescription": "In 1687, Isaac Newton published 'Philosophi\u00e6 Naturalis Principia Mathematica', a seminal work that laid down the laws of motion and universal gravitation. Newton\u2019s mathematical framework explained a wide range of physical phenomena, from the orbits of planets to the behavior of everyday objects on Earth, profoundly influencing the fields of physics and science. His principles remained the cornerstone of classical mechanics until the advent of relativity and quantum mechanics centuries later.",
@@ -512,8 +459,7 @@
     {
         "id": "steam_engine_invented",
         "title": "Steam Engine Invented",
-        "year": 1712,
-        "date": "January 1, 1712",
+        "rank": 1712,
         "country": "England",
         "description": "Thomas Newcomen develops the first practical steam engine, revolutionizing industry.",
         "longDescription": "In 1712, Thomas Newcomen developed the first practical steam engine, designed to pump water out of mines. Newcomen's engine laid the groundwork for future steam-powered inventions, fundamentally transforming industry by providing a new source of power independent of wind or water. This invention heralded the dawn of the Industrial Revolution, driving advancements in manufacturing, transportation, and economies around the world.",
@@ -522,8 +468,7 @@
     {
         "id": "communist_manifesto",
         "title": "The Communist Manifesto",
-        "year": 1848,
-        "date": "February 21, 1848",
+        "rank": 1848,
         "country": "Germany",
         "description": "Karl Marx and Friedrich Engels publish The Communist Manifesto.",
         "longDescription": "Published in 1848 by German philosophers Karl Marx and Friedrich Engels, The Communist Manifesto provided a foundational text for the Communist movement, advocating for the abolition of bourgeois property and the establishment of a classless, stateless society. This seminal work catalyzed various socialist movements worldwide, influencing revolutionary efforts in numerous countries by inspiring disenfranchised workers and intellectuals to pursue systemic change.",
@@ -532,8 +477,7 @@
     {
         "id": "origin_of_species",
         "title": "Origin of Species",
-        "year": 1859,
-        "date": "November 24, 1859",
+        "rank": 1859,
         "country": "United Kingdom",
         "description": "Charles Darwin publishes On the Origin of Species.",
         "longDescription": "On the Origin of Species, published in 1859 by English naturalist Charles Darwin, introduced the groundbreaking theory of evolution by natural selection. Arguing that species evolve over generations through inherited variations aiding survival, Darwin's work challenged existing scientific notions and religious teachings about life on earth. Despite controversy, the book laid the groundwork for modern biology, driving scientific inquiry and changing public perceptions about humanity\u2019s biological origins.",
@@ -542,8 +486,7 @@
     {
         "id": "american_civil_war_start",
         "title": "American Civil War Starts",
-        "year": 1861,
-        "date": "April 12, 1861",
+        "rank": 1861,
         "country": "United States",
         "description": "The American Civil War begins as Confederate forces attack Fort Sumter.",
         "longDescription": "The American Civil War began in 1861 when Confederate forces fired on Fort Sumter in South Carolina. Rooted primarily in disputes over slavery, states' rights, and secession, the conflict escalated into one of the deadliest wars in American history. It saw the Northern states, or the Union, clashing with the Southern, or Confederate states. The war transformed the American landscape, affecting millions socially, economically, and politically.",
@@ -552,8 +495,7 @@
     {
         "id": "american_civil_war_end",
         "title": "American Civil War Ends",
-        "year": 1865,
-        "date": "April 9, 1865",
+        "rank": 1865,
         "country": "United States",
         "description": "The American Civil War ends with the Confederate surrender at Appomattox.",
         "longDescription": "The surrender of Confederate General Robert E. Lee to Union General Ulysses S. Grant at Appomattox Court House in 1865 marked the end of the American Civil War. Culminating in the Union's victory, the war preserved the United States as a single, unified nation while resulting in the abolition of slavery. The aftermath saw the securing of civil rights for newly freed African Americans, although full equity remained an ongoing struggle.",
@@ -562,8 +504,7 @@
     {
         "id": "meiji_restoration",
         "title": "Meiji Restoration",
-        "year": 1868,
-        "date": "January 3, 1868",
+        "rank": 1868,
         "country": "Japan",
         "description": "The Meiji Restoration reinstates imperial rule in Japan, ending the Tokugawa Shogunate.",
         "longDescription": "In 1868, the Meiji Restoration began in Japan, a political revolution that dismantled the long-standing Tokugawa shogunate, restoring power to Emperor Meiji. This marked a period of rapid modernization and Westernization as Japan transitioned from a feudal system to a centralized state, spurring industrial growth and military expansion. The Meiji Restoration notably positioned Japan as a formidable global power, asserting its influence through regional conflicts and later world events.",
@@ -572,8 +513,7 @@
     {
         "id": "suez_canal_opening",
         "title": "Opening of Suez Canal",
-        "year": 1869,
-        "date": "November 17, 1869",
+        "rank": 1869,
         "country": "Egypt",
         "description": "The Suez Canal officially opens, transforming global maritime trade.",
         "longDescription": "The Suez Canal, completed in 1869 and connecting the Mediterranean Sea to the Red Sea, revolutionized global trade routes by allowing ships to bypass the lengthy journey around Africa. An engineering marvel of the period, the canal's opening under Egyptian and French collaboration marked a pivotal shift in international commerce, facilitating faster and more economical maritime shipping between Europe, Asia, and beyond. It significantly impacted global transportation and the geopolitical landscape.",
@@ -582,8 +522,7 @@
     {
         "id": "telephone_patent",
         "title": "Telephone Patented",
-        "year": 1876,
-        "date": "March 7, 1876",
+        "rank": 1876,
         "country": "United States",
         "description": "Alexander Graham Bell patents the telephone, a major communication breakthrough.",
         "longDescription": "In 1876, Alexander Graham Bell patented the telephone, transforming the way humans communicate by enabling voice transmission across distances. This invention marked a significant leap from traditional telegraphy, facilitating real-time interaction between individuals and laying the foundation for the vast telecommunication networks we rely on today. The telephone accelerated global connectivity and commerce, transforming social and business landscapes worldwide.",
@@ -592,8 +531,7 @@
     {
         "id": "scramble_for_africa",
         "title": "Colonization of Africa",
-        "year": 1885,
-        "date": "February 26, 1885",
+        "rank": 1885,
         "country": "Germany",
         "description": "European powers compete to colonize African territories during the Berlin Conference.",
         "longDescription": "The Berlin Conference of 1884-1885 codified the Scramble for Africa, where European powers divided Africa into colonies, disregarding cultural and ethnic boundaries. The industrial needs for resources and strategic expansion spurred colonial ambitions, leading to the imposition of European control over vast African landscapes. This era profoundly disrupted local societies, economies, and political structures, with legacies of exploitation and division that continue to affect the continent.",
@@ -602,8 +540,7 @@
     {
         "id": "women_suffrage",
         "title": "Women's Suffrage Movement",
-        "year": 1893,
-        "date": "September 19, 1893",
+        "rank": 1893,
         "country": "New Zealand",
         "description": "New Zealand becomes the first nation to grant women the right to vote.",
         "longDescription": "The women's suffrage movement achieved a monumental victory when New Zealand became the first nation to grant women the right to vote in 1893. Fueled by decades of activism, this breakthrough echoed globally, inspiring similar movements in other countries advocating for gender equality and women's rights, eventually leading to significant social and legislative advancements in numerous regions. The movement highlighted the power of collective action in challenging societal norms.",
@@ -612,8 +549,7 @@
     {
         "id": "invention_radio",
         "title": "Invention of Radio",
-        "year": 1895,
-        "date": "November 2, 1895",
+        "rank": 1895,
         "country": "Italy",
         "description": "Guglielmo Marconi demonstrates radio technology for the first time successfully.",
         "longDescription": "In 1895, Guglielmo Marconi demonstrated the first successful radio transmission, a revolutionary step in wireless communication. By proving that electromagnetic waves could be sent over long distances, the advent of radio paved the way for broadcasting and mass communication industries, shrinking perceived distances by connecting people across the globe. The radio transformed access to information and entertainment, influencing culture and societal dynamics profoundly.",
@@ -622,8 +558,7 @@
     {
         "id": "first_powered_flight",
         "title": "First Powered Flight",
-        "year": 1903,
-        "date": "December 17, 1903",
+        "rank": 1903,
         "country": "United States",
         "description": "The Wright brothers achieve the first controlled, sustained flight of a powered aircraft.",
         "longDescription": "On December 17, 1903, Orville and Wilbur Wright successfully achieved the first controlled and sustained flight of a powered, heavier-than-air aircraft at Kitty Hawk, North Carolina. This pioneering milestone, characterized by a flight lasting just 12 seconds over 120 feet, heralded the dawn of aviation. It marked a transformative moment in transportation history, eventually leading to modern aviation and changing perceptions of distance and global connectivity.",
@@ -632,8 +567,7 @@
     {
         "id": "russo_japanese_war",
         "title": "Russo-Japanese War Ends",
-        "year": 1905,
-        "date": "September 5, 1905",
+        "rank": 1905,
         "country": "Japan",
         "description": "Japan's victory in the Russo-Japanese War establishes it as a global power.",
         "longDescription": "The Russo-Japanese War ended in 1905 with Japan's decisive victory over Russia, dramatically altering perceptions of a non-Western nation capable of defeating a European power. Demonstrating modern military strength and strategy, Japan's win at battles like Tsushima heralded its emergence as a formidable world power, with significant geopolitical implications in East Asia and beyond. This success catalyzed further Japanese expansionism and global influence in the early 20th century.",
@@ -642,8 +576,7 @@
     {
         "id": "ww1_start",
         "title": "World War I Begins",
-        "year": 1914,
-        "date": "July 28, 1914",
+        "rank": 1914,
         "country": "Serbia",
         "description": "World War I erupts following the assassination of Archduke Franz Ferdinand.",
         "longDescription": "The assassination of Archduke Franz Ferdinand in Sarajevo on June 28, 1914, triggered a series of diplomatic crises, culminating in the outbreak of World War I as Austro-Hungary declared war on Serbia. This quickly spiraled into a global conflict involving many of the world's great powers due to a complex web of alliances. The war drastically altered political borders and societies, initiating major shifts in global power structures and precipitating significant technological and medical advancements.",
@@ -652,8 +585,7 @@
     {
         "id": "russian_revolution",
         "title": "The Russian Revolution",
-        "year": 1917,
-        "date": "October 25, 1917",
+        "rank": 1917,
         "country": "Russia",
         "description": "The Bolsheviks overthrow the Provisional Government, initiating the Communist regime.",
         "longDescription": "The Russian Revolution of 1917 saw the Bolsheviks, led by Vladimir Lenin, seize control from the Provisional Government in a coup known as the October Revolution. This marked the beginning of Communist rule in Russia, leading to the abolition of the monarchy, the establishment of the Soviet Union, and radical socio-political changes. The revolution inspired a worldwide spread of communist ideologies, deeply influencing global political trends and inciting future conflicts tied to ideological divisions.",
@@ -662,8 +594,7 @@
     {
         "id": "ww1_end",
         "title": "World War I Ends",
-        "year": 1918,
-        "date": "November 11, 1918",
+        "rank": 1918,
         "country": "France",
         "description": "Armistice signed to end World War I, leading to significant geopolitical changes.",
         "longDescription": "World War I ended with the signing of the Armistice on November 11, 1918, near Compi\u00e8gne, France. The cessation of hostilities concluded one of history's deadliest conflicts, which claimed millions of lives and left vast swathes of Europe devastated. The war's end led to significant geopolitical shifts, the dissolution of empires, and the redrawing of national boundaries. The Treaty of Versailles and its terms sowed seeds of future conflicts and geopolitical tensions.",
@@ -672,8 +603,7 @@
     {
         "id": "television_invention",
         "title": "Invention of Television",
-        "year": 1927,
-        "date": "September 7, 1927",
+        "rank": 1927,
         "country": "United States",
         "description": "The first successful television transmission revolutionizes mass media consumption.",
         "longDescription": "The invention of television marks a landmark achievement in technology and media. In 1927, Philo Farnsworth demonstrated the first fully electronic television system, setting the stage for a new era of information dissemination and entertainment. Television transformed public access to visual media, influencing cultural narratives and shaping societal perspectives on a global scale, with its impact enduring through modern digital and broadcast platforms.",
@@ -682,8 +612,7 @@
     {
         "id": "stock_market_crash",
         "title": "Black Tuesday",
-        "year": 1929,
-        "date": "October 29, 1929",
+        "rank": 1929,
         "country": "United States",
         "description": "Black Tuesday leads to a severe economic depression worldwide.",
         "longDescription": "On October 29, 1929, known as Black Tuesday, the U.S. stock market crash triggered a global economic depression that lasted over a decade. The crash, marked by a systemic financial collapse, eroded wealth, caused massive unemployment, and led to widespread poverty. The Great Depression reshaped economic policy worldwide, leading to significant government interventions in economies and laying the groundwork for future regulatory standards and welfare systems.",
@@ -692,8 +621,7 @@
     {
         "id": "rise_of_hitler",
         "title": "Rise of Adolf Hitler",
-        "year": 1933,
-        "date": "January 30, 1933",
+        "rank": 1933,
         "country": "Germany",
         "description": "Adolf Hitler becomes Chancellor of Germany, beginning Nazi rule.",
         "longDescription": "Adolf Hitler's appointment as Chancellor in 1933 marks the beginning of Nazi rule in Germany. Under Hitler's leadership, the Weimar Republic transformed into a totalitarian regime, with an aggressive nationalist agenda leading to expansionist policies and the persecution of minority groups. Hitler\u2019s rise significantly contributed to the onset of World War II, drastically impacting global history with policies that induced widespread war and suffering during the mid-20th century.",
@@ -702,8 +630,7 @@
     {
         "id": "ww2_start",
         "title": "World War II Begins",
-        "year": 1939,
-        "date": "September 1, 1939",
+        "rank": 1939,
         "country": "Poland",
         "description": "World War II begins with the invasion of Poland by Germany.",
         "longDescription": "World War II commenced on September 1, 1939, when Nazi Germany invaded Poland, prompting Britain and France to declare war. Triggered by ideological ambitions for territorial expansion and racial domination, this conflict grew to engulf major world powers across Europe, Asia, and the Americas. WWII resulted in unprecedented military engagements, technological advancements, and catastrophic human tolls, reshaping global politics and economies.",
@@ -712,8 +639,7 @@
     {
         "id": "ww2_end",
         "title": "World War II Ends",
-        "year": 1945,
-        "date": "September 2, 1945",
+        "rank": 1945,
         "country": "Japan",
         "description": "Japan surrenders to the Allied Forces, concluding World War II.",
         "longDescription": "The surrender of Japan on September 2, 1945, aboard the USS Missouri in Tokyo Bay marked the official end of World War II. Culminating in catastrophic destruction, especially in the wake of atomic bombings, WWII concluded with Allied victory. The war's end led to the establishment of the United Nations and began the division of geopolitical spheres of influence, setting the stage for the Cold War and lasting global realignments.",
@@ -722,8 +648,7 @@
     {
         "id": "invention_digital_computer",
         "title": "Invention of Digital Computer",
-        "year": 1946,
-        "date": "February 14, 1946",
+        "rank": 1946,
         "country": "United States",
         "description": "The creation of the ENIAC, the first general-purpose digital electronic computer.",
         "longDescription": "The ENIAC (Electronic Numerical Integrator and Computer), developed in 1946, was the first general-purpose digital electronic computer able to solve a range of complex calculations swiftly. Originally built for military applications, its capabilities paved the way for modern computing, leading to the development of increasingly advanced processors and forming the basis of today's digital infrastructures. ENIAC heralded technological revolutions enhancing businesses and societal interactions.",
@@ -732,8 +657,7 @@
     {
         "id": "india_independence",
         "title": "India's Independence",
-        "year": 1947,
-        "date": "August 15, 1947",
+        "rank": 1947,
         "country": "India",
         "description": "India achieves independence from British rule.",
         "longDescription": "On August 15, 1947, India declared independence from British colonial rule, ending nearly two centuries of governance by the British Empire. This significant event followed a prolonged struggle for freedom led by key figures like Mahatma Gandhi and Jawaharlal Nehru. The independence movement utilized non-violent resistance and civil disobedience to successfully challenge British authority, ultimately leading to the enactment of the Indian Independence Act. Independence marked a new era of sovereignty and self-determination for India, influencing decolonization efforts globally.",
@@ -742,8 +666,7 @@
     {
         "id": "discovery_dna_structure",
         "title": "Discovery of DNA Structure",
-        "year": 1953,
-        "date": "February 28, 1953",
+        "rank": 1953,
         "country": "United Kingdom",
         "description": "The double helical structure of DNA is discovered.",
         "longDescription": "In 1953, James Watson and Francis Crick identified the double helical structure of DNA, revolutionizing biological sciences. This groundbreaking discovery illuminated the understanding of genetic material and its role in heredity. With the support of Rosalind Franklin's X-ray diffraction images, Watson and Crick developed a model that explained how DNA replicates and transmits genetic information. Their work laid the foundation for the field of molecular biology and has had profound impacts on medical research, genetics, and biotechnology.",
@@ -752,8 +675,7 @@
     {
         "id": "soviet_launches_sputnik",
         "title": "Soviet Launches Sputnik",
-        "year": 1957,
-        "date": "October 4, 1957",
+        "rank": 1957,
         "country": "Soviet Union",
         "description": "The USSR launches Sputnik, the first man-made satellite.",
         "longDescription": "On October 4, 1957, the Soviet Union launched Sputnik, the world's first artificial satellite, into Earth's orbit. This event marked the dawn of the Space Age and showcased Soviet advancements during the Cold War. Sputnik's successful launch and subsequent orbits presented a technological triumph that spurred the United States to intensify its own space exploration efforts, ultimately leading to the establishment of NASA. Sputnik's impact extended beyond science, influencing global politics, education, and international competition.",
@@ -762,8 +684,7 @@
     {
         "id": "fda_approves_contraceptive_pill",
         "title": "FDA Approves First Pill",
-        "year": 1960,
-        "date": "May 9, 1960",
+        "rank": 1960,
         "country": "United States",
         "description": "The FDA approves the first contraceptive pill for public use.",
         "longDescription": "In 1960, the Food and Drug Administration (FDA) approved Enovid, the first oral contraceptive pill, catalyzing a revolution in reproductive health. The pill offered women newfound control over their reproductive rights and played a crucial role in the feminist movement, promoting discussions about sexual freedom, family planning, and gender equality. Its availability altered societal attitudes towards female autonomy, relationships, and the institution of marriage, leaving a lasting impact on subsequent generations.",
@@ -772,8 +693,7 @@
     {
         "id": "kennedy_assassination",
         "title": "Kennedy's Assassination",
-        "year": 1963,
-        "date": "November 22, 1963",
+        "rank": 1963,
         "country": "United States",
         "description": "President John F. Kennedy is assassinated in Dallas, Texas.",
         "longDescription": "On November 22, 1963, President John F. Kennedy was assassinated while riding in a motorcade in Dallas, Texas. His assassination shocked the nation, casting a shadow over the American presidency and sparking numerous conspiracy theories. Kennedy, known for his inspirational speeches and ambitious vision for America, left a legacy highlighted by civil rights advancements and space exploration goals. His death marked a pivotal moment in American history, influencing political and social landscapes.",
@@ -782,8 +702,7 @@
     {
         "id": "us_enters_vietnam_war",
         "title": "US Enters Vietnam War",
-        "year": 1965,
-        "date": "March 8, 1965",
+        "rank": 1965,
         "country": "Vietnam",
         "description": "The US officially enters the Vietnam War with combat troops.",
         "longDescription": "In 1965, the United States formally entered the Vietnam War by deploying combat troops to battle the communist forces in Vietnam. This escalation followed years of American military aid and advisory support to South Vietnam amidst fears of communism spreading in Southeast Asia. The involvement intensified under the Gulf of Tonkin Resolution, resulting in a protracted, controversial conflict that lasted until 1975. The Vietnam War significantly impacted American foreign policy, military strategy, and domestic public opinion, leading to widespread anti-war protests.",
@@ -792,8 +711,7 @@
     {
         "id": "mlk_assassination",
         "title": "MLK Jr. Assassination",
-        "year": 1968,
-        "date": "April 4, 1968",
+        "rank": 1968,
         "country": "United States",
         "description": "Martin Luther King, Jr. is assassinated in Memphis.",
         "longDescription": "On April 4, 1968, civil rights leader Martin Luther King Jr. was assassinated in Memphis, Tennessee. King, renowned for his leadership in non-violent activism for racial equality, was in Memphis to support a sanitation workers' strike. His untimely death was a significant blow to the Civil Rights Movement, igniting riots and protests throughout the nation. Although King's life was cut short, his legacy endures as a symbol of justice and equality, inspiring subsequent movements for social change.",
@@ -802,8 +720,7 @@
     {
         "id": "apollo11_landing",
         "title": "Apollo 11 Moon Landing",
-        "year": 1969,
-        "date": "July 20, 1969",
+        "rank": 1969,
         "country": "United States",
         "description": "Apollo 11 astronauts land on the Moon.",
         "longDescription": "In 1969, NASA's Apollo 11 mission culminated in astronauts Neil Armstrong and Buzz Aldrin becoming the first humans to set foot on the Moon. Commanded by Michael Collins, the mission fulfilled President Kennedy's commitment to reaching the lunar surface before the decade's end. The historic landing captured global attention as Armstrong declared, \"That's one small step for man, one giant leap for mankind.\" The accomplishment exemplified human ingenuity, advancing scientific discovery and space exploration initiatives.",
@@ -812,8 +729,7 @@
     {
         "id": "birth_of_internet",
         "title": "Birth of the Internet",
-        "year": 1983,
-        "date": "January 1, 1983",
+        "rank": 1983,
         "country": "United States",
         "description": "The internet emerges with the adoption of TCP/IP protocols.",
         "longDescription": "On January 1, 1983, the National Science Foundation Network (NSFNET) implemented TCP/IP (Transmission Control Protocol/Internet Protocol), heralding the birth of the modern internet. Designed to enable computers to communicate efficiently across various networks, TCP/IP constructed the foundation for global connectivity. This innovation revolutionized communication, information sharing, commerce, and entertainment, transforming everyday life and heralding the Information Age.",
@@ -822,8 +738,7 @@
     {
         "id": "911_attacks",
         "title": "9/11 Terrorist Attacks",
-        "year": 2001,
-        "date": "September 11, 2001",
+        "rank": 2001,
         "country": "United States",
         "description": "Terrorists attack New York City, leading to widespread devastation.",
         "longDescription": "On September 11, 2001, Al Qaeda terrorists hijacked four airplanes, crashing two into the World Trade Center in New York City and one into the Pentagon. The fourth plane crashed in Pennsylvania following passenger intervention. The attacks resulted in nearly 3,000 deaths and profound destruction, ushering in a new era of security and counterterrorism. Internationally, they led to the U.S.-led War on Terror, significantly impacting global geopolitics, international relations, and domestic security measures worldwide.",

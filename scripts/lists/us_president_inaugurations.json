@@ -59,7 +59,7 @@
         {
             "id": "william_mckinley",
             "title": "William McKinley",
-            "year": 1897,
+            "rank": 1897,
             "date": "March 4, 1897",
             "country": "United States",
             "description": "William McKinley is inaugurated as the 25th President of the United States.",
@@ -69,7 +69,7 @@
         {
             "id": "theodore_roosevelt",
             "title": "Theodore Roosevelt",
-            "year": 1901,
+            "rank": 1901,
             "date": "September 14, 1901",
             "country": "United States",
             "description": "Theodore Roosevelt becomes the 26th President after McKinley's assassination.",
@@ -79,7 +79,7 @@
         {
             "id": "william_howard_taft",
             "title": "William Howard Taft",
-            "year": 1909,
+            "rank": 1909,
             "date": "March 4, 1909",
             "country": "United States",
             "description": "William Howard Taft takes office as the 27th President of the United States.",

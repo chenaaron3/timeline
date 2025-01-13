@@ -55,7 +55,7 @@ export const useGame = () => {
             const lastDiscarded = discardedCards[discardedCards.length - 1];
             if (lastDiscarded) {
                 setTimeout(() => {
-                    learnCard(lastDiscarded.id);
+                    // learnCard(lastDiscarded.id);
                     drawCard();
                 }, 500)
             }

@@ -43,7 +43,7 @@ export const Timeline: React.FC<TimelineProps> = ({
         // Show discarded as well as played cards, sort them
         const allCards = [...playedCards, ...discardedCards];
         const incorrectCards = new Set(discardedCards.map((c) => c.id));
-        allCards.sort((a, b) => a.year - b.year);
+        allCards.sort((a, b) => a.rank - b.rank);
         for (const card of allCards) {
             fieldElements.push(<DroppableCard key={card.id} cardID={card.id} incorrect={incorrectCards.has(card.id)} />)
         }

@@ -79,7 +79,7 @@ const initGame = (state: GameState, deckDraws = 1) => {
   for (let i = 0; i < deckDraws; i++) {
     state.playedCards.push(sampledDeck.pop()!);
   }
-  state.playedCards.sort((a, b) => a.year - b.year);
+  state.playedCards.sort((a, b) => a.rank - b.rank);
   state.discardedCards = [];
   state.deck = sampledDeck;
   state.time = 0;

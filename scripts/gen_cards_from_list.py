@@ -2,20 +2,11 @@ from constants import DECK_NAME, ROOT_PATH, DATA_DIRECTORY_PATH, LIST_PATH
 from models import EventCollection
 from utils import snake_to_pascal
 import argparse
-from dotenv import load_dotenv
-from openai import OpenAI
 import os
 import json
 import concurrent.futures
 import time
-
-# Load variables from .env file
-load_dotenv(
-    dotenv_path=os.path.join(ROOT_PATH, ".env")
-)
-client = OpenAI(
-    api_key=os.getenv("OPENAI_API_KEY")
-)
+from llm import client
 
 # constants
 model = 'gpt-4o' # 'gpt-4o-mini' for cheaper
@@ -45,9 +36,7 @@ Each JSON entry should be formatted as below.
 {{
 id: string // Lowercase unique identifier derived from the title. Use underscores for spaces.
 title: string // Should be less than 30 characters. Do not include the year. {title}
-year: number // The year the event took place. If the event is BC, use a negative number.
-date: string // Formatted like May 29, 2024. Include BC but omit AD.
-country: string // The location of the event
+rank: number // The year the event took place. If the event is BC, use a negative number.
 description: string // A short 1 sentence description about the event.
 longDescription: string // A longer 1 paragraph description about the event. {description}
 imagePrompt: string // A descriptive prompt used for an image generation model to depict the event. {image_prompt}
@@ -79,11 +68,6 @@ Output:
     parsed_response = EventCollection.model_validate_json(raw_response)
     return parsed_response
 
-# splits a list into chunks
-def chunk_list(lst, chunk_size):
-    for i in range(0, len(lst), chunk_size):
-        yield lst[i:i + chunk_size]
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate card info from a curated list.")
     parser.add_argument('--sample', action='store_true', help='Only generate a couple samples. Use for iterating on prompt and generating samples.')
@@ -107,13 +91,13 @@ if __name__ == "__main__":
             parsed_response = future.result()
             for event in parsed_response.events:
                 # Do not include duplicate events
-                if event.year in years:
-                    print(f"Duplicate year found: {event.year}")
+                if event.rank in years:
+                    print(f"Duplicate year found: {event.rank}")
                 else:
-                    years.add(event.year)
+                    years.add(event.rank)
                     all_events.append(event.model_dump())
 
-            print([e.year for e in parsed_response.events])
+            print([e.rank for e in parsed_response.events])
 
     end_time = time.time()
     # Calculate elapsed time
@@ -121,7 +105,7 @@ if __name__ == "__main__":
     print(f"Elapsed time: {elapsed_time} seconds")
 
     # Sort the events by date
-    all_events = sorted(all_events, key=lambda x: x["year"])
+    all_events = sorted(all_events, key=lambda x: x["rank"])
 
     # Write the events to a JSON file
     with open(os.path.join(DATA_DIRECTORY_PATH, f"{DECK_NAME}.json"), "w") as f:

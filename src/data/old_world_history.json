@@ -2,985 +2,657 @@
     {
         "id": "fall_of_troy",
         "title": "Fall of Troy",
-        "year": -1184,
-        "date": "June 24, 1184 BC",
-        "country": "Troy (Modern Turkey)",
-        "division": "Troas",
+        "rank": -1184,
         "description": "The legendary destruction of the ancient city of Troy by Greek forces.",
         "longDescription": "According to legend, the Fall of Troy marks the end of the Trojan War, where Greek forces besieged the city for ten years before using the infamous Trojan Horse to infiltrate and destroy it. This event is significant in mythology and literature, symbolizing cunning and strategy over brute force. The fall led to the return of the Greek heroes to their homes and further inspired tales and dramas in Western literature.",
-        "imagePrompt": "An artistic depiction of the Trojan Horse being brought into the city of Troy, with Greek soldiers hiding inside.",
-        "relevanceScore": 85
+        "imagePrompt": "An artistic depiction of the Trojan Horse being brought into the city of Troy, with Greek soldiers hiding inside."
     },
     {
         "id": "buddha_dies",
         "title": "Death of Siddhartha Gautama (Buddha)",
-        "year": -483,
-        "date": "February 15, 483 BC",
-        "country": "India",
-        "division": "Lumbini",
+        "rank": -483,
         "description": "The passing of Siddhartha Gautama, the founder of Buddhism.",
         "longDescription": "Siddhartha Gautama, known as Buddha, passed away at the age of 80 in Lumbini, India. His death marked the end of his physical presence among his followers and the beginning of the spread of Buddhist teachings across Asia. His final teachings emphasized the importance of achieving enlightenment and the way to escape the cycle of rebirth. The Buddha's death significantly influenced religious thought and practice, leading to the development of different schools of Buddhism.",
-        "imagePrompt": "A serene scene depicting the peaceful death of Buddha in a tranquil garden, surrounded by his disciples.",
-        "relevanceScore": 90
+        "imagePrompt": "A serene scene depicting the peaceful death of Buddha in a tranquil garden, surrounded by his disciples."
     },
     {
         "id": "parthian_war_impact",
         "title": "Parthian War of Lucullus",
-        "year": -69,
-        "date": "March 1, 69 BC",
-        "country": "Armenia",
-        "division": "Cappadocia",
+        "rank": -69,
         "description": "A significant military campaign led by Roman general Lucius Licinius Lucullus against the Parthian Empire.",
         "longDescription": "The Parthian War conducted by Lucullus began in the 69 BC and marked a pivotal confrontation between the Roman Republic and the Parthian Empire. Lucullus\u2019s military successes expanded Roman influence into Armenia but also sparked significant political discord within Rome. The conflicts demonstrated the military prowess of the Romans and began a pattern of engagement and tension with Parthian forces that would shape future relationships between the two empires, influencing regional geopolitics for centuries.",
-        "imagePrompt": "Dramatic battlefield scene showing Lucullus leading Roman soldiers in an engagement against Parthian cavalry.",
-        "relevanceScore": 78
+        "imagePrompt": "Dramatic battlefield scene showing Lucullus leading Roman soldiers in an engagement against Parthian cavalry."
     },
     {
         "id": "tacitus_birth",
         "title": "Birth of Publius Cornelius Tacitus",
-        "year": -55,
-        "date": "June 1, 55 BC",
-        "country": "Italy",
-        "division": "Rome",
+        "rank": -55,
         "description": "Birth of the prominent Roman historian Tacitus.",
         "longDescription": "Publius Cornelius Tacitus, one of the greatest historians of ancient Rome, was born around 55 BC. His works, including the 'Histories' and 'Annals,' provide precious insights into the Roman Empire's politics and society during and after the reign of Emperor Tiberius. Tacitus's writings are renowned for their detailed examination of power, corruption, and human behavior, influencing historical writing in the centuries that followed. His analysis remains relevant in historical discourse today.",
-        "imagePrompt": "An artistic representation of Tacitus writing at his scrolls, deep in thought about the history of Rome.",
-        "relevanceScore": 80
+        "imagePrompt": "An artistic representation of Tacitus writing at his scrolls, deep in thought about the history of Rome."
     },
     {
         "id": "bust_of_caesar",
         "title": "Assassination of Julius Caesar",
-        "year": -44,
-        "date": "March 15, 44 BC",
-        "country": "Italy",
-        "division": "Rome",
+        "rank": -44,
         "description": "The assassination of Julius Caesar by a group of Roman senators.",
         "longDescription": "On March 15, 44 BC, known as the Ides of March, Julius Caesar was assassinated by a group of Roman senators led by Brutus and Cassius fearing his growing power and potential establishment of tyranny. This event triggered a series of civil wars that led to the eventual rise of Augustus and the end of the Roman Republic. The assassination marks a significant turning point in Roman history, fundamentally altering the trajectory of Roman governance and leading to the establishment of the Roman Empire.",
-        "imagePrompt": "A dramatic scene in the Roman Senate depicting Caesar surrounded by conspirators as they prepare to attack.",
-        "relevanceScore": 92
+        "imagePrompt": "A dramatic scene in the Roman Senate depicting Caesar surrounded by conspirators as they prepare to attack."
     },
     {
         "id": "roman_empire_founded",
         "title": "Foundation of the Roman Empire",
-        "year": -27,
-        "date": "January 16, 27 BC",
-        "country": "Italy",
-        "division": "Rome",
+        "rank": -27,
         "description": "The establishment of the Roman Empire after Julius Caesar's assassination.",
         "longDescription": "The foundation of the Roman Empire was formalized when Octavian, later known as Augustus, was granted the title of emperor after a period of civil war following Julius Caesar's assassination. This event marks the transition from the Roman Republic to a centralized imperial regime, leading to a remarkable era of peace and prosperity known as the Pax Romana. The establishment of the Empire had a profound impact on the culture, law, and governance structures in Europe that last well into the modern era.",
-        "imagePrompt": "A majestic depiction of Augustus Caesar standing before the Senate, receiving honors as the first emperor of Rome.",
-        "relevanceScore": 95
+        "imagePrompt": "A majestic depiction of Augustus Caesar standing before the Senate, receiving honors as the first emperor of Rome."
     },
     {
         "id": "herod-builds-temple",
         "title": "Rebuilding of the Second Temple",
-        "year": 20,
-        "date": "August 5, 20",
-        "country": "Israel",
-        "division": "Judea",
+        "rank": 20,
         "description": "King Herod's expansion and reconstruction of the Second Temple was a symbol of Jewish resilience.",
         "longDescription": "Inaugurated on August 5, 20, King Herod's monumental reconstruction of the Second Temple was an effort to gain favor with the Jewish population and assert his legitimacy as king. This ambitious project transformed the temple into a stunning architectural wonder, which became the center of Jewish worship and identity for centuries. Although the temple was later destroyed, its rebuilding symbolizes Jewish resilience and piety, making it crucial in the historical and religious narrative of Judaism.",
-        "imagePrompt": "An artist's impression of the grand Second Temple in Jerusalem, bustling with worshippers, detailed with gold and marble, under a clear blue sky.",
-        "relevanceScore": 88
+        "imagePrompt": "An artist's impression of the grand Second Temple in Jerusalem, bustling with worshippers, detailed with gold and marble, under a clear blue sky."
     },
     {
         "id": "crucifixion-of-jesus",
         "title": "Crucifixion of Jesus",
-        "year": 30,
-        "date": "April 3, 30",
-        "country": "Israel",
-        "division": "Judea",
+        "rank": 30,
         "description": "The crucifixion of Jesus marked a pivotal moment in Christian history.",
         "longDescription": "The crucifixion of Jesus around April 3, 30, occurred during the Roman occupation of Judea. Jesus was tried and condemned under the Roman governor Pontius Pilate for claiming to be the King of the Jews, which was seen as a challenge to Roman authority. His execution was a significant moment for his followers and led to the growth of Christianity as a major world religion. The event's impact resonates through centuries as it laid the foundation for Christian belief in Jesus as the Messiah and influenced Western culture profoundly.",
-        "imagePrompt": "A depiction of the crucifixion of Jesus on a hill, surrounded by Roman soldiers, followers, and onlookers, under a stormy sky.",
-        "relevanceScore": 98
+        "imagePrompt": "A depiction of the crucifixion of Jesus on a hill, surrounded by Roman soldiers, followers, and onlookers, under a stormy sky."
     },
     {
         "id": "great-fire-of-rome",
         "title": "Great Fire of Rome",
-        "year": 64,
-        "date": "July 18, 64",
-        "country": "Roman Empire",
-        "division": "Rome",
+        "rank": 64,
         "description": "The Great Fire of Rome destroyed vast parts of the city, leading to significant rebuilding.",
         "longDescription": "On July 18, 64, a devastating fire swept through Rome, lasting for six days and destroying much of the city. Emperor Nero famously blamed Christians for the disaster, instigating a wave of persecution against them. The aftermath led to massive rebuilding efforts, including the construction of Nero's sumptuous Golden House, thereby altering the urban landscape of Rome forever. This event highlighted the fragile nature of urban centers in ancient times and accentuated tensions between the Roman state and emerging Christian communities.",
-        "imagePrompt": "A chaotic scene of the Great Fire of Rome, with buildings ablaze and people fleeing in panic, under a smoky sky.",
-        "relevanceScore": 87
+        "imagePrompt": "A chaotic scene of the Great Fire of Rome, with buildings ablaze and people fleeing in panic, under a smoky sky."
     },
     {
         "id": "destruction-of-temple",
         "title": "Destruction of the Second Temple",
-        "year": 70,
-        "date": "August 6, 70",
-        "country": "Israel",
-        "division": "Judea",
+        "rank": 70,
         "description": "The destruction of the Second Temple was a pivotal event in Jewish history.",
         "longDescription": "On August 6, 70, the Roman army, led by Titus, destroyed the Second Temple in Jerusalem during the First Jewish-Roman War. This catastrophic event marked the end of an era for the Jewish people and profoundly affected their religious practices, leading to a shift from temple sacrifice to Rabbinic Judaism. The destruction served as a catalyst for Jewish diaspora and changed the religious landscape in the region, as synagogues and community-based worship became more central to Jewish life.",
-        "imagePrompt": "The Roman army storming the Second Temple in Jerusalem, with flames and chaos, showcasing the devastation.",
-        "relevanceScore": 95
+        "imagePrompt": "The Roman army storming the Second Temple in Jerusalem, with flames and chaos, showcasing the devastation."
     },
     {
         "id": "antonine_plague",
         "title": "Antonine Plague",
-        "year": 165,
-        "date": "March 1, 165",
-        "country": "Roman Empire",
-        "division": "N/A",
+        "rank": 165,
         "description": "A devastating epidemic that significantly impacted the Roman Empire.",
         "longDescription": "On March 1, 165, the Antonine Plague began to spread throughout the Roman Empire, culminating from diseases believed to be brought back by soldiers returning from campaigns in the East. The epidemic is estimated to have killed over five million people, severely weakening Roman military and economic structures. As the plague spread, it created social unrest and significantly affected trade due to the high mortality rate, as labor shortages became rampant. This catastrophic event not only decimated the population but also led to a profound change in the Roman society's perspective on health and governance. The plague raised awareness regarding the importance of public health measures, influencing future responses to medical crises throughout history.",
-        "imagePrompt": "A somber scene in a Roman city during the Antonine Plague, depicting sick citizens being cared for, and a soldier reporting the toll of the epidemic to a worried governor.",
-        "relevanceScore": 82
+        "imagePrompt": "A somber scene in a Roman city during the Antonine Plague, depicting sick citizens being cared for, and a soldier reporting the toll of the epidemic to a worried governor."
     },
     {
         "id": "birth-of-constantine",
         "title": "Birth of Constantine the Great",
-        "year": 272,
-        "date": "February 27, 272",
-        "country": "Roman Empire",
-        "division": "Illyricum",
+        "rank": 272,
         "description": "Constantine the Great was the first Roman emperor to convert to Christianity.",
         "longDescription": "Constantine, born on February 27, 272, in what is now Serbia, rose to power and became the first Roman emperor to embrace Christianity, significantly contributing to its spread throughout the Roman Empire. His Edict of Milan in 313 granted religious tolerance for Christianity, which allowed it to flourish and gain followers. The development of Christian policy under his reign transformed the relationship between the church and the state, paving the way for Christianity to become a dominant force in Europe and impacting Western civilization for centuries.",
-        "imagePrompt": "A portrait of Constantine the Great, adorned in imperial attire, with a Christian cross in the backdrop.",
-        "relevanceScore": 93
+        "imagePrompt": "A portrait of Constantine the Great, adorned in imperial attire, with a Christian cross in the backdrop."
     },
     {
         "id": "constantine_battle",
         "title": "Battle of Milvian Bridge",
-        "year": 312,
-        "date": "October 28, 312",
-        "country": "Roman Empire",
-        "division": "N/A",
+        "rank": 312,
         "description": "A decisive battle that led to Constantine's rise as the emperor of the Western Roman Empire.",
         "longDescription": "On October 28, 312, the Battle of Milvian Bridge took place between the forces of Constantine and Maxentius, marking a pivotal moment in the history of the Roman Empire. Constantine, claiming divine favor after reportedly receiving a vision before the battle, fought against Maxentius in a confrontation that would determine the control of Rome. After a fierce battle, Maxentius' forces were defeated, and he drowned while trying to flee the fighting. This victory not only solidified Constantine's rule over the Western Roman Empire but also set the stage for his subsequent endorsement of Christianity across the empire, culminating in the Edict of Milan in 313 which granted religious tolerance to Christians and reshaped the Roman Empire's religious landscape.",
-        "imagePrompt": "The epic scene of the Battle of Milvian Bridge with Constantine leading his troops across the bridge, while Maxentius's forces are depicted in disarray, capturing the moment of victory and divine intervention.",
-        "relevanceScore": 88
+        "imagePrompt": "The epic scene of the Battle of Milvian Bridge with Constantine leading his troops across the bridge, while Maxentius's forces are depicted in disarray, capturing the moment of victory and divine intervention."
     },
     {
         "id": "durland_story",
         "title": "Durland Story",
-        "year": 362,
-        "date": "February 23, 362",
-        "country": "Roman Empire",
-        "division": "N/A",
+        "rank": 362,
         "description": "The Durland Story describes a pivotal pagan festival disrupted by the Emperor Julian.",
         "longDescription": "On February 23, 362, Emperor Julian attempted to revive traditional Roman pagan rituals, a move that was met with resistance from the predominantly Christian populace. His actions were part of a broader aim to reinstate pagan practices that had been in decline since the rise of Christianity. During this time, Julian's efforts culminated in the celebration of a traditional festival which he attended, symbolizing his support for paganism. However, opposition from Christians and internal conflicts led to a swift response against such gatherings, emphasizing the growing tension between the old pagan traditions and the emerging Christian faith that would dominate the empire shortly thereafter. Julian's brief restoration of paganism ultimately ended with his death in 363, leading to an irreversible shift towards a Christian empire.",
-        "imagePrompt": "A scene depicting Emperor Julian participating in a pagan festival, surrounded by traditional Roman priests and citizens, contrasting with the looming presence of Christian symbols.",
-        "relevanceScore": 78
+        "imagePrompt": "A scene depicting Emperor Julian participating in a pagan festival, surrounded by traditional Roman priests and citizens, contrasting with the looming presence of Christian symbols."
     },
     {
         "id": "nicanor-battle",
         "title": "Battle of Nicanor",
-        "year": 364,
-        "date": "May 29, 364",
-        "country": "Roman Empire",
-        "division": "Unknown",
+        "rank": 364,
         "description": "A significant battle during the late Roman Empire period.",
         "longDescription": "The Battle of Nicanor took place on May 29, 364, and was a crucial confrontation between the forces of the Eastern Roman Empire and invading tribes. The Eastern Roman Emperor, Jovian, sought to defend the territory from increasing threats. The engagement ended in a vital victory for Jovian that bolstered the fragile security of the empire and showcased the challenges it faced during its decline. The battle highlighted the conflicts arising from the empire\u2019s overextension and set the stage for future military campaigns.",
-        "imagePrompt": "A dramatic depiction of the Battle of Nicanor featuring Roman soldiers in formation against tribal warriors, set in a landscape typical of the Roman Empire.",
-        "relevanceScore": 75
+        "imagePrompt": "A dramatic depiction of the Battle of Nicanor featuring Roman soldiers in formation against tribal warriors, set in a landscape typical of the Roman Empire."
     },
     {
         "id": "druids_laws",
         "title": "Druids' Laws",
-        "year": 367,
-        "date": "August 1, 367",
-        "country": "Roman Empire",
-        "division": "N/A",
+        "rank": 367,
         "description": "The laws enacted by the Romans to abolish pagan practices among the Druids.",
         "longDescription": "On August 1, 367, the Roman Empire enacted a series of laws aimed at suppressing the practices of the Druids in Britain and Gaul, in efforts to eradicate paganism. These legal restrictions were part of a systematic process initiated by the Roman authorities to curb the influence of Druidic culture and religious practices which were seen as a threat to Roman stability and order. The laws prohibited Druids from performing any rituals or gatherings, leading to the decline of Druidic influence, and marking a significant turning point in the cultural history of the Celtic peoples. This legislative action contributed to the broader agenda of cultural assimilation and the spread of Christianity as the dominant belief system within the empire, leading to lasting changes in the societal fabric of Celtic regions.",
-        "imagePrompt": "Druids gathered in a secluded forest setting, looking concerned as Roman soldiers arrive to enforce laws against their practices, creating a stark division between the ancient and imperial cultures.",
-        "relevanceScore": 80
+        "imagePrompt": "Druids gathered in a secluded forest setting, looking concerned as Roman soldiers arrive to enforce laws against their practices, creating a stark division between the ancient and imperial cultures."
     },
     {
         "id": "theodosius_declaration",
         "title": "Theodosius' Declaration of Christianity",
-        "year": 380,
-        "date": "February 27, 380",
-        "country": "Roman Empire",
-        "division": "N/A",
+        "rank": 380,
         "description": "The edict declared Nicene Christianity as the state religion of the Roman Empire.",
         "longDescription": "On February 27, 380, Emperor Theodosius I declared Nicene Christianity the official state religion of the Roman Empire through the Edict of Thessalonica. This declaration was made in an effort to unify the empire under a single faith after years of religious strife and the rise of various sects and beliefs. By outlawing paganism and heretical sects, Theodosius aimed to stabilize the empire and cultivate a sense of unity among its citizens. As a result, he solidified the church's power and influence while enforcing the dominance of Nicene orthodoxy, ultimately leading to the decline of pagan practices and the increased role of Christianity in everyday life and governance.",
-        "imagePrompt": "An ancient Roman edict being proclaimed in a grand setting, with Theodosius I seated on a throne, surrounded by clergy and citizens in traditional Roman attire, depicting the moment of declaration of Christianity as the state religion.",
-        "relevanceScore": 85
+        "imagePrompt": "An ancient Roman edict being proclaimed in a grand setting, with Theodosius I seated on a throne, surrounded by clergy and citizens in traditional Roman attire, depicting the moment of declaration of Christianity as the state religion."
     },
     {
         "id": "theodosius-ii",
         "title": "Reign of Theodosius II Begins",
-        "year": 408,
-        "date": "July 19, 408",
-        "country": "Roman Empire",
-        "division": "Bysantium",
+        "rank": 408,
         "description": "Theodosius II begins a reign that would shape the Eastern Roman Empire's future.",
         "longDescription": "On July 19, 408, Theodosius II ascended to the throne of the Eastern Roman Empire at a young age, after the death of his father Arcadius. His reign lasted for over 40 years, a time marked by both internal strife and external threats, including the growing power of the Huns and Persians. Theodosius II is noted for his initiatives to fortify Constantinople and for his engagement in legal reforms, including the Codex Theodosianus, aimed at modernizing and codifying the law. His lasting impact on the Roman Empire was significant as he navigated the complexities of governance during a transformative era in history.",
-        "imagePrompt": "A portrait of Theodosius II in royal attire, overseeing the construction of walls in Constantinople, symbolizing his reign.",
-        "relevanceScore": 80
+        "imagePrompt": "A portrait of Theodosius II in royal attire, overseeing the construction of walls in Constantinople, symbolizing his reign."
     },
     {
         "id": "theodosian-codex",
         "title": "Theodosius II Codifies Roman Law",
-        "year": 438,
-        "date": "March 15, 438",
-        "country": "Roman Empire",
-        "division": "Bysantium",
+        "rank": 438,
         "description": "The issuance of the Theodosian Code made Roman laws more accessible.",
         "longDescription": "The issuance of the Theodosian Code on March 15, 438, represented a significant development in the legal history of the Roman Empire. Theodosius II compiled and codified existing laws and decrees to create a comprehensive legal framework, making them more accessible especially to legal professionals and citizens. This monumental work aimed to clarify the often chaotic body of Roman law and provide uniformity to legal proceedings. The Codex not only served as a foundation for future legal systems but also reflected the complexities and changing nature of the empire, as it faced both internal dissensions and external invasions.",
-        "imagePrompt": "An ancient legal scholar reviewing the Theodosian Code amid scrolls, symbolizing the evolution of Roman law.",
-        "relevanceScore": 85
+        "imagePrompt": "An ancient legal scholar reviewing the Theodosian Code amid scrolls, symbolizing the evolution of Roman law."
     },
     {
         "id": "huns-invade-rome",
         "title": "Hun Invasion of the Roman Empire",
-        "year": 451,
-        "date": "June 20, 451",
-        "country": "Roman Empire",
-        "division": "Western Roman Empire",
+        "rank": 451,
         "description": "The Huns launched a major invasion that threatened the stability of the Roman Empire.",
         "longDescription": "On June 20, 451, the Huns, led by the notorious leader Attila, invaded the Roman Empire, pushing deeper into Western territories. Their advance forced the disparate tribes and Roman legions to unite for a defensive battle. This invasion culminated in the Battle of the Catalaunian Plains, which saw the Romans coalition with their traditional adversaries, the Visigoths. Although the battle ended indecisively, it significantly halted Attila's advance, preserving Rome for a time while highlighting the empire's vulnerabilities. This event marked a pivotal moment in the decline of the Western Roman Empire and reshaped the power dynamics of Europe as a whole.",
-        "imagePrompt": "An illustration of the fierce Battle of the Catalaunian Plains with Romans and Huns clashing on a vast battlefield.",
-        "relevanceScore": 90
+        "imagePrompt": "An illustration of the fierce Battle of the Catalaunian Plains with Romans and Huns clashing on a vast battlefield."
     },
     {
         "id": "sack-of-rome",
         "title": "Sack of Rome by the Vandals",
-        "year": 455,
-        "date": "June 2, 455",
-        "country": "Roman Empire",
-        "division": "Western Roman Empire",
+        "rank": 455,
         "description": "The Vandals brutally sacked Rome, signaling a low point for the Western Roman Empire.",
         "longDescription": "On June 2, 455, the city of Rome was ravaged by the Vandals under King Genseric in a brutal sack that lasted for two weeks. This traumatic event occurred during a period of political instability and marked the decline of the Western Roman Empire's influence. The Vandals plundered significant treasures, including religious artifacts and imposed terror on the city\u2019s inhabitants. This episode underscored the empire's fragility, eroding its prestige and further emboldening other barbarian tribes. The sack of Rome served as a psychological blow, altering the course of history in the region and symbolizing the impending fall of the empire.",
-        "imagePrompt": "A chaotic scene depicting the Sack of Rome with Vandals pillaging the city amidst desperate Roman citizens trying to defend their homes.",
-        "relevanceScore": 95
+        "imagePrompt": "A chaotic scene depicting the Sack of Rome with Vandals pillaging the city amidst desperate Roman citizens trying to defend their homes."
     },
     {
         "id": "the_dissolution_of_the_western_roman_empire",
         "title": "Dissolution of the Western Roman Empire",
-        "year": 476,
-        "date": "September 4, 476",
-        "country": "Italy",
-        "division": "Rome",
+        "rank": 476,
         "description": "The deposition of the last Roman emperor, Romulus Augustulus, leading to the end of the Western Roman Empire.",
         "longDescription": "The fall of the Western Roman Empire culminated when the Germanic king Odoacer deposed the last emperor, Romulus Augustulus, on September 4, 476. This event marked the end of ancient Rome's political power and handed control of Italy to Odoacer. The dissolution signified the fragmentation of a once-unified Roman territory into various successor kingdoms and initiated the transition into the medieval period in Europe. This event is often considered the start of the Middle Ages and had a profound impact on the political landscape of Europe.",
-        "imagePrompt": "Artistic depiction of Odoacer confronting Romulus Augustulus in the Roman Forum.",
-        "relevanceScore": 95
+        "imagePrompt": "Artistic depiction of Odoacer confronting Romulus Augustulus in the Roman Forum."
     },
     {
         "id": "battle_of_badon",
         "title": "Battle of Badon",
-        "year": 490,
-        "date": "May 29, 490",
-        "country": "Britannia",
-        "division": "Unknown",
+        "rank": 490,
         "description": "A legendary battle where British forces repelled invading Saxons.",
         "longDescription": "The Battle of Badon is traditionally attributed to the legendary King Arthur's defense of Britain against a Saxon invasion around the late 5th or early 6th century. This battle is significant in British history, symbolizing the struggle against external invasion during a period of relative chaos following the Roman withdrawal. Although the exact date and conditions of this battle are debated among historians, it is seen as a pivotal moment that temporarily halted Saxon expansion and solidified the importance of chivalric leadership in the British Isles.",
-        "imagePrompt": "Illustration of King Arthur leading soldiers in battle against Saxons at Badon Hill.",
-        "relevanceScore": 85
+        "imagePrompt": "Illustration of King Arthur leading soldiers in battle against Saxons at Badon Hill."
     },
     {
         "id": "the_conversion_of_king_clovis",
         "title": "Conversion of King Clovis",
-        "year": 496,
-        "date": "December 25, 496",
-        "country": "France",
-        "division": "Merovingian Kingdom",
+        "rank": 496,
         "description": "King Clovis I converts to Christianity, marking a pivotal moment in the history of France and Christianity.",
         "longDescription": "King Clovis I's baptism on December 25, 496, marks a significant turning point for both France and Christianity, as he became one of the first Frankish kings to convert to Christianity and align his kingdom with the Roman Catholic Church. His conversion not only strengthened his rule over the Salian Franks but also established the foundations for the future alliance between the monarchy and the church in France. This alliance played a crucial role in the unification of his kingdom and the spread of Christianity throughout the region, influencing European politics and culture for centuries to come.",
-        "imagePrompt": "Clovis being baptized by Saint Remigius in a grand cathedral.",
-        "relevanceScore": 90
+        "imagePrompt": "Clovis being baptized by Saint Remigius in a grand cathedral."
     },
     {
         "id": "justinian_i_becomes_emperor",
         "title": "Justinian I Becomes Emperor",
-        "year": 527,
-        "date": "August 1, 527",
-        "country": "Byzantine Empire",
-        "division": "Constantinople",
+        "rank": 527,
         "description": "Justinian I ascends to the throne, embarking on ambitious projects to revive the glory of the Roman Empire.",
         "longDescription": "Justinian I's ascension to the throne on August 1, 527, marked the beginning of a transformative era for the Byzantine Empire, as he sought to restore the Roman Empire's former glory. His reign was characterized by ambitious military campaigns, legal reforms, and monumental building projects, including the construction of the Hagia Sophia. Justinian aimed to reclaim lost territories in the West and successfully undertook campaigns against the Vandals and Ostrogoths. His legal codification, known as the Corpus Juris Civilis, laid the groundwork for modern legal systems, influencing European law profoundly for centuries to come.",
-        "imagePrompt": "Justinian I on the throne, overseeing the construction of the Hagia Sophia.",
-        "relevanceScore": 88
+        "imagePrompt": "Justinian I on the throne, overseeing the construction of the Hagia Sophia."
     },
     {
         "id": "the_captivity_of_varangians",
         "title": "The Captivity of Varangians",
-        "year": 552,
-        "date": "March 20, 552",
-        "country": "Byzantine Empire",
-        "division": "Unknown",
+        "rank": 552,
         "description": "The Varangians are captured in the Byzantine Empire, marking the beginning of their significant role in Eastern Europe.",
         "longDescription": "In 552, a significant event occurred involving the Varangians, a group of Norse warriors known for their fierce fighting skills, who were captured during a Byzantine military campaign. This captivity led to their integration into Byzantine military service and trading networks. Over time, the Varangians would establish essential trade routes and political alliances that would shape the region's landscape. Their involvement in the Byzantine Empire facilitated cultural exchanges between Norse and Byzantine civilizations, which contributed to the development of Eastern Europe.",
-        "imagePrompt": "Scene of Varangian warriors being taken captive by Byzantine soldiers.",
-        "relevanceScore": 80
+        "imagePrompt": "Scene of Varangian warriors being taken captive by Byzantine soldiers."
     },
     {
         "id": "the_battle_of_cowpens",
         "title": "Battle of Cowpens",
-        "year": 606,
-        "date": "March 7, 606",
-        "country": "Britannia",
-        "division": "Unknown",
+        "rank": 606,
         "description": "A notable engagement in the final stages of a significant dispute over land and resources in the region during early British history.",
         "longDescription": "The Battle of Cowpens that occurred on March 7, 606, marked a crucial conflict between the Britons and invading forces during a period of territorial disputes. This encounter resulted in a decisive victory for the Britons, reinforcing their hold over contested lands. The battle is emblematic of the struggles for power and resources in early Britain, demonstrating the resilience of local leaders in the face of external pressures. The outcome had lasting implications on the distribution of power in the region, shaping the socio-political landscape of early medieval Britain.",
-        "imagePrompt": "Dramatic battle scene between Britons and invading forces at Cowpens.",
-        "relevanceScore": 75
+        "imagePrompt": "Dramatic battle scene between Britons and invading forces at Cowpens."
     },
     {
         "id": "defeat-of-christian-army",
         "title": "Battle of the River Bregalnica",
-        "year": 615,
-        "date": "June 22, 615",
-        "country": "Serbia",
-        "division": "N/A",
+        "rank": 615,
         "description": "The battle was a pivotal conflict between Byzantine Emperor Heraclius and Persian forces leading to significant territorial changes.",
         "longDescription": "The Battle of the River Bregalnica occurred on June 22, 615, as part of the Byzantine\u2013Sasanian Wars, where Byzantine Emperor Heraclius faced off against Persian forces. Heraclius sought to reclaim territories lost to the Persians, leading to this decisive battle. Though the Byzantines were ultimately forced to retreat, the battle marked the beginning of a series of escalations and reforms in the Byzantine military, contributing to their eventual resurgence. The battle's significance lies in its demonstration of the shifting power dynamics in the region and its influence on the prolonged conflict between these two empires.",
-        "imagePrompt": "A fierce battle scene between Byzantine and Persian soldiers on the banks of a river, swords clashing, archers in the background.",
-        "relevanceScore": 85
+        "imagePrompt": "A fierce battle scene between Byzantine and Persian soldiers on the banks of a river, swords clashing, archers in the background."
     },
     {
         "id": "establishment-of-caliphate",
         "title": "Start of Rashidun Caliphate",
-        "year": 632,
-        "date": "June 24, 632",
-        "country": "Saudi Arabia",
-        "division": "N/A",
+        "rank": 632,
         "description": "The establishment of the Rashidun Caliphate marked the beginning of a new era in Islamic governance after Muhammad's death.",
         "longDescription": "On June 24, 632, following the death of the Prophet Muhammad, the Rashidun Caliphate was established, marking the first period of Islamic governance and the spread of Islam beyond the Arabian Peninsula. Abu Bakr was appointed as the first Caliph, uniting the Muslim community under a single leadership which inspired military campaigns against the Byzantine and Persian empires. This era was characterized by rapid territorial expansion and consolidation of Islamic rule, significantly shaping world history. The Rashidun Caliphate set precedents in governance and jurisprudence that impacted future Islamic states.",
-        "imagePrompt": "The first caliph meeting with companions, surrounded by desert landscapes, representing unity and leadership after Muhammad.",
-        "relevanceScore": 90
+        "imagePrompt": "The first caliph meeting with companions, surrounded by desert landscapes, representing unity and leadership after Muhammad."
     },
     {
         "id": "battle-of-yarmouk",
         "title": "Battle of Yarmouk",
-        "year": 636,
-        "date": "August 15, 636",
-        "country": "Jordan",
-        "division": "N/A",
+        "rank": 636,
         "description": "One of the most decisive battles in history where Muslim forces defeated the Byzantine military.",
         "longDescription": "The Battle of Yarmouk took place on August 15, 636, and is regarded as one of the great military turning points in history, where Muslim forces under Khalid ibn al-Walid confronted and defeated the Byzantine army. Factors contributing to this victory included superior tactics, Arab cavalry mobility, and the exhaustion of Byzantine forces after years of war. The outcome solidified Muslim control in Syria and facilitated the further expansion into the Byzantine territories, ultimately leading to the decline of Byzantine influence in the Levant. The battle is often seen as a critical moment in the spread of Islam, demonstrating the effectiveness of the Muslim military strategy.",
-        "imagePrompt": "A dramatic battle scene at Yarmouk, showcasing the charging forces of the Muslim cavalry against the Byzantine infantry.",
-        "relevanceScore": 95
+        "imagePrompt": "A dramatic battle scene at Yarmouk, showcasing the charging forces of the Muslim cavalry against the Byzantine infantry."
     },
     {
         "id": "treaty-of-savar",
         "title": "Treaty of Savar",
-        "year": 660,
-        "date": "January 29, 660",
-        "country": "Iraq",
-        "division": "N/A",
+        "rank": 660,
         "description": "The Treaty of Savar marked a significant peace agreement between the Umayyad Caliphate and the Byzantine Empire.",
         "longDescription": "The Treaty of Savar, established on January 29, 660, represented a pivotal moment in relations between the Umayyad Caliphate and the Byzantine Empire. Following years of conflict, the treaty sought to formalize peace and delineate borders between the two powers. This agreement allowed the Umayyads to focus on advancing their territories in North Africa and Spain, while the Byzantines solidified their control in Anatolia. The treaty highlighted the shifting balance of power in the region and facilitated a temporary period of stability that allowed both empires to flourish economically and culturally.",
-        "imagePrompt": "A historic signing of the Treaty of Savar, with representatives from the Byzantine Empire and Umayyad Caliphate in traditional attire.",
-        "relevanceScore": 80
+        "imagePrompt": "A historic signing of the Treaty of Savar, with representatives from the Byzantine Empire and Umayyad Caliphate in traditional attire."
     },
     {
         "id": "construction-of-umayyad-mosque",
         "title": "Construction of the Umayyad Mosque",
-        "year": 706,
-        "date": "September 1, 706",
-        "country": "Syria",
-        "division": "N/A",
+        "rank": 706,
         "description": "The Umayyad Mosque was constructed in Damascus, becoming a pivotal Islamic architectural landmark.",
         "longDescription": "Construction of the Umayyad Mosque commenced on September 1, 706, under the Umayyad Caliph Al-Walid I in Damascus. This mosque was built on the site of previous Christian churches, signifying the triumph of Islam in the region. This architectural marvel showcased the grandeur of Umayyad power and became a model for subsequent mosques around the world. Its intricate artistry and vast size highlighted the Islamic culture's commitment to architecture and is considered one of the largest and oldest mosques in the world today. The mosque played a crucial role in the religious life of Muslims in Syria and influenced the architectural styles of future Islamic places of worship.",
-        "imagePrompt": "An aerial view of the grand Umayyad Mosque with its stunning architectural details and vast courtyard under a blue sky.",
-        "relevanceScore": 90
+        "imagePrompt": "An aerial view of the grand Umayyad Mosque with its stunning architectural details and vast courtyard under a blue sky."
     },
     {
         "id": "madain-saleh-architecture",
         "title": "Construction of Madain Saleh",
-        "year": 728,
-        "date": "August 23, 728",
-        "country": "Saudi Arabia",
-        "division": "N/A",
+        "rank": 728,
         "description": "The construction of the ancient city of Madain Saleh established a key site of Nabatean architecture.",
         "longDescription": "On August 23, 728, the construction of what is now known as Madain Saleh, an ancient city and archaeological site in Saudi Arabia, began, showcasing the achievements of the Nabatean civilization. This site features rock-cut tombs and monuments that illustrate the sophisticated understanding of architecture and trade within Nabatean society. Over the years, Madain Saleh became a crucial caravan stop for merchants traveling to Medina and Iraq, symbolizing the wealth and influence of the Nabateans who thrived on trade routes. Its eventual decline and subsequent discovery have provided invaluable insights into historical trade networks and cultural practices in the region, making it a UNESCO World Heritage site today.",
-        "imagePrompt": "A picturesque view of the rock-cut tombs of Madain Saleh against a desert landscape during sunset.",
-        "relevanceScore": 85
+        "imagePrompt": "A picturesque view of the rock-cut tombs of Madain Saleh against a desert landscape during sunset."
     },
     {
         "id": "battle_of_wooded_glade",
         "title": "Battle of Wooded Glade",
-        "year": 731,
-        "date": "March 22, 731",
-        "country": "Britain",
-        "division": "Kent",
+        "rank": 731,
         "description": "A decisive battle between the Anglo-Saxon kingdoms of Mercia and Kent.",
         "longDescription": "The Battle of Wooded Glade took place on March 22, 731, marking a significant conflict in the early medieval period of Britain. The Mercian forces, led by King Ceolred, faced off against the Kentish army in a struggle for dominance over southern England. The battle concluded with a decisive Mercian victory, which subsequently solidified Mercia's power in the region. This event wasn't just a battle for land; it represented the struggle among Anglo-Saxon kingdoms for supremacy, significantly impacting territorial politics for decades to come.",
-        "imagePrompt": "An artistic representation of the Battle of Wooded Glade, with Anglo-Saxon warriors in armor clashing in a wooded area.",
-        "relevanceScore": 75
+        "imagePrompt": "An artistic representation of the Battle of Wooded Glade, with Anglo-Saxon warriors in armor clashing in a wooded area."
     },
     {
         "id": "coronation_of_charlemagne",
         "title": "Coronation of Charlemagne",
-        "year": 800,
-        "date": "December 25, 800",
-        "country": "Holy Roman Empire",
-        "division": "N/A",
+        "rank": 800,
         "description": "Charlemagne is crowned Emperor of the Romans by Pope Leo III.",
         "longDescription": "On December 25, 800, Charlemagne was crowned Emperor of the Romans by Pope Leo III in St. Peter's Basilica in Rome. This event symbolized the unification of the Christian and Roman traditions, as Charlemagne became the first ruler since the fall of the Western Roman Empire to bear the title. His reign marked a significant revival of art, culture, and administration known as the Carolingian Renaissance, and laid the foundation for modern Europe. The coronation also strengthened the relationship between the Frankish king and the papacy, setting a precedent for the future power dynamics in Europe.",
-        "imagePrompt": "A depiction of Charlemagne crowned by the pope in the grand Basilica, surrounded by nobles and clergy.",
-        "relevanceScore": 90
+        "imagePrompt": "A depiction of Charlemagne crowned by the pope in the grand Basilica, surrounded by nobles and clergy."
     },
     {
         "id": "death_of_charlemagne",
         "title": "Death of Charlemagne",
-        "year": 814,
-        "date": "January 28, 814",
-        "country": "France",
-        "division": "Frankish Empire",
+        "rank": 814,
         "description": "Charlemagne, the King of the Franks and Lombards, died, marking the end of an era in European history.",
         "longDescription": "Charlemagne died on January 28, 814, in Aachen, after ruling the Frankish Empire for over four decades. His reign marked a significant period in European history, characterized by the unification of a large part of Western Europe under Christian rule. Known for his military conquests and reforms, he was crowned Emperor of the Romans in 800, reviving the concept of a unified Europe. His death led to the fragmentation of the empire into several territories divided among his grandsons, thereby influencing the subsequent political landscape of Europe and the rise of regional powers.",
-        "imagePrompt": "A somber scene depicting the death of Charlemagne in his palace, with courtiers paying their respects.",
-        "relevanceScore": 95
+        "imagePrompt": "A somber scene depicting the death of Charlemagne in his palace, with courtiers paying their respects."
     },
     {
         "id": "sack_of_paris",
         "title": "Sack of Paris",
-        "year": 845,
-        "date": "March 28, 845",
-        "country": "France",
-        "division": "Ile-de-France",
+        "rank": 845,
         "description": "A Viking army devastated Paris, marking a turning point in the Viking invasions of France.",
         "longDescription": "The Sack of Paris in 845 was a significant event during the Viking invasions of France, when a large force of Norse warriors, led by Ragnar Lodbrok, pillaged the city. After months of siege, they looted and burned large parts of Paris, which was then not as fortified as it would later become. This event catalyzed the need for stronger defenses against Viking incursions and led to changes in the political landscape, including the eventual establishment of agreements with Viking leaders, thus impacting the future of French governance and social structure.",
-        "imagePrompt": "A dramatic scene of Vikings attacking Paris in the year 845, with fires burning and chaos in the streets.",
-        "relevanceScore": 85
+        "imagePrompt": "A dramatic scene of Vikings attacking Paris in the year 845, with fires burning and chaos in the streets."
     },
     {
         "id": "viking_exploration",
         "title": "Viking Exploration of Greenland",
-        "year": 850,
-        "date": "July 4, 850",
-        "country": "Greenland",
-        "division": "N/A",
+        "rank": 850,
         "description": "The Vikings embark on their exploration expeditions to Greenland.",
         "longDescription": "In 850, the Vikings, known for their seafaring prowess, began their exploration of Greenland, a significant event that marked the expansion of Norse culture into the North Atlantic. Led by figures like Erik the Red, these expeditions were driven by the search for new land, resources, and opportunities. Viking settlers established a presence on the island, which would play a crucial role in their subsequent expansion into North America. This event not only demonstrates the Viking's navigational skills but also highlights the interconnectivity of different cultures during the early medieval period, influencing trade and settlement patterns.",
-        "imagePrompt": "A vivid representation of Viking ships sailing towards the icy shores of Greenland with explorers on board.",
-        "relevanceScore": 80
+        "imagePrompt": "A vivid representation of Viking ships sailing towards the icy shores of Greenland with explorers on board."
     },
     {
         "id": "establishment_of_the_first_schools",
         "title": "Establishment of the First Universities",
-        "year": 859,
-        "date": "December 20, 859",
-        "country": "Morocco",
-        "division": "Fes",
+        "rank": 859,
         "description": "The University of al-Qarawiyyin was founded, recognized as the world\u2019s oldest existing university.",
         "longDescription": "In 859, the University of al-Qarawiyyin was established in Fes, Morocco, by Fatima al-Fihri. This institution became recognized as the oldest continuous degree-granting university in the world. It aimed to provide education on a wide range of subjects including religion, grammar, rhetoric, logic, medicine, and astronomy. Al-Qarawiyyin attracted scholars from various regions and played a critical role in the intellectual and cultural life of the Islamic world, laying the foundation for future educational institutions and the spread of knowledge across Europe and the Middle East.",
-        "imagePrompt": "The ancient University of al-Qarawiyyin with students and scholars gathering in medieval Morocco.",
-        "relevanceScore": 90
+        "imagePrompt": "The ancient University of al-Qarawiyyin with students and scholars gathering in medieval Morocco."
     },
     {
         "id": "byzantine_invasion_of_macedonia",
         "title": "Byzantine Invasion of Macedonia",
-        "year": 863,
-        "date": "September 1, 863",
-        "country": "Greece",
-        "division": "Macedonia",
+        "rank": 863,
         "description": "The Byzantine Empire invaded Macedonia to expand its territory and influence.",
         "longDescription": "In September 863, the Byzantine Empire launched an invasion of Macedonia, aiming to reclaim territories lost to Slavic tribes and to expand its influence in the region. The invasion was marked by military campaigns and strategic alliances with local groups. The Byzantines faced resistance but ultimately managed to establish control over parts of Macedonia, solidifying their power in the Balkans. This event was significant as it contributed to the long-term Byzantine-Slavic relations and set the stage for the spread of Christianity among Slavic peoples, shaping the region's cultural landscape.",
-        "imagePrompt": "Byzantine soldiers in battle during the invasion of Macedonia in 863, with medieval architecture in the background.",
-        "relevanceScore": 75
+        "imagePrompt": "Byzantine soldiers in battle during the invasion of Macedonia in 863, with medieval architecture in the background."
     },
     {
         "id": "construction_of_the_first_stone_castle",
         "title": "Construction of the First Stone Castle",
-        "year": 870,
-        "date": "April 15, 870",
-        "country": "Germany",
-        "division": "Bavaria",
+        "rank": 870,
         "description": "The first stone castle of the Holy Roman Empire was completed, revolutionizing medieval architecture.",
         "longDescription": "The construction of the first stone castle in Germany, known as the Burghausen Castle, was completed in April 870. This marked a notable shift in architectural practices, as castles became a central feature of medieval defense and feudal power dynamics. Built for the duke of Bavaria, the castle was strategically positioned and heavily fortified. Its completion demonstrated the growing militarization of society during this period and laid the groundwork for future castle design across Europe, influencing both social structures and military strategy in the Middle Ages.",
-        "imagePrompt": "A majestic stone castle with tall walls and a strategic location in medieval Bavaria, showcasing its defensive structure.",
-        "relevanceScore": 80
+        "imagePrompt": "A majestic stone castle with tall walls and a strategic location in medieval Bavaria, showcasing its defensive structure."
     },
     {
         "id": "battleofhastings",
         "title": "Battle of Hastings",
-        "year": 1066,
-        "date": "October 14, 1066",
-        "country": "England",
-        "division": "Sussex",
+        "rank": 1066,
         "description": "A decisive battle that led to the Norman conquest of England.",
         "longDescription": "The Battle of Hastings, fought on October 14, 1066, was a turning point in English history as William the Conqueror defeated King Harold II. This battle resulted from a struggle for the English throne and led to the establishment of Norman rule over England. The victory allowed William to claim kingship, transforming the culture, governance, and demographics of England. This pivotal event set the stage for the Feudalism system and the evolution of the English language.",
-        "imagePrompt": "The fierce clash of knights and soldiers during the Battle of Hastings in 1066.",
-        "relevanceScore": 90
+        "imagePrompt": "The fierce clash of knights and soldiers during the Battle of Hastings in 1066."
     },
     {
         "id": "investiture_controversy",
         "title": "Investiture Controversy Begins",
-        "year": 1075,
-        "date": "February 22, 1075",
-        "country": "Italy",
-        "division": "Rome",
+        "rank": 1075,
         "description": "The Investiture Controversy began, a significant conflict between the church and state over the appointment of bishops.",
         "longDescription": "The Investiture Controversy officially began on February 22, 1075, as Pope Gregory VII issued a decree prohibiting lay investiture, challenging the authority of the Holy Roman Emperor Henry IV, who believed he had the right to appoint bishops. This conflict escalated over the following years, leading to a power struggle between the papacy and the monarchy, as well as a series of excommunications and reconciliations. It ultimately resulted in the weakening of the emperor's authority and strengthened the power of the church, significantly shaping the political landscape of Europe and influencing the church-state relationships in subsequent centuries.",
-        "imagePrompt": "A tense meeting between Pope Gregory VII and Emperor Henry IV in medieval Rome during the Investiture Controversy.",
-        "relevanceScore": 85
+        "imagePrompt": "A tense meeting between Pope Gregory VII and Emperor Henry IV in medieval Rome during the Investiture Controversy."
     },
     {
         "id": "croatia_golden_bull",
         "title": "Golden Bull of 1092",
-        "year": 1092,
-        "date": "April 9, 1092",
-        "country": "Hungary",
-        "division": "Kingdom of Hungary",
+        "rank": 1092,
         "description": "A royal decree that granted certain rights and privileges to the nobility of Croatia.",
         "longDescription": "The Golden Bull of 1092 was a significant document issued by King Coloman of Hungary that established the rights of Croat nobility. This decree allowed greater autonomy and privileges within the kingdom, leading to a more structured feudal system in Croatia. The Golden Bull represents the consolidation of power among the nobility and formally recognized their rights, fostering an environment of legal and economic growth that would influence the region's governance for years to come. It is considered a landmark in Croatian history as it marked the emergence of a stronger noble class.",
-        "imagePrompt": "A depiction of King Coloman of Hungary signing the Golden Bull, surrounded by nobles and scholars in a medieval courtroom.",
-        "relevanceScore": 75
+        "imagePrompt": "A depiction of King Coloman of Hungary signing the Golden Bull, surrounded by nobles and scholars in a medieval courtroom."
     },
     {
         "id": "great_famine",
         "title": "The Great Famine",
-        "year": 1093,
-        "date": "March 1, 1093",
-        "country": "Europe",
-        "division": "Multiple Regions",
+        "rank": 1093,
         "description": "A widespread famine across Europe due to poor harvests and climate conditions.",
         "longDescription": "The Great Famine of 1093 was a devastating event that affected much of Europe, largely caused by adverse weather conditions, including a period of heavy rains and a subsequent rise in crop failures. The famine led to widespread starvation and significantly impacted the population, with estimates suggesting millions died or suffered greatly. The societal impact prompted changes in agricultural practices and various responses from local governments, marking a shift in how food security was managed. This period of hardship also played a role in the sociopolitical dynamics of medieval Europe, influencing future conflicts and migrations.",
-        "imagePrompt": "A grim scene depicting starving peasants in a medieval village during the Great Famine, with wilted crops and barren fields all around.",
-        "relevanceScore": 80
+        "imagePrompt": "A grim scene depicting starving peasants in a medieval village during the Great Famine, with wilted crops and barren fields all around."
     },
     {
         "id": "first_crusade",
         "title": "Beginning of the First Crusade",
-        "year": 1095,
-        "date": "November 27, 1095",
-        "country": "France",
-        "division": "Provence",
+        "rank": 1095,
         "description": "Pope Urban II calls for the First Crusade at the Council of Clermont.",
         "longDescription": "On November 27, 1095, Pope Urban II delivered a powerful sermon at the Council of Clermont, calling Christians to embark on a crusade to reclaim Jerusalem from Muslim rule. This call to arms was motivated by the desire to aid the Byzantine Empire and restore access to holy sites. The speech ignited a wave of enthusiasm among the nobility and commoners alike, leading to the mobilization of thousands of participants. The First Crusade would eventually lead to the establishment of several Crusader states in the Holy Land, but it also intensified religious conflicts between Christians and Muslims and left a lasting legacy in both regions.",
-        "imagePrompt": "A gathering of knights and commoners at the Council of Clermont, inspired by Pope Urban II's urging to take up the Cross.",
-        "relevanceScore": 90
+        "imagePrompt": "A gathering of knights and commoners at the Council of Clermont, inspired by Pope Urban II's urging to take up the Cross."
     },
     {
         "id": "siegeofjerusalem",
         "title": "Siege of Jerusalem",
-        "year": 1099,
-        "date": "July 15, 1099",
-        "country": "Israel",
-        "division": "Jerusalem",
+        "rank": 1099,
         "description": "The capture of Jerusalem by the Crusaders during the First Crusade.",
         "longDescription": "The Siege of Jerusalem marked a pivotal moment in the First Crusade when Crusaders besieged the city from June to July 1099. The goal was to reclaim the Holy Land from Muslim rule. After weeks of intense combat, the Crusaders succeeded in breaching the city's defenses and captured Jerusalem on July 15, 1099. This event solidified a Christian foothold in the region and significantly influenced Christian-Muslim relations for centuries, inciting further crusades.",
-        "imagePrompt": "Crusaders storming the walls of Jerusalem during the siege in 1099.",
-        "relevanceScore": 85
+        "imagePrompt": "Crusaders storming the walls of Jerusalem during the siege in 1099."
     },
     {
         "id": "thirdcrusade",
         "title": "Start of the Third Crusade",
-        "year": 1189,
-        "date": "August 5, 1189",
-        "country": "Europe",
-        "division": "Multiple Regions",
+        "rank": 1189,
         "description": "The launch of the Third Crusade aimed at recapturing Jerusalem.",
         "longDescription": "The Third Crusade began on August 5, 1189, in response to the fall of Jerusalem to Saladin in 1187. Major European monarchs, including Richard the Lionheart of England, Philip II of France, and Emperor Frederick Barbarossa of Germany, gathered forces to reclaim the city. Although they achieved notable victories, the crusade ultimately did not succeed in retaking Jerusalem. The open lines of communication between the East and West established during this period had long-lasting effects on trade and cultural exchanges.",
-        "imagePrompt": "European kings and knights preparing for the Third Crusade in 1189.",
-        "relevanceScore": 82
+        "imagePrompt": "European kings and knights preparing for the Third Crusade in 1189."
     },
     {
         "id": "deathofsaladin",
         "title": "Death of Saladin",
-        "year": 1193,
-        "date": "March 4, 1193",
-        "country": "Syria",
-        "division": "Damascus",
+        "rank": 1193,
         "description": "The death of the Muslim leader famed for his role in the Crusades.",
         "longDescription": "Saladin, the first Sultan of Egypt and Syria, died on March 4, 1193, in Damascus. Renowned for his leadership during the Crusades, particularly in reclaiming Jerusalem from the Crusaders, Saladin was respected by both Muslim and Christian opponents. His death marked a significant shift in Muslim leadership during the Crusades and destabilized the political dynamics of the region. The reverence for Saladin has endured, emblematic of valor and chivalry in Islamic history.",
-        "imagePrompt": "A solemn scene depicting the death of Saladin in 1193.",
-        "relevanceScore": 80
+        "imagePrompt": "A solemn scene depicting the death of Saladin in 1193."
     },
     {
         "id": "battle_of_bouvines",
         "title": "Battle of Bouvines",
-        "year": 1214,
-        "date": "July 27, 1214",
-        "country": "France",
-        "division": "Lille",
+        "rank": 1214,
         "description": "The Battle of Bouvines was a critical conflict that solidified the power of the French monarchy against opposing forces.",
         "longDescription": "The Battle of Bouvines on July 27, 1214, marked a decisive conflict between the French kingdom and a coalition of English and Flemish forces, led by King John of England and Count Ferrand of Flanders, respectively. This battle was pivotal in reinforcing the power of Philip II of France, and it resulted in a stunning victory for the French forces. As a result, the battle ensured the consolidation of royal power and established the kingdom as a dominant political entity in medieval Europe, and significantly weakened the English king's influence on the continent.",
-        "imagePrompt": "A dramatic scene from the Battle of Bouvines, showcasing knights in armor in fierce combat on a medieval battlefield.",
-        "relevanceScore": 90
+        "imagePrompt": "A dramatic scene from the Battle of Bouvines, showcasing knights in armor in fierce combat on a medieval battlefield."
     },
     {
         "id": "magna_carta",
         "title": "Signing of the Magna Carta",
-        "year": 1215,
-        "date": "June 15, 1215",
-        "country": "England",
-        "division": "Middlesex",
+        "rank": 1215,
         "description": "The Magna Carta was a charter agreed upon by King John of England that forced him to respect certain legal rights.",
         "longDescription": "The signing of the Magna Carta in 1215 was a pivotal moment in the limitation of royal authority in England. Facing strong opposition from his barons due to heavy taxation and arbitrary justice, King John was coerced into signing this document at Runnymede, which established the principle that everyone, including the king, was subject to the law. This event laid the foundation for modern democracy and the development of constitutional law, influencing legal systems worldwide and inspiring future generations in their quest for rights and liberties.",
-        "imagePrompt": "A historical depiction of King John signing the Magna Carta at Runnymede, surrounded by barons and nobles.",
-        "relevanceScore": 95
+        "imagePrompt": "A historical depiction of King John signing the Magna Carta at Runnymede, surrounded by barons and nobles."
     },
     {
         "id": "december_25_1223",
         "title": "Death of King Philip II of France",
-        "year": 1223,
-        "date": "July 14, 1223",
-        "country": "France",
-        "division": "\u00cele-de-France",
+        "rank": 1223,
         "description": "King Philip II of France died, ending his impactful reign during which he greatly expanded French territory.",
         "longDescription": "The death of King Philip II on July 14, 1223, marked the end of a transformative ordeal in French history. Philip II, often referred to as Philip Augustus, successfully expanded the French royal domain through military conquests and strategic marriages. His death led to the ascension of his son, Louis VIII, and although dramatic changes in policy were not immediate, the legacy of Philip's reign influenced France's ambitions for power in Europe for decades to come, setting the stage for heightened nationalism and conflict within the region.",
-        "imagePrompt": "A solemn queen mourning the death of King Philip II of France in a royal palace, surrounded by advisors and nobles.",
-        "relevanceScore": 85
+        "imagePrompt": "A solemn queen mourning the death of King Philip II of France in a royal palace, surrounded by advisors and nobles."
     },
     {
         "id": "establishment_of_university_of_paris",
         "title": "Establishment of the University of Paris",
-        "year": 1253,
-        "date": "December 25, 1253",
-        "country": "France",
-        "division": "\u00cele-de-France",
+        "rank": 1253,
         "description": "The University of Paris was officially established, becoming one of the first universities in Europe and a center for academic excellence.",
         "longDescription": "The establishment of the University of Paris on December 25, 1253, symbolized a significant development in medieval education, representing the growth of scholastic thought. Under the auspices of Pope Innocent IV, the University gained recognition, which attracted scholars and students from across Europe, fostering an environment of academic pursuit and theological debate. This institution laid the groundwork for modern universities, shaping academic structures and curricula, eventually influencing education globally. The university not only preserved knowledge during the medieval period but also motivated the emergence of intellectual movements in Europe.",
-        "imagePrompt": "A medieval classroom at the University of Paris with scholars debating and students writing notes.",
-        "relevanceScore": 90
+        "imagePrompt": "A medieval classroom at the University of Paris with scholars debating and students writing notes."
     },
     {
         "id": "pestilence_of_1338",
         "title": "Plague of 1338",
-        "year": 1338,
-        "date": "September 13, 1338",
-        "country": "Europe",
-        "division": "Varies",
+        "rank": 1338,
         "description": "The Plague of 1338 is one of the earliest instances recorded of the devastating Black Death across Europe.",
         "longDescription": "The plague that began spreading throughout Europe on September 13, 1338, marked the onset of the Black Death, a catastrophic pandemic that would decimate the population over the following years. Although the precise origins remained debated, the rapid transmission across trade routes and cities led to unprecedented death tolls. This event reshaped European society, leading to labor shortages, economic shifts, and ultimately transformations in social structures. The repercussions of the pandemic not only resulted in immediate devastating effects but also laid the groundwork for significant changes during the Renaissance, influencing art, culture, and human perspectives on life and death.",
-        "imagePrompt": "A grim illustration of villagers witnessing the effects of the Plague of 1338 in a medieval European town.",
-        "relevanceScore": 92
+        "imagePrompt": "A grim illustration of villagers witnessing the effects of the Plague of 1338 in a medieval European town."
     },
     {
         "id": "battle_of_crecy",
         "title": "Battle of Cr\u00e9cy",
-        "year": 1346,
-        "date": "August 26, 1346",
-        "country": "France",
-        "division": "Normandy",
+        "rank": 1346,
         "description": "The Battle of Cr\u00e9cy was a significant early victory for the English during the Hundred Years' War.",
         "longDescription": "The Battle of Cr\u00e9cy, fought on August 26, 1346, marked a monumental event in the Hundred Years' War between England and France. The English, led by King Edward III, utilized the longbow to devastating effect against the French cavalry, resulting in a remarkable victory that showcased the effectiveness of English military tactics and changed the nature of warfare in the region. This battle not only solidified England's position but also inspired further campaigns in France, setting the stage for a prolonged conflict that lasted over a century. The impact of Cr\u00e9cy resonated throughout Europe, influencing military strategies and perceptions of combat.",
-        "imagePrompt": "A fierce battle scene at Cr\u00e9cy, featuring English archers firing arrows at charging French knights.",
-        "relevanceScore": 95
+        "imagePrompt": "A fierce battle scene at Cr\u00e9cy, featuring English archers firing arrows at charging French knights."
     },
     {
         "id": "peasantrebellion",
         "title": "Peasant Revolt in England",
-        "year": 1381,
-        "date": "June 15, 1381",
-        "country": "England",
-        "division": "Essex",
+        "rank": 1381,
         "description": "A major revolt by peasants against the tax system and social inequalities.",
         "longDescription": "The Peasant Revolt of 1381 was sparked by rising taxes after the Hundred Years' War and increasing social and economic burdens on the lower classes. Led by Wat Tyler, the peasants marched on London demanding reforms, including the abolition of serfdom. The event culminated in the storming of the Tower of London and the killing of several nobles. King Richard II initially agreed to their demands but later reneged on his promises, resulting in brutal reprisals and executions. The revolt is significant as it highlighted social tensions and foreshadowed future reforms in English society.",
-        "imagePrompt": "A group of angry peasants marching towards London with banners, swords, and pitchforks, historic London in the background.",
-        "relevanceScore": 85
+        "imagePrompt": "A group of angry peasants marching towards London with banners, swords, and pitchforks, historic London in the background."
     },
     {
         "id": "battleofagincourt",
         "title": "Battle of Agincourt",
-        "year": 1415,
-        "date": "October 25, 1415",
-        "country": "France",
-        "division": "Nord-Pas-de-Calais",
+        "rank": 1415,
         "description": "A pivotal English victory during the Hundred Years' War against the French.",
         "longDescription": "The Battle of Agincourt is one of the most celebrated English victories in the Hundred Years' War. On October 25, 1415, a significantly outnumbered English army, led by King Henry V, faced the French forces in northern France. The English used longbowmen to devastating effect, causing massive casualties among the French knights. The victory boosted English morale and solidified Henry V's reputation as a capable leader. It demonstrated the effectiveness of infantry tactics over the traditional feudal knight cavalry, influencing military strategy in Europe for years to come.",
-        "imagePrompt": "An intense scene of the Battle of Agincourt with English archers firing arrows and French knights in armor, mud and chaos around them.",
-        "relevanceScore": 88
+        "imagePrompt": "An intense scene of the Battle of Agincourt with English archers firing arrows and French knights in armor, mud and chaos around them."
     },
     {
         "id": "inventionofprintingpress",
         "title": "Invention of the Printing Press",
-        "year": 1440,
-        "date": "January 1, 1440",
-        "country": "Germany",
-        "division": "Mainz",
+        "rank": 1440,
         "description": "The creation of the first movable-type printing press by Johannes Gutenberg.",
         "longDescription": "The invention of the movable-type printing press by Johannes Gutenberg around 1440 revolutionized the way information was disseminated. This innovation allowed for the mass production of books, significantly lowering their cost and making literature accessible to a wider audience. Gutenberg\u2019s printing press played a pivotal role in the spread of the Renaissance, Reformation, and the Scientific Revolution by enabling the rapid dissemination of new ideas and knowledge. This event is considered one of the most significant in history, marking the transition from an oral culture to one dominated by written text, fundamentally altering communication and education.",
-        "imagePrompt": "A scene showing Johannes Gutenberg working on the first printing press, surrounded by books and papers in a workshop.",
-        "relevanceScore": 95
+        "imagePrompt": "A scene showing Johannes Gutenberg working on the first printing press, surrounded by books and papers in a workshop."
     },
     {
         "id": "fallofconstantinople",
         "title": "Fall of Constantinople",
-        "year": 1453,
-        "date": "May 29, 1453",
-        "country": "Turkey",
-        "division": "Istanbul",
+        "rank": 1453,
         "description": "The capture of the capital of the Byzantine Empire by the Ottoman Turks.",
         "longDescription": "The Fall of Constantinople was a key moment in world history when Sultan Mehmed II of the Ottoman Empire laid siege to the city for 53 days. The city, which had been the capital of the Byzantine Empire, fell on May 29, 1453, after massive bombardment and strategic advancements. The event marked the end of Christian Byzantine rule and the rise of the Ottoman Empire. It had a profound effect on global trade routes, leading to the Age of Discovery, and reshaped the political landscape of southeastern Europe and the history of Christianity and Islam.",
-        "imagePrompt": "A dramatic scene of the Ottoman Empire's siege on Constantinople, depicting the sea and land forces attacking the city.",
-        "relevanceScore": 90
+        "imagePrompt": "A dramatic scene of the Ottoman Empire's siege on Constantinople, depicting the sea and land forces attacking the city."
     },
     {
         "id": "spanish_inquisition_start",
         "title": "Spanish Inquisition",
-        "year": 1478,
-        "date": "November 1, 1478",
-        "country": "Spain",
-        "division": "Castile",
+        "rank": 1478,
         "description": "The Catholic Monarchs established the Spanish Inquisition to maintain Catholic orthodoxy in their kingdoms.",
         "longDescription": "The Spanish Inquisition was officially established on November 1, 1478, by Ferdinand II of Aragon and Isabella I of Castile, aimed at consolidating their reign and enforcing Catholic orthodoxy. It was characterized by the persecution of converted Jews and Muslims, known as conversos, who were suspected of secretly practicing their former religions. The Inquisition became infamous for its methods, including torture and public executions, and it served as a tool for the monarchy to control the population. Its impact extended beyond the Kingdom of Spain, influencing the treatment of heresy across Europe and contributing to the religious and cultural tensions that characterized the early modern period.",
-        "imagePrompt": "A dramatic scene of the Spanish Inquisition with a tribunal of inquisitors and accused individuals in a dark chamber.",
-        "relevanceScore": 90
+        "imagePrompt": "A dramatic scene of the Spanish Inquisition with a tribunal of inquisitors and accused individuals in a dark chamber."
     },
     {
         "id": "discoveryofamericas",
         "title": "Discovery of the Americas by Christopher Columbus",
-        "year": 1492,
-        "date": "October 12, 1492",
-        "country": "Bahamas",
-        "division": "Caribbean",
+        "rank": 1492,
         "description": "Christopher Columbus arrives in the New World, marking the beginning of European exploration.",
         "longDescription": "Although slightly out of the range provided, the discovery of the Americas by Christopher Columbus on October 12, 1492, is a crucial event in world history. Columbus, under the auspices of Spain, landed on what is now known as the Bahamas, mistakenly believing he had reached the East Indies. This event initiated a wave of exploration and colonization of the Americas by European powers, leading to significant cultural exchanges, the Columbian Exchange, and the eventual establishment of new nations. The impact of Columbus's voyages was profound, resulting in both the exploitation and cultural exchange that would reshape the globe.",
-        "imagePrompt": "An artistic depiction of Christopher Columbus landing on the shores of the Bahamas, with ships and native people visible.",
-        "relevanceScore": 93
+        "imagePrompt": "An artistic depiction of Christopher Columbus landing on the shores of the Bahamas, with ships and native people visible."
     },
     {
         "id": "martin_luther_95_theses",
         "title": "Martin Luther's 95 Theses",
-        "year": 1517,
-        "date": "October 31, 1517",
-        "country": "Germany",
-        "division": "Saxony",
+        "rank": 1517,
         "description": "Martin Luther publicly invited debate on church practices, sparking the Protestant Reformation.",
         "longDescription": "On October 31, 1517, Martin Luther nailed his 95 Theses to the door of the Castle Church in Wittenberg, Germany, challenging the Catholic Church's practices, particularly the sale of indulgences. This act is widely regarded as the catalyst for the Protestant Reformation, a religious movement that questioned the authority of the Pope and led to the rise of various Protestant denominations. Luther's theses ignited widespread debate across Europe, encouraging others to seek reform within the church and promoting the idea of personal faith and scripture. The Reformation significantly altered the religious landscape of Europe, leading to religious wars, the establishment of Protestant churches, and lasting impacts on culture and politics.",
-        "imagePrompt": "An image of Martin Luther posting his 95 Theses on the church door, with curious townspeople gathered around.",
-        "relevanceScore": 97
+        "imagePrompt": "An image of Martin Luther posting his 95 Theses on the church door, with curious townspeople gathered around."
     },
     {
         "id": "establishment_of_the_mughal_empire",
         "title": "Establishment of the Mughal Empire",
-        "year": 1526,
-        "date": "April 20, 1526",
-        "country": "India",
-        "division": "N/A",
+        "rank": 1526,
         "description": "Babur founded the Mughal Empire in India, marking a significant era of cultural and political change.",
         "longDescription": "The establishment of the Mughal Empire began on April 20, 1526, when Babur, a descendant of Timur and Genghis Khan, defeated Ibrahim Lodi at the First Battle of Panipat. This victory marked the beginning of over three centuries of Mughal rule in India, characterized by significant cultural and architectural achievements, including the construction of iconic monuments like the Taj Mahal. Babur's defeat of Lodi was propelled by military innovation and strategic alliances, allowing the Mughals to consolidate power in northern India. The empire would go on to influence South Asia's culture, economy, and political landscape, with lasting legacies that resonate to this day.",
-        "imagePrompt": "An image depicting the First Battle of Panipat with Babur leading his troops against Ibrahim Lodi.",
-        "relevanceScore": 92
+        "imagePrompt": "An image depicting the First Battle of Panipat with Babur leading his troops against Ibrahim Lodi."
     },
     {
         "id": "defeat_of_spanish_armada",
         "title": "Defeat of the Spanish Armada",
-        "year": 1588,
-        "date": "August 8, 1588",
-        "country": "United Kingdom",
-        "division": "N/A",
+        "rank": 1588,
         "description": "England's defeat of the Spanish Armada marked a turning point in naval power and the rise of England as a world power.",
         "longDescription": "The defeat of the Spanish Armada on August 8, 1588, was a pivotal moment in European history. King Philip II of Spain sought to overthrow Queen Elizabeth I of England and restore Catholicism in England. The Spanish Armada, a massive fleet of 130 ships, set sail to invade England but faced fierce resistance from the smaller, more maneuverable English fleet, led by Sir Francis Drake. The engagement ended in disaster for the Spanish, due to a combination of English naval tactics and severe weather conditions. This defeat not only signaled the decline of Spanish naval dominance but also established England as a formidable global naval power, leading to its imperial ambitions in the following centuries.",
-        "imagePrompt": "A dramatic sea battle between the Spanish Armada and the English fleet amidst turbulent waters.",
-        "relevanceScore": 95
+        "imagePrompt": "A dramatic sea battle between the Spanish Armada and the English fleet amidst turbulent waters."
     },
     {
         "id": "theedictofnantes",
         "title": "The Edict of Nantes",
-        "year": 1598,
-        "date": "April 13, 1598",
-        "country": "France",
-        "division": "France",
+        "rank": 1598,
         "description": "The Edict of Nantes granted significant rights to the Huguenots in France, ending the French Wars of Religion.",
         "longDescription": "The Edict of Nantes was promulgated on April 13, 1598, by King Henry IV of France, marking a turning point in French history by granting substantial rights and freedoms to the Huguenots, the French Protestant community. Following decades of civil strife known as the French Wars of Religion, this edict sought to establish peace and coexistence between Catholics and Protestants. It allowed Huguenots to practice their religion freely and hold public office, significantly alleviating the tensions that had plagued the nation. Although the edict was revoked in 1685, it laid foundational ideas about religious tolerance and governance in Europe, influencing Enlightenment thinkers.",
-        "imagePrompt": "A painting depicting King Henry IV signing the Edict of Nantes in a ceremonial setting.",
-        "relevanceScore": 87
+        "imagePrompt": "A painting depicting King Henry IV signing the Edict of Nantes in a ceremonial setting."
     },
     {
         "id": "defenestrationofprague",
         "title": "Defenestration of Prague",
-        "year": 1618,
-        "date": "May 23, 1618",
-        "country": "Czech Republic",
-        "division": "Prague",
+        "rank": 1618,
         "description": "The Defenestration of Prague marked the start of the Thirty Years' War.",
         "longDescription": "The Defenestration of Prague occurred on May 23, 1618, when two Catholic officials were thrown from a castle window by Protestant nobles in response to growing tensions between Protestants and Catholics in the Holy Roman Empire. This event symbolized the deep religious divisions in Europe at the time and triggered the Thirty Years' War, a devastating conflict that involved most of Europe and had significant consequences for the political and religious landscape of the continent. The outcome of the war reshaped borders, resulted in the recognition of Calvinism, and culminated in the Peace of Westphalia in 1648.",
-        "imagePrompt": "An artistic depiction of the Defenestration of Prague, showing nobles throwing officials out of a castle window.",
-        "relevanceScore": 90
+        "imagePrompt": "An artistic depiction of the Defenestration of Prague, showing nobles throwing officials out of a castle window."
     },
     {
         "id": "thepeacetreatyofwestphalia",
         "title": "The Peace Treaty of Westphalia",
-        "year": 1648,
-        "date": "October 24, 1648",
-        "country": "Germany",
-        "division": "Westphalia",
+        "rank": 1648,
         "description": "The Peace of Westphalia concluded the Thirty Years' War in Europe, leading to major territorial and political changes.",
         "longDescription": "The Peace Treaty of Westphalia, signed on October 24, 1648, concluded the Thirty Years' War, which ravaged Europe from 1618 to 1648, primarily involving Germany and the Holy Roman Empire. This series of treaties resulted in significant territorial and political reconfigurations across Europe, recognizing the sovereignty of states and establishing a new understanding of international relations. It allowed for the coexistence of multiple Christian denominations, principally Catholicism, Lutheranism, and Calvinism. The principles established by this treaty laid the groundwork for modern state systems and influenced future diplomatic practices and international law, significantly shaping Europe's political landscape.",
-        "imagePrompt": "An image illustrating the signing of the Peace of Westphalia, with diplomats gathered at a negotiation table.",
-        "relevanceScore": 90
+        "imagePrompt": "An image illustrating the signing of the Peace of Westphalia, with diplomats gathered at a negotiation table."
     },
     {
         "id": "thegreatplague",
         "title": "The Great Plague",
-        "year": 1665,
-        "date": "July 12, 1665",
-        "country": "England",
-        "division": "London",
+        "rank": 1665,
         "description": "The Great Plague was one of the last major outbreaks of bubonic plague in England.",
         "longDescription": "The Great Plague of London reached its peak in July 1665 and was among the last major outbreaks of the bubonic plague in England. The disease spread rapidly through the city, exacerbated by overcrowding and poor sanitation. As people fled London to escape the carnage, it is estimated that around 100,000 residents succumbed to the disease, representing a significant portion of the city's population. The epidemic ended in 1666, coinciding with the Great Fire of London, which helped eliminate many of the unsanitary conditions that facilitated the plague's spread. The Great Plague had profound effects on London's demographics, social structures, and prompted public health reforms in the ensuing years.",
-        "imagePrompt": "A historical scene depicting the effects of the Great Plague in 1665 London, showing abandoned streets and afflicted people.",
-        "relevanceScore": 85
+        "imagePrompt": "A historical scene depicting the effects of the Great Plague in 1665 London, showing abandoned streets and afflicted people."
     },
     {
         "id": "thegreatfireoflondon",
         "title": "The Great Fire of London",
-        "year": 1666,
-        "date": "September 2, 1666",
-        "country": "England",
-        "division": "London",
+        "rank": 1666,
         "description": "The Great Fire of London devastated a large part of the city in September 1666.",
         "longDescription": "The Great Fire of London broke out on September 2, 1666, in a bakery on Pudding Lane and spread rapidly through the city, fueled by wooden structures and the dry conditions of the summer. The fire raged for four days, consuming thousands of homes, St. Paul's Cathedral, and many other landmarks, ultimately leaving around 70,000 of the city's 80,000 residents homeless. While the destruction was catastrophic, the rebuilding efforts that followed led to significant changes in urban planning, construction, and fire safety regulations, transforming London into a modern city. Additionally, the fire symbolized the fragility of human civilization and prompted changes in fire prevention laws throughout Europe.",
-        "imagePrompt": "A dramatic painting of the Great Fire of London engulfing buildings and creating chaos in the streets.",
-        "relevanceScore": 92
+        "imagePrompt": "A dramatic painting of the Great Fire of London engulfing buildings and creating chaos in the streets."
     },
     {
         "id": "thegloriousrevolution",
         "title": "The Glorious Revolution",
-        "year": 1688,
-        "date": "November 5, 1688",
-        "country": "England",
-        "division": "England",
+        "rank": 1688,
         "description": "The Glorious Revolution resulted in a peaceful transfer of power and established constitutional monarchy in England.",
         "longDescription": "The Glorious Revolution unfolded in November 1688 when William of Orange landed in England and overthrew King James II, who had become increasingly unpopular due to his Catholic faith and disregard for parliamentary governance. This bloodless coup established limits on royal authority and reinforced the principles of parliamentary supremacy. William and his wife Mary ascended to the throne, agreeing to the Bill of Rights in 1689, which laid the groundwork for a constitutional monarchy. The outcome significantly influenced the development of modern democracy, representing a pivotal moment in the establishment of political rights and liberties in England.",
-        "imagePrompt": "An illustration of William of Orange's invasion of England during the Glorious Revolution, with troops landing at Torbay.",
-        "relevanceScore": 95
+        "imagePrompt": "An illustration of William of Orange's invasion of England during the Glorious Revolution, with troops landing at Torbay."
     },
     {
         "id": "the_declaration_of_independence",
         "title": "The Declaration of Independence",
-        "year": 1776,
-        "date": "July 4, 1776",
-        "country": "United States",
-        "division": "Federal",
+        "rank": 1776,
         "description": "The United States declared its independence from British rule with the adoption of the Declaration of Independence.",
         "longDescription": "On July 4, 1776, the Continental Congress adopted the Declaration of Independence, formally proclaiming the American colonies' separation from Great Britain. Drafted primarily by Thomas Jefferson, the document articulated the colonies' grievances against King George III and established the principles of individual liberty and government by consent of the governed. This event marked a pivotal moment in the struggle for independence, inspiring future democratic movements and becoming a cornerstone of American identity. The declaration\u2019s lasting principles continue to resonate in global human rights discourse.",
-        "imagePrompt": "An illustration of the signing of the Declaration of Independence with key figures like Thomas Jefferson and John Adams.",
-        "relevanceScore": 97
+        "imagePrompt": "An illustration of the signing of the Declaration of Independence with key figures like Thomas Jefferson and John Adams."
     },
     {
         "id": "the_signing_of_the_u_s_constitution",
         "title": "The Signing of the U.S. Constitution",
-        "year": 1787,
-        "date": "September 17, 1787",
-        "country": "United States",
-        "division": "Federal",
+        "rank": 1787,
         "description": "The U.S. Constitution was signed by delegates at the Constitutional Convention in Philadelphia.",
         "longDescription": "On September 17, 1787, the U.S. Constitution was signed by 39 delegates in Philadelphia, creating the framework for the federal government of the United States. This landmark event followed months of heated debates and discussions aimed at addressing the weaknesses of the Articles of Confederation. It established a system of checks and balances between the branches of government, fostering a democratic framework that has influenced constitutions worldwide. The signing marked a significant step towards the formation of the United States as a unified nation.",
-        "imagePrompt": "An artistic depiction of the signing of the U.S. Constitution in Philadelphia, featuring delegates in a historic setting.",
-        "relevanceScore": 95
+        "imagePrompt": "An artistic depiction of the signing of the U.S. Constitution in Philadelphia, featuring delegates in a historic setting."
     },
     {
         "id": "the_french_revolution",
         "title": "The French Revolution",
-        "year": 1789,
-        "date": "July 14, 1789",
-        "country": "France",
-        "division": "\u00cele-de-France",
+        "rank": 1789,
         "description": "The French Revolution began with the storming of the Bastille, signaling the start of a radical shift in French politics.",
         "longDescription": "On July 14, 1789, the storming of the Bastille prison symbolized the uprising against the tyranny of the Bourbon monarchy and the beginning of the French Revolution. Economic hardships, social inequality, and a lack of political representation had fueled public anger, leading to protests and demands for reform. The fall of the Bastille became a rallying point for revolutionaries and represented the fight for liberty and equality. The revolution led to the eventual establishment of a republic, utterly transforming French society and influencing revolutionary movements around the world.",
-        "imagePrompt": "A dramatic scene of the storming of the Bastille, depicting revolutionary crowds and the prison in flames.",
-        "relevanceScore": 98
+        "imagePrompt": "A dramatic scene of the storming of the Bastille, depicting revolutionary crowds and the prison in flames."
     },
     {
         "id": "the_abolishment_of_slavery_in_haiti",
         "title": "The Abolishment of Slavery in Haiti",
-        "year": 1804,
-        "date": "January 1, 1804",
-        "country": "Haiti",
-        "division": "Ouest",
+        "rank": 1804,
         "description": "Haiti declared independence and abolished slavery, becoming the first nation to do so after a successful slave revolt.",
         "longDescription": "On January 1, 1804, Haiti declared its independence from French colonial rule and abolished slavery, marking a monumental achievement in the fight against oppression. This event culminated from the Haitian Revolution, which began in 1791 as enslaved Africans revolted against their masters. Under leaders like Toussaint Louverture and Jean-Jacques Dessalines, the revolution was marked by fierce battles and strategic alliances. The success of the revolt inspired enslaved people and abolitionists worldwide, significantly impacting the global discourse on human rights and slavery, while Haiti's independence highlighted the power of resistance against colonialism.",
-        "imagePrompt": "An inspiring image of the Haitian flag being raised after independence, symbolizing freedom and hope.",
-        "relevanceScore": 96
+        "imagePrompt": "An inspiring image of the Haitian flag being raised after independence, symbolizing freedom and hope."
     },
     {
         "id": "the_mexican_war_of_independence",
         "title": "The Mexican War of Independence",
-        "year": 1810,
-        "date": "September 16, 1810",
-        "country": "Mexico",
-        "division": "Federal District",
+        "rank": 1810,
         "description": "The Mexican War of Independence began with Miguel Hidalgo's Grito de Dolores, calling for freedom from Spanish colonial rule.",
         "longDescription": "On September 16, 1810, Miguel Hidalgo, a Catholic priest, issued the Grito de Dolores, launching the Mexican War of Independence against Spanish colonial rule. This event signified the start of a prolonged conflict characterized by social, political, and ethnic tensions, ultimately leading to Mexico's independence in 1821. Hidalgo's call to arms rallied local populations, underscoring the desire for autonomy and rights. The revolution was marked by several key figures and battles, shaping Mexico's national identity and influencing other liberation movements in Latin America.",
-        "imagePrompt": "A scene depicting Miguel Hidalgo proclaiming the Grito de Dolores to a crowd of revolutionaries.",
-        "relevanceScore": 93
+        "imagePrompt": "A scene depicting Miguel Hidalgo proclaiming the Grito de Dolores to a crowd of revolutionaries."
     },
     {
         "id": "the_battle_of_waterloo",
         "title": "The Battle of Waterloo",
-        "year": 1815,
-        "date": "June 18, 1815",
-        "country": "Belgium",
-        "division": "Walloon Brabant",
+        "rank": 1815,
         "description": "The Battle of Waterloo marked the defeat of Napoleon Bonaparte, leading to the end of his rule and the Napoleonic Wars.",
         "longDescription": "The Battle of Waterloo, fought on June 18, 1815, was a decisive confrontation that led to the defeat of Napoleon Bonaparte and the end of the Napoleonic Wars. Facing a coalition army led by the Duke of Wellington and Prussian Field Marshal Gebhard Leberecht von Bl\u00fccher, Napoleon's forces were ultimately overwhelmed. This battle marked a turning point in European history, leading to a long period of peace on the continent and the Congress of Vienna, which aimed to restore balance of power. The defeat ensured that Europe would move towards a more conservative political landscape for decades.",
-        "imagePrompt": "A vivid portrayal of the Battle of Waterloo, showcasing soldiers, cavalry, and the chaotic battlefield.",
-        "relevanceScore": 94
+        "imagePrompt": "A vivid portrayal of the Battle of Waterloo, showcasing soldiers, cavalry, and the chaotic battlefield."
     },
     {
         "id": "greekindependence",
         "title": "Greek War of Independence Begins",
-        "year": 1821,
-        "date": "February 21, 1821",
-        "country": "Greece",
-        "division": "N/A",
+        "rank": 1821,
         "description": "The Greek revolt against Ottoman rule launched a struggle for independence.",
         "longDescription": "The Greek War of Independence began on February 21, 1821, as Greek revolutionaries sought to overthrow over four centuries of Ottoman rule. The discontent stemmed from nationalistic sentiments and the failure of the Ottomans to effectively govern the region. The revolt attracted international attention and support, particularly from Western Europe. After years of conflict, the war ended in 1829 with the establishment of Greece as an independent state, significantly influencing the rise of nationalism in the Balkans and setting a precedent for future independence movements.",
-        "imagePrompt": "A historical depiction of Greek revolutionaries in traditional attire fighting for independence from Ottoman rule.",
-        "relevanceScore": 85
+        "imagePrompt": "A historical depiction of Greek revolutionaries in traditional attire fighting for independence from Ottoman rule."
     },
     {
         "id": "emancipationproclamation",
         "title": "Emancipation Proclamation",
-        "year": 1863,
-        "date": "January 1, 1863",
-        "country": "United States",
-        "division": "N/A",
+        "rank": 1863,
         "description": "An executive order by President Lincoln declaring the freedom of slaves in Confederate states.",
         "longDescription": "On January 1, 1863, President Abraham Lincoln issued the Emancipation Proclamation, which declared that all enslaved people in Confederate-held territory were to be made free. This pivotal document was not only a strategic war measure intended to weaken the Confederacy but also laid the foundation for the eventual abolition of slavery throughout the United States. While it did not immediately free a single slave, it empowered African Americans to escape and fight for the Union, ultimately changing the course of the Civil War and heralding a new era of civil rights.",
-        "imagePrompt": "Abraham Lincoln signing the Emancipation Proclamation in the White House during the Civil War.",
-        "relevanceScore": 95
+        "imagePrompt": "Abraham Lincoln signing the Emancipation Proclamation in the White House during the Civil War."
     },
     {
         "id": "startofww1",
         "title": "World War I Starts",
-        "year": 1914,
-        "date": "July 28, 1914",
-        "country": "Austria-Hungary",
-        "division": "N/A",
+        "rank": 1914,
         "description": "The assassination of Archduke Franz Ferdinand triggered the Great War.",
         "longDescription": "World War I officially began on July 28, 1914, when Austria-Hungary declared war on Serbia following the assassination of Archduke Franz Ferdinand. The conflict arose from a complex web of alliances and nationalistic fervor that had been brewing in Europe. As nations took sides, the war quickly escalated across the continent and drew in countries from around the world. The war resulted in unprecedented levels of destruction and loss of life, reshaping international relations and eventually leading to significant political changes in many countries, including the fall of empires and the rise of new nations.",
-        "imagePrompt": "A scene depicting the mobilization of soldiers as World War I is declared, with Archduke Ferdinand's portrait in the background.",
-        "relevanceScore": 98
+        "imagePrompt": "A scene depicting the mobilization of soldiers as World War I is declared, with Archduke Ferdinand's portrait in the background."
     },
     {
         "id": "endofww1",
         "title": "World War I Ends",
-        "year": 1918,
-        "date": "November 11, 1918",
-        "country": "France",
-        "division": "N/A",
+        "rank": 1918,
         "description": "The Armistice of Compi\u00e8gne ended the fighting in World War I.",
         "longDescription": "On November 11, 1918, an armistice was signed between the Allies and Germany, marking the end of World War I. The war had wreaked havoc across Europe, with millions of soldiers and civilians dead and entire regions devastated. The peace negotiations that followed, particularly the Treaty of Versailles, not only aimed to dismantle the empires involved but also created new national boundaries and governments. The repercussions of World War I set the stage for future conflicts and dramatically altered the geopolitical landscape of the 20th century.",
-        "imagePrompt": "A celebratory scene of Allied soldiers and civilians after the Armistice signing, showcasing the end of World War I.",
-        "relevanceScore": 97
+        "imagePrompt": "A celebratory scene of Allied soldiers and civilians after the Armistice signing, showcasing the end of World War I."
     },
     {
         "id": "startofww2",
         "title": "World War II Starts",
-        "year": 1939,
-        "date": "September 1, 1939",
-        "country": "Germany",
-        "division": "N/A",
+        "rank": 1939,
         "description": "Germany invades Poland, marking the official start of World War II.",
         "longDescription": "World War II commenced on September 1, 1939, when Germany invaded Poland, prompting Britain and France to declare war on Germany two days later. This invasion was part of Adolf Hitler's aggressive expansionist policies aimed at overturning the post-World War I order and establishing German dominance in Europe. The initial phase of the war saw rapid advances by German forces utilizing blitzkrieg tactics, leading to the swift fall of Poland. The implications of World War II were immense, resulting in a global conflict that would last until 1945, reshaping nations, economies, and ideologies worldwide.",
-        "imagePrompt": "German troops advancing into Poland in a blitzkrieg attack as World War II begins.",
-        "relevanceScore": 100
+        "imagePrompt": "German troops advancing into Poland in a blitzkrieg attack as World War II begins."
     },
     {
         "id": "pearlharbor",
         "title": "Attack on Pearl Harbor",
-        "year": 1941,
-        "date": "December 7, 1941",
-        "country": "United States",
-        "division": "Hawaii",
+        "rank": 1941,
         "description": "A surprise military strike by the Japanese Navy against the United States naval base at Pearl Harbor.",
         "longDescription": "On December 7, 1941, the Japanese military launched a surprise attack on the United States naval base at Pearl Harbor, Hawaii, which led to the United States' formal entry into World War II. The attack aimed to incapacitate the Pacific Fleet and cripple the U.S. ability to respond to Japanese expansion in the Pacific. Over 2,400 Americans were killed, and numerous ships and aircraft were destroyed. The aftermath united the American public, leading to a swift declaration of war against Japan and subsequently against Germany and Italy, dramatically shaping the course of the conflict and the global landscape.",
-        "imagePrompt": "A historical depiction of the attack on Pearl Harbor with planes and explosions in the background.",
-        "relevanceScore": 99
+        "imagePrompt": "A historical depiction of the attack on Pearl Harbor with planes and explosions in the background."
     }
 ]

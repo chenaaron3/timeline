@@ -2,9 +2,7 @@
     {
         "id": "george_washington",
         "title": "George Washington",
-        "year": 1789,
-        "date": "April 30, 1789",
-        "country": "United States",
+        "rank": 1789,
         "description": "George Washington becomes the first President of the United States.",
         "longDescription": "George Washington was inaugurated as the first President of the United States on April 30, 1789. His presidency set the foundation for American governance, establishing key traditions like the Cabinet system and the inaugural address. Washington's nonpartisan leadership emphasized unity and neutrality, shaping the fledgling nation's future. He signed the Judiciary Act of 1789, which established the federal judiciary, and maintained peace through the Jay Treaty with Britain, thus preventing war. Washington's two-term presidency and voluntary retirement set democratic precedents for constitutional governance.",
         "imagePrompt": "The first presidential inauguration of George Washington surrounded by founding fathers and the excitement of a nascent nation."
@@ -12,9 +10,7 @@
     {
         "id": "john_adams",
         "title": "John Adams",
-        "year": 1797,
-        "date": "March 4, 1797",
-        "country": "United States",
+        "rank": 1797,
         "description": "John Adams becomes the second President of the United States.",
         "longDescription": "Inaugurated on March 4, 1797, John Adams became the second President of the United States. Known for his role during the American Revolution, Adams faced significant challenges, including managing foreign tensions with France that led to the Quasi-War. His presidency was also marked by the controversial passage of the Alien and Sedition Acts, which aimed to strengthen national security but drew criticism for infringing on civil liberties. Despite a tumultuous term and declining Federalist support, Adams played a crucial role in preventing an all-out war with France, showcasing his diplomatic acumen.",
         "imagePrompt": "A formal inauguration scene of John Adams, surrounded by early American patriots, in a period-accurate setting depicting the early Washington era."
@@ -22,9 +18,7 @@
     {
         "id": "thomas_jefferson",
         "title": "Thomas Jefferson",
-        "year": 1801,
-        "date": "March 4, 1801",
-        "country": "United States",
+        "rank": 1801,
         "description": "Thomas Jefferson begins his first term as the third U.S. President.",
         "longDescription": "Thomas Jefferson's presidency began on March 4, 1801, following a contentious election decided by the House of Representatives. His administration is notably marked by the Louisiana Purchase in 1803, which nearly doubled the size of the United States, and the Lewis and Clark Expedition, which expanded American knowledge and exploration. Jefferson pursued policies of limited government and reduced federal spending, while his Embargo Act of 1807 aimed to maintain American neutrality but led to significant economic difficulties. His presidency shaped American republicanism and expanded the nation's territorial boundaries.",
         "imagePrompt": "An idealistic scene of Thomas Jefferson's inauguration, with Jefferson at the forefront, surrounded by early Americans, picturesque early Washington setting, and the air of optimism."
@@ -32,9 +26,7 @@
     {
         "id": "james_madison",
         "title": "James Madison",
-        "year": 1809,
-        "date": "March 4, 1809",
-        "country": "United States",
+        "rank": 1809,
         "description": "James Madison takes office as the fourth U.S. President.",
         "longDescription": "Inaugurated on March 4, 1809, James Madison, known as 'The Father of the Constitution,' became the fourth President of the United States. His presidency faced the challenges of the War of 1812 against Britain, which highlighted American resilience and eventually led to stronger national unity and identity. Madison's leadership saw the preservation of U.S. sovereignty despite British invasions and blockades. Domestically, he promoted the development of infrastructure and a national bank, defining policies that enhanced economic strength. His contributions to the nation's framework and post-war national strength are significant aspects of his legacy.",
         "imagePrompt": "A composed James Madison during his inauguration, against the backdrop of a community coming together, emphasizing patriotism and resilience before the challenges of conflict."
@@ -42,9 +34,7 @@
     {
         "id": "james_monroe",
         "title": "James Monroe",
-        "year": 1817,
-        "date": "March 4, 1817",
-        "country": "United States",
+        "rank": 1817,
         "description": "James Monroe assumes the presidency with a message of unity.",
         "longDescription": "James Monroe, inaugurated on March 4, 1817, is remembered for presiding over the 'Era of Good Feelings,' a time of national unity and political calm. His two-term presidency included the signing of the Missouri Compromise, which temporarily settled conflicts between free and slave states, and the issuance of the Monroe Doctrine, a defining statement of foreign policy opposing European colonialism in the Americas. Monroe's forward-thinking policies and acquisition of Florida from Spain further shaped the national boundaries, leaving an enduring legacy of increased domestic harmony and international respect for American sovereignty.",
         "imagePrompt": "A proud and serene inauguration of James Monroe, amidst a backdrop of hopeful and united American citizens, signaling the 'Era of Good Feelings' with symbols of unity and progress."
@@ -52,9 +42,7 @@
     {
         "id": "john_quincy_adams",
         "title": "John Quincy Adams",
-        "year": 1825,
-        "date": "March 4, 1825",
-        "country": "United States",
+        "rank": 1825,
         "description": "John Quincy Adams becomes the sixth President of the United States.",
         "longDescription": "John Quincy Adams took office on March 4, 1825, as the sixth President of the United States following a hotly contested election resolved in the House of Representatives. His administration emphasized modernization and education, advocating for a national university and scientific advancements. Adams faced political gridlock and intense opposition from Andrew Jackson's followers, hindering many of his initiatives. Despite these challenges, his intelligent leadership and commitment to public service left an enduring impact, notably through his post-presidential Congressional career advocating for civil liberties and anti-slavery measures.",
         "imagePrompt": "An intellectual and forward-thinking inauguration of John Quincy Adams, surrounded by dignitaries and scholarly texts, reflecting the beginnings of a modernizing era in American politics."
@@ -62,9 +50,7 @@
     {
         "id": "andrew_jackson",
         "title": "Andrew Jackson",
-        "year": 1829,
-        "date": "March 4, 1829",
-        "country": "United States",
+        "rank": 1829,
         "description": "Andrew Jackson, known for his populist policies, starts his presidency.",
         "longDescription": "Andrew Jackson's presidency began on March 4, 1829, with sweeping promises to embody the 'common man's' interests, marking a shift in American politics towards populism. Under his leadership, the controversial Indian Removal Act of 1830 led to the forced relocation of Native American tribes, resulting in the Trail of Tears. Jackson vehemently opposed the national bank and asserted federal authority in disputes like the Nullification Crisis. Viewed as both a champion of the average citizen and a divisive figure, Jackson's presidency initiated a more democratized political landscape yet also sowed seeds of significant conflict.",
         "imagePrompt": "A dynamic inauguration of Andrew Jackson, with an air of boldness and resolve, surrounded by a diverse crowd representing the common people's fervor and hope."
@@ -72,9 +58,7 @@
     {
         "id": "martin_van_buren",
         "title": "Martin Van Buren",
-        "year": 1837,
-        "date": "March 4, 1837",
-        "country": "United States",
+        "rank": 1837,
         "description": "Martin Van Buren becomes the eighth President amid economic challenges.",
         "longDescription": "Martin Van Buren was inaugurated on March 4, 1837, as the eighth President of the United States, immediately facing the Panic of 1837 that led to a severe economic depression. Despite these challenges, Van Buren upheld Jacksonian ideals, supporting limited government interference in the economy. His presidency was marred by growing financial crises and internal pressures related to slavery and expanding territories. Van Buren's adherence to hard money policies prolonged economic struggles, yet his legacy includes reinforcing federal neutrality in bank management and emphasizing states' rights.",
         "imagePrompt": "A solemn inauguration scene of Martin Van Buren, amid increasing economic concerns, with Van Buren's poised figure standing firm before a cautious and expectant crowd."
@@ -82,9 +66,7 @@
     {
         "id": "william_henry_harrison",
         "title": "William Henry Harrison",
-        "year": 1841,
-        "date": "March 4, 1841",
-        "country": "United States",
+        "rank": 1841,
         "description": "William Henry Harrison becomes President in the shortest tenure ever.",
         "longDescription": "William Henry Harrison was inaugurated on March 4, 1841, delivering the longest inaugural address in history, which contributed to his falling ill and subsequent death only a month later. His presidency remains notable for its brevity and the subsequent constitutional clarification of presidential succession. Known as a military hero from the Battle of Tippecanoe, Harrison's career reflected frontier leadership and popular appeal. His death led to the succession of John Tyler and emphasized the importance of clear constitutional guidelines for the abrupt transfer of presidential power.",
         "imagePrompt": "A heroic yet poignant inauguration of William Henry Harrison, depicted against a brisk outdoor setting with a celebratory yet solemn crowd, embodying a frontier spirit."
@@ -92,9 +74,7 @@
     {
         "id": "john_tyler",
         "title": "John Tyler",
-        "year": 1841,
-        "date": "April 6, 1841",
-        "country": "United States",
+        "rank": 1841,
         "description": "John Tyler assumes the presidency after the death of William Henry Harrison.",
         "longDescription": "John Tyler became the 10th President of the United States on April 6, 1841, following the sudden death of President William Henry Harrison, only 31 days into Harrison's term. Tyler's presidency was marked by his strong stance on states' rights and his support for annexing Texas, which played a major role in the lead-up to the Mexican-American War. Tyler faced significant opposition from both political parties, as many saw him as an accidental president, and he was the first president to ascend to office due to the death of his predecessor. Despite these challenges, he was determined to uphold the office's authority.",
         "imagePrompt": "John Tyler, assuming the presidency in a somber moment, standing firm in a historical setting, with a determined gaze amidst a backdrop of a nation in transition."
@@ -102,9 +82,7 @@
     {
         "id": "james_k_polk",
         "title": "James K. Polk",
-        "year": 1845,
-        "date": "March 4, 1845",
-        "country": "United States",
+        "rank": 1845,
         "description": "James K. Polk becomes the 11th President of the United States.",
         "longDescription": "James K. Polk was inaugurated on March 4, 1845, as the 11th President, emphasizing a strong commitment to territorial expansion across the continent. Known as the president who achieved all his major goals, he orchestrated the acquisition of California and the Oregon Territory, resolved the Texas border issue through war with Mexico, and reformed the treasury system. Despite facing challenges over slavery expansion, his presidency succeeded in significantly enlarging the nation. Polk's expansionist vision laid the groundwork for the United States' future growth but also intensified the debate over slavery.",
         "imagePrompt": "A determined James K. Polk taking the oath of office in 1845, set against the backdrop of manifest destiny and an expansive nation."
@@ -112,9 +90,7 @@
     {
         "id": "zachary_taylor",
         "title": "Zachary Taylor",
-        "year": 1849,
-        "date": "March 4, 1849",
-        "country": "United States",
+        "rank": 1849,
         "description": "Zachary Taylor is appointed as the 12th President of the United States.",
         "longDescription": "Zachary Taylor, a celebrated military leader, was inaugurated on March 4, 1849, as the 12th President of the United States. His presidency was predominantly marked by his stance against the spread of slavery into the newly acquired western territories, adopting a firm approach that startled many in his party. The Compromise of 1850 became a central issue, although Taylor opposed it, asserting the need to admit California as a free state. His unexpected death in 1850 curtailed his potential influence on the growing sectional divide, leaving behind a complex legacy of decisive albeit brief leadership.",
         "imagePrompt": "An assertive Zachary Taylor on the platform, surrounded by an audience, as he hesitates to extend slavery into new territories."
@@ -122,9 +98,7 @@
     {
         "id": "millard_fillmore",
         "title": "Millard Fillmore",
-        "year": 1850,
-        "date": "July 9, 1850",
-        "country": "United States",
+        "rank": 1850,
         "description": "Millard Fillmore assumes the presidency following Taylor's death.",
         "longDescription": "Millard Fillmore became the 13th President on July 9, 1850, after the death of Zachary Taylor. His administration is most noted for the passage of the Compromise of 1850, a series of legislations addressing the territorial and slavery controversies arising from the Mexican-American War. Fillmore's firm enforcement of the Fugitive Slave Act , part of the Compromise, caused further tensions between North and South. Though perceived as stabilizing in the short term, his decisions failed to address the root of sectional conflicts, leading to his diminished standing within his party.",
         "imagePrompt": "Millard Fillmore surrounded by lawmakers, signing the Compromise of 1850, portraying civil yet divided sentiments of the era."
@@ -132,9 +106,7 @@
     {
         "id": "franklin_pierce",
         "title": "Franklin Pierce",
-        "year": 1853,
-        "date": "March 4, 1853",
-        "country": "United States",
+        "rank": 1853,
         "description": "Franklin Pierce begins his term as the 14th President of the United States.",
         "longDescription": "Franklin Pierce took office on March 4, 1853, as the 14th President, known for his pro-southern beliefs and signing the controversial Kansas-Nebraska Act, which negated the Missouri Compromise and opened new territories to slavery through popular sovereignty. His inability to alleviate tensions exacerbated divisions, resulting in fierce opposition from newly formed Republican party activists and abolitionists. Pierce's foreign policy evidenced expansionist desires with the ostend manifesto, but his presidency is marred by his domestic failures, regarded as accelerating the path towards Civil War.",
         "imagePrompt": "A contemplative Franklin Pierce signing the Kansas-Nebraska Act as protestors gather outside, embodying intense political strife."
@@ -142,9 +114,7 @@
     {
         "id": "james_buchanan",
         "title": "James Buchanan",
-        "year": 1857,
-        "date": "March 4, 1857",
-        "country": "United States",
+        "rank": 1857,
         "description": "James Buchanan is inaugurated as the 15th President during a national crisis.",
         "longDescription": "James Buchanan's presidency (March 4, 1857) occurred amidst profound national division, having received the notorious Dred Scott decision early in his term. His failure to address escalating tensions over states' rights and slavery rendered the nation closer to Civil War. While Buchanan maintained a conciliatory approach towards pro-slavery factions, his administration saw the fracture of his own party. Buchanan is often criticized for his inaction regarding the secession of southern states as his term concluded, leaving the daunting issue to his successor, Lincoln.",
         "imagePrompt": "James Buchanan delivering his inaugural speech, a solitary figure amidst a growing storm of disunion and conflict."
@@ -152,9 +122,7 @@
     {
         "id": "abraham_lincoln",
         "title": "Abraham Lincoln ",
-        "year": 1861,
-        "date": "March 4, 1861",
-        "country": "United States",
+        "rank": 1861,
         "description": "Abraham Lincoln commences his presidency amid impending Civil War.",
         "longDescription": "Abraham Lincoln was inaugurated as the 16th President on March 4, 1861, confronting an unparalleled national crisis as states began to secede over slavery issues. His determined leadership through the Civil War focused on preserving the Union and ending slavery, evidenced by the Emancipation Proclamation and the Thirteenth Amendment. Lincoln's articulate vision for reconciliation in his second term was cut short by his assassination in 1865. Lincoln's presidency is immortalized for its moral courage, leadership during warfare, and transformative impact on American society and its laws.",
         "imagePrompt": "A resolute Abraham Lincoln delivering his inaugural address, framed by banners and divided factions, symbolizing hope amidst turmoil."
@@ -162,9 +130,7 @@
     {
         "id": "andrew_johnson",
         "title": "Andrew Johnson",
-        "year": 1865,
-        "date": "April 15, 1865",
-        "country": "United States",
+        "rank": 1865,
         "description": "Andrew Johnson assumes the presidency following Lincoln's assassination.",
         "longDescription": "Andrew Johnson, ascending to the presidency on April 15, 1865, was tasked with reuniting a war-torn nation and navigating the complexities of Reconstruction. A Southern Democrat himself, Johnson's lenient policies towards the South and vetoes of Freedmen's rights bills led to conflict with a Radical Republican Congress. His impeachment, though narrowly escaped, highlighted immense political strife and challenges in integrating former Confederate states. Johnson's presidency is chiefly noted for its bitter disputes over civil rights for freed slaves and the direction of post-war America.",
         "imagePrompt": "Andrew Johnson addressing the divided Congress during his presidency, reflecting the contentious Reconstruction era's challenges."
@@ -172,9 +138,7 @@
     {
         "id": "ulysses_s_grant",
         "title": "Ulysses S. Grant",
-        "year": 1869,
-        "date": "March 4, 1869",
-        "country": "United States",
+        "rank": 1869,
         "description": "Ulysses S. Grant starts his term as the 18th President focusing on Reconstruction.",
         "longDescription": "Ulysses S. Grant, inaugurated on March 4, 1869, led with a promise to stabilize the post-war nation. His administration prioritized Reconstruction, supporting civil rights for freed African Americans and battling the Ku Klux Klan. Despite economic prosperity, Grant faced significant scandals that marred his leadership, such as the Whiskey Ring and Indian Ring. Grant's presidency is remembered for its commitment to equality but critiqued for administrative corruption; his post-presidential memoirs and efforts to reconcile the North and South further contribute to his complex legacy.",
         "imagePrompt": "A determined Ulysses S. Grant speaking at a Reconstruction rally, balancing military background and civil authority amid societal challenges."
@@ -182,9 +146,7 @@
     {
         "id": "rutherford_b_hayes",
         "title": "Rutherford B. Hayes",
-        "year": 1877,
-        "date": "March 4, 1877",
-        "country": "United States",
+        "rank": 1877,
         "description": "Rutherford B. Hayes takes office following a highly contested election.",
         "longDescription": "Rutherford B. Hayes entered the presidency on March 4, 1877, following the disputed 1876 election, resolved by the Compromise of 1877. His tenure marked the end of Reconstruction, withdrawing federal troops from Southern states, aimed at restoring national unity. Hayes championed civil service reform and advocated for African American education but faced criticism for perceived compromises on civil rights protections. Hayes's presidency signaled a shift towards reconciliation, laying foundations for future civil reforms, though leaving lingering inequality and segregation challenges.",
         "imagePrompt": "Rutherford B. Hayes addressing the public post his contentious election win, symbolizing an unwieldy transition towards national healing."
@@ -192,9 +154,7 @@
     {
         "id": "james_garfield",
         "title": "James Garfield",
-        "year": 1881,
-        "date": "March 4, 1881",
-        "country": "United States",
+        "rank": 1881,
         "description": "James Garfield is inaugurated as the 20th President of the United States, only to be assassinated later in the year.",
         "longDescription": "James Garfield was inaugurated on March 4, 1881, as the 20th President of the United States. His time in office was tragically cut short by an assassination attempt in July, which ultimately led to his death in September. Garfield's presidency, although brief, was marked by his efforts to reform the civil service system and promote education and infrastructure. His death led to a wave of public support for civil service reform, eventually culminating in the Pendleton Civil Service Reform Act, which would change the way federal government positions were filled.",
         "imagePrompt": "James Garfield at his inauguration, a young and promising leader, amidst a sea of American flags, with an optimistic and determined expression on his face."
@@ -202,9 +162,7 @@
     {
         "id": "chester_a_arthur",
         "title": "Chester A. Arthur",
-        "year": 1881,
-        "date": "September 20, 1881",
-        "country": "United States",
+        "rank": 1881,
         "description": "Chester A. Arthur assumes the presidency after James Garfield's assassination.",
         "longDescription": "Chester A. Arthur became the 21st President of the United States following the assassination of President James A. Garfield. Inheriting a nation in mourning, Arthur took office on September 20, 1881, and aimed to restore public faith in the presidency. Known for his efforts in civil service reform, Arthur played a significant role in the passage of the Pendleton Civil Service Reform Act, which aimed to end the patronage system within the government. Despite low expectations upon his ascension, Arthur's presidency helped lay the groundwork for a more meritocratic government system, positioning him as a precursor to the Progressive Era reforms.",
         "imagePrompt": "A solemn and stately inauguration ceremony of Chester A. Arthur, surrounded by somber officials and an audience dressed in 19th-century attire."
@@ -212,9 +170,7 @@
     {
         "id": "grover_cleveland_1st_term",
         "title": "Grover Cleveland's 1st Term",
-        "year": 1885,
-        "date": "March 4, 1885",
-        "country": "United States",
+        "rank": 1885,
         "description": "Grover Cleveland inaugurated as the only president to serve two non-consecutive terms.",
         "longDescription": "Grover Cleveland began his first term as the 22nd President of the United States on March 4, 1885. Marking an era of classical liberalism, his presidency was noted for its adherence to conservative economic policies, opposition to high tariffs, and dedication to the gold standard. Cleveland faced economic challenges like the Panic of 1893 while maintaining a stance against unnecessary government subsidies, which earned him the reputation of a steadfast reformer. His dedication to political honesty and opposition to corruption set a tone for his twin presidencies, despite facing criticism for intervening in labor strikes.",
         "imagePrompt": "Grover Cleveland taking the presidential oath for his first term, with devoted supporters and dignitaries gathered under a clear, sunny sky."
@@ -222,9 +178,7 @@
     {
         "id": "benjamin_harrison",
         "title": "Benjamin Harrison",
-        "year": 1889,
-        "date": "March 4, 1889",
-        "country": "United States",
+        "rank": 1889,
         "description": "Benjamin Harrison inaugurated as the 23rd President, endorsing economic legislation and Naval expansion.",
         "longDescription": "Benjamin Harrison's presidency, which commenced on March 4, 1889, was marked by substantial legislative activity. His administration saw the McKinley Tariff Act and the Sherman Antitrust Act's passage, reflecting a period of economic protectionism and regulatory beginnings against monopolistic practices. Emphasizing veterans' affairs, Harrison also advocated for pensions and the expansion of the U.S. Navy, emphasizing modernization. Despite these efforts, Harrison's inability to control fiscally ambitious Congress led to a financial surplus, causing tensions that softened his support base, leading to his defeat by Grover Cleveland in 1892.",
         "imagePrompt": "An energetic inauguration of Benjamin Harrison, with flags waving and a vibrant military presence at the ceremony."
@@ -232,9 +186,7 @@
     {
         "id": "grover_cleveland_2nd_term",
         "title": "Grover Cleveland's 2nd Term",
-        "year": 1893,
-        "date": "March 4, 1893",
-        "country": "United States",
+        "rank": 1893,
         "description": "Grover Cleveland re-elected after a four-year hiatus, facing the challenges of economic depression.",
         "longDescription": "In his unique second non-consecutive term beginning March 4, 1893, Grover Cleveland returned to the presidency amid a severe economic depression. Tasked with stabilizing the economy, he upheld his commitment to the gold standard and reversed the Sherman Silver Purchase Act's policy to curb inflation. His administration struggled with labor unrest, including the Pullman Strike, necessitating further federal intervention. Despite the economic turmoil, Cleveland's firm beliefs in limited government and fiscal integrity highlighted his steadfast management style, eventually leading to a consolidation of executive powers and influencing future governance.",
         "imagePrompt": "Grover Cleveland resuming the presidency in a somber inauguration, with attention on challenges ahead against a backdrop of economic turmoil."
@@ -242,9 +194,7 @@
     {
         "id": "william_mckinley",
         "title": "William McKinley",
-        "year": 1897,
-        "date": "March 4, 1897",
-        "country": "United States",
+        "rank": 1897,
         "description": "William McKinley is inaugurated as the 25th President of the United States.",
         "longDescription": "William McKinley was inaugurated as the 25th President of the United States on March 4, 1897. His presidency is defined by the Spanish-American War, during which the United States emerged as a global power, acquiring territories like Puerto Rico, Guam, and the Philippines. McKinley also presided over the annexation of Hawaii and a significant economic expansion. Unfortunately, his presidency was cut short when he was assassinated in 1901, leading to the ascension of Theodore Roosevelt. McKinley's leadership during this period shaped America's position on the global stage and its economic development.",
         "imagePrompt": "William McKinley standing solemnly during his second inauguration, poised as the nation enters a new era of expansion and international influence."
@@ -252,9 +202,7 @@
     {
         "id": "theodore_roosevelt",
         "title": "Theodore Roosevelt",
-        "year": 1901,
-        "date": "September 14, 1901",
-        "country": "United States",
+        "rank": 1901,
         "description": "Theodore Roosevelt becomes the 26th President of the United States after McKinley's assassination.",
         "longDescription": "Theodore Roosevelt became the 26th President of the United States on September 14, 1901, following the assassination of President William McKinley. Roosevelt was a dynamic and energetic leader, known for his progressive policies and his emphasis on conservation, trust-busting, and the construction of the Panama Canal. His leadership reshaped the U.S. domestic and foreign policy landscape, expanding the nation's role in global affairs. Roosevelt's presidency is remembered for his assertive diplomacy and efforts to address the needs of the common people, cementing his legacy as one of the most influential presidents in American history.",
         "imagePrompt": "Theodore Roosevelt, standing with vigor and determination after McKinley's death, representing a new chapter in American history with his bold, progressive approach."
@@ -262,9 +210,7 @@
     {
         "id": "william_howard_taft",
         "title": "William Howard Taft",
-        "year": 1909,
-        "date": "March 4, 1909",
-        "country": "United States",
+        "rank": 1909,
         "description": "William Howard Taft is inaugurated as the 27th President of the United States.",
         "longDescription": "William Howard Taft assumed the presidency on March 4, 1909, following Theodore Roosevelt's tenure. Taft's presidency was marked by a focus on trust-busting and progressive reforms, although he faced criticism from progressives for not advancing reform as aggressively as Roosevelt. Taft's administration is also notable for the expansion of American influence abroad, including the construction of the Panama Canal. After his presidency, Taft went on to serve as Chief Justice of the United States, becoming the only person to hold both the presidency and the chief justice position.",
         "imagePrompt": "William Howard Taft, a large and imposing figure, confidently taking the oath of office, amidst a crowd of early 20th-century American optimism."
@@ -272,9 +218,7 @@
     {
         "id": "woodrow_wilson",
         "title": "Woodrow Wilson",
-        "year": 1913,
-        "date": "March 4, 1913",
-        "country": "United States",
+        "rank": 1913,
         "description": "Woodrow Wilson initiates sweeping reforms with his progressive policies as the 28th President.",
         "longDescription": "Taking office on March 4, 1913, Woodrow Wilson embarked on a presidency defined by progressive reforms. He pursued the New Freedom agenda, leading to substantial economic changes with implementing the Federal Reserve System and the Clayton Antitrust Act. Notably, his presidency saw the passage of constitutional amendments extending suffrage, creating income tax, and introducing direct senatorial elections. Despite successful domestic reforms, Wilson faced global challenges with World War I, culminating in the Treaty of Versailles and the unsuccessful push for the League of Nations, heavily shaping U.S. foreign policy.",
         "imagePrompt": "Woodrow Wilson at his inauguration rich with symbolism, uniting supporters with a vision of progressive change against the backdrop of the nation's Capitol."
@@ -282,9 +226,7 @@
     {
         "id": "warren_g_harding",
         "title": "Warren G. Harding",
-        "year": 1921,
-        "date": "March 4, 1921",
-        "country": "United States",
+        "rank": 1921,
         "description": "Warren G. Harding is inaugurated as the 29th President of the United States.",
         "longDescription": "Warren G. Harding assumed the presidency on March 4, 1921, with promises of a return to 'normalcy' after the upheaval of World War I. His administration focused on pro-business policies, a hands-off approach to foreign affairs, and efforts to limit government intervention in the economy. However, Harding's presidency was marred by scandal, most notably the Teapot Dome scandal, which involved the illegal leasing of federal oil reserves. Harding died suddenly of a heart attack in 1923, leaving his administration's legacy tarnished by corruption.",
         "imagePrompt": "Warren G. Harding at his inauguration, a confident leader with a vision for post-war America, standing proudly with a backdrop of American patriotism."
@@ -292,9 +234,7 @@
     {
         "id": "calvin_coolidge",
         "title": "Calvin Coolidge",
-        "year": 1923,
-        "date": "August 2, 1923",
-        "country": "United States",
+        "rank": 1923,
         "description": "Calvin Coolidge becomes the 30th President of the United States following Harding's death.",
         "longDescription": "Calvin Coolidge assumed the presidency on August 2, 1923, after the sudden death of President Warren G. Harding. Coolidge's presidency was marked by his quiet demeanor and commitment to limited government. He is known for his economic policies, which favored tax cuts, reduced government spending, and business deregulation, contributing to the prosperity of the Roaring Twenties. His hands-off approach to government earned him the nickname 'Silent Cal.' Coolidge chose not to seek re-election in 1928, leaving office with high approval ratings.",
         "imagePrompt": "Calvin Coolidge, sitting silently in his office, a calm and contemplative figure, embodying the spirit of the Roaring Twenties with a backdrop of economic prosperity."
@@ -302,9 +242,7 @@
     {
         "id": "herbert_hoover",
         "title": "Herbert Hoover",
-        "year": 1929,
-        "date": "March 4, 1929",
-        "country": "United States",
+        "rank": 1929,
         "description": "Herbert Hoover is inaugurated as the 31st President of the United States.",
         "longDescription": "Herbert Hoover began his presidency during a period of economic prosperity but soon faced the catastrophic onset of the Great Depression. Inaugurated on March 4, 1929, Hoover initially relied on voluntarism and community cooperation to address economic challenges. However, his policies struggled to halt the economic collapse, leading to widespread unemployment and financial instability. His administration enacted measures like the Reconstruction Finance Corporation to stimulate recovery, but these proved insufficient. His leadership, perceived as ineffective amid the crisis, subsequently led to significant public dissatisfaction and his defeat in the 1932 election.",
         "imagePrompt": "A poised Herbert Hoover delivering his inaugural address amidst an atmosphere of optimistic anticipation, with American flags waving and a crowd of hopeful supporters."
@@ -312,9 +250,7 @@
     {
         "id": "franklin_d_roosevelt",
         "title": "Franklin D. Roosevelt",
-        "year": 1933,
-        "date": "March 4, 1933",
-        "country": "United States",
+        "rank": 1933,
         "description": "Franklin D. Roosevelt is inaugurated as the 32nd President, promising a 'New Deal' to revive the nation.",
         "longDescription": "Franklin D. Roosevelt assumed the presidency on March 4, 1933, amidst the depths of the Great Depression, bringing hope with his promise of a 'New Deal'. His administration enacted sweeping reforms to stabilize the economy, create jobs, and provide relief to struggling Americans. Key programs like the Social Security Act, Securities and Exchange Commission, and the Tennessee Valley Authority reshaped America's economic and social landscape. Roosevelt's leadership style and fireside chats restored public confidence. The New Deal's legacy remains foundational in American government policy, though it faced challenges including constitutional battles and managing World War II in later years.",
         "imagePrompt": "A determined Franklin D. Roosevelt delivering his inaugural address, exuding confidence and vision amidst a crowd looking to him for hope and leadership."
@@ -322,9 +258,7 @@
     {
         "id": "harry_s_truman",
         "title": "Harry S. Truman",
-        "year": 1945,
-        "date": "April 12, 1945",
-        "country": "United States",
+        "rank": 1945,
         "description": "Harry S. Truman becomes President following FDR's death.",
         "longDescription": "On April 12, 1945, Harry S. Truman unexpectedly ascended to the presidency upon Franklin D. Roosevelt's death. Truman's tenure was marked by pivotal decisions, including the use of atomic bombs against Japan to end World War II and the implementation of the Marshall Plan to rebuild Europe. He advocated for civil rights, desegregating the military and supporting anti-discrimination efforts. His bold, decisive leadership faced Cold War tensions with the establishment of the Truman Doctrine to contain communism. Despite challenges like the Korean War, Truman is remembered for his straightforward demeanor and his commitment to using American power for global stability and prosperity.",
         "imagePrompt": "A resolute Harry S. Truman taking the presidential oath in a solemn ceremony, with historical gravitas as WWII nears its end."
@@ -332,9 +266,7 @@
     {
         "id": "dwight_d_eisenhower",
         "title": "Dwight D. Eisenhower",
-        "year": 1953,
-        "date": "January 20, 1953",
-        "country": "United States",
+        "rank": 1953,
         "description": "Eisenhower becomes President, emphasizing peace and prosperity.",
         "longDescription": "Dwight D. Eisenhower entered the presidency on January 20, 1953, as a war hero committed to peace and prosperity. His administration focused on maintaining global stability amidst Cold War fears, exemplified by the \"Eisenhower Doctrine\" supporting Middle Eastern nations against communism. At home, his leadership saw the expansion of the Interstate Highway System, bolstering economic growth and national unity. Despite his moderate approach to civil rights, he enforced desegregation in Little Rock. Eisenhower's pragmatic governing style and efforts to contain Soviet influence left a lasting legacy of strategic defense, economic expansion, and social progress.",
         "imagePrompt": "A determined Dwight D. Eisenhower saluting amidst a patriotic setting, embodying strength and leadership during a tense yet hopeful era in history."
@@ -342,9 +274,7 @@
     {
         "id": "john_f_kennedy",
         "title": "John F. Kennedy",
-        "year": 1961,
-        "date": "January 20, 1961",
-        "country": "United States",
+        "rank": 1961,
         "description": "John F. Kennedy is inaugurated as the 35th President, inspiring a new generation.",
         "longDescription": "John F. Kennedy's presidency, commencing on January 20, 1961, heralded an era of youthful vigor and vision. Known for his famous 'Ask not what your country can do for you' inaugural speech, Kennedy aimed to inspire civic engagement and progress. His foreign policy challenges, including the Cuban Missile Crisis, showcased his adept crisis management. Domestically, his New Frontier policies sought to address social inequality and innovation in space exploration, culminating in the Apollo program. His tragic assassination cut his presidency short, turning Kennedy into a cultural icon whose idealism continues to influence American society.",
         "imagePrompt": "An assertive John F. Kennedy delivering his iconic inaugural address, surrounded by throngs of admirers captivated by his call to service and change."
@@ -352,9 +282,7 @@
     {
         "id": "lyndon_b_johnson",
         "title": "Lyndon B. Johnson",
-        "year": 1963,
-        "date": "November 22, 1963",
-        "country": "United States",
+        "rank": 1963,
         "description": "Lyndon B. Johnson takes office after Kennedy's assassination.",
         "longDescription": "Lyndon B. Johnson became President on November 22, 1963, in the wake of JFK's assassination. His term was marked by ambitious domestic policies defined by the \"Great Society\" initiatives, emphasizing the elimination of poverty, racial injustice, and inequality. Johnson spearheaded historic civil rights legislation, including the Civil Rights Act of 1964 and the Voting Rights Act of 1965. Despite these successes, his presidency faced increasing dissent over the Vietnam War, leading to a turbulent socio-political climate. Johnson's impactful policies left a profound legacy on American social welfare and civil rights, despite the complexities of a deeply divided era.",
         "imagePrompt": "A solemn Lyndon B. Johnson taking the oath of office aboard Air Force One, surrounded by Jacqueline Kennedy and dignitaries, amid a saddened and shifting nation."
@@ -362,9 +290,7 @@
     {
         "id": "richard_nixon",
         "title": "Richard Nixon",
-        "year": 1969,
-        "date": "January 20, 1969",
-        "country": "United States",
+        "rank": 1969,
         "description": "Richard Nixon is inaugurated with a focus on foreign policy reform.",
         "longDescription": "Richard Nixon's presidency, starting January 20, 1969, is renowned for groundbreaking foreign policy achievements, such as normalizing relations with China and d\u00e9tente with the Soviet Union, reshaping global diplomacy. Domestically, his administration implemented environmental reforms, establishing the EPA. However, Nixon's tenure is largely overshadowed by the Watergate scandal, leading to his resignation to avoid impeachment. His complex legacy intertwines moments of strategic brilliance and enduring controversy, highlighting the struggles between political ambition and ethical governance, leaving a profound impact on American politics and the public's trust in leadership.",
         "imagePrompt": "A determined Richard Nixon being sworn into office, surrounded by flags and historical ambiance, symbolizing a complex period of ambition and eventual controversy."
@@ -372,9 +298,7 @@
     {
         "id": "gerald_ford",
         "title": "Gerald Ford",
-        "year": 1974,
-        "date": "August 9, 1974",
-        "country": "United States",
+        "rank": 1974,
         "description": "Gerald Ford assumes the presidency post-Watergate scandal.",
         "longDescription": "Ascending to the presidency on August 9, 1974, after Nixon's resignation, Gerald Ford sought to restore trust in government marked by the Watergate scandal. His administration focused on healing a divided nation through transparency and accountability. Ford controversially pardoned Nixon, which though intended for national reconciliation, sparked significant public debate and criticism. Domestically, he tackled economic issues of inflation and unemployment, coined as 'stagflation'. Despite his short tenure and electoral loss in 1976, Ford's efforts to promote integrity and stability, along with contributions to U.S. foreign policy, remain noteworthy.",
         "imagePrompt": "An earnest Gerald Ford taking the oath of office, exuding sincerity and determination, set against the backdrop of a nation seeking healing and trust restoration."
@@ -382,9 +306,7 @@
     {
         "id": "jimmy_carter",
         "title": "Jimmy Carter",
-        "year": 1977,
-        "date": "January 20, 1977",
-        "country": "United States",
+        "rank": 1977,
         "description": "Jimmy Carter is sworn in, emphasizing human rights and energy reform.",
         "longDescription": "Jimmy Carter's presidency began on January 20, 1977, as he took office with a focus on human rights, energy policies, and economic reform. He pushed for major legislation to address the energy crisis, emphasizing conservation and alternative energy sources, while fostering peace in the Middle East with the Camp David Accords. Carter's leadership style, marked by ethical principles and a focus on diplomacy, saw challenges, including the Iranian hostage crisis and economic difficulties at home. Although his re-election bid failed, his post-presidency humanitarian work and dedication to international peace as depicted by the Carter Center solidify his positive legacy.",
         "imagePrompt": "A humble Jimmy Carter delivering his inaugural speech with an emphasis on peace and justice, capturing the aspirations of a leader driven by integrity and reform."
@@ -392,9 +314,7 @@
     {
         "id": "ronald_reagan",
         "title": "Ronald Reagan",
-        "year": 1981,
-        "date": "January 20, 1981",
-        "country": "United States",
+        "rank": 1981,
         "description": "Ronald Reagan is inaugurated as the 40th President, promising economic revival and strong defense.",
         "longDescription": "Ronald Reagan took office on January 20, 1981, instilling a sense of optimism and revitalization through his ideological emphasis on small government, free-market economics, and robust national defense. His administration's policies, known as 'Reaganomics', sought to stimulate economic growth through tax cuts and deregulation. Internationally, he projected strength against Soviet influence, promoting the Strategic Defense Initiative. Despite facing challenges like the Beirut barrack bombing and Iran-Contra affair, Reagan's charisma and communication style solidified his legacy as a transformative figure in conservative politics, emphasizing American strength and prosperity.",
         "imagePrompt": "A confident Ronald Reagan delivering his inaugural address, radiating warmth and resolve, with fervent supporters and the grandeur of American tradition surrounding the scene."
@@ -402,9 +322,7 @@
     {
         "id": "george_hw_bush",
         "title": "George H. W. Bush",
-        "year": 1989,
-        "date": "January 20, 1989",
-        "country": "United States",
+        "rank": 1989,
         "description": "George H. W. Bush is inaugurated as the 41st President of the United States.",
         "longDescription": "George H. W. Bush was inaugurated on January 20, 1989, as the 41st President of the United States, succeeding Ronald Reagan. Bush's administration is marked by significant foreign policy achievements, including the fall of the Berlin Wall, the dissolution of the Soviet Union, and the success of Operation Desert Storm in liberating Kuwait from Iraqi occupation. Domestically, he faced economic challenges and a recession, resulting in his controversial decision to reverse his promise on \"no new taxes.\" This decision, combined with a shift in public sentiment, contributed to his unsuccessful bid for re-election. Bush is remembered for his diplomatic leadership style and fostering international cooperation during a transformative period in global politics.",
         "imagePrompt": "George H. W. Bush being inaugurated, with expressions of cautious optimism, embodying a sense of statesmanlike diplomacy."
@@ -412,9 +330,7 @@
     {
         "id": "bill_clinton",
         "title": "Bill Clinton",
-        "year": 1993,
-        "date": "January 20, 1993",
-        "country": "United States",
+        "rank": 1993,
         "description": "Bill Clinton takes office as the 42nd President of the United States.",
         "longDescription": "Bill Clinton assumed the presidency on January 20, 1993, becoming the 42nd President of the United States. His administration is characterized by economic prosperity, welfare reform, and a focus on healthcare and education. Clinton's policies led to budget surpluses and significant employment growth. However, his presidency also faced challenges, including foreign interventions in Bosnia and Somalia, and a major political scandal leading to his impeachment trial. Despite the controversies, Clinton left a lasting impact through initiatives like the North American Free Trade Agreement and the expansion of the Earned Income Tax Credit, solidifying his legacy as a transformative figure in American politics.",
         "imagePrompt": "Bill Clinton taking the oath with an energetic demeanor, surrounded by a crowd of hopeful supporters and smiling dignitaries."
@@ -422,9 +338,7 @@
     {
         "id": "george_w_bush",
         "title": "George W. Bush",
-        "year": 2001,
-        "date": "January 20, 2001",
-        "country": "United States",
+        "rank": 2001,
         "description": "George W. Bush becomes the 43rd President of the United States.",
         "longDescription": "George W. Bush was inaugurated on January 20, 2001, as the 43rd President, marking the start of an era defined by terrorism and international conflict. His presidency is largely defined by the September 11, 2001 attacks and the subsequent War on Terror, including the invasions of Afghanistan and Iraq. Domestically, Bush implemented tax cuts and education reform under the No Child Left Behind Act, while facing criticism over the federal response to Hurricane Katrina. His leadership style emphasized resolve and patriotism, with his legacy deeply intertwined with the complex global challenges of the early 21st century.",
         "imagePrompt": "A solemn George W. Bush at his inauguration, determination in his eyes, draped in a scene of American flags and filled with a sense of profound responsibility."
@@ -432,9 +346,7 @@
     {
         "id": "barack_obama",
         "title": "Barack Obama",
-        "year": 2009,
-        "date": "January 20, 2009",
-        "country": "United States",
+        "rank": 2009,
         "description": "Barack Obama is sworn in as the 44th President of the United States.",
         "longDescription": "Barack Obama made history on January 20, 2009, as the first African American President of the United States. His administration implemented landmark legislation, most notably the Affordable Care Act, aiming to provide healthcare access to millions of Americans. During his tenure, Obama oversaw efforts to revive the economy after the 2008 financial crisis, advocated for renewable energy and climate change policies, and orchestrated the military operation that resulted in the death of Osama bin Laden. His tenure emphasized hope and change, leaving a profound imprint on social progress and the role of America in the global arena.",
         "imagePrompt": "Barack Obama, with a confident and historic demeanor, taking the oath of office, surrounded by an electrified crowd, embodying the spirit of change."
@@ -442,9 +354,7 @@
     {
         "id": "donald_trump_1st_term",
         "title": "Donald Trump's 1st Term",
-        "year": 2017,
-        "date": "January 20, 2017",
-        "country": "United States",
+        "rank": 2017,
         "description": "Donald Trump is inaugurated as the 45th President of the United States.",
         "longDescription": "Donald Trump's 1st term began with his inauguration on January 20, 2017, characterized by unprecedented media dynamics and strong populist rhetoric. His administration focused on deregulation, tax reform, and re-negotiating international trade deals. The controversies surrounding his presidency included investigations into Russian interference in the election, immigration policy disputes, and the handling of a national health crisis. Nevertheless, Trump's leadership style upended conventional political norms, fostering a unique realignment in American politics, driven by a base-oriented approach and unyielding communication strategies.",
         "imagePrompt": "Donald Trump with a confident stance at his inauguration, a sea of red hats around, heralding a new era of partisan politics."
@@ -452,9 +362,7 @@
     {
         "id": "joe_biden",
         "title": "Joe Biden",
-        "year": 2021,
-        "date": "January 20, 2021",
-        "country": "United States",
+        "rank": 2021,
         "description": "Joe Biden is sworn in as the 46th President of the United States.",
         "longDescription": "Joe Biden commenced his presidency on January 20, 2021, amid profound challenges encompassing a global pandemic and social unrest. His administration prioritized national unity and recovery, advancing COVID-19 relief measures and rejoining international agreements on climate change. Biden's leadership marked efforts to restore diplomatic alliances, emphasize infrastructure development, and address systemic inequalities. Faced with navigating partisan landscapes and reshaping domestic policy, his presidency aims to redefine America's role on the world stage while tackling widespread economic and societal challenges.",
         "imagePrompt": "Joe Biden taking the oath at his inauguration with a mature, seasoned presence, surrounded by hopeful supporters amidst a backdrop of solemn national challenges."
@@ -462,9 +370,7 @@
     {
         "id": "donald_trump_2nd_term",
         "title": "Donald Trump's 2nd Term",
-        "year": 2025,
-        "date": "January 20, 2025",
-        "country": "United States",
+        "rank": 2025,
         "description": "Donald Trump is inaugurated again for a non-consecutive second term as President.",
         "longDescription": "Donald Trump's anticipated second term in office, starting January 20, 2025, would be marked by continued reshaping of domestic and international policies, reflecting his undeterred agenda. With potential focus on issues lingering from his previous term, Trump's resurgence represents a pivotal moment in political dynamics, driven by persistent loyalty from his core supporters. His leadership approach and communication strategies are expected to challenge traditional political frameworks, pushing forward reforms aligned with his vision of American sovereignty and economic competitiveness.",
         "imagePrompt": "A matured Donald Trump at his second inauguration, retaining his iconic confidence, surrounded by a devoted, energized assembly, under a banner of renewed ambition."

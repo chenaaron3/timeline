@@ -77,16 +77,9 @@ export function formatSeconds(seconds: number) {
 
 // Compare method to compare event dates
 export function compareEvent(a: Event, b: Event): number {
-  // First compare by year
-  if (a.year < b.year) return -1; // `this` is earlier
-  if (a.year > b.year) return 1; // `this` is later
-
-  // If years are the same, use the more unreliable date
-  const thisDate = new Date(a.date).getTime();
-  const otherDate = new Date(b.date).getTime();
-
-  if (thisDate < otherDate) return -1; // `this` is earlier
-  if (thisDate > otherDate) return 1; // `this` is later
+  // First compare by rank
+  if (a.rank < b.rank) return -1; // `this` is earlier
+  if (a.rank > b.rank) return 1; // `this` is later
   return 0; // `this` is the same as `other`
 }
 
@@ -102,4 +95,14 @@ export function generateUniqueID(): string {
   }
 
   return uniqueId;
+}
+
+export function prettyPrintNumber(num: number) {
+  if (num >= 1_000_000) {
+    return (num / 1_000_000).toFixed(1) + "M";
+  } else if (num >= 10_000) {
+    return (num / 1_000).toFixed(1) + "K";
+  } else {
+    return num.toString();
+  }
 }

@@ -69,27 +69,7 @@ If I have time, I want to explore the option of affiliate marketing. Working wit
 
 ## AI Card Generation
 
-The prompt below is used to generate the data used for the cards.
-The ImagePrompt is fed into this [generator](https://deepai.org/machine-learning-model/anime-world-generator) as assets.
-
-```
-Topic: World History
-Count: 50
-
-Compile a list of historical events based on the above topic. Output the results in JSON format with number of elements equal to the count mentioned above. Each JSON entry should be formatted as below. Only generate events with a definitive date, meaning the date can be attributed to one day. For long lasting events like the World War I, you can create 2 entries for the start and end.
-
-{
-id: string // Lowercase unique identifier derived from the title, no numbers allowed
-title: string // The name of the historical event
-year: number // Formatted like 1453
-date: string // Formatted like May 29, 1453
-country: string // Location of event
-division: string // The Administrative Division of the event (State/Province/Region/Territory)
-description: string // A short 1 sentence description about the event.
-longDescription: string // A longer 1 paragraph description about the event. Include why the event happened, what happened at the event, how it ended, and the impact of the event.
-imagePrompt: string // A prompt used for an image generation model to depict the event.
-}
-```
+The cards are generated from Chat GPT.
 
 ## AI Image Generation
 

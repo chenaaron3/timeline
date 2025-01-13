@@ -1,6 +1,6 @@
 import os
 
-DECK_NAME = "philosophers"
+DECK_NAME = "reddit_communities"
 
 # Root Directory Paths
 ROOT_PATH = os.path.abspath(os.path.join(__file__, "..", ".."))

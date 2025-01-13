@@ -5,8 +5,13 @@ from playwright.sync_api import sync_playwright
 from constants import DECK_NAME, PUBLIC_DIRECTORY_PATH, JSON_PATH, LIST_PATH
 import concurrent.futures
 import json
+import requests
 
-model_name = json.load(open(LIST_PATH))["image_model"]
+try:
+    model_name = json.load(open(LIST_PATH))["image_model"]
+except:
+    model_name = 'logo-generator'
+
 # URL of the image generator
 gen_url = 'https://deepai.org/machine-learning-model/' + model_name
 # Name the save directory after the json name. Save into public folder
@@ -22,9 +27,10 @@ save_directory_path = os.path.join(PUBLIC_DIRECTORY_PATH,DECK_NAME)
 6. Wait for the result to generate and download the image src into public folder
 """
 def generate_image(prompt: str, title: str):
+    print("Generating image for", title)
     with sync_playwright() as p:
         # Launch the browser
-        browser = p.chromium.launch(headless=True)  # Set headless to False to view the process
+        browser = p.chromium.launch(headless=False)  # Set headless to False to view the process
         page = browser.new_page()
 
         # Step 1: Navigate to the URL
@@ -70,6 +76,13 @@ def generate_image(prompt: str, title: str):
         # Close the browser
         browser.close()
 
+def download_image(id, url):
+    # Download image
+    response = requests.get(url)
+    os.makedirs(save_directory_path, exist_ok=True)
+    with open(os.path.join(save_directory_path, f"{id}.jpg"), 'wb') as f:
+        f.write(response.content)
+
 if __name__ == '__main__':
     with open(JSON_PATH, 'r') as f:
         data = json.load(f)
@@ -84,7 +97,10 @@ if __name__ == '__main__':
     # Generate images in parallel
     with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
         def process_entry(entry):
-            generate_image(entry["title"] + ": " + entry["imagePrompt"], entry["id"])
+            if "imagePrompt" in entry:
+                generate_image(entry["title"] + ": " + entry["imagePrompt"], entry["id"])
+            elif "imageURL" in entry:
+                download_image(entry["id"], entry["imageURL"])
         for entry in data:
             if entry["id"] not in existing_images:
                 executor.submit(process_entry, entry)
