@@ -82,6 +82,7 @@ def download_image(id, url):
     os.makedirs(save_directory_path, exist_ok=True)
     with open(os.path.join(save_directory_path, f"{id}.jpg"), 'wb') as f:
         f.write(response.content)
+    print("Downloaded image for ", id)
 
 if __name__ == '__main__':
     with open(JSON_PATH, 'r') as f:

@@ -1,5 +1,5 @@
 from constants import DECK_NAME, GENERATED_DIRECTORY_PATH, JSON_PATH
-from utils import snake_to_pascal
+from utils import snake_to_pascal, strip_numbers
 
 import json
 import os
@@ -28,13 +28,13 @@ import { type StaticImageData } from 'next/image';
     for i, entry in enumerate(data):
         id = entry['id']
         image_path = f"@public/{DECK_NAME}/{id}.jpg"
-        contents += f"import {snake_to_pascal(id)} from '{image_path}';\n"
+        contents += f"import {strip_numbers(snake_to_pascal(id))} from '{image_path}';\n"
 
     # Generate the map from id to import alias
     contents += "\nexport const IMAGE_MAP: Record<string, StaticImageData> = {\n"
     for i, entry in enumerate(data):
         id = entry['id']
-        contents += f"  '{id}': {snake_to_pascal(id)},\n"
+        contents += f"  '{id}': {strip_numbers(snake_to_pascal(id))},\n"
     contents += "};"
 
 

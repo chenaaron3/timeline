@@ -1,3 +1,5 @@
+import { chunk } from 'lodash';
+
 import { Event, HighscoreCategory, Highscores, UserData } from './types';
 
 function seededRandom(seed: number): () => number {
@@ -18,6 +20,36 @@ export function shuffle<T>(array: T[], seed: number): T[] {
     }
   }
   return array;
+}
+
+export function sample<T>(array: T[], count: number, seed: number): T[] {
+  const random = seededRandom(seed);
+
+  // Ensure count is less than or equal to the array length
+  count = Math.min(count, array.length);
+
+  // Determine chunk size
+  const chunkSize = Math.ceil(array.length / count);
+  const samples: T[] = [];
+
+  // Divide array into chunks and pick one random element from each
+  chunk(array, chunkSize).forEach((chunk) => {
+    const i = Math.floor(random() * chunk.length);
+    samples.push(chunk[i]!);
+  });
+
+  // If not enough samples, pick additional unique cards
+  while (samples.length < count) {
+    // Filter out already selected samples
+    const remaining = array.filter((item) => !samples.includes(item));
+    if (remaining.length === 0) break;
+
+    const i = Math.floor(random() * remaining.length);
+    samples.push(remaining[i]!);
+  }
+
+  // Scramble the samples before returning
+  return shuffle<T>(samples, seed);
 }
 
 export function setSubtract<T>(setA: Set<T>, setB: Set<T>) {

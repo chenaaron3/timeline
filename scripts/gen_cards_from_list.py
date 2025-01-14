@@ -1,6 +1,5 @@
 from constants import DECK_NAME, ROOT_PATH, DATA_DIRECTORY_PATH, LIST_PATH
 from models import EventCollection
-from utils import snake_to_pascal
 import argparse
 import os
 import json

@@ -3,7 +3,7 @@ import { subscribeWithSelector } from 'zustand/middleware';
 import { immer } from 'zustand/middleware/immer';
 import { getDeck } from '~/utils/deck';
 import { DECK_NAMES } from '~/utils/deckCollection';
-import { shuffle } from '~/utils/utils';
+import { prettyPrintNumber, sample, shuffle } from '~/utils/utils';
 
 import { Event, Events } from '../utils/types';
 
@@ -58,11 +58,21 @@ const initGame = (state: GameState, deckDraws = 1) => {
   }
   // Get the deck data and image map
   const deckData = getDeck(state.deckName);
-  // Shuffle the deck
-  const shuffledDeck = shuffle(deckData, state.seed);
   // Sample a subset of cards from the deck so the game can end
-  const sampledDeck = shuffledDeck.slice(0, state.deckSize);
-  console.log(state.deckSize);
+  const sampledDeck = sample(deckData, state.deckSize, state.seed);
+  console.log(
+    "Sampled",
+    structuredClone(sampledDeck)
+      .sort((a, b) => a.rank - b.rank)
+      .map((d) => prettyPrintNumber(d.rank)),
+  );
+  console.log(
+    "Random",
+    shuffle(deckData, state.seed)
+      .slice(0, state.deckSize)
+      .sort((a, b) => a.rank - b.rank)
+      .map((d) => prettyPrintNumber(d.rank)),
+  );
 
   // Create a map from card ID to card. Must create map
   // before removing cards from the deck.
