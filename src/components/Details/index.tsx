@@ -31,7 +31,7 @@ export function Details() {
                     </DialogTitle>
                     <Separator />
                     <DialogDescription>
-                        <div className='flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-10'>
+                        <div className='flex flex-col items-center justify-center gap-3 py-3 sm:flex-row sm:gap-10'>
                             <div className='w-2/3 sm:w-1/2 flex justify-center items-center'>
                                 <TooltipProvider>
                                     <Tooltip>
@@ -48,7 +48,7 @@ export function Details() {
                                     </Tooltip>
                                 </TooltipProvider>
                             </div>
-                            <div className='flex w-full flex-col items-center justify-center h-48 sm:h-96 sm:w-1/2 sm:text-lg'>
+                            <div className='flex p-2 w-full flex-col items-center justify-start sm:justify-center overflow-auto max-h-48 sm:max-h-96 sm:w-1/2 sm:text-lg'>
                                 <Typewriter shortText={displayedCard.description} longText={displayedCard.longDescription} />
                             </div>
                         </div>

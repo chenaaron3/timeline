@@ -37,7 +37,7 @@ export const DISPLAY_DECKS = [
         icon: <Earth />,
         imageMap: worldHistoryImageMap,
         deckData: WorldHistoryData,
-        instruction: "Which historical event came first?",
+        instruction: "Which Historical Event Came First?",
         comparisonType: "date",
         blogData: {
             title: "Most Significant World History Events",
@@ -56,7 +56,7 @@ export const DISPLAY_DECKS = [
         icon: <EarthLock />,
         imageMap: oldWorldHistoryImageMap,
         deckData: OldWorldHistoryData,
-        instruction: "Which historical event came first?",
+        instruction: "Which Historical Event Came First?",
         comparisonType: "date",
     },
     {
@@ -65,7 +65,7 @@ export const DISPLAY_DECKS = [
         icon: <Brain />,
         imageMap: philosophersImageMap,
         deckData: PhilosophersData,
-        instruction: "Which Philosopher came first?",
+        instruction: "Which Philosopher Came First?",
         comparisonType: "date",
     },
     {
@@ -74,7 +74,7 @@ export const DISPLAY_DECKS = [
         icon: <UsersRound />,
         deckData: RedditCommunitesData,
         imageMap: redditCommunitiesImageMap,
-        instruction: "Which Subreddit has more subscribers?",
+        instruction: "Which Subreddit Has More Subscribers?",
         comparisonType: "count",
     },
     {
@@ -83,7 +83,7 @@ export const DISPLAY_DECKS = [
         icon: <User />,
         imageMap: usPresidentsImageMap,
         deckData: USPresidents,
-        instruction: "Which President served first?",
+        instruction: "Which President Served First?",
         comparisonType: "date",
         blogData: {
             title: "List of US Presidents",

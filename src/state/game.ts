@@ -154,7 +154,7 @@ export const gameStore = create<GameState & GameActions>()(
   subscribeWithSelector(
     immer((set) => ({
       deckName: "NULL_DECK",
-      deckSize: 20,
+      deckSize: 10,
       deck: [] as Events,
       cardMap: {} as Record<string, Event>,
       activeCard: undefined as Event | undefined,
