@@ -1,4 +1,4 @@
-import { Brain, Earth, EarthLock, User, UsersRound } from 'lucide-react';
+import { Brain, Earth, EarthLock, Swords, User, UsersRound } from 'lucide-react';
 import LeagueData from '~/data/league.json';
 import OldWorldHistoryData from '~/data/old_world_history.json';
 import PhilosophersData from '~/data/philosophers.json';
@@ -83,7 +83,7 @@ export const DISPLAY_DECKS = [
     {
         id: 'league_most_played',
         name: 'Most Played League Champions',
-        icon: <UsersRound />,
+        icon: <Swords />,
         deckData: LeagueData,
         imageMap: leagueImageMap,
         instruction: "Which Champion Is Played More?",
