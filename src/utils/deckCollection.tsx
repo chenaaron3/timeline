@@ -91,6 +91,26 @@ export const DISPLAY_DECKS = [
         rankKey: "play"
     },
     {
+        id: 'league_most_damage',
+        name: 'Most Damage Dealt League Champions',
+        icon: <Swords />,
+        deckData: LeagueData,
+        imageMap: leagueImageMap,
+        instruction: "Which Champion Dealt More Damage?",
+        comparisonType: "count",
+        rankKey: "damage_dealt_to_champions"
+    },
+    {
+        id: 'league_most_taken',
+        name: 'Most Damage Taken League Champions',
+        icon: <Swords />,
+        deckData: LeagueData,
+        imageMap: leagueImageMap,
+        instruction: "Which Champion Took More Damage?",
+        comparisonType: "count",
+        rankKey: "damage_taken"
+    },
+    {
         id: 'us_presidents',
         name: 'US Presidents',
         icon: <User />,
