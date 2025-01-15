@@ -45,10 +45,11 @@ export const getDeck = (deckName: DECK_NAMES): Events => {
     // Assign rank value based on key
     if (deck.rankKey) {
       const value = card[deck.rankKey];
-      if (value == undefined) {
+      if (value === undefined) {
         throw new Error("Invalid rank key! " + deck.rankKey);
+      } else {
+        card.rank = value;
       }
-      card.rank = card[deck.rankKey];
     }
   }
 
