@@ -1,9 +1,11 @@
 import { Brain, Earth, EarthLock, User, UsersRound } from 'lucide-react';
+import LeagueData from '~/data/league.json';
 import OldWorldHistoryData from '~/data/old_world_history.json';
 import PhilosophersData from '~/data/philosophers.json';
 import RedditCommunitesData from '~/data/reddit_communities.json';
 import USPresidents from '~/data/us_president_inaugurations.json';
 import WorldHistoryData from '~/data/world_history.json';
+import { IMAGE_MAP as leagueImageMap } from '~/generated/LeagueImages';
 import { IMAGE_MAP as oldWorldHistoryImageMap } from '~/generated/OldWorldHistoryImages';
 import { IMAGE_MAP as philosophersImageMap } from '~/generated/PhilosophersImages';
 import { IMAGE_MAP as redditCommunitiesImageMap } from '~/generated/RedditCommunitiesImages';
@@ -22,6 +24,7 @@ export interface DisplayDecks {
     deckData: Events;
     instruction: string;
     comparisonType: "date" | "count";
+    rankKey?: string; // If a different key should be used to get the rank
     // Blog Data should be SEO optimized
     blogData?: {
         title: string;
@@ -76,6 +79,16 @@ export const DISPLAY_DECKS = [
         imageMap: redditCommunitiesImageMap,
         instruction: "Which Subreddit Has More Subscribers?",
         comparisonType: "count",
+    },
+    {
+        id: 'league_most_played',
+        name: 'Most Played League Champions',
+        icon: <UsersRound />,
+        deckData: LeagueData,
+        imageMap: leagueImageMap,
+        instruction: "Which Champion Is Played More?",
+        comparisonType: "count",
+        rankKey: "play"
     },
     {
         id: 'us_presidents',

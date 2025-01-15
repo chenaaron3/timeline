@@ -11,6 +11,7 @@ export interface Event {
   // eslint-disable-next-line
   image?: StaticImageData | string; // This is a derived column
   compareTo(other: Event): number;
+  [key: string]: any; // Each event can have custom stats
 }
 
 // Event types

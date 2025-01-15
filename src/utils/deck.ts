@@ -41,6 +41,15 @@ export const getDeck = (deckName: DECK_NAMES): Events => {
     } else if (card.imageURL) {
       card.image = card.imageURL;
     }
+
+    // Assign rank value based on key
+    if (deck.rankKey) {
+      const value = card[deck.rankKey];
+      if (value == undefined) {
+        throw new Error("Invalid rank key! " + deck.rankKey);
+      }
+      card.rank = card[deck.rankKey];
+    }
   }
 
   return deckData;

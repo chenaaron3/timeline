@@ -63,7 +63,7 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(
         >
             <motion.div
                 // Disable touch actions for mobile
-                className={`relative pointer-events-auto hover:cursor-grabs w-32 min-w-32 h-48 sm:min-w-40 sm:w-40 sm:h-60 rounded-3xl bg-white text-white ${!showDate && 'touch-none'} drop-shadow-2xl`}
+                className={`relative overflow-hidden pointer-events-auto hover:cursor-grabs w-32 min-w-32 h-48 sm:min-w-40 sm:w-40 sm:h-60 rounded-3xl bg-white text-white ${!showDate && 'touch-none'} drop-shadow-2xl`}
                 initial={showDate ? {
                     // translateY: -100,
                     backgroundColor: "#FFFFFF"
@@ -82,7 +82,7 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(
                     alt={card.title}
                     className='px-2 py-3 rounded-3xl w-full'
                 />
-                <div className='absolute flex flex-col items-center w-full text-center bottom-2 text-wrap '>
+                <div className='absolute flex flex-col items-center w-full text-center bottom-2 text-wrap'>
                     {showDate && <div className='z-10 flex items-center justify-center w-2/5 h-4 sm:h-6 m-auto text-sm sm:text-xl translate-y-1 bg-[var(--sub-error-color)] rounded-xl outline-[var(--accent-color)] outline-solid outline-1 outline'>
                         <p className='w-full'>{prettyPrintNumber(card.rank)}</p>
                     </div>

@@ -29,3 +29,15 @@ def strip_numbers(s):
 def chunk_list(lst, chunk_size):
     for i in range(0, len(lst), chunk_size):
         yield lst[i:i + chunk_size]
+
+def remove_non_alphabetic(input_string):
+    """
+    Removes all non-alphabetic characters from the input string.
+    
+    Args:
+        input_string (str): The string to process.
+    
+    Returns:
+        str: A string containing only alphabetic characters.
+    """
+    return ''.join(char for char in input_string if char.isalpha())

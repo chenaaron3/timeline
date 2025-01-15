@@ -30,7 +30,7 @@ def generate_image(prompt: str, title: str):
     print("Generating image for", title)
     with sync_playwright() as p:
         # Launch the browser
-        browser = p.chromium.launch(headless=False)  # Set headless to False to view the process
+        browser = p.chromium.launch(headless=True)  # Set headless to False to view the process
         page = browser.new_page()
 
         # Step 1: Navigate to the URL
