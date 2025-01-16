@@ -88,7 +88,7 @@ export const DISPLAY_DECKS = [
         imageMap: leagueImageMap,
         instruction: "Which Champion Is Played More?",
         comparisonType: "count",
-        rankKey: (e: Event) => e['play']
+        rankKey: (e: Event) => e.play
     },
     {
         id: 'league_most_damage',
@@ -98,7 +98,7 @@ export const DISPLAY_DECKS = [
         imageMap: leagueImageMap,
         instruction: "Which Champion Deals More Damage Per Game?",
         comparisonType: "count",
-        rankKey: (e: Event) => (e["damage_dealt_to_champions"]! / e['play']!)
+        rankKey: (e: Event) => (e.damage_dealt_to_champions! / e.play!)
     },
     {
         id: 'league_most_taken',
@@ -108,7 +108,7 @@ export const DISPLAY_DECKS = [
         imageMap: leagueImageMap,
         instruction: "Which Champion Takes More Damage Per Game?",
         comparisonType: "count",
-        rankKey: (e: Event) => (e["damage_taken"]! / e['play']!)
+        rankKey: (e: Event) => (e.damage_taken! / e.play!)
     },
     {
         id: 'us_presidents',
