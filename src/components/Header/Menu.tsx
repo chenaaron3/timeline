@@ -1,5 +1,6 @@
-import { Boxes, PlusCircle, RotateCcw, Ruler, Settings, UserPlus2 } from 'lucide-react';
+import { Boxes, CircleHelp, PlusCircle, RotateCcw, Ruler, Settings, UserPlus2 } from 'lucide-react';
 import { useEffect } from 'react';
+import { toast } from 'sonner';
 import {
     DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem, DropdownMenuLabel,
     DropdownMenuPortal, DropdownMenuSeparator, DropdownMenuShortcut, DropdownMenuSub,
@@ -8,8 +9,6 @@ import {
 import { SimpleTooltip } from '~/components/ui/simple-tooltip';
 import { useGameStore, useMultiplayerStore } from '~/state';
 import { DECK_NAMES, DISPLAY_DECKS } from '~/utils/deckCollection';
-
-import { Feedback } from './Feedback';
 
 const deckSizes = [
     { count: 5 },
@@ -52,9 +51,22 @@ export function Menu() {
 
     return (
         <div className='fixed flex gap-5 bottom-5 left-5 flex-col sm:flex-row sm:top-3 sm:right-3 sm:static'>
-            <SimpleTooltip description='Provide Feedback'>
-                <Feedback />
+            <SimpleTooltip description='How To Play?'>
+                <div className='cursor-pointer' onClick={() => {
+                    const deckData = DISPLAY_DECKS.find((deck) => deck.id === currentDeck)
+                    if (deckData) {
+                        toast(deckData.instruction, {
+                            position: "top-center",
+                            icon: <CircleHelp />,
+                        })
+                    }
+                }}>
+                    <CircleHelp />
+                </div>
             </SimpleTooltip>
+            {/* <SimpleTooltip description='Provide Feedback'>
+                <Feedback />
+            </SimpleTooltip> */}
             <SimpleTooltip description='Multiplayer'>
                 <div className='cursor-pointer' onClick={() => setLobbyOpen(true)}>
                     <UserPlus2 />

@@ -1,7 +1,6 @@
 import { RotateCcw } from 'lucide-react';
 import { useCallback, useEffect, useState } from 'react';
 import { useGameStore } from '~/state';
-import { DISPLAY_DECKS } from '~/utils/deckCollection';
 import { HighscoreCategory, Highscores } from '~/utils/types';
 import { formatSeconds, getUserData, saveHighScore } from '~/utils/utils';
 
@@ -34,16 +33,7 @@ export const Results = () => {
         }
     }, [deckName, deckSize])
 
-    return <div className='pointer-events-auto flex flex-col items-center justify-center w-full gap-5'>
-        <div className='w-full text-2xl text-center sm:text-3xl'>
-            <p>
-
-                {DISPLAY_DECKS.find((deck) => deck.id == deckName)!.name} Results!
-            </p>
-            <p className='text-sm'>
-                x{deckSize} cards
-            </p>
-        </div>
+    return <div className='pointer-events-auto max-h-[50%] sm:max-w-[50%] flex flex-col items-center justify-center w-full gap-5'>
         <div className='flex items-center justify-center w-full gap-3 p-3'>
             <ResultCategory
                 category={'streak'}
@@ -71,8 +61,8 @@ export const Results = () => {
             />
         </div>
         <Button
-            variant={'outline'}
-            className='bg-[--main-color] text-black'
+            variant={'secondary'}
+            // className='bg-[--main-color] text-black'
             onClick={() => init()}>
             <RotateCcw />
             Restart

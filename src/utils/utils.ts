@@ -137,6 +137,6 @@ export function prettyPrintNumber(num: number) {
   } else if (num >= 10_000) {
     return (num / 1_000).toFixed(1) + "K";
   } else {
-    return num.toString();
+    return num.toFixed(0).toString();
   }
 }

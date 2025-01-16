@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import Image from 'next/image';
 import React, { forwardRef, useEffect, useState } from 'react';
 import { useGameStore } from '~/state';
+import { isGameComplete } from '~/state/game';
 import { useMediaQueries } from '~/utils/mediaQueries';
 import { prettyPrintNumber } from '~/utils/utils';
 
@@ -38,9 +39,25 @@ function mapRange(
 
 export const Card = forwardRef<HTMLDivElement, CardProps>(
     ({ cardID, showDate, incorrect, previewable = true, ...props }, ref) => {
-        const card = useGameStore.use.cardMap()[cardID]!;
+        const gameComplete = useGameStore(isGameComplete)
+        const card = useGameStore.use.cardMap()[cardID]!
         const [textSize, setTextSize] = useState(`${mapRange(card.title.length)}rem`);
         const { isSmallScreen } = useMediaQueries();
+        const [bgColor, setBgColor] = useState("#FFFFFF");
+
+        useEffect(() => {
+            if (showDate) {
+                if (incorrect) {
+                    setBgColor("var(--error-color)")
+                } else {
+                    setBgColor("var(--main-color)")
+                }
+            }
+            // Keep the incorrect cards red if the game is complete
+            if (!gameComplete) {
+                setTimeout(() => { setBgColor("#FFFFFF") }, 1000)
+            }
+        }, [showDate, incorrect])
 
         useEffect(() => {
             if (card) {
@@ -65,23 +82,24 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(
                 // Disable touch actions for mobile
                 className={`relative overflow-hidden pointer-events-auto hover:cursor-grabs w-32 min-w-32 h-48 sm:min-w-40 sm:w-40 sm:h-60 rounded-3xl bg-white text-white ${!showDate && 'touch-none'} drop-shadow-2xl`}
                 initial={showDate ? {
-                    // translateY: -100,
                     backgroundColor: "#FFFFFF"
                 } : undefined}
                 animate={showDate ? {
-                    // translateY: 0,
-                    backgroundColor: incorrect ? "var(--error-color)" : "#FFFFFF",
+                    backgroundColor: bgColor,
                 } : undefined}
                 layoutId={cardID}
                 layout
             >
                 {props.children}
 
-                {/* eslint-disable-next-line */}
-                <Image src={card.image}
-                    alt={card.title}
-                    className='px-2 py-3 rounded-3xl w-full'
-                />
+                <div className='w-full my-auto h-[90%] overflow-hidden rounded-3xl'>
+                    {/* eslint-disable-next-line */}
+                    <Image src={card.image}
+                        alt={card.title}
+                        className='px-2 py-3 rounded-3xl w-full'
+                    />
+
+                </div>
                 <div className='absolute flex flex-col items-center w-full text-center bottom-2 text-wrap'>
                     {showDate && <div className='z-10 flex items-center justify-center w-2/5 h-4 sm:h-6 m-auto text-sm sm:text-xl translate-y-1 bg-[var(--sub-error-color)] rounded-xl outline-[var(--accent-color)] outline-solid outline-1 outline'>
                         <p className='w-full'>{prettyPrintNumber(card.rank)}</p>

@@ -12,7 +12,7 @@ import { IMAGE_MAP as redditCommunitiesImageMap } from '~/generated/RedditCommun
 import { IMAGE_MAP as usPresidentsImageMap } from '~/generated/UsPresidentInaugurationsImages';
 import { IMAGE_MAP as worldHistoryImageMap } from '~/generated/WorldHistoryImages';
 
-import { Events, ImageMap } from './types';
+import { Event, Events, ImageMap } from './types';
 
 export type DECK_NAMES = "world_history" | "old_world_history" | "us_presidents" | "philosophers" | "reddit_communities" | "NULL_DECK";
 
@@ -24,7 +24,7 @@ export interface DisplayDecks {
     deckData: Events;
     instruction: string;
     comparisonType: "date" | "count";
-    rankKey?: string; // If a different key should be used to get the rank
+    rankKey?: (e: Event) => number; // If a different key should be used to get the rank
     // Blog Data should be SEO optimized
     blogData?: {
         title: string;
@@ -88,7 +88,7 @@ export const DISPLAY_DECKS = [
         imageMap: leagueImageMap,
         instruction: "Which Champion Is Played More?",
         comparisonType: "count",
-        rankKey: "play"
+        rankKey: (e: Event) => e['play']
     },
     {
         id: 'league_most_damage',
@@ -96,9 +96,9 @@ export const DISPLAY_DECKS = [
         icon: <Swords />,
         deckData: LeagueData,
         imageMap: leagueImageMap,
-        instruction: "Which Champion Dealt More Damage?",
+        instruction: "Which Champion Deals More Damage Per Game?",
         comparisonType: "count",
-        rankKey: "damage_dealt_to_champions"
+        rankKey: (e: Event) => (e["damage_dealt_to_champions"]! / e['play']!)
     },
     {
         id: 'league_most_taken',
@@ -106,9 +106,9 @@ export const DISPLAY_DECKS = [
         icon: <Swords />,
         deckData: LeagueData,
         imageMap: leagueImageMap,
-        instruction: "Which Champion Took More Damage?",
+        instruction: "Which Champion Takes More Damage Per Game?",
         comparisonType: "count",
-        rankKey: "damage_taken"
+        rankKey: (e: Event) => (e["damage_taken"]! / e['play']!)
     },
     {
         id: 'us_presidents',
