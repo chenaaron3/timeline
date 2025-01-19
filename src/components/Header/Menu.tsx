@@ -1,4 +1,5 @@
-import { Boxes, CircleHelp, PlusCircle, RotateCcw, Ruler, Settings, UserPlus2 } from 'lucide-react';
+import { BookText, Boxes, CircleHelp, RotateCcw, Ruler, Settings, UserPlus2 } from 'lucide-react';
+import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import { toast } from 'sonner';
 import {
@@ -19,6 +20,7 @@ const deckSizes = [
 ]
 
 export function Menu() {
+    const router = useRouter();
     const setDeckSize = useGameStore.use.setDeckSize();
     const selectDeck = useGameStore.use.selectDeck();
     const currentDeck = useGameStore.use.deckName();
@@ -28,6 +30,10 @@ export function Menu() {
 
     const onSelectDeck = (deckName: DECK_NAMES) => {
         selectDeck(deckName);
+    }
+
+    const onViewBlog = (deckName: DECK_NAMES) => {
+        router.push('/posts/' + deckName); // Replace with your target route
     }
 
     useEffect(() => {
@@ -125,11 +131,32 @@ export function Menu() {
                                             </DropdownMenuItem>
                                         ))
                                     }
-                                    <DropdownMenuSeparator />
-                                    <DropdownMenuItem>
-                                        <PlusCircle />
-                                        <span>More...</span>
-                                    </DropdownMenuItem>
+                                </DropdownMenuSubContent>
+                            </DropdownMenuPortal>
+                        </DropdownMenuSub>
+                        <DropdownMenuSub>
+                            <DropdownMenuSubTrigger>
+                                <BookText />
+                                <span>Learn More</span>
+                            </DropdownMenuSubTrigger>
+                            <DropdownMenuPortal>
+                                <DropdownMenuSubContent>
+                                    {
+                                        DISPLAY_DECKS.map((deck) => {
+                                            if (deck.blogData) {
+                                                return (
+                                                    <DropdownMenuItem key={deck.id} onClick={() => onViewBlog(deck.id)}>
+                                                        {deck.icon}
+                                                        <span>
+                                                            {deck.name}
+                                                        </span>
+                                                    </DropdownMenuItem>
+                                                )
+                                            } else {
+                                                return <></>
+                                            }
+                                        })
+                                    }
                                 </DropdownMenuSubContent>
                             </DropdownMenuPortal>
                         </DropdownMenuSub>

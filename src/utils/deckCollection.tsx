@@ -61,6 +61,16 @@ export const DISPLAY_DECKS = [
         deckData: OldWorldHistoryData,
         instruction: "Which Historical Event Came First?",
         comparisonType: "date",
+        blogData: {
+            title: "Most Significant World History Events",
+            description: `Explore the pivotal moments in world history that shaped 
+            our present and continue to influence our future. From ancient civilizations 
+            to modern times, this blog dives into the most significant events that altered 
+            the course of nations, cultures, and humanity itself. Gain deeper insights into 
+            the wars, discoveries, revolutions, and movements that have left a lasting legacy 
+            on the world stage.`,
+            date: "January 3, 2025",
+        }
     },
     {
         id: 'philosophers',
@@ -70,6 +80,13 @@ export const DISPLAY_DECKS = [
         deckData: PhilosophersData,
         instruction: "Which Philosopher Came First?",
         comparisonType: "date",
+        blogData: {
+            title: "Most Significant Philosophers of All Time",
+            description: `Embark on a journey through the minds that shaped the world. Whether you're a curious beginner or a seasoned thinker,
+            this blog brings philosophy to life, exploring how these timeless ideas continue to resonate in our ever-changing 
+            world. Expand your mind—one thinker at a time.`,
+            date: "January 1, 2025",
+        }
     },
     {
         id: 'reddit_communities',
@@ -79,6 +96,15 @@ export const DISPLAY_DECKS = [
         imageMap: redditCommunitiesImageMap,
         instruction: "Which Subreddit Has More Subscribers?",
         comparisonType: "count",
+        blogData: {
+            title: "Most Popular Subreddits of All Time",
+            description: `Curious about what’s trending in the Reddit universe? This article dives into the platform’s 
+            most popular subreddits, where millions of users gather to share ideas, memes, advice, and more. From niche 
+            hobbies to global conversations, discover the communities shaping the pulse of Reddit. Whether you’re new to 
+            the platform or looking to expand your feed, this list will connect you with the vibrant corners of the internet 
+            where the action happens. Explore, engage, and join the conversation!`,
+            date: "January 1, 2025",
+        }
     },
     {
         id: 'league_most_played',
@@ -119,7 +145,7 @@ export const DISPLAY_DECKS = [
         instruction: "Which President Served First?",
         comparisonType: "date",
         blogData: {
-            title: "List of US Presidents",
+            title: "The Presidents of the United States Timeline",
             description: `Discover a comprehensive list of all U.S. Presidents, 
             from the founding of the nation to the present day. This blog provides 
             detailed insights into the leadership, policies, and legacies of each 

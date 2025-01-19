@@ -2,10 +2,13 @@ import { motion, useScroll } from 'framer-motion';
 import { chunk } from 'lodash';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import { useRef } from 'react';
+import { Button } from '~/components/ui/button';
 import { getDeck } from '~/utils/deck';
 import { DECK_NAMES, DISPLAY_DECKS, DisplayDecks } from '~/utils/deckCollection';
 import { Event } from '~/utils/types';
+import { prettyPrintNumber } from '~/utils/utils';
 
 // Icons are not serializable, so remove it
 type SerializableDeck = Omit<DisplayDecks, 'icon'>;
@@ -16,15 +19,22 @@ type PageProps = {
 };
 
 export default function Page({ metadata, content }: PageProps) {
+    const router = useRouter();
     const containerRef = useRef(null)
-    const { scrollYProgress } = useScroll({
-    });
+    const { scrollYProgress } = useScroll({});
+
+    const onPlayClick = () => {
+        router.push({
+            pathname: "/",
+            query: {
+                "deck": metadata.id,
+            }
+        })
+    }
 
     if (!metadata.blogData) {
         return
     }
-
-    console.log(scrollYProgress)
 
     return (
         <>
@@ -50,6 +60,9 @@ export default function Page({ metadata, content }: PageProps) {
                             {metadata.blogData.date}
                         </div>
                     </div>
+                    <Button className='mt-3' onClick={onPlayClick}>
+                        Play Interactive Version
+                    </Button>
                     {/* Content */}
                     <div className='mt-16'>
                         {
@@ -65,7 +78,7 @@ export default function Page({ metadata, content }: PageProps) {
                                         ></Image>
                                     </div>
                                     <div className='flex-[2] flex flex-col gap-5'>
-                                        <h1 className='text-3xl'>{e.title} ({e.rank})</h1>
+                                        <h1 className='text-3xl'>{e.title} ({prettyPrintNumber(e.rank)})</h1>
                                         {sections.map((section, sid) => <p key={e.id + sid}>
                                             {section.join(". ")}
                                         </p>)}
