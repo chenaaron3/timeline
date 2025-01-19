@@ -33,7 +33,7 @@ export function Menu() {
     }
 
     const onViewBlog = (deckName: DECK_NAMES) => {
-        router.push('/posts/' + deckName); // Replace with your target route
+        void router.push('/posts/' + deckName); // Replace with your target route
     }
 
     useEffect(() => {

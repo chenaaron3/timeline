@@ -24,7 +24,7 @@ export default function Page({ metadata, content }: PageProps) {
     const { scrollYProgress } = useScroll({});
 
     const onPlayClick = () => {
-        router.push({
+        void router.push({
             pathname: "/",
             query: {
                 "deck": metadata.id,
