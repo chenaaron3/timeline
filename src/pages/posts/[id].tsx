@@ -111,7 +111,7 @@ export const getStaticProps: GetStaticProps<PageProps> = async ({ params }) => {
     const id = params?.id as DECK_NAMES;
     const metadata = DISPLAY_DECKS.find(x => x.id == id)!;
     const content = getDeck(id)
-    content.sort(e => e.rank)
+    content.sort((e1, e2) => e2.rank - e1.rank)
     const { icon, ...serializableMetadata } = metadata;
     return {
         props: {

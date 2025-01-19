@@ -41,3 +41,15 @@ def remove_non_alphabetic(input_string):
         str: A string containing only alphabetic characters.
     """
     return ''.join(char for char in input_string if char.isalpha())
+
+def list_to_dict(l):
+    d = {}
+    for i in l:
+        d[i['id']] = i
+    return d
+
+def dict_to_list(d):
+    l = []
+    for k in sorted(d.keys()):
+        l.append(d[k])
+    return l

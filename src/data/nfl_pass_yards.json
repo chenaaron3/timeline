@@ -1,0 +1,410 @@
+[
+    {
+        "id": "aaronrodgers",
+        "title": "Aaron Rodgers",
+        "rank": 62952,
+        "description": "Aaron Rodgers",
+        "longDescription": "Aaron Rodgers, renowned for his precise passing and exceptional football IQ, has etched his name in NFL history with an astounding 62,952 passing yards, showcasing his elite skills and resilience on the field.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/RodgAa00_2023.jpg"
+    },
+    {
+        "id": "alexsmith",
+        "title": "Alex Smith",
+        "rank": 35650,
+        "description": "Alex Smith",
+        "longDescription": "Alex Smith, a veteran NFL quarterback, impressively accumulated 35,650 passing yards over his career, showcasing his precision and resilience on the field.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/SmitAl03_2020.jpg"
+    },
+    {
+        "id": "andrewluck",
+        "title": "Andrew Luck",
+        "rank": 23671,
+        "description": "Andrew Luck",
+        "longDescription": "Andrew Luck, the former Indianapolis Colts quarterback, dazzled fans with his exceptional arm talent and football IQ, amassing an impressive 23,671 passing yards during his career before his surprising retirement.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/LuckAn00_2019.jpg"
+    },
+    {
+        "id": "andydalton",
+        "title": "Andy Dalton",
+        "rank": 39500,
+        "description": "Andy Dalton",
+        "longDescription": "Andy Dalton, a seasoned NFL quarterback, has etched his name in football history by amassing an impressive 39,500 passing yards throughout his career, showcasing his skill and resilience on the field.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/DaltAn00_2024.jpg"
+    },
+    {
+        "id": "bakermayfield",
+        "title": "Baker Mayfield",
+        "rank": 24832,
+        "description": "Baker Mayfield",
+        "longDescription": "Baker Mayfield, the dynamic quarterback known for his precision and competitiveness, has amassed an impressive 24,832 passing yards, showcasing his talent and resilience on the field.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/MayfBa00_2024.jpg"
+    },
+    {
+        "id": "benroethlisberger",
+        "title": "Ben Roethlisberger",
+        "rank": 64088,
+        "description": "Ben Roethlisberger",
+        "longDescription": "Ben Roethlisberger, the legendary quarterback known for his remarkable grit and on-field savvy, amassed an impressive 64,088 passing yards throughout his illustrious NFL career, solidifying his status as one of football's all-time greats.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/RoetBe00_2020.jpg"
+    },
+    {
+        "id": "blainegabbert",
+        "title": "Blaine Gabbert",
+        "rank": 9487,
+        "description": "Blaine Gabbert",
+        "longDescription": "Blaine Gabbert, the seasoned NFL quarterback, showcased his skill and resilience on the field, amassing an impressive total of 9,487 passing yards throughout his dynamic career.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/GabbBl00_2023.jpg"
+    },
+    {
+        "id": "blakebortles",
+        "title": "Blake Bortles",
+        "rank": 17649,
+        "description": "Blake Bortles",
+        "longDescription": "Blake Bortles, renowned for his powerful arm and tenacity on the field, amassed an impressive total of 17,649 passing yards during his NFL career, showcasing his ability to lead and deliver in high-pressure situations.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/BortBl00_2019.jpg"
+    },
+    {
+        "id": "brianhoyer",
+        "title": "Brian Hoyer",
+        "rank": 10899,
+        "description": "Brian Hoyer",
+        "longDescription": "Brian Hoyer, a seasoned NFL quarterback known for his resilience and strategic play, has amassed an impressive 10,899 passing yards throughout his career, showcasing his ability to lead offenses and adapt under pressure.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/HoyeBr00_2023.jpg"
+    },
+    {
+        "id": "brockosweiler",
+        "title": "Brock Osweiler",
+        "rank": 7418,
+        "description": "Brock Osweiler",
+        "longDescription": "Brock Osweiler, known for his impressive arm and commanding presence on the field, amassed a remarkable 7,418 passing yards during his NFL career, showcasing his talent as a reliable quarterback in the league.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/OsweBr00_2018.jpg"
+    },
+    {
+        "id": "brockpurdy",
+        "title": "Brock Purdy",
+        "rank": 9518,
+        "description": "Brock Purdy",
+        "longDescription": "Brock Purdy, the dynamic quarterback known for his precise arm and quick decision-making, has already amassed an impressive 9,518 passing yards in his burgeoning NFL career, showcasing his potential as a rising star in the league.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/PurdBr00_2024.jpg"
+    },
+    {
+        "id": "camnewton",
+        "title": "Cam Newton",
+        "rank": 32382,
+        "description": "Cam Newton",
+        "longDescription": "Cam Newton, the dynamic NFL quarterback, dazzled fans with his powerful arm and athleticism, amassing an impressive 32,382 passing yards over his career, while redefining the dual-threat quarterback position.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/NewtCa00_2021.jpg"
+    },
+    {
+        "id": "carsonpalmer",
+        "title": "Carson Palmer",
+        "rank": 46247,
+        "description": "Carson Palmer",
+        "longDescription": "Carson Palmer, a standout quarterback in the NFL, amassed an impressive total of 46,247 passing yards throughout his career, showcasing his exceptional skills and strategic prowess on the field.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/PalmCa00_2017.jpg"
+    },
+    {
+        "id": "carsonwentz",
+        "title": "Carson Wentz",
+        "rank": 22410,
+        "description": "Carson Wentz",
+        "longDescription": "Carson Wentz, known for his powerful arm and dynamic playmaking ability, dazzled fans with an impressive 22,410 passing yards throughout his NFL career, showcasing his talent as a formidable quarterback in the league.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/WentCa00_2024.jpg"
+    },
+    {
+        "id": "casekeenum",
+        "title": "Case Keenum",
+        "rank": 15175,
+        "description": "Case Keenum",
+        "longDescription": "Case Keenum, a seasoned NFL quarterback, has amassed an impressive 15,175 passing yards throughout his career, showcasing his resilience and playmaking ability on the field.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/KeenCa00_2024.jpg"
+    },
+    {
+        "id": "chadhenne",
+        "title": "Chad Henne",
+        "rank": 13290,
+        "description": "Chad Henne",
+        "longDescription": "Chad Henne, a versatile NFL quarterback known for his resilience, amassed an impressive 13,290 passing yards throughout his career, showcasing his skill and determination on the field.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/HennCh01_2021.jpg"
+    },
+    {
+        "id": "cjstroud",
+        "title": "C.J. Stroud",
+        "rank": 7835,
+        "description": "C.J. Stroud",
+        "longDescription": "C.J. Stroud, a dynamic quarterback known for his precision and poise, threw an impressive 7,835 passing yards, showcasing his elite playmaking ability and solidifying his place among the league's brightest talents.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/StroCJ00_2024.jpg"
+    },
+    {
+        "id": "colinkaepernick",
+        "title": "Colin Kaepernick",
+        "rank": 12271,
+        "description": "Colin Kaepernick",
+        "longDescription": "Colin Kaepernick, the dynamic former NFL quarterback known for his game-changing plays and activism, amassed an impressive 12,271 passing yards during his career, leaving a lasting impact both on and off the field.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/KaepCo00_2019.jpg"
+    },
+    {
+        "id": "coltmccoy",
+        "title": "Colt McCoy",
+        "rank": 7975,
+        "description": "Colt McCoy",
+        "longDescription": "Colt McCoy, the veteran quarterback known for his resilience and leadership on the field, has amassed an impressive total of 7,975 passing yards throughout his NFL career, showcasing his skill and determination as a pivotal player in the league.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/McCoCo00_2023.jpg"
+    },
+    {
+        "id": "dakprescott",
+        "title": "Dak Prescott",
+        "rank": 31437,
+        "description": "Dak Prescott",
+        "longDescription": "Dak Prescott, the talented quarterback for the Dallas Cowboys, has showcased his elite arm and leadership on the field by amassing an impressive 31,437 passing yards, solidifying his reputation as one of the NFL\u2019s top playmakers.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/PresDa01_2024.jpg"
+    },
+    {
+        "id": "danieljones",
+        "title": "Daniel Jones",
+        "rank": 14582,
+        "description": "Daniel Jones",
+        "longDescription": "Daniel Jones, the dynamic quarterback known for his strong arm and playmaking ability, has amassed an impressive 14,582 passing yards, showcasing his evolution as a leader on the field.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/JoneDa05_2024.jpg"
+    },
+    {
+        "id": "derekanderson",
+        "title": "Derek Anderson",
+        "rank": 10878,
+        "description": "Derek Anderson",
+        "longDescription": "Derek Anderson, a formidable quarterback known for his powerful arm, amassed an impressive 10,878 passing yards during his NFL career, showcasing both resilience and skill on the field.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/AndeDe00_2017.jpg"
+    },
+    {
+        "id": "derekcarr",
+        "title": "Derek Carr",
+        "rank": 41245,
+        "description": "Derek Carr",
+        "longDescription": "Derek Carr, a dynamic quarterback known for his precision and resilience, has amassed an impressive 41,245 passing yards, solidifying his reputation as one of the premier passers in the NFL.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/CarrDe02_2024.jpg"
+    },
+    {
+        "id": "deshaunwatson",
+        "title": "Deshaun Watson",
+        "rank": 17904,
+        "description": "Deshaun Watson",
+        "longDescription": "Deshaun Watson, the dynamic NFL quarterback known for his exceptional passing ability, has amassed an impressive total of 17,904 passing yards, showcasing his talent and resilience on the field.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/WatsDe00_2024.jpg"
+    },
+    {
+        "id": "drewbrees",
+        "title": "Drew Brees",
+        "rank": 80358,
+        "description": "Drew Brees",
+        "longDescription": "Drew Brees, an iconic NFL quarterback, etched his name in history by amassing an astounding 80,358 passing yards, showcasing his precision, resilience, and remarkable leadership over a legendary 20-season career.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/BreeDr00_2020.jpg"
+    },
+    {
+        "id": "elimanning",
+        "title": "Eli Manning",
+        "rank": 57023,
+        "description": "Eli Manning",
+        "longDescription": "Eli Manning, the legendary NFL quarterback, dazzled fans throughout his career by amassing an impressive 57,023 passing yards, solidifying his legacy as one of the greats in football history.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/MannEl00_2019.jpg"
+    },
+    {
+        "id": "gardnerminshewii",
+        "title": "Gardner Minshew II",
+        "rank": 11950,
+        "description": "Gardner Minshew II",
+        "longDescription": "Gardner Minshew II, the dynamic quarterback known for his fierce competitiveness and charismatic style, has amassed an impressive 11,950 passing yards, showcasing his skill and determination on the field.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/MinsGa00_2023.jpg"
+    },
+    {
+        "id": "joeflacco",
+        "title": "Joe Flacco",
+        "rank": 45697,
+        "description": "Joe Flacco",
+        "longDescription": "Joe Flacco, the veteran NFL quarterback renowned for his powerful arm and clutch performances, has amassed an impressive 45,697 passing yards over his career, solidifying his legacy as one of the league's most accomplished signal-callers.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/FlacJo00_2024.jpg"
+    },
+    {
+        "id": "matthewstafford",
+        "title": "Matthew Stafford",
+        "rank": 59809,
+        "description": "Matthew Stafford",
+        "longDescription": "Matthew Stafford, the prolific NFL quarterback, has amassed an impressive 59,809 passing yards, showcasing his exceptional arm talent and resilience throughout his career.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/StafMa00_2024.jpg"
+    },
+    {
+        "id": "mattryan",
+        "title": "Matt Ryan",
+        "rank": 62792,
+        "description": "Matt Ryan",
+        "longDescription": "Matt Ryan, renowned for his exceptional precision and leadership on the field, has amassed a staggering 62,792 passing yards, solidifying his legacy as one of the NFL's most prolific quarterbacks.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/RyanMa00_2022.jpg"
+    },
+    {
+        "id": "mattschaub",
+        "title": "Matt Schaub",
+        "rank": 25467,
+        "description": "Matt Schaub",
+        "longDescription": "Matt Schaub, a seasoned NFL quarterback, showcased his impressive arm talent by amassing a remarkable 25,467 passing yards throughout his career, solidifying his legacy in the league.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/SchaMa00_2020.jpg"
+    },
+    {
+        "id": "michaelvick",
+        "title": "Michael Vick",
+        "rank": 22464,
+        "description": "Michael Vick",
+        "longDescription": "Michael Vick, a dynamic quarterback known for his electrifying playing style, amassed an impressive 22,464 passing yards during his NFL career, redefining the role of the dual-threat quarterback.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/VickMi00_2019.jpg"
+    },
+    {
+        "id": "mitchelltrubisky",
+        "title": "Mitchell Trubisky",
+        "rank": 12715,
+        "description": "Mitchell Trubisky",
+        "longDescription": "Mitchell Trubisky, a talented quarterback known for his dynamic playmaking ability, has amassed an impressive 12,715 passing yards, showcasing his skill and determination on the field throughout his NFL career.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/TrubMi00_2024.jpg"
+    },
+    {
+        "id": "nickfoles",
+        "title": "Nick Foles",
+        "rank": 14227,
+        "description": "Nick Foles",
+        "longDescription": "Nick Foles, renowned for his exceptional poise and passing accuracy, amassed an impressive 14,227 passing yards throughout his NFL career, solidifying his legacy as a versatile and resilient quarterback.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/FoleNi00_2022.jpg"
+    },
+    {
+        "id": "patrickmahomes",
+        "title": "Patrick Mahomes",
+        "rank": 32352,
+        "description": "Patrick Mahomes",
+        "longDescription": "Patrick Mahomes, the dynamic quarterback known for his electrifying playing style, has amassed an impressive 32,352 passing yards, solidifying his status as one of the NFL's elite playmakers.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/MahoPa00_2024.jpg"
+    },
+    {
+        "id": "peytonmanning",
+        "title": "Peyton Manning",
+        "rank": 71940,
+        "description": "Peyton Manning",
+        "longDescription": "Peyton Manning, the legendary quarterback known for his exceptional football IQ and precision passing, etched his name in history with a staggering 71,940 passing yards, solidifying his legacy as one of the greatest players in NFL history.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/MannPe00_2019.jpg"
+    },
+    {
+        "id": "philiprivers",
+        "title": "Philip Rivers",
+        "rank": 63440,
+        "description": "Philip Rivers",
+        "longDescription": "Philip Rivers, a legendary NFL quarterback known for his exceptional arm talent and competitive spirit, amassed an astonishing 63,440 passing yards over his prolific career, solidifying his legacy as one of the game's all-time greats.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/RivePh00_2020.jpg"
+    },
+    {
+        "id": "robertgriffiniii",
+        "title": "Robert Griffin III",
+        "rank": 9271,
+        "description": "Robert Griffin III",
+        "longDescription": "Robert Griffin III, a dynamic quarterback known for his electrifying playing style, showcased his impressive talent by amassing 9,271 passing yards during his NFL career.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/GrifRo01_2020.jpg"
+    },
+    {
+        "id": "russellwilson",
+        "title": "Russell Wilson",
+        "rank": 46135,
+        "description": "Russell Wilson",
+        "longDescription": "Russell Wilson, a dynamic NFL quarterback known for his impressive agility and strategic mindset, has amassed an astounding 46,135 passing yards, showcasing his elite passing ability and leadership on the field.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/WilsRu00_2024.jpg"
+    },
+    {
+        "id": "ryanfitzpatrick",
+        "title": "Ryan Fitzpatrick",
+        "rank": 34990,
+        "description": "Ryan Fitzpatrick",
+        "longDescription": "Ryan Fitzpatrick, known for his prolific career as an NFL quarterback, amassed an impressive total of 34,990 passing yards, showcasing his versatility and resilience across multiple teams in the league.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/FitzRy00_2021.jpg"
+    },
+    {
+        "id": "ryantannehill",
+        "title": "Ryan Tannehill",
+        "rank": 34881,
+        "description": "Ryan Tannehill",
+        "longDescription": "Ryan Tannehill, the dynamic quarterback known for his impressive arm strength and precision, has carved his name in NFL history with a remarkable 34,881 passing yards, solidifying his status as a formidable leader on the field.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/TannRy00_2023.jpg"
+    },
+    {
+        "id": "sambradford",
+        "title": "Sam Bradford",
+        "rank": 19449,
+        "description": "Sam Bradford",
+        "longDescription": "Sam Bradford, a former NFL quarterback known for his precision and resilience, amassed an impressive 19,449 passing yards throughout his career, showcasing his ability to lead teams with both skill and determination.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/BradSa00_2018.jpg"
+    },
+    {
+        "id": "samdarnold",
+        "title": "Sam Darnold",
+        "rank": 16383,
+        "description": "Sam Darnold",
+        "longDescription": "Sam Darnold, the talented quarterback known for his dynamic playmaking, has accumulated an impressive 16,383 passing yards, showcasing his ability to lead offenses and make critical plays in high-pressure situations.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/DarnSa00_2024.jpg"
+    },
+    {
+        "id": "shaunhill",
+        "title": "Shaun Hill",
+        "rank": 8295,
+        "description": "Shaun Hill",
+        "longDescription": "Shaun Hill, a seasoned NFL quarterback, showcased his skill on the field by racking up an impressive 8,295 passing yards throughout his career, demonstrating both resilience and adaptability as he led various teams with his steady presence.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/HillSh00_2019.jpg"
+    },
+    {
+        "id": "teddybridgewater",
+        "title": "Teddy Bridgewater",
+        "rank": 15120,
+        "description": "Teddy Bridgewater",
+        "longDescription": "Teddy Bridgewater, a resilient NFL quarterback, has showcased his impressive skills by amassing over 15,120 passing yards throughout his career, demonstrating precision and poise on the field.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/BridTe00_2022.jpg"
+    },
+    {
+        "id": "tombrady",
+        "title": "Tom Brady",
+        "rank": 89214,
+        "description": "Tom Brady",
+        "longDescription": "Tom Brady, the legendary NFL quarterback, achieved an unprecedented milestone by throwing for an astounding 89,214 passing yards throughout his illustrious career, solidifying his status as one of the greatest players in football history.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/BradTo00_2022.jpg"
+    },
+    {
+        "id": "tonyromo",
+        "title": "Tony Romo",
+        "rank": 34183,
+        "description": "Tony Romo",
+        "longDescription": "Tony Romo, a celebrated NFL quarterback, amassed an impressive 34,183 passing yards over his career, showcasing his skill and precision as he led the Dallas Cowboys to numerous playoff appearances.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/RomoTo00_2019.jpg"
+    },
+    {
+        "id": "trevorlawrence",
+        "title": "Trevor Lawrence",
+        "rank": 13815,
+        "description": "Trevor Lawrence",
+        "longDescription": "Trevor Lawrence, the talented quarterback known for his impressive arm and poise under pressure, has thrown for a remarkable 13,815 passing yards, solidifying his status as one of the brightest stars in the NFL.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/LawrTr00_2024.jpg"
+    },
+    {
+        "id": "trevorsiemian",
+        "title": "Trevor Siemian",
+        "rank": 7751,
+        "description": "Trevor Siemian",
+        "longDescription": "Trevor Siemian, known for his strong arm and football IQ, has etched his name in NFL history with an impressive total of 7,751 passing yards, showcasing his dedication and skill on the field.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/SiemTr00_2023.jpg"
+    },
+    {
+        "id": "tuatagovailoa",
+        "title": "Tua Tagovailoa",
+        "rank": 15506,
+        "description": "Tua Tagovailoa",
+        "longDescription": "Tua Tagovailoa, the dynamic quarterback known for his precision and poise, has amassed an impressive 15,506 passing yards, showcasing his talent and leadership on the field.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/TagoTu00_2024.jpg"
+    },
+    {
+        "id": "tyrodtaylor",
+        "title": "Tyrod Taylor",
+        "rank": 12254,
+        "description": "Tyrod Taylor",
+        "longDescription": "Tyrod Taylor, a dynamic quarterback known for his dual-threat capabilities, has amassed an impressive 12,254 passing yards throughout his career, showcasing his skill and resilience on the field.",
+        "imageURL": "https://www.pro-football-reference.com/req/20230307/images/headshots/TaylTy00_2024.jpg"
+    }
+]

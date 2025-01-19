@@ -1,11 +1,13 @@
-import { Brain, Earth, EarthLock, Swords, User, UsersRound } from 'lucide-react';
+import { Brain, Earth, EarthLock, Ruler, Swords, User, UsersRound } from 'lucide-react';
 import LeagueData from '~/data/league.json';
+import NFLPassYards from '~/data/nfl_pass_yards.json';
 import OldWorldHistoryData from '~/data/old_world_history.json';
 import PhilosophersData from '~/data/philosophers.json';
 import RedditCommunitesData from '~/data/reddit_communities.json';
 import USPresidents from '~/data/us_president_inaugurations.json';
 import WorldHistoryData from '~/data/world_history.json';
 import { IMAGE_MAP as leagueImageMap } from '~/generated/LeagueImages';
+import { IMAGE_MAP as nflPassYardsImages } from '~/generated/NflPassYardsImages';
 import { IMAGE_MAP as oldWorldHistoryImageMap } from '~/generated/OldWorldHistoryImages';
 import { IMAGE_MAP as philosophersImageMap } from '~/generated/PhilosophersImages';
 import { IMAGE_MAP as redditCommunitiesImageMap } from '~/generated/RedditCommunitiesImages';
@@ -153,6 +155,24 @@ export const DISPLAY_DECKS = [
             a history enthusiast or simply curious about the individuals who have shaped 
             the U.S., this resource offers a valuable overview of the nation's political evolution.`,
             date: "January 2, 2025",
+        }
+    },
+    {
+        id: 'nfl_pass_yards',
+        name: 'NFL Passing Yards',
+        icon: <Ruler />,
+        imageMap: nflPassYardsImages,
+        deckData: NFLPassYards,
+        instruction: "Which Quarterback Has The Highest Passing Yards?",
+        comparisonType: "count",
+        blogData: {
+            title: "NFL Passing Yards Career Leaders",
+            description: `Dive into the storied history of the NFL’s greatest quarterbacks with our comprehensive list of 
+            all-time passing yards leaders. From record-setting performances to unforgettable moments on the field, this 
+            article celebrates the legends who have redefined the passing game. Explore their achievements, milestones, and 
+            how they’ve shaped the game we love today. Whether you're a die-hard fan or just getting into football, this is 
+            your ultimate guide to the most prolific passers in NFL history!`,
+            date: "January 19, 2025",
         }
     },
 ] as DisplayDecks[];

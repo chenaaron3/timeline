@@ -1,6 +1,6 @@
 import os
 
-DECK_NAME = "league"
+DECK_NAME = "nfl_pass_yards"
 
 # Root Directory Paths
 ROOT_PATH = os.path.abspath(os.path.join(__file__, "..", ".."))
