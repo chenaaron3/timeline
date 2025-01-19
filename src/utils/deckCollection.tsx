@@ -163,7 +163,7 @@ export const DISPLAY_DECKS = [
         icon: <Ruler />,
         imageMap: nflPassYardsImages,
         deckData: NFLPassYards,
-        instruction: "Which Quarterback Has The Highest Passing Yards?",
+        instruction: "Which Quarterback Holds The Record For The Most Passing Yards?",
         comparisonType: "count",
         blogData: {
             title: "NFL Passing Yards Career Leaders",
